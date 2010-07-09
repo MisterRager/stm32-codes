@@ -1,7 +1,7 @@
 ### uVision2 Project, (C) Keil Software
 ### Do not modify !
 
-Target (SysTick), 0x0004 // Tools: 'ARM-ADS'
+Target (stm32), 0x0004 // Tools: 'ARM-ADS'
 
 Group (StartUp)
 Group (FWLib)
@@ -41,7 +41,7 @@ File 3,1,<..\source\gpio.c><gpio.c>
 File 3,1,<..\source\systick.c><systick.c>
 
 
-Options 1,0,0  // Target 'SysTick'
+Options 1,0,0  // Target 'stm32'
  Device (STM32F103VE)
  Vendor (STMicroelectronics)
  Cpu (IRAM(0x20000000-0x2000FFFF) IROM(0x8000000-0x807FFFF) CLOCK(8000000) CPUTYPE("Cortex-M3"))
@@ -67,7 +67,7 @@ Options 1,0,0  // Target 'SysTick'
  OrgReg (ST\STM32F10x\)
  TgStat=16
  OutDir (.\)
- OutName (SysTick)
+ OutName (stm32)
  GenApp=1
  GenLib=0
  GenHex=1
