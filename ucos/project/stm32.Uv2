@@ -6,6 +6,7 @@ Target (stm32), 0x0004 // Tools: 'ARM-ADS'
 Group (StartUp)
 Group (FWLib)
 Group (Source)
+Group (ucos)
 
 File 1,2,<..\startup\cortexm3_macro.s><cortexm3_macro.s>
 File 1,2,<..\startup\stm32f10x_vector.s><stm32f10x_vector.s>
@@ -39,6 +40,10 @@ File 3,1,<..\source\rcc.c><rcc.c>
 File 3,1,<..\source\nvic.c><nvic.c>
 File 3,1,<..\source\gpio.c><gpio.c>
 File 3,1,<..\source\systick.c><systick.c>
+File 4,1,<..\os\os_dbg.c><os_dbg.c>
+File 4,1,<..\os\ucos_ii.c><ucos_ii.c>
+File 4,1,<..\port\os_cpu_c.c><os_cpu_c.c>
+File 4,2,<..\port\os_cpu_a.s><os_cpu_a.s>
 
 
 Options 1,0,0  // Target 'stm32'
