@@ -71,7 +71,7 @@ __heap_limit
                  IMPORT  UsageFaultException
                  IMPORT  SVCHandler
                  IMPORT  DebugMonitor
-                 IMPORT  PendSVC
+                 IMPORT  OSPendSV
                  IMPORT  SysTickHandler
                  IMPORT  WWDG_IRQHandler
                  IMPORT  PVD_IRQHandler
@@ -154,7 +154,7 @@ __Vectors        DCD  __initial_sp              ; Top of Stack
                  DCD  SVCHandler
                  DCD  DebugMonitor
                  DCD  0                 ; Reserved
-                 DCD  PendSVC
+                 DCD  OSPendSV
                  DCD  SysTickHandler
                  DCD  WWDG_IRQHandler
                  DCD  PVD_IRQHandler

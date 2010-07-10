@@ -46,7 +46,7 @@
      
 NVIC_INT_CTRL   	EQU     0xE000ED04  ; 中断控制寄存器
 NVIC_SYSPRI2    	EQU     0xE000ED20  ; 系统优先级寄存器(2)
-NVIC_PENDSV_PRI 	EQU     0xFFFF0000  ; 软件中断和系统节拍中断
+NVIC_PENDSV_PRI 	EQU     0x0000000f  ; 软件中断和系统节拍中断
                                         ; (都为最低，0xff).
 NVIC_PENDSVSET  	EQU     0x10000000  ; 触发软件中断的值.
 

@@ -104,7 +104,7 @@ Options 1,0,0  // Target 'stm32'
  ADSCMISC ()
  ADSCDEFN ()
  ADSCUDEF ()
- ADSCINCD ()
+ ADSCINCD (..\port;..\os)
  ADSASFLG { 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
  ADSAMISC ()
  ADSADEFN ()
