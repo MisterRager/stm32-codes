@@ -12,13 +12,18 @@
 // Description: Includes
 // *****************************************************************************
 #include "stm32f10x_lib.h"
+#include "app_cfg.h"
+#define OS_TASK_INIT_PRIO 			2 
+#define OS_INIT_TASK_STACK_SIZE		64			/* 初始化任务堆栈大小 	*/ 
+OS_STK	InitTaskStk[OS_INIT_TASK_STACK_SIZE];	/* 初始化任务堆栈 		*/
+OS_STK	InitTaskStk1[OS_INIT_TASK_STACK_SIZE];	
 
 
 
 // *****************************************************************************
 // Description: Private defines
 // *****************************************************************************
-#define VECT_TAB_FLASH
+#define VECT_TAB_RAM
 
 
 
@@ -36,7 +41,8 @@ extern void SysTick_Configuration(void);
 extern void SysTick_Start(void);
 unsigned int sig=0;
 
-
+static void init_task_core(void *pdata);
+static void init_task_core1(void *pdata);
 
 
 
@@ -62,15 +68,57 @@ int main(void)
     GPIO_Configuration();
 		SysTick_Configuration();
 		SysTick_Start();
-		//GPIO_SetBits(GPIOE, GPIO_Pin_3);
-    while(1)
-    {	
-			if(sig==0)
-					GPIO_SetBits(GPIOB, GPIO_Pin_5);
-			else GPIO_ResetBits(GPIOB, GPIO_Pin_5);
-    }
+		OSInit();				/* 初始化OS 	  */
+
+  
+  	OSTaskCreateExt(init_task_core, (void *)0, (OS_STK *)&InitTaskStk[OS_INIT_TASK_STACK_SIZE - 1],
+					OS_TASK_INIT_PRIO,
+					OS_TASK_INIT_PRIO,
+					(OS_STK *)&InitTaskStk[0],
+					OS_INIT_TASK_STACK_SIZE,
+					(void *)0,
+					OS_TASK_OPT_STK_CHK | OS_TASK_OPT_STK_CLR);	
+		  	OSTaskCreateExt(init_task_core1, (void *)0, (OS_STK *)&InitTaskStk1[OS_INIT_TASK_STACK_SIZE - 1],
+					OS_TASK_INIT_PRIO-1,
+					OS_TASK_INIT_PRIO-1,
+					(OS_STK *)&InitTaskStk1[0],
+					OS_INIT_TASK_STACK_SIZE,
+					(void *)0,
+					OS_TASK_OPT_STK_CHK | OS_TASK_OPT_STK_CLR);	
+					
+	#if (OS_TASK_NAME_SIZE >= 16)
+		OSTaskNameSet(OS_TASK_IDLE_PRIO, (INT8U *)"Idle task", &err);
+		OSTaskNameSet(OS_TASK_INIT_PRIO, (INT8U *)"Init task", &err);
+	#endif
+
+	OSStart();				/* 启动多任务环境 */
+	 
+  	return(0);
 }
 
+static void init_task_core(void *pdata)
+{
+		 
+	pdata = pdata;				/* 防止编译器警告 				*/
+	GPIO_SetBits(GPIOB, GPIO_Pin_5);
+
+	while(1)
+	{
+		//OSTaskSuspend(OS_PRIO_SELF);	/* 挂起初始化任务 		*/
+	}	
+}
+
+static void init_task_core1(void *pdata)
+{
+		 
+	pdata = pdata;				/* 防止编译器警告 				*/
+	GPIO_ResetBits(GPIOB, GPIO_Pin_5);
+
+	while(1)
+	{
+		//OSTaskSuspend(OS_PRIO_SELF);	/* 挂起初始化任务 		*/
+	}	
+}
 
 #ifdef  DEBUG
 void assert_failed(u8* file, u32 line)

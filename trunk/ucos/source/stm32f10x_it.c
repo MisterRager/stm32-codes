@@ -17,7 +17,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
-extern unsigned int sig;
+#include "app_cfg.h"
+vu32	wdg_clr_flag = 1;
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
@@ -127,6 +128,7 @@ void SVCHandler(void)
 *******************************************************************************/
 void PendSVC(void)
 {
+	
 }
 
 /*******************************************************************************
@@ -138,15 +140,13 @@ void PendSVC(void)
 *******************************************************************************/
 void SysTickHandler(void)
 {
-	static int delayNum=1000;
-	delayNum--;
-	if(delayNum==0)
-	{
-		if(sig==0)
-		 sig=1;
-		 else sig=0;
-		delayNum=1000;
-	}
+    OS_ENTER_CRITICAL(); /* Tell uC/OS-II that we are starting an ISR  */
+    OSIntNesting++;
+    OS_EXIT_CRITICAL();
+
+    OSTimeTick();        /* Call uC/OS-II's OSTimeTick()               */
+
+    OSIntExit();         /* Tell uC/OS-II that we are leaving the ISR  */
 		
 }
 

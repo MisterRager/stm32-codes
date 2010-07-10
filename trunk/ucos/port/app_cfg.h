@@ -28,7 +28,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_lib.h"	
-#include "stm32f10x_target.h"
+
 #include "ucos_ii.h"
 
 //#include "create_task.h"
