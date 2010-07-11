@@ -552,3 +552,5 @@ T0D18 019:084 JLINKARM_ReadMemU32(0xE0001004, 0x0001 Items, ...) >0x170 JTAG> --
 T0D18 019:087 JLINKARM_ReadMem (0x2000002B, 0x0001 Bytes, ...) >0x440 JTAG> -- Updating C cache (64 bytes @ 0x20000000) -- Read from C cache (1 bytes @ 0x2000002B) -- Data:  03  returns 0x00 (0003ms, 1171ms total)
 T0D18 019:090 JLINKARM_ReadMem (0x20000044, 0x0004 Bytes, ...) >0x440 JTAG> -- Updating C cache (64 bytes @ 0x20000040) -- Read from C cache (4 bytes @ 0x20000044) -- Data:  18 0A 00 20  returns 0x00 (0003ms, 1174ms total)
 T0D18 019:093 JLINKARM_ReadMem (0x20000029, 0x0001 Bytes, ...) -- Read from C cache (1 bytes @ 0x20000029) -- Data:  00  returns 0x00 (0001ms, 1177ms total)
+T0D18 520:776 JLINKARM_WriteU32(0xE000EDFC, 0x00000000) >0x170 JTAG>  returns 0x00 (0002ms, 1178ms total)
+T0D18 520:778 JLINKARM_Close() >0x170 JTAG> >0x170 JTAG> >0x170 JTAG> >0x170 JTAG> >0x170 JTAG> >0x170 JTAG> >0x170 JTAG> >0x170 JTAG> (0079ms, 1180ms total)
