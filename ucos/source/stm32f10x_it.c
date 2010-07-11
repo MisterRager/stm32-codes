@@ -143,11 +143,8 @@ void SysTickHandler(void)
     OS_ENTER_CRITICAL(); /* Tell uC/OS-II that we are starting an ISR  */
     OSIntNesting++;
     OS_EXIT_CRITICAL();
-
     OSTimeTick();        /* Call uC/OS-II's OSTimeTick()               */
-
     OSIntExit();         /* Tell uC/OS-II that we are leaving the ISR  */
-		
 }
 
 /*******************************************************************************
