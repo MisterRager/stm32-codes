@@ -104,6 +104,109 @@ void USART1_Init(void)
   USART_Cmd(USART1, ENABLE);
 }
 
+void USART2_Init(void)
+{
+  GPIO_InitTypeDef GPIO_InitStructure;
+  USART_InitTypeDef USART_InitStructure;
+
+  /* Clock configuration -------------------------------------------------------*/
+
+  /* Configure the GPIO ports( USART1 Transmit and Receive Lines) */
+  /* Configure the USART1_Tx as Alternate function Push-Pull */
+  /* Configure USART4_Tx(PC10) as alternate function push-pull */
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD,ENABLE);
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+	GPIO_PinRemapConfig(GPIO_Remap_USART2,ENABLE);
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD | RCC_APB2Periph_AFIO,ENABLE);
+
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5;
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+  GPIO_Init(GPIOD, &GPIO_InitStructure);
+
+  // Configure USART4_Rx(PC11) as input floating 
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+  GPIO_Init(GPIOD, &GPIO_InitStructure);  
+
+
+  /* USART1 configuration ------------------------------------------------------*/
+  /* USART1 configured as follow:
+        - BaudRate = 115200 baud  
+        - Word Length = 8 Bits
+        - One Stop Bit
+        - No parity
+        - Hardware flow control disabled (RTS and CTS signals)
+        - Receive and transmit enabled
+  */
+  USART_InitStructure.USART_BaudRate = 9600;
+  USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+  USART_InitStructure.USART_StopBits = USART_StopBits_1;
+  USART_InitStructure.USART_Parity = USART_Parity_No;
+  USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+  USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+
+  /* Configure the USART1 */
+  USART_Init(USART2, &USART_InitStructure);
+
+  /* Enable the USART1 */
+  USART_Cmd(USART2, ENABLE);
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD,ENABLE);
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+	GPIO_PinRemapConfig(GPIO_Remap_USART2,ENABLE);
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD | RCC_APB2Periph_AFIO,ENABLE);
+}
+
+void USART3_Init(void)
+{
+  GPIO_InitTypeDef GPIO_InitStructure;
+  USART_InitTypeDef USART_InitStructure;
+
+  /* Clock configuration -------------------------------------------------------*/
+
+  /* Configure the GPIO ports( USART1 Transmit and Receive Lines) */
+  /* Configure the USART1_Tx as Alternate function Push-Pull */
+  /* Configure USART4_Tx(PC10) as alternate function push-pull */
+		
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD,ENABLE);
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+	GPIO_PinRemapConfig(GPIO_FullRemap_USART3,ENABLE);
+
+
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8;
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+  GPIO_Init(GPIOD, &GPIO_InitStructure);
+
+  // Configure USART4_Rx(PC11) as input floating 
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+  GPIO_Init(GPIOD, &GPIO_InitStructure);  
+
+
+  /* USART1 configuration ------------------------------------------------------*/
+  /* USART1 configured as follow:
+        - BaudRate = 115200 baud  
+        - Word Length = 8 Bits
+        - One Stop Bit
+        - No parity
+        - Hardware flow control disabled (RTS and CTS signals)
+        - Receive and transmit enabled
+  */
+  USART_InitStructure.USART_BaudRate = 9600;
+  USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+  USART_InitStructure.USART_StopBits = USART_StopBits_1;
+  USART_InitStructure.USART_Parity = USART_Parity_No;
+  USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+  USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+
+  /* Configure the USART1 */
+  USART_Init(USART3, &USART_InitStructure);
+
+  /* Enable the USART1 */
+  USART_Cmd(USART3, ENABLE);
+}
+
 void UART4_Init(void)
 {
   GPIO_InitTypeDef GPIO_InitStructure;
@@ -146,6 +249,50 @@ void UART4_Init(void)
 
   /* Enable the USART1 */
   USART_Cmd(UART4, ENABLE);
+}
+
+void UART5_Init(void)
+{
+  GPIO_InitTypeDef GPIO_InitStructure;
+  USART_InitTypeDef USART_InitStructure;
+
+  /* Clock configuration -------------------------------------------------------*/
+
+  /* Configure the GPIO ports( USART1 Transmit and Receive Lines) */
+  /* Configure the USART1_Tx as Alternate function Push-Pull */
+  /* Configure USART4_Tx(PC10) as alternate function push-pull */
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12;
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+  GPIO_Init(GPIOC, &GPIO_InitStructure);
+
+  // Configure USART4_Rx(PC11) as input floating 
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+  GPIO_Init(GPIOD, &GPIO_InitStructure);  
+
+
+  /* USART1 configuration ------------------------------------------------------*/
+  /* USART1 configured as follow:
+        - BaudRate = 115200 baud  
+        - Word Length = 8 Bits
+        - One Stop Bit
+        - No parity
+        - Hardware flow control disabled (RTS and CTS signals)
+        - Receive and transmit enabled
+  */
+  USART_InitStructure.USART_BaudRate = 9600;
+  USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+  USART_InitStructure.USART_StopBits = USART_StopBits_1;
+  USART_InitStructure.USART_Parity = USART_Parity_No;
+  USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+  USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+
+  /* Configure the USART1 */
+  USART_Init(UART5, &USART_InitStructure);
+
+  /* Enable the USART1 */
+  USART_Cmd(UART5, ENABLE);
 }
 
 
@@ -205,12 +352,18 @@ void RCC_Configuration(void)
   /* Enable GPIOA, GPIOC and USART1 clock  */
   RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA 	\
 											 |	RCC_APB2Periph_GPIOC	\
+											  |	RCC_APB2Periph_GPIOD	\
 											 |	RCC_APB2Periph_TIM1 	\
 											 |	RCC_APB2Periph_GPIOB	\
 											 |	RCC_APB2Periph_GPIOE	\
+											 | RCC_APB2Periph_AFIO  \
                        | RCC_APB2Periph_USART1, ENABLE);
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3 | RCC_APB1Periph_TIM4, ENABLE);
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART3,ENABLE);
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2,ENABLE);
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_UART4,ENABLE);
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_UART5,ENABLE);
+
 }
 
 /* Timer functions ---------------------------------------------------------*/

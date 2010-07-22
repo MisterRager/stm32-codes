@@ -41,7 +41,10 @@ int main(void)
 	int i;
   RCC_Configuration();
   USART1_Init();
-	UART4_Init();
+	USART2_Init();
+	USART3_Init();
+	//UART4_Init();
+	UART5_Init();
 	//Serial_PutString("\r\n======================================================================");
 	//Serial_PutString("\r\n=              (C) COPYRIGHT 2008 STMicroelectronics                 =");
 	//Serial_PutString("\r\n=                                                                    =");
@@ -50,29 +53,37 @@ int main(void)
 	//Serial_PutString("\r\n=                                   By MCD Application Team          =");
 	//Serial_PutString("\r\n======================================================================");
 
-	Timer3_Init();
-	TIM_CtrlPWMOutputs(TIM3, ENABLE);
-	Timer4_Init();
-	TIM_CtrlPWMOutputs(TIM4, ENABLE);
+	//Timer3_Init();
+	//TIM_CtrlPWMOutputs(TIM3, ENABLE);
+	//Timer4_Init();
+	//TIM_CtrlPWMOutputs(TIM4, ENABLE);
 
 
-  for (i=0;i<8;i++)
-	PWM_Set(i,Pulse[i]);
+  //for (i=0;i<8;i++)
+	//PWM_Set(i,Pulse[i]);
 	while(1) {
 	//SerialPutChar('w');
-
-	if(SET==USART_GetFlagStatus(UART4,USART_FLAG_RXNE))
+		if(SET==USART_GetFlagStatus(UART5,USART_FLAG_RXNE))
 	{
 		pre_received=received;
-		received=(u8)USART_ReceiveData(UART4);
-
-			
-			SerialPutChar(received);
-				//SerialPutChar(0xdd);
+		received=(u8)USART_ReceiveData(UART5);	
+		SerialPutChar(received);
+	}	
 
 
-
+		if(SET==USART_GetFlagStatus(USART3,USART_FLAG_RXNE))
+	{
+		pre_received=received;
+		received=(u8)USART_ReceiveData(USART3);	
+		SerialPutChar(received);
 	}
+			if(SET==USART_GetFlagStatus(USART2,USART_FLAG_RXNE))
+	{
+		pre_received=received;
+		received=(u8)USART_ReceiveData(USART2);	
+		SerialPutChar(received);
+	}
+
 															 
 
 	}
