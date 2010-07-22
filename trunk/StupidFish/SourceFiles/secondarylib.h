@@ -28,7 +28,10 @@
 void SerialPutChar(u8 c);
 void Serial_PutString(u8 *s);
 void USART1_Init(void);
+void USART2_Init(void);
+void USART3_Init(void);
 void UART4_Init(void);
+void UART5_Init(void);
 void RCC_Configuration(void);
 void Timer3_Init(void);
 void Timer4_Init(void);
