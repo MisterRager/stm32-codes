@@ -12,6 +12,10 @@
 // Description: Includes
 // *****************************************************************************
 #include "stm32f10x_lib.h"
+#include "stdint.h"
+#include "lcd.h"
+#include "usart.h"
+#include "fsmc_lcd.h"
 
 
 
@@ -34,7 +38,13 @@ extern void NVIC_Configuration(void);
 extern void GPIO_Configuration(void);
 extern void SysTick_Configuration(void);
 extern void SysTick_Start(void);
+extern void LCD_Init(void);
+
+extern void LCD_GPIO_Configuration(void);
+
 unsigned int sig=0;
+
+
 
 
 
@@ -52,24 +62,55 @@ int main(void)
 #ifdef DEBUG
 	debug();
 #endif
-		int led=0;
-		led=0;
+	int i,j;
+
+
     //  System clock configuration
-    RCC_Configuration();    
+    RCC_Configuration();  
+		  RCC_AHBPeriphClockCmd(RCC_AHBPeriph_FSMC, ENABLE);  
     // Nested Vector Interrupt Controller configuration
     NVIC_Configuration();   
-    // General Purpose I/O default configration
-    GPIO_Configuration();
-		SysTick_Configuration();
-		SysTick_Start();
-		//GPIO_SetBits(GPIOE, GPIO_Pin_3);
+
+		LCD_GPIO_Configuration();
+		FSMC_LCD_Init();
+		USART1_Init();
+		ILI9325_Init();
+		ILI9325_VerticalScreen();
+		ILI9325_GRAMOperation();  //Tell ILI9325 that I'm now starting to write GRAM.
+    for(i=0;i<240;i++)
+    {
+       for(j=0;j<320;j++)
+       {
+          unsigned int n=i*320+j;
+          if(n<25600)
+          { 
+            ILI9325_WriteWDR(n);
+          }   
+    
+          else if(n<51200)
+          { 
+            ILI9325_WriteWDR(n);
+          }
+    
+          else if(n<76800)
+          { 
+            ILI9325_WriteWDR(0xf800);
+          }
+      } 
+		}
+			
+
+		ILI9325_FillWindowArea(10,10,100,100,0x001f);
+						    
     while(1)
-    {	
-			if(sig==0)
-					GPIO_SetBits(GPIOB, GPIO_Pin_5);
-			else GPIO_ResetBits(GPIOB, GPIO_Pin_5);
-    }
+    {
+
+		}
+		
+
+		    
 }
+
 
 
 #ifdef  DEBUG
