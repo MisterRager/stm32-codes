@@ -40,6 +40,8 @@ File 3,1,<..\source\nvic.c><nvic.c>
 File 3,1,<..\source\gpio.c><gpio.c>
 File 3,1,<..\source\systick.c><systick.c>
 File 3,1,<..\source\fsmc_lcd.c><fsmc_lcd.c>
+File 3,1,<..\source\lcd.c><lcd.c>
+File 3,1,<..\source\usart.c><usart.c>
 
 
 Options 1,0,0  // Target 'stm32'
