@@ -369,6 +369,57 @@ void RCC_Configuration(void)
 /* Timer functions ---------------------------------------------------------*/
 
 /*******************************************************************************
+* Function Name  : Timer2_Init
+* Description    : Initialize Timer2
+* Input          : None
+* Output         : None
+* Return         : None
+*******************************************************************************/
+void Timer2_Init(void)
+{
+	GPIO_InitTypeDef GPIO_InitStructure;
+	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
+	TIM_OCInitTypeDef TIM_OCInitStructure;
+
+	/*Alternative function clock setup  for GPIO */
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+	/*Clock setup for timer2 */
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+	/*Pin remap for timer2*/
+	//GPIO_PinRemapConfig(GPIO_FullRemap_TIM2,ENABLE);
+	/*PA0,1,2,3 setup for timer2*/
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+  GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_0 |GPIO_Pin_1 |GPIO_Pin_2 |GPIO_Pin_3;
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  GPIO_Init(GPIOA, &GPIO_InitStructure);
+	/*Timer Base Initialization for timer3 */
+	TIM_TimeBaseInitStructure.TIM_Prescaler=15-1;
+	TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up ;
+	TIM_TimeBaseInitStructure.TIM_Period = 48000-1;
+	TIM_TimeBaseInitStructure.TIM_ClockDivision	= 0;
+	TIM_TimeBaseInit(TIM2,&TIM_TimeBaseInitStructure);
+	/*Auto-reload always */
+	TIM_ARRPreloadConfig(TIM2, DISABLE);
+	/*Channels initialization for timer3 */
+	TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM1;
+	TIM_OCInitStructure.TIM_OutputState	 = TIM_OutputState_Enable ;
+	TIM_OCInitStructure.TIM_Pulse = 3600-1;
+	TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
+	TIM_OC1Init(TIM2, &TIM_OCInitStructure);
+	TIM_OC2Init(TIM2, &TIM_OCInitStructure);
+	TIM_OC3Init(TIM2, &TIM_OCInitStructure);
+	TIM_OC4Init(TIM2, &TIM_OCInitStructure);
+	/*CCRs auto-reload always */
+	TIM_OC1PreloadConfig(TIM2,TIM_OCPreload_Disable);
+	TIM_OC2PreloadConfig(TIM2,TIM_OCPreload_Disable);
+	TIM_OC3PreloadConfig(TIM2,TIM_OCPreload_Disable);
+	TIM_OC4PreloadConfig(TIM2,TIM_OCPreload_Disable);
+	/*Start counter for timer2 */
+	TIM_Cmd(TIM2, ENABLE);
+}
+/*End Timer2_Init()*/
+
+/*******************************************************************************
 * Function Name  : Timer3_Init
 * Description    : Initialize Timer3
 * Input          : None

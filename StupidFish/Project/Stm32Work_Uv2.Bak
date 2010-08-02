@@ -6,7 +6,6 @@ Target (Target 1), 0x0004 // Tools: 'ARM-ADS'
 Group (SourceFiles)
 Group (Stm32FWLib)
 Group (StartUp)
-Group (LCD)
 
 File 1,1,<..\SourceFiles\stm32f10x_it.c><stm32f10x_it.c>
 File 1,1,<..\SourceFiles\main.c><main.c>
@@ -37,11 +36,6 @@ File 2,1,<..\Stm32FWLib\src\stm32f10x_tim.c><stm32f10x_tim.c>
 File 2,1,<..\Stm32FWLib\src\stm32f10x_usart.c><stm32f10x_usart.c>
 File 3,2,<..\StartUp\stm32f10x_vector.s><stm32f10x_vector.s>
 File 3,2,<..\StartUp\cortexm3_macro.s><cortexm3_macro.s>
-File 4,1,<..\LCD\src\cnpix.c><cnpix.c>
-File 4,1,<..\LCD\src\delay.c><delay.c>
-File 4,1,<..\LCD\src\enpix.c><enpix.c>
-File 4,1,<..\LCD\src\lcd.c><lcd.c>
-File 4,1,<..\LCD\src\spi.c><spi.c>
 
 
 Options 1,0,0  // Target 'Target 1'
