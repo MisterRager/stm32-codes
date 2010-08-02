@@ -41,10 +41,11 @@ int main(void)
 	int i;
   RCC_Configuration();
   USART1_Init();
-	USART2_Init();
+	USART2_Init();															
 	USART3_Init();
 	//UART4_Init();
 	UART5_Init();
+	Timer2_Init();
 	//Serial_PutString("\r\n======================================================================");
 	//Serial_PutString("\r\n=              (C) COPYRIGHT 2008 STMicroelectronics                 =");
 	//Serial_PutString("\r\n=                                                                    =");
@@ -82,7 +83,7 @@ int main(void)
 		pre_received=received;
 		received=(u8)USART_ReceiveData(USART2);	
 		SerialPutChar(received);
-	}
+	}	
 
 															 
 
