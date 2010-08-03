@@ -33,6 +33,7 @@ void USART3_Init(void);
 void UART4_Init(void);
 void UART5_Init(void);
 void RCC_Configuration(void);
+void Timer2_Init(unsigned int value);
 void Timer3_Init(void);
 void Timer4_Init(void);
 int PWM_Set(int Channel, int Pulse);

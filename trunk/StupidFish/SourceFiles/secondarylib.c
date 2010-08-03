@@ -90,7 +90,7 @@ void USART1_Init(void)
         - Hardware flow control disabled (RTS and CTS signals)
         - Receive and transmit enabled
   */
-  USART_InitStructure.USART_BaudRate = 115200;
+  USART_InitStructure.USART_BaudRate = 9600;
   USART_InitStructure.USART_WordLength = USART_WordLength_8b;
   USART_InitStructure.USART_StopBits = USART_StopBits_1;
   USART_InitStructure.USART_Parity = USART_Parity_No;
@@ -375,7 +375,7 @@ void RCC_Configuration(void)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void Timer2_Init(void)
+void Timer2_Init(unsigned int value)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
@@ -389,13 +389,19 @@ void Timer2_Init(void)
 	//GPIO_PinRemapConfig(GPIO_FullRemap_TIM2,ENABLE);
 	/*PA0,1,2,3 setup for timer2*/
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-  GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_3 ;//|GPIO_Pin_1 |GPIO_Pin_2 |GPIO_Pin_3;
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_Init(GPIOA, &GPIO_InitStructure);
+  	GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_3 ;//|GPIO_Pin_1 |GPIO_Pin_2 |GPIO_Pin_3;
+  	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  	GPIO_Init(GPIOA, &GPIO_InitStructure);
+
+  	GPIO_InitStructure.GPIO_Mode=GPIO_Mode_Out_PP;
+  	GPIO_InitStructure.GPIO_Pin=GPIO_Pin_2 |GPIO_Pin_1 |GPIO_Pin_0;
+	GPIO_InitStructure.GPIO_Speed=GPIO_Speed_50MHz;
+	GPIO_Init(GPIOA,&GPIO_InitStructure);
+
 	/*Timer Base Initialization for timer3 */
 	TIM_TimeBaseInitStructure.TIM_Prescaler=15-1;
 	TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up ;
-	TIM_TimeBaseInitStructure.TIM_Period = 48000-1;
+	TIM_TimeBaseInitStructure.TIM_Period = value-1;
 	TIM_TimeBaseInitStructure.TIM_ClockDivision	= 0;
 	TIM_TimeBaseInit(TIM2,&TIM_TimeBaseInitStructure);
 	/*Auto-reload always */
@@ -403,7 +409,7 @@ void Timer2_Init(void)
 	/*Channels initialization for timer3 */
 	TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM1;
 	TIM_OCInitStructure.TIM_OutputState	 = TIM_OutputState_Enable ;
-	TIM_OCInitStructure.TIM_Pulse = 24000-1;
+	TIM_OCInitStructure.TIM_Pulse = value/2-1;
 	TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
 //	TIM_OC1Init(TIM2, &TIM_OCInitStructure);
 //	TIM_OC2Init(TIM2, &TIM_OCInitStructure);
