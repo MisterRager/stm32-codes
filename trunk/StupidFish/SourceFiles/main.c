@@ -46,6 +46,8 @@ int main(void)
 	//UART4_Init();
 	UART5_Init();
 	Timer2_Init();
+	Timer3_Init();
+	Timer4_Init();
 	//Serial_PutString("\r\n======================================================================");
 	//Serial_PutString("\r\n=              (C) COPYRIGHT 2008 STMicroelectronics                 =");
 	//Serial_PutString("\r\n=                                                                    =");
