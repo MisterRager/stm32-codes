@@ -17,6 +17,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
+#include "usart.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -574,6 +575,31 @@ void SPI2_IRQHandler(void)
 *******************************************************************************/
 void USART1_IRQHandler(void)
 {
+	/* Received */
+	if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+	{
+		/* Clear the USART1 Receive interrupt */
+		USART_ClearITPendingBit(USART1, USART_IT_RXNE);
+	}
+	/* Sent */
+	if (USART_GetITStatus(USART1, USART_IT_TXE) != RESET)
+	{
+		USART_SendData(USART1, Send_Data[Send_Length++]);
+		if (Send_Length==SEND_LENGTH)
+  	{
+     	//发送字节结束
+   		USART_ClearITPendingBit(USART1,USART_IT_TXE);
+   		USART_ITConfig(USART1, USART_IT_TXE, DISABLE);
+   		USART_ITConfig(USART1, USART_IT_TC, ENABLE);
+  	}
+
+	}
+	//发送完成
+	if (USART_GetITStatus(USART1, USART_IT_TC) != RESET)
+	{
+ 		USART_ClearITPendingBit(USART1,USART_IT_TC);
+ 		USART_ITConfig(USART1, USART_IT_TC, DISABLE);
+	}
 }
 
 /*******************************************************************************
