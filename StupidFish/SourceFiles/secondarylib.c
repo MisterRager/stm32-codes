@@ -24,276 +24,56 @@
 
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
-/* Usart functions ---------------------------------  ------------------------*/
-/*******************************************************************************
-* Function Name  : SerialPutChar
-* Description    : Print a character on the HyperTerminal
-* Input          : - c: The character to be printed
-* Output         : None
-* Return         : None
-*******************************************************************************/
-void SerialPutChar(u8 c)
-{
-  USART_SendData(USART1, c);
-  while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET);
-}
+
 
 /*******************************************************************************
-* Function Name  : Serial_PutString
-* Description    : Print a string on the HyperTerminal
-* Input          : - s: The string to be printed
-* Output         : None
-* Return         : None
+* Name  	: NVIC_Configuration
+* Deion 	: Configures NVIC and Vector Table base location.
+* Input 	: None
+* Output	: None
+* Return	: None
 *******************************************************************************/
-void Serial_PutString(u8 *s)
+void NVIC_Configuration(void)
 {
-  while (*s != '\0')
-  {
-    SerialPutChar(*s);
-    s ++;
-  }
+  NVIC_InitTypeDef NVIC_InitStructure;
+  
+#ifdef  VECT_TAB_RAM
+    /* Set the Vector Table base location at 0x20000000 */
+    NVIC_SetVectorTable(NVIC_VectTab_RAM, 0x0);
+#else  /* VECT_TAB_FLASH  */
+    /* Set the Vector Table base location at 0x08000000 */
+    NVIC_SetVectorTable(NVIC_VectTab_FLASH, 0x0);
+#endif
+  
+  /* Configure the NVIC Preemption Priority Bits */  
+  NVIC_PriorityGroupConfig(NVIC_PriorityGroup_0);
+  
+  /* Enable the USART1 Interrupt */
+  NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQChannel;
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+  NVIC_Init(&NVIC_InitStructure);
+
+	/* Enable the USART2 Interrupt */
+	NVIC_InitStructure.NVIC_IRQChannel = USART2_IRQChannel;
+  NVIC_Init(&NVIC_InitStructure);
+
+	/* Enable the USART3 Interrupt */
+	NVIC_InitStructure.NVIC_IRQChannel = USART3_IRQChannel;
+  NVIC_Init(&NVIC_InitStructure);
+
+	/* Enable the UART4 Interrupt */
+	NVIC_InitStructure.NVIC_IRQChannel = UART4_IRQChannel;
+  NVIC_Init(&NVIC_InitStructure);
+
+	/* Enable the UART5 Interrupt */
+	NVIC_InitStructure.NVIC_IRQChannel = UART5_IRQChannel;
+  NVIC_Init(&NVIC_InitStructure);
+  
 }
 
-/*******************************************************************************
-* Function Name  : IAP_Init
-* Description    : Initialize the IAP: Configure RCC, USART and GPIOs.
-* Input          : None
-* Output         : None
-* Return         : None
-* Note			 : You have to run RCC_Configuration() before calling this function
-*******************************************************************************/
-void USART1_Init(void)
-{
-  GPIO_InitTypeDef GPIO_InitStructure;
-  USART_InitTypeDef USART_InitStructure;
-
-  /* Clock configuration -------------------------------------------------------*/
-
-  /* Configure the GPIO ports( USART1 Transmit and Receive Lines) */
-  /* Configure the USART1_Tx as Alternate function Push-Pull */
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-  GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_9;
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_Init(GPIOA, &GPIO_InitStructure);
-
-  /* Configure the USART1_Rx as input floating */
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10 ;
-  GPIO_Init(GPIOA, &GPIO_InitStructure);
-
-  /* USART1 configuration ------------------------------------------------------*/
-  /* USART1 configured as follow:
-        - BaudRate = 115200 baud  
-        - Word Length = 8 Bits
-        - One Stop Bit
-        - No parity
-        - Hardware flow control disabled (RTS and CTS signals)
-        - Receive and transmit enabled
-  */
-  USART_InitStructure.USART_BaudRate = 9600;
-  USART_InitStructure.USART_WordLength = USART_WordLength_8b;
-  USART_InitStructure.USART_StopBits = USART_StopBits_1;
-  USART_InitStructure.USART_Parity = USART_Parity_No;
-  USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
-  USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
-
-  /* Configure the USART1 */
-  USART_Init(USART1, &USART_InitStructure);
-
-  /* Enable the USART1 */
-  USART_Cmd(USART1, ENABLE);
-}
-
-void USART2_Init(void)
-{
-  GPIO_InitTypeDef GPIO_InitStructure;
-  USART_InitTypeDef USART_InitStructure;
-
-  /* Clock configuration -------------------------------------------------------*/
-
-  /* Configure the GPIO ports( USART1 Transmit and Receive Lines) */
-  /* Configure the USART1_Tx as Alternate function Push-Pull */
-  /* Configure USART4_Tx(PC10) as alternate function push-pull */
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD,ENABLE);
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
-	GPIO_PinRemapConfig(GPIO_Remap_USART2,ENABLE);
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD | RCC_APB2Periph_AFIO,ENABLE);
-
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5;
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-  GPIO_Init(GPIOD, &GPIO_InitStructure);
-
-  // Configure USART4_Rx(PC11) as input floating 
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
-  GPIO_Init(GPIOD, &GPIO_InitStructure);  
 
 
-  /* USART1 configuration ------------------------------------------------------*/
-  /* USART1 configured as follow:
-        - BaudRate = 115200 baud  
-        - Word Length = 8 Bits
-        - One Stop Bit
-        - No parity
-        - Hardware flow control disabled (RTS and CTS signals)
-        - Receive and transmit enabled
-  */
-  USART_InitStructure.USART_BaudRate = 9600;
-  USART_InitStructure.USART_WordLength = USART_WordLength_8b;
-  USART_InitStructure.USART_StopBits = USART_StopBits_1;
-  USART_InitStructure.USART_Parity = USART_Parity_No;
-  USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
-  USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
-
-  /* Configure the USART1 */
-  USART_Init(USART2, &USART_InitStructure);
-
-  /* Enable the USART1 */
-  USART_Cmd(USART2, ENABLE);
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD,ENABLE);
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
-	GPIO_PinRemapConfig(GPIO_Remap_USART2,ENABLE);
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD | RCC_APB2Periph_AFIO,ENABLE);
-}
-
-void USART3_Init(void)
-{
-  GPIO_InitTypeDef GPIO_InitStructure;
-  USART_InitTypeDef USART_InitStructure;
-
-  /* Clock configuration -------------------------------------------------------*/
-
-  /* Configure the GPIO ports( USART1 Transmit and Receive Lines) */
-  /* Configure the USART1_Tx as Alternate function Push-Pull */
-  /* Configure USART4_Tx(PC10) as alternate function push-pull */
-		
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD,ENABLE);
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
-	GPIO_PinRemapConfig(GPIO_FullRemap_USART3,ENABLE);
-
-
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8;
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-  GPIO_Init(GPIOD, &GPIO_InitStructure);
-
-  // Configure USART4_Rx(PC11) as input floating 
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
-  GPIO_Init(GPIOD, &GPIO_InitStructure);  
-
-
-  /* USART1 configuration ------------------------------------------------------*/
-  /* USART1 configured as follow:
-        - BaudRate = 115200 baud  
-        - Word Length = 8 Bits
-        - One Stop Bit
-        - No parity
-        - Hardware flow control disabled (RTS and CTS signals)
-        - Receive and transmit enabled
-  */
-  USART_InitStructure.USART_BaudRate = 9600;
-  USART_InitStructure.USART_WordLength = USART_WordLength_8b;
-  USART_InitStructure.USART_StopBits = USART_StopBits_1;
-  USART_InitStructure.USART_Parity = USART_Parity_No;
-  USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
-  USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
-
-  /* Configure the USART1 */
-  USART_Init(USART3, &USART_InitStructure);
-
-  /* Enable the USART1 */
-  USART_Cmd(USART3, ENABLE);
-}
-
-void UART4_Init(void)
-{
-  GPIO_InitTypeDef GPIO_InitStructure;
-  USART_InitTypeDef USART_InitStructure;
-
-  /* Clock configuration -------------------------------------------------------*/
-
-  /* Configure the GPIO ports( USART1 Transmit and Receive Lines) */
-  /* Configure the USART1_Tx as Alternate function Push-Pull */
-  /* Configure USART4_Tx(PC10) as alternate function push-pull */
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-  GPIO_Init(GPIOC, &GPIO_InitStructure);
-
-  // Configure USART4_Rx(PC11) as input floating 
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
-  GPIO_Init(GPIOC, &GPIO_InitStructure);  
-
-
-  /* USART1 configuration ------------------------------------------------------*/
-  /* USART1 configured as follow:
-        - BaudRate = 115200 baud  
-        - Word Length = 8 Bits
-        - One Stop Bit
-        - No parity
-        - Hardware flow control disabled (RTS and CTS signals)
-        - Receive and transmit enabled
-  */
-  USART_InitStructure.USART_BaudRate = 9600;
-  USART_InitStructure.USART_WordLength = USART_WordLength_8b;
-  USART_InitStructure.USART_StopBits = USART_StopBits_1;
-  USART_InitStructure.USART_Parity = USART_Parity_No;
-  USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
-  USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
-
-  /* Configure the USART1 */
-  USART_Init(UART4, &USART_InitStructure);
-
-  /* Enable the USART1 */
-  USART_Cmd(UART4, ENABLE);
-}
-
-void UART5_Init(void)
-{
-  GPIO_InitTypeDef GPIO_InitStructure;
-  USART_InitTypeDef USART_InitStructure;
-
-  /* Clock configuration -------------------------------------------------------*/
-
-  /* Configure the GPIO ports( USART1 Transmit and Receive Lines) */
-  /* Configure the USART1_Tx as Alternate function Push-Pull */
-  /* Configure USART4_Tx(PC10) as alternate function push-pull */
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12;
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-  GPIO_Init(GPIOC, &GPIO_InitStructure);
-
-  // Configure USART4_Rx(PC11) as input floating 
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
-  GPIO_Init(GPIOD, &GPIO_InitStructure);  
-
-
-  /* USART1 configuration ------------------------------------------------------*/
-  /* USART1 configured as follow:
-        - BaudRate = 115200 baud  
-        - Word Length = 8 Bits
-        - One Stop Bit
-        - No parity
-        - Hardware flow control disabled (RTS and CTS signals)
-        - Receive and transmit enabled
-  */
-  USART_InitStructure.USART_BaudRate = 9600;
-  USART_InitStructure.USART_WordLength = USART_WordLength_8b;
-  USART_InitStructure.USART_StopBits = USART_StopBits_1;
-  USART_InitStructure.USART_Parity = USART_Parity_No;
-  USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
-  USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
-
-  /* Configure the USART1 */
-  USART_Init(UART5, &USART_InitStructure);
-
-  /* Enable the USART1 */
-  USART_Cmd(UART5, ENABLE);
-}
 
 
 
@@ -351,10 +131,10 @@ void RCC_Configuration(void)
 
   /* Enable GPIOA, GPIOC and USART1 clock  */
   RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA 	\
+											  |	RCC_APB2Periph_GPIOB	\
 											 |	RCC_APB2Periph_GPIOC	\
 											  |	RCC_APB2Periph_GPIOD	\
 											 |	RCC_APB2Periph_TIM1 	\
-											 |	RCC_APB2Periph_GPIOB	\
 											 |	RCC_APB2Periph_GPIOE	\
 											 | RCC_APB2Periph_AFIO  \
                        | RCC_APB2Periph_USART1, ENABLE);
@@ -368,207 +148,9 @@ void RCC_Configuration(void)
 
 /* Timer functions ---------------------------------------------------------*/
 
-/*******************************************************************************
-* Function Name  : Timer2_Init
-* Description    : Initialize Timer2
-* Input          : None
-* Output         : None
-* Return         : None
-*******************************************************************************/
-void Timer2_Init(unsigned int value)
-{
-	GPIO_InitTypeDef GPIO_InitStructure;
-	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
-	TIM_OCInitTypeDef TIM_OCInitStructure;
 
-	/*Alternative function clock setup  for GPIO */
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
-	/*Clock setup for timer2 */
-	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
-	/*Pin remap for timer2*/
-	//GPIO_PinRemapConfig(GPIO_FullRemap_TIM2,ENABLE);
-	/*PA0,1,2,3 setup for timer2*/
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-  	GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_3 ;//|GPIO_Pin_1 |GPIO_Pin_2 |GPIO_Pin_3;
-  	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  	GPIO_Init(GPIOA, &GPIO_InitStructure);
 
-  	GPIO_InitStructure.GPIO_Mode=GPIO_Mode_Out_PP;
-  	GPIO_InitStructure.GPIO_Pin=GPIO_Pin_2 |GPIO_Pin_1 |GPIO_Pin_0;
-	GPIO_InitStructure.GPIO_Speed=GPIO_Speed_50MHz;
-	GPIO_Init(GPIOA,&GPIO_InitStructure);
 
-	/*Timer Base Initialization for timer3 */
-	TIM_TimeBaseInitStructure.TIM_Prescaler=15-1;
-	TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up ;
-	TIM_TimeBaseInitStructure.TIM_Period = value-1;
-	TIM_TimeBaseInitStructure.TIM_ClockDivision	= 0;
-	TIM_TimeBaseInit(TIM2,&TIM_TimeBaseInitStructure);
-	/*Auto-reload always */
-	TIM_ARRPreloadConfig(TIM2, DISABLE);
-	/*Channels initialization for timer3 */
-	TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM1;
-	TIM_OCInitStructure.TIM_OutputState	 = TIM_OutputState_Enable ;
-	TIM_OCInitStructure.TIM_Pulse = value/2-1;
-	TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
-//	TIM_OC1Init(TIM2, &TIM_OCInitStructure);
-//	TIM_OC2Init(TIM2, &TIM_OCInitStructure);
-//	TIM_OC3Init(TIM2, &TIM_OCInitStructure);
-	TIM_OC4Init(TIM2, &TIM_OCInitStructure);
-	/*CCRs auto-reload always */
-//	TIM_OC1PreloadConfig(TIM2,TIM_OCPreload_Disable);
-//	TIM_OC2PreloadConfig(TIM2,TIM_OCPreload_Disable);
-//	TIM_OC3PreloadConfig(TIM2,TIM_OCPreload_Disable);
-	TIM_OC4PreloadConfig(TIM2,TIM_OCPreload_Disable);
-	/*Start counter for timer2 */
-	TIM_Cmd(TIM2, ENABLE);
-}
-/*End Timer2_Init()*/
-
-/*******************************************************************************
-* Function Name  : Timer3_Init
-* Description    : Initialize Timer3
-* Input          : None
-* Output         : None
-* Return         : None
-*******************************************************************************/
-void Timer3_Init(void)
-{
-	GPIO_InitTypeDef GPIO_InitStructure;
-	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
-	TIM_OCInitTypeDef TIM_OCInitStructure;
-
-	/*Alternative function clock setup  for GPIO */
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
-	/*Clock setup for timer3 */
-	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);
-	/*Pin remap for timer3*/
-	//GPIO_PinRemapConfig(GPIO_FullRemap_TIM3,ENABLE);
-	/*PA6,7,PB0,1 setup for timer3*/
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-  GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_6;// |GPIO_Pin_7 |GPIO_Pin_8 |GPIO_Pin_9;
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_Init(GPIOA, &GPIO_InitStructure);
-	/*Timer Base Initialization for timer3 */
-	TIM_TimeBaseInitStructure.TIM_Prescaler=15-1;
-	TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up ;
-	TIM_TimeBaseInitStructure.TIM_Period = 48000-1;
-	TIM_TimeBaseInitStructure.TIM_ClockDivision	= 0;
-	TIM_TimeBaseInit(TIM3,&TIM_TimeBaseInitStructure);
-	/*Auto-reload always */
-	TIM_ARRPreloadConfig(TIM3, DISABLE);
-	/*Channels initialization for timer3 */
-	TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM1;
-	TIM_OCInitStructure.TIM_OutputState	 = TIM_OutputState_Enable ;
-	TIM_OCInitStructure.TIM_Pulse = 24000-1;
-	TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
-	TIM_OC1Init(TIM3, &TIM_OCInitStructure);
-//	TIM_OC2Init(TIM3, &TIM_OCInitStructure);
-//	TIM_OC3Init(TIM3, &TIM_OCInitStructure);
-//	TIM_OC4Init(TIM3, &TIM_OCInitStructure);
-	/*CCRs auto-reload always */
-	TIM_OC1PreloadConfig(TIM3,TIM_OCPreload_Disable);
-//	TIM_OC2PreloadConfig(TIM3,TIM_OCPreload_Disable);
-//	TIM_OC3PreloadConfig(TIM3,TIM_OCPreload_Disable);
-//	TIM_OC4PreloadConfig(TIM3,TIM_OCPreload_Disable);
-	/*Start counter for timer3 */
-	TIM_Cmd(TIM3, ENABLE);
-}
-/*End Timer3_Init()*/
-
-/*******************************************************************************
-* Function Name  : Timer4_Init
-* Description    : Initialize Timer4
-* Input          : None
-* Output         : None
-* Return         : None
-*******************************************************************************/
-void Timer4_Init(void)
-{
-	GPIO_InitTypeDef GPIO_InitStructure;
-	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
-	TIM_OCInitTypeDef TIM_OCInitStructure;
-
-	/*Clock setup for timer4 */
-	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
-	/*PB6,7,8,9 setup for timer4*/
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-  GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_6 ;//|GPIO_Pin_7 |GPIO_Pin_8 |GPIO_Pin_9;
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_Init(GPIOB, &GPIO_InitStructure);
-	/*Timer Base Initialization for timer4 */
-	TIM_TimeBaseInitStructure.TIM_Prescaler=15-1;
-	TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up ;
-	TIM_TimeBaseInitStructure.TIM_Period = 48000-1;
-	TIM_TimeBaseInitStructure.TIM_ClockDivision	= 0;
-	TIM_TimeBaseInit(TIM4,&TIM_TimeBaseInitStructure);
-	/*Auto-reload always */
-	TIM_ARRPreloadConfig(TIM4, DISABLE);
-	/*Channels initialization for timer4 */
-	TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM1;
-	TIM_OCInitStructure.TIM_OutputState	 = TIM_OutputState_Enable ;
-	TIM_OCInitStructure.TIM_Pulse = 24000-1;
-	TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
-	TIM_OC1Init(TIM4, &TIM_OCInitStructure);
-	TIM_OC2Init(TIM4, &TIM_OCInitStructure);
-	TIM_OC3Init(TIM4, &TIM_OCInitStructure);
-	TIM_OC4Init(TIM4, &TIM_OCInitStructure);
-	/*CCRs auto-reload always */
-	TIM_OC1PreloadConfig(TIM4,TIM_OCPreload_Enable);
-	TIM_OC2PreloadConfig(TIM4,TIM_OCPreload_Enable);
-	TIM_OC3PreloadConfig(TIM4,TIM_OCPreload_Enable);
-	TIM_OC4PreloadConfig(TIM4,TIM_OCPreload_Enable);
-	/*Start counter for timer4 */
-	TIM_Cmd(TIM4, ENABLE);
-}
-/*End Timer4_Init()*/
-
-/*******************************************************************************
-* Function Name  : Timer5_Init
-* Description    : Initialize Timer5
-* Input          : None
-* Output         : None
-* Return         : None
-*******************************************************************************/
-void Timer5_Init(void)
-{
-	GPIO_InitTypeDef GPIO_InitStructure;
-	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
-	TIM_OCInitTypeDef TIM_OCInitStructure;
-
-	/*Clock setup for timer5 */
-	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM5, ENABLE);
-	/*PB6,7,8,9 setup for timer5*/
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-  GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_6 ;//|GPIO_Pin_7 |GPIO_Pin_8 |GPIO_Pin_9;
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_Init(GPIOB, &GPIO_InitStructure);
-	/*Timer Base Initialization for timer4 */
-	TIM_TimeBaseInitStructure.TIM_Prescaler=15-1;
-	TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up ;
-	TIM_TimeBaseInitStructure.TIM_Period = 48000-1;
-	TIM_TimeBaseInitStructure.TIM_ClockDivision	= 0;
-	TIM_TimeBaseInit(TIM4,&TIM_TimeBaseInitStructure);
-	/*Auto-reload always */
-	TIM_ARRPreloadConfig(TIM4, DISABLE);
-	/*Channels initialization for timer4 */
-	TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM1;
-	TIM_OCInitStructure.TIM_OutputState	 = TIM_OutputState_Enable ;
-	TIM_OCInitStructure.TIM_Pulse = 24000-1;
-	TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
-	TIM_OC1Init(TIM4, &TIM_OCInitStructure);
-	TIM_OC2Init(TIM4, &TIM_OCInitStructure);
-	TIM_OC3Init(TIM4, &TIM_OCInitStructure);
-	TIM_OC4Init(TIM4, &TIM_OCInitStructure);
-	/*CCRs auto-reload always */
-	TIM_OC1PreloadConfig(TIM4,TIM_OCPreload_Enable);
-	TIM_OC2PreloadConfig(TIM4,TIM_OCPreload_Enable);
-	TIM_OC3PreloadConfig(TIM4,TIM_OCPreload_Enable);
-	TIM_OC4PreloadConfig(TIM4,TIM_OCPreload_Enable);
-	/*Start counter for timer4 */
-	TIM_Cmd(TIM4, ENABLE);
-}
-/*End Timer4_Init()*/
 
 /* Pwm functions */
 /*******************************************************************************

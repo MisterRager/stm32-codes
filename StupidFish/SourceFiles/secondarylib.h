@@ -37,6 +37,7 @@ void Timer2_Init(unsigned int value);
 void Timer3_Init(void);
 void Timer4_Init(void);
 int PWM_Set(int Channel, int Pulse);
+void NVIC_Configuration(void);
 
 #endif /* __SECONDARYLIB_H */
 

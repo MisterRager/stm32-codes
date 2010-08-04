@@ -16,6 +16,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_lib.h"
 #include "secondarylib.h"
+#include "stepmotor.h"
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
@@ -41,22 +42,33 @@ int main(void)
 	u8 receivedbyte;
 	int i;
   	RCC_Configuration();
+		NVIC_Configuration();
   	USART1_Init();
-	USART2_Init();															
-	USART3_Init();
+	//USART2_Init();															
+	//USART3_Init();
 	//UART4_Init();
 	UART5_Init();
-	Timer2_Init(4800);
-	Timer3_Init();
-	Timer4_Init();
+	Timer1_MotorInit();
+	Timer1_MotorSetFreq(800);
+	Timer2_MotorInit();
+	Timer2_MotorSetFreq(800);
+	Timer3_MotorInit();
+	Timer3_MotorSetFreq(800);
+	Timer4_MotorInit();
+	Timer4_MotorSetFreq(800);
+	Timer5_MotorInit();
+	Timer5_MotorSetFreq(800);
+	Timer8_MotorInit();
+	Timer8_MotorSetFreq(800);
+	//Timer4_Init();
 	//Serial_PutString("\r\n======================================================================");
 	GPIO_SetBits(GPIOA,GPIO_Pin_2);
 
-	while(1) 
+/* PA7 setup for GPIO */	while(1) 
 	{
 
 
-		unsigned char tmp=0;
+	/*	unsigned char tmp=0;
 		unsigned int vEncoder=0;
 		u8 i;
 		for(i=0;i<9;i++)
@@ -95,40 +107,40 @@ int main(void)
 
 			//6
 			if((vEncoder)<=15000&&vEncoder>=14000)
-				Timer2_Init(5000/5);
+				Timer1_MotorSetFreq(5000/5);
 
 
 
 			//7
 			if((vEncoder)<=16000&&vEncoder>=15000)
-				Timer2_Init(6000/5);
+				Timer1_MotorSetFreq(6000/5);
 			//5
 			if((vEncoder)<=14000&&vEncoder>=13000)
-				Timer2_Init(6000/5);
+				Timer1_MotorSetFreq(6000/5);
 			//8
 			if((vEncoder)<=17000&&vEncoder>=16000)
-				Timer2_Init(7500/5);
+				Timer1_MotorSetFreq(7500/5);
 			//4
 			if((vEncoder)<=13000&&vEncoder>=12000)
-				Timer2_Init(7500/5);
+				Timer1_MotorSetFreq(7500/5);
 			//9
 			if((vEncoder)<=18000&&vEncoder>=17000)
-				Timer2_Init(9000/5);
+				Timer1_MotorSetFreq(9000/5);
 			//3
 			if((vEncoder)<=12000&&vEncoder>=11000)
-				Timer2_Init(9000/5);				
+				Timer1_MotorSetFreq(9000/5);				
 			//10
 			if((vEncoder)<=19000&&vEncoder>=18000)
-				Timer2_Init(14000/5);
+				Timer1_MotorSetFreq(14000/5);
 			//2
 			if((vEncoder)<=11000&&vEncoder>=10000)
-				Timer2_Init(14000/5);
+				Timer1_MotorSetFreq(14000/5);
 			//11
 			if((vEncoder)<=20000&&vEncoder>=19000)
-				Timer2_Init(18000/5);
+				Timer1_MotorSetFreq(18000/5);
 
 			if((vEncoder)<=10000&&vEncoder>=9000)   			
-				Timer2_Init(18000/5);																								
+				Timer1_MotorSetFreq(18000/5);																								
 				
 				
 				
