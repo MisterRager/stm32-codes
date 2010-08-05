@@ -32,6 +32,7 @@ unsigned int vEncoder[4];
 /* Private functions ---------------------------------------------------------*/
 void vEncoder_Refresh(void)
 {
+	unsigned int tmp;
 	if(UART5_Data.Locked==FALSE)
 	{	
 		tmp=UART5_Data.Value;
@@ -60,9 +61,9 @@ void vEncoder_Refresh(void)
 		Serial_PutString("\n\r"); 
 		*/
 	}
-	if(UART3_Data.Locked==FALSE)
+	if(USART3_Data.Locked==FALSE)
 	{	
-		tmp=UART3_Data.Value;
+		tmp=USART3_Data.Value;
 		vEncoder[1]=tmp*36000>>11;
 		/*
 		Serial_PutString("UART3:"); 
@@ -74,9 +75,9 @@ void vEncoder_Refresh(void)
 		Serial_PutString("\n\r"); 
 		*/
 	}
-	if(UART2_Data.Locked==FALSE)
+	if(USART2_Data.Locked==FALSE)
 	{	
-		tmp=UART2_Data.Value;
+		tmp=USART2_Data.Value;
 		vEncoder[0]=tmp*36000>>11;
 		/*
 		Serial_PutString("UART2:"); 
@@ -96,7 +97,7 @@ void vEncoder_Refresh(void)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-int main(void)
+int main1(void)
 {
 	unsigned int vEncoder[5];
 	int i;
@@ -122,8 +123,6 @@ int main(void)
 
 	while(1) 
 	{
-		unsigned int tmp=0;
-
 		vEncoder_Refresh();
 		//limitations	
 		if((vEncoder[3])<=9000)	

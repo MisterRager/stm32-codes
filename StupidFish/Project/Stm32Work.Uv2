@@ -12,6 +12,8 @@ File 1,1,<..\SourceFiles\main.c><main.c>
 File 1,1,<..\SourceFiles\secondarylib.c><secondarylib.c>
 File 1,1,<..\SourceFiles\usart.c><usart.c>
 File 1,1,<..\SourceFiles\stepmotor.c><stepmotor.c>
+File 1,1,<..\SourceFiles\spi.c><spi.c>
+File 1,1,<..\SourceFiles\timer.c><timer.c>
 File 2,1,<..\Stm32FWLib\src\stm32f10x_wwdg.c><stm32f10x_wwdg.c>
 File 2,1,<..\Stm32FWLib\src\stm32f10x_adc.c><stm32f10x_adc.c>
 File 2,1,<..\Stm32FWLib\src\stm32f10x_bkp.c><stm32f10x_bkp.c>

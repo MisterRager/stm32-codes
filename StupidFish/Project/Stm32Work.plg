@@ -8,65 +8,171 @@ Project File Date:  08/04/2010
 
 <h2>Output:</h2>
 Build target 'Target 1'
-compiling stm32f10x_it.c...
 compiling main.c...
-..\SourceFiles\main.c(73): warning:  #223-D: function "SerialPutString" declared implicitly
-..\SourceFiles\main.c(74): error:  #268: declaration may not appear after executable statement in block
-..\SourceFiles\main.c(42): warning:  #177-D: variable "Pulse" was declared but never referenced
-..\SourceFiles\main.c(43): warning:  #177-D: variable "pre_received" was declared but never referenced
-..\SourceFiles\main.c(44): warning:  #177-D: variable "received" was declared but never referenced
-..\SourceFiles\main.c(45): warning:  #177-D: variable "receivedbyte" was declared but never referenced
-..\SourceFiles\main.c(46): warning:  #177-D: variable "i" was declared but never referenced
-compiling secondarylib.c...
-compiling usart.c...
-compiling stepmotor.c...
-compiling stm32f10x_wwdg.c...
-compiling stm32f10x_adc.c...
-compiling stm32f10x_bkp.c...
-compiling stm32f10x_can.c...
-compiling stm32f10x_crc.c...
-compiling stm32f10x_dac.c...
-compiling stm32f10x_dbgmcu.c...
-compiling stm32f10x_dma.c...
-compiling stm32f10x_exti.c...
-compiling stm32f10x_flash.c...
-compiling stm32f10x_fsmc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_i2c.c...
-compiling stm32f10x_iwdg.c...
-compiling stm32f10x_lib.c...
-compiling stm32f10x_nvic.c...
-compiling stm32f10x_pwr.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_rtc.c...
-compiling stm32f10x_sdio.c...
-compiling stm32f10x_spi.c...
-compiling stm32f10x_systick.c...
-compiling stm32f10x_tim.c...
-compiling stm32f10x_usart.c...
-assembling stm32f10x_vector.s...
-assembling cortexm3_macro.s...
+..\SourceFiles\main.c(37): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(51): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(63): error:  #20: identifier "UART3_Data" is undefined
+..\SourceFiles\main.c(65): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(77): error:  #20: identifier "UART2_Data" is undefined
+..\SourceFiles\main.c(79): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(125): warning:  #177-D: variable "tmp" was declared but never referenced
+..\SourceFiles\main.c(102): warning:  #177-D: variable "i" was declared but never referenced
+compiling spi.c...
+..\SourceFiles\spi.h(18): error:  #11-D: unrecognized preprocessing directive
+..\SourceFiles\spi.h(4): error:  #37: the #endif for this directive is missing
+..\SourceFiles\24l01.h(10): warning:  #9-D: nested comment is not allowed
+..\SourceFiles\24l01.h(84): warning:  #1-D: last line of file ends without a newline
+..\SourceFiles\24l01.h(84): warning:  #9-D: nested comment is not allowed
+..\SourceFiles\spi.c(8): error:  #20: identifier "RCC_APB2Periph_SPI2" is undefined
+..\SourceFiles\spi.c(15): error:  #20: identifier "GPIO_Mode_OUT_PP" is undefined
+..\SourceFiles\spi.c(66): warning:  #223-D: function "SPI_RW" declared implicitly
+..\SourceFiles\spi.c(70): error:  #20: identifier "uchar" is undefined
+..\SourceFiles\spi.c(86): error:  #20: identifier "uchar" is undefined
+..\SourceFiles\spi.c(86): error:  #20: identifier "uchar" is undefined
+..\SourceFiles\spi.c(86): error:  #20: identifier "uchar" is undefined
+..\SourceFiles\spi.c(99): error:  #167: argument of type "const unsigned char *" is incompatible with parameter of type "<error-type> *"
+..\SourceFiles\spi.c(120): error:  #167: argument of type "const unsigned char *" is incompatible with parameter of type "<error-type> *"
+..\SourceFiles\spi.c(121): error:  #167: argument of type "const unsigned char *" is incompatible with parameter of type "<error-type> *"
 Target not created
 Build target 'Target 1'
 compiling main.c...
-..\SourceFiles\main.c(74): error:  #268: declaration may not appear after executable statement in block
-..\SourceFiles\main.c(42): warning:  #177-D: variable "Pulse" was declared but never referenced
-..\SourceFiles\main.c(43): warning:  #177-D: variable "pre_received" was declared but never referenced
-..\SourceFiles\main.c(44): warning:  #177-D: variable "received" was declared but never referenced
-..\SourceFiles\main.c(45): warning:  #177-D: variable "receivedbyte" was declared but never referenced
-..\SourceFiles\main.c(46): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(37): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(51): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(63): error:  #20: identifier "UART3_Data" is undefined
+..\SourceFiles\main.c(65): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(77): error:  #20: identifier "UART2_Data" is undefined
+..\SourceFiles\main.c(79): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(125): warning:  #177-D: variable "tmp" was declared but never referenced
+..\SourceFiles\main.c(102): warning:  #177-D: variable "i" was declared but never referenced
+compiling spi.c...
+..\SourceFiles\24l01.h(10): warning:  #9-D: nested comment is not allowed
+..\SourceFiles\24l01.h(84): warning:  #1-D: last line of file ends without a newline
+..\SourceFiles\24l01.h(84): warning:  #9-D: nested comment is not allowed
+..\SourceFiles\spi.c(8): error:  #20: identifier "RCC_APB2Periph_SPI2" is undefined
+..\SourceFiles\spi.c(15): error:  #20: identifier "GPIO_Mode_OUT_PP" is undefined
+..\SourceFiles\spi.c(66): warning:  #223-D: function "SPI_RW" declared implicitly
+..\SourceFiles\spi.c(70): error:  #20: identifier "uchar" is undefined
+..\SourceFiles\spi.c(86): error:  #20: identifier "uchar" is undefined
+..\SourceFiles\spi.c(86): error:  #20: identifier "uchar" is undefined
+..\SourceFiles\spi.c(86): error:  #20: identifier "uchar" is undefined
+..\SourceFiles\spi.c(99): error:  #167: argument of type "const unsigned char *" is incompatible with parameter of type "<error-type> *"
+..\SourceFiles\spi.c(120): error:  #167: argument of type "const unsigned char *" is incompatible with parameter of type "<error-type> *"
+..\SourceFiles\spi.c(121): error:  #167: argument of type "const unsigned char *" is incompatible with parameter of type "<error-type> *"
 Target not created
 Build target 'Target 1'
 compiling main.c...
-..\SourceFiles\main.c(42): warning:  #177-D: variable "Pulse" was declared but never referenced
-..\SourceFiles\main.c(43): warning:  #177-D: variable "pre_received" was declared but never referenced
-..\SourceFiles\main.c(44): warning:  #177-D: variable "received" was declared but never referenced
-..\SourceFiles\main.c(45): warning:  #177-D: variable "receivedbyte" was declared but never referenced
-..\SourceFiles\main.c(46): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(37): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(51): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(63): error:  #20: identifier "UART3_Data" is undefined
+..\SourceFiles\main.c(65): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(77): error:  #20: identifier "UART2_Data" is undefined
+..\SourceFiles\main.c(79): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(125): warning:  #177-D: variable "tmp" was declared but never referenced
+..\SourceFiles\main.c(102): warning:  #177-D: variable "i" was declared but never referenced
+compiling spi.c...
+..\SourceFiles\24l01.h(55): warning:  #1-D: last line of file ends without a newline
+..\SourceFiles\24l01.h(55): warning:  #9-D: nested comment is not allowed
+..\SourceFiles\spi.c(15): error:  #20: identifier "GPIO_Mode_OUT_PP" is undefined
+..\SourceFiles\spi.c(66): warning:  #223-D: function "SPI_RW" declared implicitly
+..\SourceFiles\spi.c(70): error:  #20: identifier "uchar" is undefined
+..\SourceFiles\spi.c(86): error:  #20: identifier "uchar" is undefined
+..\SourceFiles\spi.c(86): error:  #20: identifier "uchar" is undefined
+..\SourceFiles\spi.c(86): error:  #20: identifier "uchar" is undefined
+..\SourceFiles\spi.c(99): error:  #167: argument of type "const unsigned char *" is incompatible with parameter of type "<error-type> *"
+..\SourceFiles\spi.c(120): error:  #167: argument of type "const unsigned char *" is incompatible with parameter of type "<error-type> *"
+..\SourceFiles\spi.c(121): error:  #167: argument of type "const unsigned char *" is incompatible with parameter of type "<error-type> *"
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(37): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(51): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(63): error:  #20: identifier "UART3_Data" is undefined
+..\SourceFiles\main.c(65): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(77): error:  #20: identifier "UART2_Data" is undefined
+..\SourceFiles\main.c(79): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(125): warning:  #177-D: variable "tmp" was declared but never referenced
+..\SourceFiles\main.c(102): warning:  #177-D: variable "i" was declared but never referenced
+compiling spi.c...
+..\SourceFiles\24l01.h(55): warning:  #9-D: nested comment is not allowed
+..\SourceFiles\spi.c(99): error:  #167: argument of type "const unsigned char *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\spi.c(120): error:  #167: argument of type "const unsigned char *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\spi.c(121): error:  #167: argument of type "const unsigned char *" is incompatible with parameter of type "unsigned char *"
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(37): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(51): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(63): error:  #20: identifier "UART3_Data" is undefined
+..\SourceFiles\main.c(65): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(77): error:  #20: identifier "UART2_Data" is undefined
+..\SourceFiles\main.c(79): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(125): warning:  #177-D: variable "tmp" was declared but never referenced
+..\SourceFiles\main.c(102): warning:  #177-D: variable "i" was declared but never referenced
+compiling spi.c...
+..\SourceFiles\spi.c(99): error:  #167: argument of type "const unsigned char *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\spi.c(120): error:  #167: argument of type "const unsigned char *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\spi.c(121): error:  #167: argument of type "const unsigned char *" is incompatible with parameter of type "unsigned char *"
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(37): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(51): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(63): error:  #20: identifier "UART3_Data" is undefined
+..\SourceFiles\main.c(65): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(77): error:  #20: identifier "UART2_Data" is undefined
+..\SourceFiles\main.c(79): error:  #20: identifier "tmp" is undefined
+..\SourceFiles\main.c(125): warning:  #177-D: variable "tmp" was declared but never referenced
+..\SourceFiles\main.c(102): warning:  #177-D: variable "i" was declared but never referenced
+compiling spi.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(64): error:  #20: identifier "UART3_Data" is undefined
+..\SourceFiles\main.c(78): error:  #20: identifier "UART2_Data" is undefined
+..\SourceFiles\main.c(103): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(103): warning:  #177-D: variable "i" was declared but never referenced
 linking...
-Program Size: Code=12080 RO-data=388 RW-data=36 ZI-data=2212  
+Program Size: Code=12434 RO-data=358 RW-data=36 ZI-data=2260  
 FromELF: creating hex file...
-"Stm32Work.axf" - 0 Error(s), 5 Warning(s).
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(103): warning:  #177-D: variable "i" was declared but never referenced
+compiling spi.c...
+..\SourceFiles\spi.c(142): warning:  #951-D: return type of function "main" must be "int"
+..\SourceFiles\spi.c(157): warning:  #223-D: function "SPI_Read" declared implicitly
+..\SourceFiles\spi.c(166): warning:  #223-D: function "SPI2_readReg" declared implicitly
+..\SourceFiles\spi.c(170): warning:  #223-D: function "Serail_PutString" declared implicitly
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Stm32Work.axf: Error: L6218E: Undefined symbol SPI2_readReg (referred from spi.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol SPI_Read (referred from spi.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Serail_PutString (referred from spi.o).
+Target not created
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(157): warning:  #223-D: function "SPI2_readReg" declared implicitly
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Stm32Work.axf: Error: L6218E: Undefined symbol SPI2_readReg (referred from spi.o).
+Target not created
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(166): warning:  #223-D: function "SPI2_readReg" declared implicitly
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Stm32Work.axf: Error: L6218E: Undefined symbol SPI2_readReg (referred from spi.o).
+Target not created
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=11878 RO-data=358 RW-data=20 ZI-data=2308  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
 Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
 
 JLink info:
@@ -86,7 +192,7 @@ Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull
 Target info:
 ------------
 Device: STM32F103ZE
-VTarget = 3.293V
+VTarget = 3.280V
 State of Pins: 
 TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
 * JLink Info: TotalIRLen = 9, IRPrint = 0x0011
@@ -108,9 +214,8 @@ Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
-compiling usart.c...
 linking...
-Program Size: Code=12100 RO-data=388 RW-data=36 ZI-data=2212  
+Program Size: Code=11878 RO-data=358 RW-data=20 ZI-data=2308  
 FromELF: creating hex file...
 "Stm32Work.axf" - 0 Error(s), 0 Warning(s).
 Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
@@ -132,7 +237,7 @@ Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull
 Target info:
 ------------
 Device: STM32F103ZE
-VTarget = 3.293V
+VTarget = 3.313V
 State of Pins: 
 TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
 * JLink Info: TotalIRLen = 9, IRPrint = 0x0011
@@ -154,29 +259,673 @@ Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
-compiling stm32f10x_it.c...
-compiling main.c...
-..\SourceFiles\main.c(42): warning:  #177-D: variable "Pulse" was declared but never referenced
-..\SourceFiles\main.c(43): warning:  #177-D: variable "pre_received" was declared but never referenced
-..\SourceFiles\main.c(44): warning:  #177-D: variable "received" was declared but never referenced
-..\SourceFiles\main.c(45): warning:  #177-D: variable "receivedbyte" was declared but never referenced
-..\SourceFiles\main.c(46): warning:  #177-D: variable "i" was declared but never referenced
-compiling usart.c...
+compiling spi.c...
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
 linking...
-Program Size: Code=12612 RO-data=388 RW-data=36 ZI-data=2244  
+Program Size: Code=11878 RO-data=358 RW-data=20 ZI-data=2308  
 FromELF: creating hex file...
-"Stm32Work.axf" - 0 Error(s), 5 Warning(s).
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
 Build target 'Target 1'
-compiling main.c...
-..\SourceFiles\main.c(42): warning:  #177-D: variable "Pulse" was declared but never referenced
-..\SourceFiles\main.c(43): warning:  #177-D: variable "pre_received" was declared but never referenced
-..\SourceFiles\main.c(44): warning:  #177-D: variable "received" was declared but never referenced
-..\SourceFiles\main.c(45): warning:  #177-D: variable "receivedbyte" was declared but never referenced
-..\SourceFiles\main.c(46): warning:  #177-D: variable "i" was declared but never referenced
 linking...
-Program Size: Code=12592 RO-data=388 RW-data=36 ZI-data=2244  
+Program Size: Code=11878 RO-data=358 RW-data=20 ZI-data=2308  
 FromELF: creating hex file...
-"Stm32Work.axf" - 0 Error(s), 5 Warning(s).
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.280V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=11882 RO-data=358 RW-data=20 ZI-data=2308  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.280V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=11874 RO-data=358 RW-data=20 ZI-data=2308  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.280V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+linking...
+Program Size: Code=11874 RO-data=358 RW-data=20 ZI-data=2308  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=11874 RO-data=358 RW-data=20 ZI-data=2308  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=11898 RO-data=358 RW-data=20 ZI-data=2308  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=11882 RO-data=358 RW-data=20 ZI-data=2308  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=11870 RO-data=358 RW-data=20 ZI-data=2308  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=11870 RO-data=358 RW-data=20 ZI-data=2308  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(144): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(145): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\spi.c(194): error: At end of source:  #67: expected a "}"
+Target not created
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(144): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(145): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=11746 RO-data=358 RW-data=20 ZI-data=2244  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 3 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=11870 RO-data=358 RW-data=20 ZI-data=2308  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=11870 RO-data=358 RW-data=20 ZI-data=2308  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+linking...
+Program Size: Code=11870 RO-data=358 RW-data=20 ZI-data=2308  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.280V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(146): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=11866 RO-data=358 RW-data=20 ZI-data=2308  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
 Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
 
 JLink info:
@@ -218,16 +967,10 @@ Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
-compiling main.c...
-..\SourceFiles\main.c(42): warning:  #177-D: variable "Pulse" was declared but never referenced
-..\SourceFiles\main.c(43): warning:  #177-D: variable "pre_received" was declared but never referenced
-..\SourceFiles\main.c(44): warning:  #177-D: variable "received" was declared but never referenced
-..\SourceFiles\main.c(45): warning:  #177-D: variable "receivedbyte" was declared but never referenced
-..\SourceFiles\main.c(46): warning:  #177-D: variable "i" was declared but never referenced
 linking...
-Program Size: Code=12596 RO-data=388 RW-data=36 ZI-data=2244  
+Program Size: Code=11866 RO-data=358 RW-data=20 ZI-data=2308  
 FromELF: creating hex file...
-"Stm32Work.axf" - 0 Error(s), 5 Warning(s).
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
 Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
 
 JLink info:
@@ -247,7 +990,502 @@ Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull
 Target info:
 ------------
 Device: STM32F103ZE
-VTarget = 3.293V
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(142): warning:  #223-D: function "TimingDelay_Decrement" declared implicitly
+compiling spi.c...
+..\SourceFiles\spi.c(56): warning:  #223-D: function "Delay_us" declared implicitly
+..\SourceFiles\spi.c(62): warning:  #223-D: function "SPI2_readBuf" declared implicitly
+..\SourceFiles\spi.c(62): error:  #29: expected an expression
+..\SourceFiles\spi.c(63): error:  #65: expected a ";"
+..\SourceFiles\spi.c(102): error:  #159: declaration is incompatible with previous "SPI2_readBuf" (declared at line 62)
+..\SourceFiles\spi.c(166): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(168): warning:  #177-D: variable "i" was declared but never referenced
+compiling timer.c...
+..\SourceFiles\timer.c(26): error:  #20: identifier "uint32" is undefined
+..\SourceFiles\timer.c(28): error:  #20: identifier "gTimer_1ms" is undefined
+..\SourceFiles\timer.c(42): error:  #20: identifier "gTimer_1ms" is undefined
+Target not created
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(56): warning:  #223-D: function "Delay_us" declared implicitly
+..\SourceFiles\spi.c(62): warning:  #223-D: function "SPI2_readBuf" declared implicitly
+..\SourceFiles\spi.c(62): error:  #29: expected an expression
+..\SourceFiles\spi.c(63): error:  #65: expected a ";"
+..\SourceFiles\spi.c(102): error:  #159: declaration is incompatible with previous "SPI2_readBuf" (declared at line 62)
+..\SourceFiles\spi.c(166): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(168): warning:  #177-D: variable "i" was declared but never referenced
+compiling timer.c...
+..\SourceFiles\timer.c(26): error:  #20: identifier "uint32" is undefined
+Target not created
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(73): warning:  #223-D: function "SPI2_readBuf" declared implicitly
+..\SourceFiles\spi.c(73): error:  #29: expected an expression
+..\SourceFiles\spi.c(74): error:  #65: expected a ";"
+..\SourceFiles\spi.c(113): error:  #159: declaration is incompatible with previous "SPI2_readBuf" (declared at line 73)
+..\SourceFiles\spi.c(177): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(179): warning:  #177-D: variable "i" was declared but never referenced
+compiling timer.c...
+..\SourceFiles\timer.c(26): error:  #20: identifier "uint32" is undefined
+Target not created
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(73): warning:  #223-D: function "SPI2_readBuf" declared implicitly
+..\SourceFiles\spi.c(113): error:  #159: declaration is incompatible with previous "SPI2_readBuf" (declared at line 73)
+..\SourceFiles\spi.c(177): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(179): warning:  #177-D: variable "i" was declared but never referenced
+compiling timer.c...
+Target not created
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(179): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(181): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=12202 RO-data=358 RW-data=24 ZI-data=2304  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(179): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(181): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=12198 RO-data=358 RW-data=24 ZI-data=2304  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 2 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+**JLink Warning: No matching core found. Selecting default core (ARM7).
+***JLink Error: Supply voltage too low (1 Volt is required, Measured: 0.0 Volt).
+Please check target power.
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+linking...
+Program Size: Code=12198 RO-data=358 RW-data=24 ZI-data=2304  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(183): error:  #20: identifier "sta" is undefined
+..\SourceFiles\spi.c(184): error:  #20: identifier "MAX_RT" is undefined
+..\SourceFiles\spi.c(187): error:  #20: identifier "RF_WRITE_REG" is undefined
+..\SourceFiles\spi.c(188): error:  #20: identifier "IRQ_H" is undefined
+..\SourceFiles\spi.c(189): error:  #20: identifier "TX_DS" is undefined
+..\SourceFiles\spi.c(199): error:  #20: identifier "tran" is undefined
+..\SourceFiles\spi.c(205): error:  #20: identifier "MAX_RT" is undefined
+..\SourceFiles\spi.c(216): error:  #20: identifier "Uart2_Get_Flag" is undefined
+..\SourceFiles\spi.c(216): error:  #20: identifier "Timer2" is undefined
+..\SourceFiles\spi.c(218): error:  #20: identifier "TX_BUF" is undefined
+..\SourceFiles\spi.c(225): warning:  #870-D: invalid multibyte character sequence
+..\SourceFiles\spi.c(225): warning:  #870-D: invalid multibyte character sequence
+..\SourceFiles\spi.c(225): warning:  #870-D: invalid multibyte character sequence
+..\SourceFiles\spi.c(225): warning:  #870-D: invalid multibyte character sequence
+..\SourceFiles\spi.c(225): warning:  #870-D: invalid multibyte character sequence
+..\SourceFiles\spi.c(225): warning:  #870-D: invalid multibyte character sequence
+..\SourceFiles\spi.c(225): warning:  #870-D: invalid multibyte character sequence
+..\SourceFiles\spi.c(225): warning:  #870-D: invalid multibyte character sequence
+..\SourceFiles\spi.c(253): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(255): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(183): error:  #20: identifier "sta" is undefined
+..\SourceFiles\spi.c(184): error:  #20: identifier "MAX_RT" is undefined
+..\SourceFiles\spi.c(187): error:  #20: identifier "RF_WRITE_REG" is undefined
+..\SourceFiles\spi.c(188): error:  #20: identifier "IRQ_H" is undefined
+..\SourceFiles\spi.c(189): error:  #20: identifier "TX_DS" is undefined
+..\SourceFiles\spi.c(199): error:  #20: identifier "tran" is undefined
+..\SourceFiles\spi.c(205): error:  #20: identifier "MAX_RT" is undefined
+..\SourceFiles\spi.c(217): warning:  #223-D: function "SPI_RD_Reg" declared implicitly
+..\SourceFiles\spi.c(217): error:  #20: identifier "NRFRegSTATUS" is undefined
+..\SourceFiles\spi.c(222): warning:  #223-D: function "SPI_Read_Buf" declared implicitly
+..\SourceFiles\spi.c(225): warning:  #223-D: function "SPI_WR_Reg" declared implicitly
+..\SourceFiles\spi.c(251): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(253): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(186): error:  #20: identifier "MAX_RT" is undefined
+..\SourceFiles\spi.c(189): error:  #20: identifier "RF_WRITE_REG" is undefined
+..\SourceFiles\spi.c(190): error:  #20: identifier "IRQ_H" is undefined
+..\SourceFiles\spi.c(191): error:  #20: identifier "TX_DS" is undefined
+..\SourceFiles\spi.c(201): error:  #20: identifier "tran" is undefined
+..\SourceFiles\spi.c(207): error:  #20: identifier "MAX_RT" is undefined
+..\SourceFiles\spi.c(219): warning:  #223-D: function "SPI_RD_Reg" declared implicitly
+..\SourceFiles\spi.c(219): error:  #20: identifier "NRFRegSTATUS" is undefined
+..\SourceFiles\spi.c(224): warning:  #223-D: function "SPI_Read_Buf" declared implicitly
+..\SourceFiles\spi.c(227): warning:  #223-D: function "SPI_WR_Reg" declared implicitly
+..\SourceFiles\spi.c(253): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(255): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(192): error:  #20: identifier "RF_WRITE_REG" is undefined
+..\SourceFiles\spi.c(193): error:  #20: identifier "IRQ_H" is undefined
+..\SourceFiles\spi.c(204): error:  #20: identifier "tran" is undefined
+..\SourceFiles\spi.c(222): error:  #20: identifier "NRFRegSTATUS" is undefined
+..\SourceFiles\spi.c(227): warning:  #223-D: function "SPI_Read_Buf" declared implicitly
+..\SourceFiles\spi.c(230): warning:  #223-D: function "SPI_WR_Reg" declared implicitly
+..\SourceFiles\spi.c(256): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(258): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(203): error:  #20: identifier "IRQ_H" is undefined
+..\SourceFiles\spi.c(214): error:  #20: identifier "tran" is undefined
+..\SourceFiles\spi.c(232): error:  #20: identifier "NRFRegSTATUS" is undefined
+..\SourceFiles\spi.c(237): warning:  #223-D: function "SPI_Read_Buf" declared implicitly
+..\SourceFiles\spi.c(240): warning:  #223-D: function "SPI_WR_Reg" declared implicitly
+..\SourceFiles\spi.c(266): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(268): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(201): error:  #20: identifier "tran" is undefined
+..\SourceFiles\spi.c(219): error:  #20: identifier "NRFRegSTATUS" is undefined
+..\SourceFiles\spi.c(224): warning:  #223-D: function "SPI_Read_Buf" declared implicitly
+..\SourceFiles\spi.c(227): warning:  #223-D: function "SPI_WR_Reg" declared implicitly
+..\SourceFiles\spi.c(253): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(255): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(221): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(223): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=12366 RO-data=358 RW-data=28 ZI-data=2340  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(223): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(225): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=12306 RO-data=358 RW-data=28 ZI-data=2340  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 2 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(223): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(225): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=12302 RO-data=358 RW-data=28 ZI-data=2340  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 2 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(223): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(225): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=12400 RO-data=388 RW-data=28 ZI-data=2340  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 2 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(223): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(224): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\spi.c(225): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=12384 RO-data=388 RW-data=28 ZI-data=2340  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 3 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.280V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi.c...
+..\SourceFiles\spi.c(223): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\spi.c(224): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\spi.c(225): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=12368 RO-data=388 RW-data=28 ZI-data=2340  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 3 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.280V
 State of Pins: 
 TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
 * JLink Info: TotalIRLen = 9, IRPrint = 0x0011
