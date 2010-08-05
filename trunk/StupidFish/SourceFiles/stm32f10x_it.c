@@ -611,6 +611,33 @@ void USART1_IRQHandler(void)
 *******************************************************************************/
 void USART2_IRQHandler(void)
 {
+	if(USART_GetITStatus(USART2, USART_IT_RXNE) != RESET)
+	{
+		unsigned char tmp=0;
+		/* Clear the USART1 Receive interrupt */
+		USART_ClearITPendingBit(USART2, USART_IT_RXNE);
+		tmp=(unsigned char)USART_ReceiveData(USART2);
+		if(USART2_Data.ByteCount==0&&tmp==0xff)
+			USART2_Data.ByteCount++;
+		else if(USART2_Data.ByteCount==1&&tmp==0x81)
+			USART2_Data.ByteCount++;
+		else if(USART2_Data.ByteCount==2&&tmp==0)
+			USART2_Data.ByteCount++;
+		else if(USART2_Data.ByteCount==3)	 //when the first byte data is written while the second not,the data is not valid.
+		{
+			USART2_Data.Value=tmp<<8;
+			USART2_Data.Locked=TRUE;
+			USART2_Data.ByteCount++;
+		}
+		else if(USART2_Data.ByteCount==4)
+		{
+			USART2_Data.Value|=tmp;
+			USART2_Data.Locked=FALSE;
+			USART2_Data.ByteCount=0;
+		}
+		else USART2_Data.ByteCount=0;	  //if a wrong byte is received		
+
+	}
 }
 
 /*******************************************************************************
@@ -622,6 +649,33 @@ void USART2_IRQHandler(void)
 *******************************************************************************/
 void USART3_IRQHandler(void)
 {
+	if(USART_GetITStatus(USART3, USART_IT_RXNE) != RESET)
+	{
+		unsigned char tmp=0;
+		/* Clear the USART1 Receive interrupt */
+		USART_ClearITPendingBit(USART3, USART_IT_RXNE);
+		tmp=(unsigned char)USART_ReceiveData(USART3);
+		if(USART3_Data.ByteCount==0&&tmp==0xff)
+			USART3_Data.ByteCount++;
+		else if(USART3_Data.ByteCount==1&&tmp==0x81)
+			USART3_Data.ByteCount++;
+		else if(USART3_Data.ByteCount==2&&tmp==0)
+			USART3_Data.ByteCount++;
+		else if(USART3_Data.ByteCount==3)	 //when the first byte data is written while the second not,the data is not valid.
+		{
+			USART3_Data.Value=tmp<<8;
+			USART3_Data.Locked=TRUE;
+			USART3_Data.ByteCount++;
+		}
+		else if(USART3_Data.ByteCount==4)
+		{
+			USART3_Data.Value|=tmp;
+			USART3_Data.Locked=FALSE;
+			USART3_Data.ByteCount=0;
+		}
+		else USART3_Data.ByteCount=0;	  //if a wrong byte is received		
+
+	}
 }
 
 /*******************************************************************************
@@ -767,6 +821,33 @@ void SPI3_IRQHandler(void)
 *******************************************************************************/
 void UART4_IRQHandler(void)
 {
+	if(USART_GetITStatus(UART4, USART_IT_RXNE) != RESET)
+	{
+		unsigned char tmp=0;
+		/* Clear the USART1 Receive interrupt */
+		USART_ClearITPendingBit(UART4, USART_IT_RXNE);
+		tmp=(unsigned char)USART_ReceiveData(UART4);
+		if(UART4_Data.ByteCount==0&&tmp==0xff)
+			UART4_Data.ByteCount++;
+		else if(UART4_Data.ByteCount==1&&tmp==0x81)
+			UART4_Data.ByteCount++;
+		else if(UART4_Data.ByteCount==2&&tmp==0)
+			UART4_Data.ByteCount++;
+		else if(UART4_Data.ByteCount==3)	 //when the first byte data is written while the second not,the data is not valid.
+		{
+			UART4_Data.Value=tmp<<8;
+			UART4_Data.Locked=TRUE;
+			UART4_Data.ByteCount++;
+		}
+		else if(UART4_Data.ByteCount==4)
+		{
+			UART4_Data.Value|=tmp;
+			UART4_Data.Locked=FALSE;
+			UART4_Data.ByteCount=0;
+		}
+		else UART4_Data.ByteCount=0;	  //if a wrong byte is received		
+
+	}
 }
 
 /*******************************************************************************

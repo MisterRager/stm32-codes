@@ -3,10 +3,156 @@
 <pre>
 <h1>µVision3 Build Log</h1>
 <h2>Project:</h2>
-H:\StupidFish\Dean\Project\Stm32Work.uv2
+J:\StupidFish\Dean\Project\Stm32Work.uv2
 Project File Date:  08/04/2010
 
 <h2>Output:</h2>
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+compiling main.c...
+..\SourceFiles\main.c(73): warning:  #223-D: function "SerialPutString" declared implicitly
+..\SourceFiles\main.c(74): error:  #268: declaration may not appear after executable statement in block
+..\SourceFiles\main.c(42): warning:  #177-D: variable "Pulse" was declared but never referenced
+..\SourceFiles\main.c(43): warning:  #177-D: variable "pre_received" was declared but never referenced
+..\SourceFiles\main.c(44): warning:  #177-D: variable "received" was declared but never referenced
+..\SourceFiles\main.c(45): warning:  #177-D: variable "receivedbyte" was declared but never referenced
+..\SourceFiles\main.c(46): warning:  #177-D: variable "i" was declared but never referenced
+compiling secondarylib.c...
+compiling usart.c...
+compiling stepmotor.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_systick.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+assembling stm32f10x_vector.s...
+assembling cortexm3_macro.s...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(74): error:  #268: declaration may not appear after executable statement in block
+..\SourceFiles\main.c(42): warning:  #177-D: variable "Pulse" was declared but never referenced
+..\SourceFiles\main.c(43): warning:  #177-D: variable "pre_received" was declared but never referenced
+..\SourceFiles\main.c(44): warning:  #177-D: variable "received" was declared but never referenced
+..\SourceFiles\main.c(45): warning:  #177-D: variable "receivedbyte" was declared but never referenced
+..\SourceFiles\main.c(46): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(42): warning:  #177-D: variable "Pulse" was declared but never referenced
+..\SourceFiles\main.c(43): warning:  #177-D: variable "pre_received" was declared but never referenced
+..\SourceFiles\main.c(44): warning:  #177-D: variable "received" was declared but never referenced
+..\SourceFiles\main.c(45): warning:  #177-D: variable "receivedbyte" was declared but never referenced
+..\SourceFiles\main.c(46): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=12080 RO-data=388 RW-data=36 ZI-data=2212  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 5 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.293V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling usart.c...
+linking...
+Program Size: Code=12100 RO-data=388 RW-data=36 ZI-data=2212  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.293V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
 Build target 'Target 1'
 compiling stm32f10x_it.c...
 compiling main.c...
@@ -15,44 +161,59 @@ compiling main.c...
 ..\SourceFiles\main.c(44): warning:  #177-D: variable "received" was declared but never referenced
 ..\SourceFiles\main.c(45): warning:  #177-D: variable "receivedbyte" was declared but never referenced
 ..\SourceFiles\main.c(46): warning:  #177-D: variable "i" was declared but never referenced
-compiling stepmotor.c...
+compiling usart.c...
 linking...
-Program Size: Code=12036 RO-data=388 RW-data=36 ZI-data=2212  
+Program Size: Code=12612 RO-data=388 RW-data=36 ZI-data=2244  
 FromELF: creating hex file...
 "Stm32Work.axf" - 0 Error(s), 5 Warning(s).
-Load "H:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
-JLink Speed: 2000 kHz
-VTarget = 3.300V
-DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(42): warning:  #177-D: variable "Pulse" was declared but never referenced
+..\SourceFiles\main.c(43): warning:  #177-D: variable "pre_received" was declared but never referenced
+..\SourceFiles\main.c(44): warning:  #177-D: variable "received" was declared but never referenced
+..\SourceFiles\main.c(45): warning:  #177-D: variable "receivedbyte" was declared but never referenced
+..\SourceFiles\main.c(46): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=12592 RO-data=388 RW-data=36 ZI-data=2244  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 5 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
 Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
 Hardware: V8.00
-TotalIRLen = 9, IRPrint = 0x0011
-Found Cortex-M3 r1p1, Little endian.
-TPIU fitted.
-ETM fitted.
-  FPUnit: 6 code (BP) slots and 2 literal slots
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
 Hardware-Breakpoints: 6
 Software-Breakpoints: 2048
-Watchpoints:          0
-TotalIRLen = 9, IRPrint = 0x0011
-Found Cortex-M3 r1p1, Little endian.
-TPIU fitted.
-ETM fitted.
-  FPUnit: 6 code (BP) slots and 2 literal slots
-TotalIRLen = 9, IRPrint = 0x0011
-Found Cortex-M3 r1p1, Little endian.
-TPIU fitted.
-ETM fitted.
-  FPUnit: 6 code (BP) slots and 2 literal slots
-Found Cortex-M3 r1p1, Little endian.
-TPIU fitted.
-ETM fitted.
-  FPUnit: 6 code (BP) slots and 2 literal slots
-TotalIRLen = 9, IRPrint = 0x0011
-Found Cortex-M3 r1p1, Little endian.
-TPIU fitted.
-ETM fitted.
-  FPUnit: 6 code (BP) slots and 2 literal slots
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
 Erase Done.
 Programming Done.
 Verify OK.
@@ -64,42 +225,46 @@ compiling main.c...
 ..\SourceFiles\main.c(45): warning:  #177-D: variable "receivedbyte" was declared but never referenced
 ..\SourceFiles\main.c(46): warning:  #177-D: variable "i" was declared but never referenced
 linking...
-Program Size: Code=12036 RO-data=388 RW-data=36 ZI-data=2212  
+Program Size: Code=12596 RO-data=388 RW-data=36 ZI-data=2244  
 FromELF: creating hex file...
 "Stm32Work.axf" - 0 Error(s), 5 Warning(s).
-Load "H:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
-JLink Speed: 2000 kHz
-VTarget = 3.293V
-DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
 Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
 Hardware: V8.00
-TotalIRLen = 9, IRPrint = 0x0011
-Found Cortex-M3 r1p1, Little endian.
-TPIU fitted.
-ETM fitted.
-  FPUnit: 6 code (BP) slots and 2 literal slots
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.293V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
 Hardware-Breakpoints: 6
 Software-Breakpoints: 2048
-Watchpoints:          0
-TotalIRLen = 9, IRPrint = 0x0011
-Found Cortex-M3 r1p1, Little endian.
-TPIU fitted.
-ETM fitted.
-  FPUnit: 6 code (BP) slots and 2 literal slots
-TotalIRLen = 9, IRPrint = 0x0011
-Found Cortex-M3 r1p1, Little endian.
-TPIU fitted.
-ETM fitted.
-  FPUnit: 6 code (BP) slots and 2 literal slots
-Found Cortex-M3 r1p1, Little endian.
-TPIU fitted.
-ETM fitted.
-  FPUnit: 6 code (BP) slots and 2 literal slots
-TotalIRLen = 9, IRPrint = 0x0011
-Found Cortex-M3 r1p1, Little endian.
-TPIU fitted.
-ETM fitted.
-  FPUnit: 6 code (BP) slots and 2 literal slots
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
 Erase Done.
 Programming Done.
 Verify OK.
