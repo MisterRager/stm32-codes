@@ -778,6 +778,33 @@ void UART4_IRQHandler(void)
 *******************************************************************************/
 void UART5_IRQHandler(void)
 {
+	if(USART_GetITStatus(UART5, USART_IT_RXNE) != RESET)
+	{
+		unsigned char tmp=0;
+		/* Clear the USART1 Receive interrupt */
+		USART_ClearITPendingBit(UART5, USART_IT_RXNE);
+		tmp=(unsigned char)USART_ReceiveData(UART5);
+		if(UART5_Data.ByteCount==0&&tmp==0xff)
+			UART5_Data.ByteCount++;
+		else if(UART5_Data.ByteCount==1&&tmp==0x81)
+			UART5_Data.ByteCount++;
+		else if(UART5_Data.ByteCount==2&&tmp==0)
+			UART5_Data.ByteCount++;
+		else if(UART5_Data.ByteCount==3)	 //when the first byte data is written while the second not,the data is not valid.
+		{
+			UART5_Data.Value=tmp<<8;
+			UART5_Data.Locked=TRUE;
+			UART5_Data.ByteCount++;
+		}
+		else if(UART5_Data.ByteCount==4)
+		{
+			UART5_Data.Value|=tmp;
+			UART5_Data.Locked=FALSE;
+			UART5_Data.ByteCount=0;
+		}
+		else UART5_Data.ByteCount=0;	  //if a wrong byte is received		
+
+	}
 }
 
 /*******************************************************************************

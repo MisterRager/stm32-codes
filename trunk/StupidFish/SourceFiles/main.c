@@ -17,10 +17,12 @@
 #include "stm32f10x_lib.h"
 #include "secondarylib.h"
 #include "stepmotor.h"
+#include "usart.h"
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
 //#define VECT_TAB_RAM
+
 
 
 /* Private variables ---------------------------------------------------------*/
@@ -36,20 +38,21 @@
 *******************************************************************************/
 int main(void)
 {
+			unsigned int vEncoder=0;
 	int Pulse[8]={3600,3600,3600,3600,3600,3600,3600,3600};
 	u8 pre_received=255;
 	u8 received[9];
 	u8 receivedbyte;
 	int i;
   	RCC_Configuration();
-		NVIC_Configuration();
+	NVIC_Configuration();
   	USART1_Init();
 	//USART2_Init();															
 	//USART3_Init();
 	//UART4_Init();
 	UART5_Init();
 	Timer1_MotorInit();
-	Timer1_MotorSetFreq(800);
+	Timer1_MotorSetFreq(80);
 	Timer2_MotorInit();
 	Timer2_MotorSetFreq(800);
 	Timer3_MotorInit();
@@ -64,41 +67,29 @@ int main(void)
 	//Serial_PutString("\r\n======================================================================");
 	GPIO_SetBits(GPIOA,GPIO_Pin_2);
 
-/* PA7 setup for GPIO */	while(1) 
+	while(1) 
 	{
 
 
-	/*	unsigned char tmp=0;
-		unsigned int vEncoder=0;
-		u8 i;
-		for(i=0;i<9;i++)
-		{
-			while(SET!=USART_GetFlagStatus(UART5,USART_FLAG_RXNE));//wait for another byte
-        		received[i]=(u8)USART_ReceiveData(UART5);
-        }
+		unsigned int tmp=0;
 
-		for(i=0;i<9;i++)
-		{
-			if((received[i]==0xff)&&(received[i+1]==0x81)&&(received[i+2]==0x00))
-			{	
-				vEncoder=(received[i+3]<<8)|(received[i+4]);
-				vEncoder=36000*vEncoder>>11;	
-				Serial_PutString("Degree:");		
+		if(UART5_Data.Locked==FALSE)
+		{	
+			tmp=UART5_Data.Value;
+			vEncoder=tmp*36000>>11;
 				SerialPutChar(vEncoder/10000+'0');
 				SerialPutChar(vEncoder%10000/1000+'0');
 				SerialPutChar(vEncoder%1000/100+'0');
-				SerialPutChar('.');
 				SerialPutChar(vEncoder%100/10+'0');
 				SerialPutChar(vEncoder%10+'0');
-				Serial_PutString("\n");	
-			}
-			//received[0]=0;	   	
+				Serial_PutString("    "); 
+
 		}
 		//limitations	
-			if((vEncoder)<=9000)	
-				GPIO_ResetBits(GPIOA,GPIO_Pin_2);
-			if((vEncoder)>=20000)
-				GPIO_SetBits(GPIOA,GPIO_Pin_2);
+		if((vEncoder)<=9000)	
+			Timer4_MotorUp();
+		if((vEncoder)>=20000)
+			Timer4_MotorDown();
 			//1
 
 
@@ -107,40 +98,40 @@ int main(void)
 
 			//6
 			if((vEncoder)<=15000&&vEncoder>=14000)
-				Timer1_MotorSetFreq(5000/5);
+				Timer4_MotorSetFreq(1200);
 
 
 
 			//7
 			if((vEncoder)<=16000&&vEncoder>=15000)
-				Timer1_MotorSetFreq(6000/5);
+				Timer4_MotorSetFreq(1100);
 			//5
 			if((vEncoder)<=14000&&vEncoder>=13000)
-				Timer1_MotorSetFreq(6000/5);
+				Timer4_MotorSetFreq(1100);
 			//8
 			if((vEncoder)<=17000&&vEncoder>=16000)
-				Timer1_MotorSetFreq(7500/5);
+				Timer4_MotorSetFreq(900);
 			//4
 			if((vEncoder)<=13000&&vEncoder>=12000)
-				Timer1_MotorSetFreq(7500/5);
+				Timer4_MotorSetFreq(900);
 			//9
 			if((vEncoder)<=18000&&vEncoder>=17000)
-				Timer1_MotorSetFreq(9000/5);
+				Timer4_MotorSetFreq(700);
 			//3
 			if((vEncoder)<=12000&&vEncoder>=11000)
-				Timer1_MotorSetFreq(9000/5);				
+				Timer4_MotorSetFreq(700);				
 			//10
 			if((vEncoder)<=19000&&vEncoder>=18000)
-				Timer1_MotorSetFreq(14000/5);
+				Timer4_MotorSetFreq(500);
 			//2
 			if((vEncoder)<=11000&&vEncoder>=10000)
-				Timer1_MotorSetFreq(14000/5);
+				Timer4_MotorSetFreq(500);
 			//11
 			if((vEncoder)<=20000&&vEncoder>=19000)
-				Timer1_MotorSetFreq(18000/5);
+				Timer4_MotorSetFreq(300);
 
 			if((vEncoder)<=10000&&vEncoder>=9000)   			
-				Timer1_MotorSetFreq(18000/5);																								
+				Timer4_MotorSetFreq(300);																								
 				
 				
 				

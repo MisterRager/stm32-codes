@@ -9,9 +9,15 @@
 *******************************************************************************/
 void Timer1_MotorSetFreq(unsigned int freq)
 {
-	unsigned int value=2400000/freq;
+	static unsigned int value;
+
 	TIM_OCInitTypeDef TIM_OCInitStructure;
 	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
+
+	if(value==2400000/freq)
+		return;
+	else value=2400000/freq;
+
 	/*Timer Base Initialization for timer1 */
 	TIM_TimeBaseInitStructure.TIM_Prescaler=15-1;
 	TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up ;
@@ -78,9 +84,13 @@ void Timer1_MotorPrepare(void)
 *******************************************************************************/
 void Timer2_MotorSetFreq(unsigned int freq)
 {
-	unsigned int value=2400000/freq;
+	static unsigned int value;
 	TIM_OCInitTypeDef TIM_OCInitStructure;
 	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
+
+	if(value==2400000/freq)
+		return;
+	else value=2400000/freq;
 	/*Timer Base Initialization for timer2 */
 	TIM_TimeBaseInitStructure.TIM_Prescaler=15-1;
 	TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up ;
@@ -154,11 +164,13 @@ void Timer2_MotorPrepare(void)
 *******************************************************************************/
 void Timer3_MotorSetFreq(unsigned int freq)
 {
-	unsigned int value=2400000/freq;
+	static unsigned int value;
 	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
 	TIM_OCInitTypeDef TIM_OCInitStructure;
 
-
+	if(value==2400000/freq)
+		return;
+	else value=2400000/freq;
 	/*Timer Base Initialization for timer3 */
 	TIM_TimeBaseInitStructure.TIM_Prescaler=15-1;
 	TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up ;
@@ -230,11 +242,13 @@ void Timer3_MotorPrepare(void)
 *******************************************************************************/
 void Timer4_MotorSetFreq(unsigned int freq)
 {
-	unsigned int value=2400000/freq;
+	static unsigned int value;
 	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
 	TIM_OCInitTypeDef TIM_OCInitStructure;
 
-
+	if(value==2400000/freq)
+		return;
+	else value=2400000/freq;
 	/*Timer Base Initialization for timer4 */
 	TIM_TimeBaseInitStructure.TIM_Prescaler=15-1;
 	TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up ;
@@ -294,11 +308,13 @@ void Timer4_MotorPrepare(void)
 *******************************************************************************/
 void Timer5_MotorSetFreq(unsigned int freq)
 {
-	unsigned int value=2400000/freq;
+	static unsigned int value;
 	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
 	TIM_OCInitTypeDef TIM_OCInitStructure;
 
-
+	if(value==2400000/freq)
+		return;
+	else value=2400000/freq;
 	/*Timer Base Initialization for timer5 */
 	TIM_TimeBaseInitStructure.TIM_Prescaler=15-1;
 	TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up ;
@@ -358,11 +374,13 @@ void Timer5_MotorPrepare(void)
 *******************************************************************************/
 void Timer8_MotorSetFreq(unsigned int freq)
 {
-	unsigned int value=2400000/freq;
+	static unsigned int value;
 	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
 	TIM_OCInitTypeDef TIM_OCInitStructure;
 
-
+	if(value==2400000/freq)
+		return;
+	else value=2400000/freq;
 	/*Timer Base Initialization for timer8 */
 	TIM_TimeBaseInitStructure.TIM_Prescaler=15-1;
 	TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up ;
