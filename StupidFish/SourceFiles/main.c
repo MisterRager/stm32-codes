@@ -28,7 +28,67 @@
 /* Private variables ---------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
   void TIM_Configuration(void);
+unsigned int vEncoder[4];
 /* Private functions ---------------------------------------------------------*/
+void vEncoder_Refresh(void)
+{
+	if(UART5_Data.Locked==FALSE)
+	{	
+		tmp=UART5_Data.Value;
+		vEncoder[3]=tmp*36000>>11;
+		/*
+		Serial_PutString("UART5:"); 
+		SerialPutChar(vEncoder[3]/10000+'0');
+		SerialPutChar(vEncoder[3]%10000/1000+'0');
+		SerialPutChar(vEncoder[3]%1000/100+'0');
+		SerialPutChar(vEncoder[3]%100/10+'0');
+		SerialPutChar(vEncoder[3]%10+'0');
+		Serial_PutString("\n\r"); 
+		*/
+	}
+	if(UART4_Data.Locked==FALSE)
+	{	
+		tmp=UART4_Data.Value;
+		vEncoder[2]=tmp*36000>>11;
+		/*
+		Serial_PutString("UART4:"); 
+		SerialPutChar(vEncoder[2]/10000+'0');
+		SerialPutChar(vEncoder[2]%10000/1000+'0');
+		SerialPutChar(vEncoder[2]%1000/100+'0');
+		SerialPutChar(vEncoder[2]%100/10+'0');
+		SerialPutChar(vEncoder[2]%10+'0');
+		Serial_PutString("\n\r"); 
+		*/
+	}
+	if(UART3_Data.Locked==FALSE)
+	{	
+		tmp=UART3_Data.Value;
+		vEncoder[1]=tmp*36000>>11;
+		/*
+		Serial_PutString("UART3:"); 
+		SerialPutChar(vEncoder[1]/10000+'0');
+		SerialPutChar(vEncoder[1]%10000/1000+'0');
+		SerialPutChar(vEncoder[1]%1000/100+'0');
+		SerialPutChar(vEncoder[1]%100/10+'0');
+		SerialPutChar(vEncoder[1]%10+'0');
+		Serial_PutString("\n\r"); 
+		*/
+	}
+	if(UART2_Data.Locked==FALSE)
+	{	
+		tmp=UART2_Data.Value;
+		vEncoder[0]=tmp*36000>>11;
+		/*
+		Serial_PutString("UART2:"); 
+		SerialPutChar(vEncoder[0]/10000+'0');
+		SerialPutChar(vEncoder[0]%10000/1000+'0');
+		SerialPutChar(vEncoder[0]%1000/100+'0');
+		SerialPutChar(vEncoder[0]%100/10+'0');
+		SerialPutChar(vEncoder[0]%10+'0');
+		Serial_PutString("\n\r"); 
+		*/
+	}
+}
 /*******************************************************************************
 * Function Name  : Main
 * Description    : Main Program
@@ -38,18 +98,14 @@
 *******************************************************************************/
 int main(void)
 {
-			unsigned int vEncoder=0;
-	int Pulse[8]={3600,3600,3600,3600,3600,3600,3600,3600};
-	u8 pre_received=255;
-	u8 received[9];
-	u8 receivedbyte;
+	unsigned int vEncoder[5];
 	int i;
-  	RCC_Configuration();
+  RCC_Configuration();
 	NVIC_Configuration();
-  	USART1_Init();
-	//USART2_Init();															
-	//USART3_Init();
-	//UART4_Init();
+  USART1_Init();
+	USART2_Init();															
+	USART3_Init();
+	UART4_Init();
 	UART5_Init();
 	Timer1_MotorInit();
 	Timer1_MotorSetFreq(80);
@@ -63,32 +119,16 @@ int main(void)
 	Timer5_MotorSetFreq(800);
 	Timer8_MotorInit();
 	Timer8_MotorSetFreq(800);
-	//Timer4_Init();
-	//Serial_PutString("\r\n======================================================================");
-	GPIO_SetBits(GPIOA,GPIO_Pin_2);
 
 	while(1) 
 	{
-
-
 		unsigned int tmp=0;
 
-		if(UART5_Data.Locked==FALSE)
-		{	
-			tmp=UART5_Data.Value;
-			vEncoder=tmp*36000>>11;
-				SerialPutChar(vEncoder/10000+'0');
-				SerialPutChar(vEncoder%10000/1000+'0');
-				SerialPutChar(vEncoder%1000/100+'0');
-				SerialPutChar(vEncoder%100/10+'0');
-				SerialPutChar(vEncoder%10+'0');
-				Serial_PutString("    "); 
-
-		}
+		vEncoder_Refresh();
 		//limitations	
-		if((vEncoder)<=9000)	
+		if((vEncoder[3])<=9000)	
 			Timer4_MotorUp();
-		if((vEncoder)>=20000)
+		if((vEncoder[3])>=20000)
 			Timer4_MotorDown();
 			//1
 
@@ -97,40 +137,40 @@ int main(void)
 
 
 			//6
-			if((vEncoder)<=15000&&vEncoder>=14000)
+			if((vEncoder[3])<=15000&&vEncoder[3]>=14000)
 				Timer4_MotorSetFreq(1200);
 
 
 
 			//7
-			if((vEncoder)<=16000&&vEncoder>=15000)
+			if((vEncoder[3])<=16000&&vEncoder[3]>=15000)
 				Timer4_MotorSetFreq(1100);
 			//5
-			if((vEncoder)<=14000&&vEncoder>=13000)
+			if((vEncoder[3])<=14000&&vEncoder[3]>=13000)
 				Timer4_MotorSetFreq(1100);
 			//8
-			if((vEncoder)<=17000&&vEncoder>=16000)
+			if((vEncoder[3])<=17000&&vEncoder[3]>=16000)
 				Timer4_MotorSetFreq(900);
 			//4
-			if((vEncoder)<=13000&&vEncoder>=12000)
+			if((vEncoder[3])<=13000&&vEncoder[3]>=12000)
 				Timer4_MotorSetFreq(900);
 			//9
-			if((vEncoder)<=18000&&vEncoder>=17000)
+			if((vEncoder[3])<=18000&&vEncoder[3]>=17000)
 				Timer4_MotorSetFreq(700);
 			//3
-			if((vEncoder)<=12000&&vEncoder>=11000)
+			if((vEncoder[3])<=12000&&vEncoder[3]>=11000)
 				Timer4_MotorSetFreq(700);				
 			//10
-			if((vEncoder)<=19000&&vEncoder>=18000)
+			if((vEncoder[3])<=19000&&vEncoder[3]>=18000)
 				Timer4_MotorSetFreq(500);
 			//2
-			if((vEncoder)<=11000&&vEncoder>=10000)
+			if((vEncoder[3])<=11000&&vEncoder[3]>=10000)
 				Timer4_MotorSetFreq(500);
 			//11
-			if((vEncoder)<=20000&&vEncoder>=19000)
+			if((vEncoder[3])<=20000&&vEncoder[3]>=19000)
 				Timer4_MotorSetFreq(300);
 
-			if((vEncoder)<=10000&&vEncoder>=9000)   			
+			if((vEncoder[3])<=10000&&vEncoder[3]>=9000)   			
 				Timer4_MotorSetFreq(300);																								
 				
 				
