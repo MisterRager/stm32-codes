@@ -14,6 +14,7 @@ File 1,1,<..\SourceFiles\usart.c><usart.c>
 File 1,1,<..\SourceFiles\stepmotor.c><stepmotor.c>
 File 1,1,<..\SourceFiles\timer.c><timer.c>
 File 1,1,<..\SourceFiles\nrf24L01.c><nrf24L01.c>
+File 1,1,<..\SourceFiles\nvic.c><nvic.c>
 File 2,1,<..\Stm32FWLib\src\stm32f10x_wwdg.c><stm32f10x_wwdg.c>
 File 2,1,<..\Stm32FWLib\src\stm32f10x_adc.c><stm32f10x_adc.c>
 File 2,1,<..\Stm32FWLib\src\stm32f10x_bkp.c><stm32f10x_bkp.c>

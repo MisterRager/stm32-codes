@@ -18,6 +18,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
 #include "usart.h"
+extern void nRF24L01_ISR(void);
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -261,6 +262,13 @@ void EXTI3_IRQHandler(void)
 *******************************************************************************/
 void EXTI4_IRQHandler(void)
 {
+	//Serial_PutString("int--");
+	if(EXTI_GetITStatus(EXTI_Line4)!= RESET)
+	{
+		//Serial_PutString("in");
+		EXTI_ClearITPendingBit(EXTI_Line4);
+		nRF24L01_ISR();
+	}
 }
 
 /*******************************************************************************
