@@ -8,6 +8,7 @@
 ### List of Objects: adding '"stepmotor.o"'
 ### List of Objects: adding '"timer.o"'
 ### List of Objects: adding '"nrf24l01.o"'
+### List of Objects: adding '"nvic.o"'
 ### List of Objects: adding '"stm32f10x_wwdg.o"'
 ### List of Objects: adding '"stm32f10x_adc.o"'
 ### List of Objects: adding '"stm32f10x_bkp.o"'
@@ -35,13 +36,13 @@
 ### List of Objects: adding '".\stm32f10x_vector.o"'
 ### List of Objects: adding '".\cortexm3_macro.o"'
 ### ADS-LD Command completed:
---device DARMSTM "stm32f10x_it.o" "main.o" "secondarylib.o" "usart.o" "stepmotor.o" "timer.o" "nrf24l01.o" "stm32f10x_wwdg.o" "stm32f10x_adc.o" "stm32f10x_bkp.o" "stm32f10x_can.o" "stm32f10x_crc.o" "stm32f10x_dac.o" "stm32f10x_dbgmcu.o" "stm32f10x_dma.o" "stm32f10x_exti.o" "stm32f10x_flash.o" "stm32f10x_fsmc.o" "stm32f10x_gpio.o" "stm32f10x_i2c.o" "stm32f10x_iwdg.o" "stm32f10x_lib.o" "stm32f10x_nvic.o" "stm32f10x_pwr.o" "stm32f10x_rcc.o" "stm32f10x_rtc.o" "stm32f10x_sdio.o" "stm32f10x_spi.o" "stm32f10x_systick.o" "stm32f10x_tim.o" "stm32f10x_usart.o" ".\stm32f10x_vector.o" ".\cortexm3_macro.o" --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--device DARMSTM "stm32f10x_it.o" "main.o" "secondarylib.o" "usart.o" "stepmotor.o" "timer.o" "nrf24l01.o" "nvic.o" "stm32f10x_wwdg.o" "stm32f10x_adc.o" "stm32f10x_bkp.o" "stm32f10x_can.o" "stm32f10x_crc.o" "stm32f10x_dac.o" "stm32f10x_dbgmcu.o" "stm32f10x_dma.o" "stm32f10x_exti.o" "stm32f10x_flash.o" "stm32f10x_fsmc.o" "stm32f10x_gpio.o" "stm32f10x_i2c.o" "stm32f10x_iwdg.o" "stm32f10x_lib.o" "stm32f10x_nvic.o" "stm32f10x_pwr.o" "stm32f10x_rcc.o" "stm32f10x_rtc.o" "stm32f10x_sdio.o" "stm32f10x_spi.o" "stm32f10x_systick.o" "stm32f10x_tim.o" "stm32f10x_usart.o" ".\stm32f10x_vector.o" ".\cortexm3_macro.o" --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\Stm32Work.map" -o "Stm32Work.axf"### Preparing Environment (PrepEnvAds)
 ### ADS-LD Output File: 'Stm32Work.axf'
 ### ADS-LD Command File: 'Stm32Work.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'Stm32Work.lnp', Handle=0x000004CC
+### Creating CmdFile 'Stm32Work.lnp', Handle=0x00000294
 ### Writing '.lnp' file
 ### ADS-LD Command file 'Stm32Work.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

@@ -69,6 +69,9 @@ void NVIC_Configuration(void)
 	/* Enable the UART5 Interrupt */
 	NVIC_InitStructure.NVIC_IRQChannel = UART5_IRQChannel;
   NVIC_Init(&NVIC_InitStructure);
+
+	NVIC_InitStructure.NVIC_IRQChannel = EXTI4_IRQChannel;
+  NVIC_Init(&NVIC_InitStructure);
   
 }
 
@@ -88,45 +91,52 @@ void NVIC_Configuration(void)
 *******************************************************************************/
 void RCC_Configuration(void)
 {
-	/* RCC system reset(for debug purpose) */
+	ErrorStatus HSEStartUpStatus;
+    
+	/* Reset the RCC clock configuration to default reset state */
 	RCC_DeInit();
-
-	/* Enable HSI */
-	RCC_HSICmd(ENABLE);	
-
-  if (1)
+    
+	/* Configure the High Speed External oscillator */
+	RCC_HSEConfig(RCC_HSE_ON);
+    
+	/* Wait for HSE start-up */
+	HSEStartUpStatus = RCC_WaitForHSEStartUp();
+    
+	if(HSEStartUpStatus == SUCCESS)
 	{
-    /* Enable Prefetch Buffer */
-  	FLASH_PrefetchBufferCmd(FLASH_PrefetchBuffer_Enable);
-
-    /* Flash 2 wait state */
-    FLASH_SetLatency(FLASH_Latency_2);
-
-    /* HCLK = SYSCLK */
-    RCC_HCLKConfig(RCC_SYSCLK_Div1);
-
-    /* PCLK2 = HCLK */
-    RCC_PCLK2Config(RCC_HCLK_Div1);
-
-    /* PCLK1 = HCLK/2 */
-    RCC_PCLK1Config(RCC_HCLK_Div2);
-
-    /* PLLCLK = 8MHz * 9 = 72 MHz */
-    RCC_PLLConfig(RCC_PLLSource_HSI_Div2, RCC_PLLMul_9);
-
-    /* Enable PLL */
-    RCC_PLLCmd(ENABLE);
-
-    /* Wait till PLL is ready */
-    while (RCC_GetFlagStatus(RCC_FLAG_PLLRDY) == RESET)
-    {}
-
-    /* Select PLL as system clock source */
-    RCC_SYSCLKConfig(RCC_SYSCLKSource_PLLCLK);
-
-    /* Wait till PLL is used as system clock source */
-    while (RCC_GetSYSCLKSource() != 0x08)
-    {}
+		/* Enable Prefetch Buffer */
+		FLASH_PrefetchBufferCmd(FLASH_PrefetchBuffer_Enable);
+        
+		/* Set the code latency value: FLASH Two Latency cycles */
+		FLASH_SetLatency(FLASH_Latency_2);
+        
+		/* Configure the AHB clock(HCLK): HCLK = SYSCLK */
+		RCC_HCLKConfig(RCC_SYSCLK_Div1);
+        
+		/* Configure the High Speed APB2 clcok(PCLK2): PCLK2 = HCLK */
+		RCC_PCLK2Config(RCC_HCLK_Div1);
+        
+		/* Configure the Low Speed APB1 clock(PCLK1): PCLK1 = HCLK/2 */
+		RCC_PCLK1Config(RCC_HCLK_Div2);
+        
+		/* Configure the PLL clock source and multiplication factor	*/
+		/* PLLCLK = HSE*PLLMul = 8*9 = 72MHz */
+		RCC_PLLConfig(RCC_PLLSource_HSE_Div1, RCC_PLLMul_9);
+        
+		/* Enable PLL	*/
+		RCC_PLLCmd(ENABLE);
+        
+		/* Check whether the specified RCC flag is set or not */
+		/* Wait till PLL is ready	*/
+		while(RCC_GetFlagStatus(RCC_FLAG_PLLRDY) == RESET);
+        
+		/* Select PLL as system clock source */
+		RCC_SYSCLKConfig(RCC_SYSCLKSource_PLLCLK);
+        
+		/* Get System Clock Source */
+		/* Wait till PLL is used as system clock source	*/
+		while(RCC_GetSYSCLKSource() != 0x08);
+     
   }
 
   /* Enable GPIOA, GPIOC and USART1 clock  */
@@ -146,7 +156,6 @@ void RCC_Configuration(void)
 
 }
 
-/* Timer functions ---------------------------------------------------------*/
 
 
 

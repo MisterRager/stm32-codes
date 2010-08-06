@@ -8,14 +8,14 @@ Project File Date:  08/05/2010
 
 <h2>Output:</h2>
 Build target 'Target 1'
-compiling spi.c...
-..\SourceFiles\spi.c(223): warning:  #177-D: variable "nCount" was declared but never referenced
-..\SourceFiles\spi.c(224): warning:  #177-D: variable "vEncoder" was declared but never referenced
-..\SourceFiles\spi.c(225): warning:  #177-D: variable "i" was declared but never referenced
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(143): warning:  #223-D: function "TimingDelay_Decrement" declared implicitly
+..\SourceFiles\stm32f10x_it.c(265): warning:  #223-D: function "Serial_PutString" declared implicitly
 linking...
-Program Size: Code=12248 RO-data=388 RW-data=28 ZI-data=2340  
+Program Size: Code=12986 RO-data=358 RW-data=40 ZI-data=2336  
 FromELF: creating hex file...
-"Stm32Work.axf" - 0 Error(s), 3 Warning(s).
+"Stm32Work.axf" - 0 Error(s), 2 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
 Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
 
 JLink info:
@@ -35,7 +35,102 @@ Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull
 Target info:
 ------------
 Device: STM32F103ZE
-VTarget = 3.280V
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(143): warning:  #223-D: function "TimingDelay_Decrement" declared implicitly
+linking...
+Program Size: Code=12962 RO-data=358 RW-data=40 ZI-data=2336  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(143): warning:  #223-D: function "TimingDelay_Decrement" declared implicitly
+compiling nvic.c...
+linking...
+Program Size: Code=12962 RO-data=358 RW-data=40 ZI-data=2336  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
 State of Pins: 
 TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
 * JLink Info: TotalIRLen = 9, IRPrint = 0x0011
@@ -58,17 +153,404 @@ Programming Done.
 Verify OK.
 Build target 'Target 1'
 compiling nrf24L01.c...
-..\SourceFiles\nrf24L01.c(1): error:  #5: cannot open source input file "spi.h": No such file or directory
+..\SourceFiles\nrf24L01.c(222): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\nrf24L01.c(244): warning:  #223-D: function "EXTI_Configuration" declared implicitly
+..\SourceFiles\nrf24L01.c(238): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\nrf24L01.c(239): warning:  #550-D: variable "vEncoder" was set but never used
+..\SourceFiles\nrf24L01.c(240): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=12938 RO-data=358 RW-data=40 ZI-data=2336  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 5 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling nrf24L01.c...
+..\SourceFiles\nrf24L01.c(222): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\nrf24L01.c(244): warning:  #223-D: function "EXTI_Configuration" declared implicitly
+..\SourceFiles\nrf24L01.c(238): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\nrf24L01.c(239): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\nrf24L01.c(240): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=12866 RO-data=358 RW-data=32 ZI-data=2336  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 5 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(143): warning:  #223-D: function "TimingDelay_Decrement" declared implicitly
+linking...
+Program Size: Code=12858 RO-data=358 RW-data=32 ZI-data=2336  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling nvic.c...
+linking...
+Program Size: Code=12858 RO-data=358 RW-data=32 ZI-data=2336  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Failed!
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling nvic.c...
+linking...
+Program Size: Code=12858 RO-data=358 RW-data=32 ZI-data=2336  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.293V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+assembling stm32f10x_vector.s...
+..\StartUp\stm32f10x_vector.s - 0 Error(s), 0 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.254V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling nvic.c...
+linking...
+Program Size: Code=12858 RO-data=358 RW-data=32 ZI-data=2336  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling nrf24L01.c...
+..\SourceFiles\nrf24L01.c(222): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\nrf24L01.c(249): warning:  #223-D: function "EXTI_Configuration" declared implicitly
+..\SourceFiles\nrf24L01.c(243): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\nrf24L01.c(244): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\nrf24L01.c(245): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=12858 RO-data=358 RW-data=32 ZI-data=2336  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling nrf24L01.c...
+..\SourceFiles\nrf24L01.c(232): warning:  #223-D: function "Serail_PutString" declared implicitly
+..\SourceFiles\nrf24L01.c(222): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\nrf24L01.c(250): warning:  #223-D: function "EXTI_Configuration" declared implicitly
+..\SourceFiles\nrf24L01.c(244): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\nrf24L01.c(245): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\nrf24L01.c(246): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Stm32Work.axf: Error: L6218E: Undefined symbol Serail_PutString (referred from nrf24l01.o).
 Target not created
 Build target 'Target 1'
 compiling nrf24L01.c...
-..\SourceFiles\nrf24L01.c(233): warning:  #177-D: variable "nCount" was declared but never referenced
-..\SourceFiles\nrf24L01.c(234): warning:  #177-D: variable "vEncoder" was declared but never referenced
-..\SourceFiles\nrf24L01.c(235): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\nrf24L01.c(222): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\nrf24L01.c(250): warning:  #223-D: function "EXTI_Configuration" declared implicitly
+..\SourceFiles\nrf24L01.c(244): warning:  #177-D: variable "nCount" was declared but never referenced
+..\SourceFiles\nrf24L01.c(245): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\nrf24L01.c(246): warning:  #177-D: variable "i" was declared but never referenced
 linking...
-Program Size: Code=12336 RO-data=388 RW-data=32 ZI-data=2336  
+Program Size: Code=12866 RO-data=358 RW-data=32 ZI-data=2336  
 FromELF: creating hex file...
-"Stm32Work.axf" - 0 Error(s), 3 Warning(s).
+"Stm32Work.axf" - 0 Error(s), 5 Warning(s).
 Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
 
 JLink info:
@@ -88,7 +570,7 @@ Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull
 Target info:
 ------------
 Device: STM32F103ZE
-VTarget = 3.274V
+VTarget = 3.300V
 State of Pins: 
 TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
 * JLink Info: TotalIRLen = 9, IRPrint = 0x0011
@@ -110,14 +592,12 @@ Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
-compiling nrf24L01.c...
-..\SourceFiles\nrf24L01.c(233): warning:  #177-D: variable "nCount" was declared but never referenced
-..\SourceFiles\nrf24L01.c(234): warning:  #177-D: variable "vEncoder" was declared but never referenced
-..\SourceFiles\nrf24L01.c(235): warning:  #177-D: variable "i" was declared but never referenced
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(143): warning:  #223-D: function "TimingDelay_Decrement" declared implicitly
 linking...
-Program Size: Code=12368 RO-data=388 RW-data=32 ZI-data=2336  
+Program Size: Code=12874 RO-data=358 RW-data=32 ZI-data=2336  
 FromELF: creating hex file...
-"Stm32Work.axf" - 0 Error(s), 3 Warning(s).
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
 Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
 
 JLink info:
@@ -137,7 +617,53 @@ Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull
 Target info:
 ------------
 Device: STM32F103ZE
-VTarget = 3.280V
+VTarget = 3.300V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling nvic.c...
+linking...
+Program Size: Code=12874 RO-data=358 RW-data=32 ZI-data=2336  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "J:\\StupidFish\\Dean\\Project\\Stm32Work.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
 State of Pins: 
 TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
 * JLink Info: TotalIRLen = 9, IRPrint = 0x0011

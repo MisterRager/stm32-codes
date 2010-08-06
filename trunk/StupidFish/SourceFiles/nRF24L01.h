@@ -1,7 +1,6 @@
-#ifndef _BYTE_DEF_
-#define _BYTE_DEF_
-typedef unsigned char BYTE;
-#endif   /* _BYTE_DEF_ */
+#ifndef _NRF24L01_H
+#define _NRF24L01_H
+
 
 #define TX_ADR_WIDTH    5   // 5 bytes TX(RX) address width
 #define TX_PLOAD_WIDTH  20  // 20 bytes TX payload
@@ -46,6 +45,10 @@ typedef unsigned char BYTE;
 #define RX_PW_P4        0x15  // 'RX payload width, pipe4' register address
 #define RX_PW_P5        0x16  // 'RX payload width, pipe5' register address
 #define FIFO_STATUS     0x17  // 'FIFO Status Register' register address
+
+
+#endif
+
 
 
 

@@ -6,7 +6,7 @@
 #include "usart.h"
 #include "timer.h"
 u8 TxBuf[32]={0};
-unsigned int sta;
+volatile unsigned int sta;
 
 unsigned char TX_ADDRESS[TX_ADR_WIDTH]  = {0x34,0x43,0x10,0x10,0x01}; // Define a static TX address
 unsigned char rx_buf[TX_PLOAD_WIDTH];
@@ -36,8 +36,8 @@ unsigned char accept_flag;
 #define CE_L()   GPIO_ResetBits(GPIOE, GPIO_Pin_1)
 
 //SPI Chip Select
-#define CSN_H()  GPIO_SetBits(GPIOB, GPIO_Pin_12)
-#define CSN_L()  GPIO_ResetBits(GPIOB, GPIO_Pin_12)
+#define SPI2_releaseChip()  GPIO_SetBits(GPIOB, GPIO_Pin_12)
+#define SPI2_selectChip()  GPIO_ResetBits(GPIOB, GPIO_Pin_12)
 
 void SPI2_Init(void)
 {
@@ -64,7 +64,7 @@ void SPI2_Init(void)
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
   GPIO_Init(GPIOD, &GPIO_InitStructure);
 
-	 SPI_Cmd(SPI2, DISABLE); 
+	SPI_Cmd(SPI2, DISABLE); 
 	/* SPI1 configuration */
   SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex; //SPI设置为双线双向全双工 
   SPI_InitStructure.SPI_Mode = SPI_Mode_Master; //设置为主 SPI 
@@ -94,69 +94,84 @@ void Delay_us(unsigned int  n)
 
 
 /*******************************************************************************
-* Function Name   : SPI2_RW
-* Description : Sends a byte through the SPI interface and return the byte
-*                received from the SPI bus.
-* Input       : byte : byte to send.
-* Output       : None
-* Return       : The value of the received byte.
+* Function Name   : SPI2_readWriteByte
+* Description 		: Sends a byte through the SPI interface and return the byte
+*                		received from the SPI bus.
+* Input       		: byte : byte to send.
+* Output       		: None
+* Return       		: The value of the received byte.
 *******************************************************************************/
-u8 SPI2_readWrite(u8 byte)
+unsigned char SPI2_readWriteByte(unsigned char byte)
 {
-   /* Loop while DR register in not emplty */
   while (SPI_I2S_GetFlagStatus(SPI2, SPI_I2S_FLAG_TXE) == RESET);
-   /* Send byte through the SPI1 peripheral */
-   SPI_I2S_SendData(SPI2, byte);
-   /* Wait to receive a byte */
-  while (SPI_I2S_GetFlagStatus(SPI2, SPI_I2S_FLAG_RXNE) == RESET);
-   /* Return the byte read from the SPI bus */
-   return SPI_I2S_ReceiveData(SPI2);
+	/* Send byte through the SPI1 peripheral */
+	SPI_I2S_SendData(SPI2, byte);
+	/* Wait to receive a byte */
+	while (SPI_I2S_GetFlagStatus(SPI2, SPI_I2S_FLAG_RXNE) == RESET);
+	/* Return the byte read from the SPI bus */
+	return SPI_I2S_ReceiveData(SPI2);
 }
 
+/*******************************************************************************
+* Function Name   : SPI2_writeReg
+* Description 		: write a byte into the register specified and return the 
+										status byte.
+* Input       		: value: value to be written.	reg:register to write to.
+* Output       		: None
+* Return       		: The status byte.
+*******************************************************************************/
 
-unsigned char SPI2_readWriteReg(unsigned char reg, unsigned char value)
+unsigned char SPI2_writeReg(unsigned char reg, unsigned char value)
 {
 	unsigned char status;
-	CSN_L();
-	// select register 
-	status = SPI2_readWrite(reg);
-	// set value
-	SPI2_readWrite(value);
-	CSN_H();
+	SPI2_selectChip();
+	//select register 
+	status = SPI2_readWriteByte(reg);
+	//write to it the value
+	SPI2_readWriteByte(value);
+	SPI2_releaseChip();
 	return(status);
 }
+
+/*******************************************************************************
+* Function Name   : SPI2_readReg
+* Description 		: read from a specified register.
+* Input       		: reg:register to read from.
+* Output       		: None
+* Return       		: The correponding value.
+*******************************************************************************/
 
 unsigned char SPI2_readReg(unsigned char reg)
 {
 	unsigned char reg_val;
-   CSN_L();                    // CSN置低，开始传输数据
-   SPI2_readWrite(reg);                // 选择寄存器
-   reg_val = SPI2_readWrite(0);        // 然后从该寄存器读数据
-   CSN_H();                    // CSN拉高，结束数据传输
-   return(reg_val);            // 返回寄存器数据
+	SPI2_selectChip();                    
+	SPI2_readWriteByte(reg);                
+	reg_val = SPI2_readWriteByte(0);       
+	SPI2_releaseChip();                    
+	return(reg_val);            
 }
 
-unsigned char SPI2_readBuf(unsigned char reg,unsigned char *pBuf, unsigned char bytes)
+unsigned char SPI2_readBuf(unsigned char reg,unsigned char *pBuf, unsigned char bufSize)
 {
 	unsigned char status,i;
-	CSN_L();
+	SPI2_selectChip();
 	// Select register to write to and read status byte
-	status = SPI2_readWrite(reg);
-	for(i=0;i<bytes;i++)
-		pBuf[i] = SPI2_readWrite(0);
-	CSN_H();
+	status = SPI2_readWriteByte(reg);
+	for(i=0;i<bufSize;i++)
+		pBuf[i] = SPI2_readWriteByte(0);
+	SPI2_releaseChip();
 	return(status);
 }
 
-unsigned char SPI2_writeBuf(unsigned char reg, unsigned char *pBuf, unsigned char bytes)
+unsigned char SPI2_writeBuf(unsigned char reg, unsigned char *pBuf, unsigned char bufSize)
 {
 	unsigned char status,i;
-	CSN_L();
+	SPI2_selectChip();
 	// Select register to write to and read status byte
-	status = SPI2_readWrite(reg);
-	for(i=0; i<bytes; i++) // then write all byte in buffer(*pBuf)
-		SPI2_readWrite(*pBuf++);
-	CSN_H();
+	status = SPI2_readWriteByte(reg);
+	for(i=0; i<bufSize; i++) // then write all byte in buffer(*pBuf)
+		SPI2_readWriteByte(*pBuf++);
+	SPI2_releaseChip();
 	return(status);
 }
 
@@ -164,14 +179,14 @@ void RX_Mode(void)
 {
 	 CE_L();
 	SPI2_writeBuf(WRITE_REG + RX_ADDR_P0, TX_ADDRESS, TX_ADR_WIDTH);
-	SPI2_readWriteReg(WRITE_REG + EN_AA, 0x01);
+	SPI2_writeReg(WRITE_REG + EN_AA, 0x01);
 	// Enable Auto.Ack:Pipe0
-	SPI2_readWriteReg(WRITE_REG + EN_RXADDR, 0x01); // Enable Pipe0
-	SPI2_readWriteReg(WRITE_REG + RF_CH, 40);
+	SPI2_writeReg(WRITE_REG + EN_RXADDR, 0x01); // Enable Pipe0
+	SPI2_writeReg(WRITE_REG + RF_CH, 40);
 	// Select RF channel 40
-	SPI2_readWriteReg(WRITE_REG + RX_PW_P0, TX_PLOAD_WIDTH);
-	SPI2_readWriteReg(WRITE_REG + RF_SETUP, 0x07);
-	SPI2_readWriteReg(WRITE_REG + CONFIG, 0x0f);
+	SPI2_writeReg(WRITE_REG + RX_PW_P0, TX_PLOAD_WIDTH);
+	SPI2_writeReg(WRITE_REG + RF_SETUP, 0x07);
+	SPI2_writeReg(WRITE_REG + CONFIG, 0x0f);
 	// Set PWR_UP bit, enable CRC(2 bytes)
 	//& Prim:RX. RX_DR enabled..
 	 CE_H(); // Set CE pin high to enable RX device
@@ -187,54 +202,52 @@ void TX_Mode(unsigned char * BUF)
 	SPI2_writeBuf(WRITE_REG + TX_ADDR, TX_ADDRESS, TX_ADR_WIDTH);
 	SPI2_writeBuf(WRITE_REG + RX_ADDR_P0, TX_ADDRESS, TX_ADR_WIDTH);
 	SPI2_writeBuf(WR_TX_PLOAD, BUF, TX_PLOAD_WIDTH); // Writes data to TX payload
-	SPI2_readWriteReg(WRITE_REG + EN_AA, 0x01);
+	SPI2_writeReg(WRITE_REG + EN_AA, 0x01);
 	// Enable Auto.Ack:Pipe0
-	SPI2_readWriteReg(WRITE_REG + EN_RXADDR, 0x01); // Enable Pipe0
-	SPI2_readWriteReg(WRITE_REG + SETUP_RETR, 0x1a); // 500us + 86us, 10 retrans...
-	SPI2_readWriteReg(WRITE_REG + RF_CH, 40);
+	SPI2_writeReg(WRITE_REG + EN_RXADDR, 0x01); // Enable Pipe0
+	SPI2_writeReg(WRITE_REG + SETUP_RETR, 0x1a); // 500us + 86us, 10 retrans...
+	SPI2_writeReg(WRITE_REG + RF_CH, 40);
 	// Select RF channel 40
-	SPI2_readWriteReg(WRITE_REG + RF_SETUP, 0x07);
+	SPI2_writeReg(WRITE_REG + RF_SETUP, 0x07);
 	// TX_PWR:0dBm, Datarate:2Mbps,
 //	LNA:HCURR
-	SPI2_readWriteReg(WRITE_REG + CONFIG, 0x0e);
+	SPI2_writeReg(WRITE_REG + CONFIG, 0x0e);
 	// Set PWR_UP bit, enable CRC(2 bytes)
 	//& Prim:TX. MAX_RT & TX_DS enabled..
 	GPIO_SetBits(GPIOE,GPIO_Pin_1); // Set CE pin high 
 }
 
-
-
-
-
-void init_NRF24L01(void)
+void nRF24L01_ISR(void)
 {
- u8 buf[5]={0};
- 
-  Delay_us(100);
-
-
-  CE_L();    // chip enable
-  //CSN_H();   // Spi disable 
-  
-  SPI2_readBuf(TX_ADDR, buf, TX_ADR_WIDTH);
+	int i;
+	sta=SPI2_readReg(STATUS);	
+	if(RX_DR)				
+	{
+		SPI2_readBuf(RD_RX_PLOAD,rx_buf,TX_PLOAD_WIDTH);
+  }
+	if(MAX_RT)
+	{
+		SPI2_writeReg(FLUSH_TX,0);
+  }
+			Serial_PutString("\n\r");
+			Serial_PutString(rx_buf);
+			rx_buf[0]=0;
+			rx_buf[1]=0;
+			rx_buf[2]=0;
+			rx_buf[3]=0;
+	SPI2_writeReg(WRITE_REG+STATUS,0xff);
+	RX_Mode();	
 }
-
-void init_io(void)
-{
- CE_L();        // 待机
- CSN_H();        // SPI禁止
- RX_Mode(); //接收
-}
-
-
 
 int main(void)
 {
 	unsigned int nCount;
-	unsigned char vEncoder[30]="abcdgsdfgdfgsdfgsdffgsdfgsdf";
+	unsigned char vEncoder[20]="--------------------";
 	int i;
   RCC_Configuration();
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
 	NVIC_Configuration();
+		EXTI_Configuration();
   USART1_Init();
 	USART2_Init();															
 	USART3_Init();
@@ -242,21 +255,44 @@ int main(void)
 	UART5_Init();
 	SPI2_Init();
 	SysTick_Init();
-	init_NRF24L01();
+	//init_NRF24L01();
+	RX_Mode();
+	nRF24L01_ISR();
+	
   while(1)
 {
-	//Serial_PutString("Running"); 
-	RX_Mode();		              // 设置为接收模式
+
+/*	static int i='a',j='a';
+	vEncoder[0]=i;
+	vEncoder[1]=j;
+
+	if(i<'z')
+		i++;
+	else
+	{
+		j++;
+		i='a';
+	}
+		*/
+			              // 设置为接收模式
 	//TX_Mode(vEncoder);			// 把nRF24L01设置为发送模式并发送数据
-  //SPI2_readWriteReg(WRITE_REG+STATUS,(SPI2_readReg(READ_REG+STATUS)));	// clear interrupt flag(TX_DS)
-	Delayms(100);
-	RX_Mode();			        // 设置为接收模式
+  //SPI2_writeReg(WRITE_REG+STATUS,(SPI2_readReg(READ_REG+STATUS)));	// clear interrupt flag(TX_DS)
+		
+	//RX_Mode();
+//	Delayms(1000);
+	//nRF24L01_ISR();
+//	CE_L();
+	//SPI2_writeReg(WRITE_REG+STATUS,0xff);
+	
+	
+
 
 
 	
 
-			SPI2_readBuf(RD_RX_PLOAD,rx_buf,TX_PLOAD_WIDTH);
-			Serial_PutString(rx_buf);
+			//SPI2_readBuf(RD_RX_PLOAD,rx_buf,TX_PLOAD_WIDTH);
+
+
 
 }
 }	 

@@ -103,6 +103,7 @@ int main1(void)
 	int i;
   RCC_Configuration();
 	NVIC_Configuration();
+
   USART1_Init();
 	USART2_Init();															
 	USART3_Init();
