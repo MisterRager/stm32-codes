@@ -19,7 +19,15 @@
 #include "stm32f10x_it.h"
 #include "usart.h"
 extern void nRF24L01_ISR(void);
-
+extern void TX_Mode(unsigned char * BUF);
+extern bool sendOnce;
+extern Serial_PutString(unsigned char * buf);
+extern SerialPutChar(unsigned char i);
+extern void RX_Mode(void);
+extern void nRF24L01_ISR(void);
+extern void clearFlag(void);
+extern void Delay_us(unsigned int  n);
+extern void TimingDelay_Decrement(void);
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
@@ -262,13 +270,15 @@ void EXTI3_IRQHandler(void)
 *******************************************************************************/
 void EXTI4_IRQHandler(void)
 {
-	//Serial_PutString("int--");
+	Enter_Critical();
 	if(EXTI_GetITStatus(EXTI_Line4)!= RESET)
 	{
-		//Serial_PutString("in");
 		EXTI_ClearITPendingBit(EXTI_Line4);
+		//Delay_us(1000);
+		//Serial_PutString("int");
 		nRF24L01_ISR();
 	}
+	Exit_Critical();
 }
 
 /*******************************************************************************
@@ -584,12 +594,31 @@ void SPI2_IRQHandler(void)
 *******************************************************************************/
 void USART1_IRQHandler(void)
 {
+	static unsigned int i=0;
+	static unsigned char temp[7];
+
 	/* Received */
-	if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+	Enter_Critical();
+	while(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
 	{
+		
 		/* Clear the USART1 Receive interrupt */
 		USART_ClearITPendingBit(USART1, USART_IT_RXNE);
+
+		temp[i]=USART_ReceiveData(USART1);
+		i++;	
+		if(i>=7)
+		{
+			i=0;
+			TX_Mode(temp);
+			Delay_us(1000);
+			clearFlag();
+			RX_Mode();
+		} 
+
 	}
+	Exit_Critical();
+
 	/* Sent */
 	if (USART_GetITStatus(USART1, USART_IT_TXE) != RESET)
 	{

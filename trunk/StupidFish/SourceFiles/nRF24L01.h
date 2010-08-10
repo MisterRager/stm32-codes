@@ -3,7 +3,7 @@
 
 
 #define TX_ADR_WIDTH    5   // 5 bytes TX(RX) address width
-#define TX_PLOAD_WIDTH  20  // 20 bytes TX payload
+#define TX_PLOAD_WIDTH  7  // 20 bytes TX payload
 
 
 

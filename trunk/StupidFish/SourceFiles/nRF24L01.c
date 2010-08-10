@@ -7,6 +7,7 @@
 #include "timer.h"
 u8 TxBuf[32]={0};
 volatile unsigned int sta;
+//bool sendOnce;
 
 unsigned char TX_ADDRESS[TX_ADR_WIDTH]  = {0x34,0x43,0x10,0x10,0x01}; // Define a static TX address
 unsigned char rx_buf[TX_PLOAD_WIDTH];
@@ -217,27 +218,45 @@ void TX_Mode(unsigned char * BUF)
 	GPIO_SetBits(GPIOE,GPIO_Pin_1); // Set CE pin high 
 }
 
+//Chip Enable Activates RX or TX mode
+#define CE_H()   GPIO_SetBits(GPIOE, GPIO_Pin_1) 
+#define CE_L()   GPIO_ResetBits(GPIOE, GPIO_Pin_1)
+
+//SPI Chip Select
+#define SPI2_releaseChip()  GPIO_SetBits(GPIOB, GPIO_Pin_12)
+#define SPI2_selectChip()  GPIO_ResetBits(GPIOB, GPIO_Pin_12)
+void nRF24L01_Enable(void)
+{
+	CE_L();			// chip enable
+	SPI2_releaseChip();			// Spi disable	
+	//SCK=0;			// Spi clock line init high
+}
+
+void clearFlag(void)
+{	 
+	SPI2_writeReg(WRITE_REG+STATUS,0xff);	
+}
+
 void nRF24L01_ISR(void)
 {
 	int i;
-	sta=SPI2_readReg(STATUS);	
+	sta=SPI2_readReg(STATUS);
+	SPI2_writeReg(WRITE_REG+STATUS,0xff);
 	if(RX_DR)				
 	{
 		SPI2_readBuf(RD_RX_PLOAD,rx_buf,TX_PLOAD_WIDTH);
+		Serial_PutString(rx_buf);				 //put whatever received to the UART
   }
 	if(MAX_RT)
 	{
 		SPI2_writeReg(FLUSH_TX,0);
   }
-			Serial_PutString("\n\r");
-			Serial_PutString(rx_buf);
-			rx_buf[0]=0;
-			rx_buf[1]=0;
-			rx_buf[2]=0;
-			rx_buf[3]=0;
-	SPI2_writeReg(WRITE_REG+STATUS,0xff);
+
+	
 	RX_Mode();	
 }
+
+
 
 int main(void)
 {
@@ -257,41 +276,12 @@ int main(void)
 	SysTick_Init();
 	//init_NRF24L01();
 	RX_Mode();
-	nRF24L01_ISR();
+	//nRF24L01_ISR();
 	
   while(1)
 {
 
-/*	static int i='a',j='a';
-	vEncoder[0]=i;
-	vEncoder[1]=j;
-
-	if(i<'z')
-		i++;
-	else
-	{
-		j++;
-		i='a';
-	}
-		*/
-			              // 设置为接收模式
-	//TX_Mode(vEncoder);			// 把nRF24L01设置为发送模式并发送数据
-  //SPI2_writeReg(WRITE_REG+STATUS,(SPI2_readReg(READ_REG+STATUS)));	// clear interrupt flag(TX_DS)
-		
-	//RX_Mode();
-//	Delayms(1000);
-	//nRF24L01_ISR();
-//	CE_L();
-	//SPI2_writeReg(WRITE_REG+STATUS,0xff);
-	
-	
-
-
-
-	
-
-			//SPI2_readBuf(RD_RX_PLOAD,rx_buf,TX_PLOAD_WIDTH);
-
+	//Serial_PutString("While ");
 
 
 }
