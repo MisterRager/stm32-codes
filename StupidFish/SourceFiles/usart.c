@@ -23,6 +23,9 @@ void SerialPutChar(u8 c)
   	while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET);
 }
 
+
+
+
 /*******************************************************************************
 * Function Name  : Serial_PutString
 * Description    : Print a string on the HyperTerminal
