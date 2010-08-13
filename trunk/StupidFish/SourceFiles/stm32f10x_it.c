@@ -28,6 +28,7 @@ extern void nRF24L01_ISR(void);
 extern void clearFlag(void);
 extern void Delay_us(unsigned int  n);
 extern void TimingDelay_Decrement(void);
+void Wireless_Received(unsigned char *pbuf);
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
