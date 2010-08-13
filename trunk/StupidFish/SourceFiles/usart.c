@@ -4,10 +4,11 @@
 unsigned char Send_Length=0;
 unsigned char Send_Data[SEND_LENGTH];
 
-struct USART_Data USART2_Data;
-struct USART_Data USART3_Data;
-struct USART_Data UART4_Data;
-struct USART_Data UART5_Data;
+struct USART_Data USART2_Data={0,0,TRUE};
+struct USART_Data USART3_Data={0,0,TRUE};
+struct USART_Data UART4_Data={0,0,TRUE};
+struct USART_Data UART5_Data={0,0,TRUE};
+
 
 /* Usart functions ---------------------------------  ------------------------*/
 /*******************************************************************************

@@ -3,7 +3,2378 @@
 <pre>
 <h1>礦ision3 Build Log</h1>
 <h2>Project:</h2>
-F:\Dean\StupidFish\Project\Stm32Work.uv2
+C:\Documents and Settings\Dean\桌面\新建文件夹\StupidFish\StupidFish\Project\Stm32Work.uv2
 Project File Date:  08/10/2010
 
 <h2>Output:</h2>
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(274): warning:  #223-D: function "Enter_Critical" declared implicitly
+..\SourceFiles\stm32f10x_it.c(282): warning:  #223-D: function "Exit_Critical" declared implicitly
+..\SourceFiles\stm32f10x_it.c(602): warning:  #223-D: function "Enter_Critical" declared implicitly
+..\SourceFiles\stm32f10x_it.c(621): warning:  #223-D: function "Exit_Critical" declared implicitly
+compiling main.c...
+..\SourceFiles\main.c(24): error:  #65: expected a ";"
+..\SourceFiles\main.c(89): warning:  #47-D: incompatible redefinition of macro "SmallMotorLeftcurrentPosition" (declared at line 88)
+..\SourceFiles\main.c(94): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(122): warning:  #223-D: function "refreshPosition" declared implicitly
+..\SourceFiles\main.c(128): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(138): warning:  #223-D: function "Timer4_SmallMotorLeftDown" declared implicitly
+..\SourceFiles\main.c(144): warning:  #223-D: function "Timer2_MotorInit" declared implicitly
+..\SourceFiles\main.c(145): warning:  #223-D: function "Timer2_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(146): warning:  #223-D: function "Timer3_MotorInit" declared implicitly
+..\SourceFiles\main.c(147): warning:  #223-D: function "Timer3_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(148): warning:  #223-D: function "Timer4_MotorInit" declared implicitly
+..\SourceFiles\main.c(149): warning:  #223-D: function "Timer4_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(150): warning:  #223-D: function "Timer5_MotorInit" declared implicitly
+..\SourceFiles\main.c(151): warning:  #223-D: function "Timer5_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(162): error:  #20: identifier "SmaillMotorALeft" is undefined
+..\SourceFiles\main.c(166): error:  #20: identifier "SmaillMotorARight" is undefined
+..\SourceFiles\main.c(168): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(170): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(170): warning:  #223-D: function "refreshPosition" declared implicitly
+..\SourceFiles\main.c(176): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(127): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(205): warning:  #223-D: function "Enter_Critical" declared implicitly
+..\SourceFiles\main.c(210): warning:  #223-D: function "Exit_Critical" declared implicitly
+..\SourceFiles\main.c(224): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(224): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(228): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(232): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(236): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(215): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(264): error:  #159: declaration is incompatible with previous "refreshTable" (declared at line 176)
+..\SourceFiles\main.c(282): error:  #159: declaration is incompatible with previous "refreshPosition" (declared at line 122)
+..\SourceFiles\main.c(303): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(321): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(334): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(346): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(350): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(358): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(309): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(367): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(372): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(376): error:  #20: identifier "set" is undefined
+..\SourceFiles\main.c(379): error:  #65: expected a ";"
+..\SourceFiles\main.c(387): error:  #268: declaration may not appear after executable statement in block
+..\SourceFiles\main.c(387): error:  #67: expected a "}"
+..\SourceFiles\main.c(429): warning:  #223-D: function "vEncoder_Refresh" declared implicitly
+..\SourceFiles\main.c(431): error:  #20: identifier "BigMotorLeftcurrentPosition" is undefined
+..\SourceFiles\main.c(442): warning:  #223-D: function "Timer4_SmallMotorLeftDown" declared implicitly
+..\SourceFiles\main.c(443): error:  #20: identifier "SmallMotorRightcurrentPosition" is undefined
+..\SourceFiles\main.c(457): error:  #29: expected an expression
+..\SourceFiles\main.c(490): warning:  #12-D: parsing restarts here after previous syntax error
+..\SourceFiles\main.c(490): error:  #18: expected a ")"
+..\SourceFiles\main.c(490): error:  #127: expected a statement
+..\SourceFiles\main.c(492): error: At end of source:  #67: expected a "}"
+compiling secondarylib.c...
+compiling usart.c...
+compiling stepmotor.c...
+compiling timer.c...
+compiling nrf24L01.c...
+compiling nvic.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_systick.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+assembling stm32f10x_vector.s...
+assembling cortexm3_macro.s...
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(274): warning:  #223-D: function "Enter_Critical" declared implicitly
+..\SourceFiles\stm32f10x_it.c(282): warning:  #223-D: function "Exit_Critical" declared implicitly
+..\SourceFiles\stm32f10x_it.c(602): warning:  #223-D: function "Enter_Critical" declared implicitly
+..\SourceFiles\stm32f10x_it.c(621): warning:  #223-D: function "Exit_Critical" declared implicitly
+compiling main.c...
+..\SourceFiles\main.c(24): error:  #65: expected a ";"
+..\SourceFiles\main.c(89): warning:  #47-D: incompatible redefinition of macro "SmallMotorLeftcurrentPosition" (declared at line 88)
+..\SourceFiles\main.c(94): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(122): warning:  #223-D: function "refreshPosition" declared implicitly
+..\SourceFiles\main.c(128): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(138): warning:  #223-D: function "Timer4_SmallMotorLeftDown" declared implicitly
+..\SourceFiles\main.c(144): warning:  #223-D: function "Timer2_MotorInit" declared implicitly
+..\SourceFiles\main.c(145): warning:  #223-D: function "Timer2_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(146): warning:  #223-D: function "Timer3_MotorInit" declared implicitly
+..\SourceFiles\main.c(147): warning:  #223-D: function "Timer3_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(148): warning:  #223-D: function "Timer4_MotorInit" declared implicitly
+..\SourceFiles\main.c(149): warning:  #223-D: function "Timer4_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(150): warning:  #223-D: function "Timer5_MotorInit" declared implicitly
+..\SourceFiles\main.c(151): warning:  #223-D: function "Timer5_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(162): error:  #20: identifier "SmaillMotorALeft" is undefined
+..\SourceFiles\main.c(166): error:  #20: identifier "SmaillMotorARight" is undefined
+..\SourceFiles\main.c(168): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(170): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(170): warning:  #223-D: function "refreshPosition" declared implicitly
+..\SourceFiles\main.c(176): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(127): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(205): warning:  #223-D: function "Enter_Critical" declared implicitly
+..\SourceFiles\main.c(210): warning:  #223-D: function "Exit_Critical" declared implicitly
+..\SourceFiles\main.c(224): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(224): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(228): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(232): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(236): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(215): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(264): error:  #159: declaration is incompatible with previous "refreshTable" (declared at line 176)
+..\SourceFiles\main.c(282): error:  #159: declaration is incompatible with previous "refreshPosition" (declared at line 122)
+..\SourceFiles\main.c(303): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(321): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(334): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(346): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(350): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(358): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(309): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(367): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(372): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(410): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(411): warning:  #177-D: variable "i" was declared but never referenced
+compiling secondarylib.c...
+compiling usart.c...
+compiling stepmotor.c...
+compiling timer.c...
+compiling nrf24L01.c...
+compiling nvic.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_systick.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+assembling stm32f10x_vector.s...
+assembling cortexm3_macro.s...
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(20): error:  #13: expected a file name
+compiling main.c...
+..\SourceFiles\main.c(24): error:  #65: expected a ";"
+..\SourceFiles\main.c(89): warning:  #47-D: incompatible redefinition of macro "SmallMotorLeftcurrentPosition" (declared at line 88)
+..\SourceFiles\main.c(94): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(122): warning:  #223-D: function "refreshPosition" declared implicitly
+..\SourceFiles\main.c(128): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(138): warning:  #223-D: function "Timer4_SmallMotorLeftDown" declared implicitly
+..\SourceFiles\main.c(144): warning:  #223-D: function "Timer2_MotorInit" declared implicitly
+..\SourceFiles\main.c(145): warning:  #223-D: function "Timer2_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(146): warning:  #223-D: function "Timer3_MotorInit" declared implicitly
+..\SourceFiles\main.c(147): warning:  #223-D: function "Timer3_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(148): warning:  #223-D: function "Timer4_MotorInit" declared implicitly
+..\SourceFiles\main.c(149): warning:  #223-D: function "Timer4_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(150): warning:  #223-D: function "Timer5_MotorInit" declared implicitly
+..\SourceFiles\main.c(151): warning:  #223-D: function "Timer5_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(162): error:  #20: identifier "SmaillMotorALeft" is undefined
+..\SourceFiles\main.c(166): error:  #20: identifier "SmaillMotorARight" is undefined
+..\SourceFiles\main.c(168): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(170): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(170): warning:  #223-D: function "refreshPosition" declared implicitly
+..\SourceFiles\main.c(176): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(127): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(224): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(224): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(228): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(232): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(236): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(215): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(264): error:  #159: declaration is incompatible with previous "refreshTable" (declared at line 176)
+..\SourceFiles\main.c(282): error:  #159: declaration is incompatible with previous "refreshPosition" (declared at line 122)
+..\SourceFiles\main.c(303): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(321): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(334): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(346): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(350): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(358): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(309): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(367): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(372): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(410): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(411): warning:  #177-D: variable "i" was declared but never referenced
+compiling secondarylib.c...
+compiling usart.c...
+compiling stepmotor.c...
+compiling timer.c...
+compiling nrf24L01.c...
+compiling nvic.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_systick.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+assembling stm32f10x_vector.s...
+assembling cortexm3_macro.s...
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(20): error:  #13: expected a file name
+compiling main.c...
+..\SourceFiles\main.c(25): error:  #65: expected a ";"
+..\SourceFiles\main.c(90): warning:  #47-D: incompatible redefinition of macro "SmallMotorLeftcurrentPosition" (declared at line 89)
+..\SourceFiles\main.c(95): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(123): warning:  #223-D: function "refreshPosition" declared implicitly
+..\SourceFiles\main.c(129): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(139): warning:  #223-D: function "Timer4_SmallMotorLeftDown" declared implicitly
+..\SourceFiles\main.c(145): warning:  #223-D: function "Timer2_MotorInit" declared implicitly
+..\SourceFiles\main.c(146): warning:  #223-D: function "Timer2_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(147): warning:  #223-D: function "Timer3_MotorInit" declared implicitly
+..\SourceFiles\main.c(148): warning:  #223-D: function "Timer3_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(149): warning:  #223-D: function "Timer4_MotorInit" declared implicitly
+..\SourceFiles\main.c(150): warning:  #223-D: function "Timer4_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(151): warning:  #223-D: function "Timer5_MotorInit" declared implicitly
+..\SourceFiles\main.c(152): warning:  #223-D: function "Timer5_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(163): error:  #20: identifier "SmaillMotorALeft" is undefined
+..\SourceFiles\main.c(167): error:  #20: identifier "SmaillMotorARight" is undefined
+..\SourceFiles\main.c(169): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(171): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(171): warning:  #223-D: function "refreshPosition" declared implicitly
+..\SourceFiles\main.c(177): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(128): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(225): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(225): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(229): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(233): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(237): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(216): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(265): error:  #159: declaration is incompatible with previous "refreshTable" (declared at line 177)
+..\SourceFiles\main.c(283): error:  #159: declaration is incompatible with previous "refreshPosition" (declared at line 123)
+..\SourceFiles\main.c(304): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(322): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(335): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(347): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(351): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(359): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(310): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(368): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(373): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(411): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(412): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(20): error:  #13: expected a file name
+compiling main.c...
+..\SourceFiles\main.c(25): error:  #65: expected a ";"
+..\SourceFiles\main.c(95): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(123): warning:  #223-D: function "refreshPosition" declared implicitly
+..\SourceFiles\main.c(129): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(139): warning:  #223-D: function "Timer4_SmallMotorLeftDown" declared implicitly
+..\SourceFiles\main.c(145): warning:  #223-D: function "Timer2_MotorInit" declared implicitly
+..\SourceFiles\main.c(146): warning:  #223-D: function "Timer2_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(147): warning:  #223-D: function "Timer3_MotorInit" declared implicitly
+..\SourceFiles\main.c(148): warning:  #223-D: function "Timer3_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(149): warning:  #223-D: function "Timer4_MotorInit" declared implicitly
+..\SourceFiles\main.c(150): warning:  #223-D: function "Timer4_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(151): warning:  #223-D: function "Timer5_MotorInit" declared implicitly
+..\SourceFiles\main.c(152): warning:  #223-D: function "Timer5_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(163): error:  #20: identifier "SmaillMotorALeft" is undefined
+..\SourceFiles\main.c(167): error:  #20: identifier "SmaillMotorARight" is undefined
+..\SourceFiles\main.c(169): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(171): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(171): warning:  #223-D: function "refreshPosition" declared implicitly
+..\SourceFiles\main.c(177): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(128): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(225): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(225): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(229): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(233): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(237): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(216): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(265): error:  #159: declaration is incompatible with previous "refreshTable" (declared at line 177)
+..\SourceFiles\main.c(283): error:  #159: declaration is incompatible with previous "refreshPosition" (declared at line 123)
+..\SourceFiles\main.c(304): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(322): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(335): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(347): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(351): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(359): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(310): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(368): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(373): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(411): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(412): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(20): error:  #13: expected a file name
+compiling main.c...
+..\SourceFiles\main.c(25): error:  #65: expected a ";"
+..\SourceFiles\main.c(95): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(123): warning:  #223-D: function "refreshPosition" declared implicitly
+..\SourceFiles\main.c(129): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(139): warning:  #223-D: function "Timer4_SmallMotorLeftDown" declared implicitly
+..\SourceFiles\main.c(145): warning:  #223-D: function "Timer2_MotorInit" declared implicitly
+..\SourceFiles\main.c(146): warning:  #223-D: function "Timer2_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(147): warning:  #223-D: function "Timer3_MotorInit" declared implicitly
+..\SourceFiles\main.c(148): warning:  #223-D: function "Timer3_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(149): warning:  #223-D: function "Timer4_MotorInit" declared implicitly
+..\SourceFiles\main.c(150): warning:  #223-D: function "Timer4_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(151): warning:  #223-D: function "Timer5_MotorInit" declared implicitly
+..\SourceFiles\main.c(152): warning:  #223-D: function "Timer5_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(163): error:  #20: identifier "SmaillMotorALeft" is undefined
+..\SourceFiles\main.c(167): error:  #20: identifier "SmaillMotorARight" is undefined
+..\SourceFiles\main.c(169): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(171): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(171): warning:  #223-D: function "refreshPosition" declared implicitly
+..\SourceFiles\main.c(177): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(128): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(225): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(225): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(229): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(233): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(237): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(216): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(265): error:  #159: declaration is incompatible with previous "refreshTable" (declared at line 177)
+..\SourceFiles\main.c(283): error:  #159: declaration is incompatible with previous "refreshPosition" (declared at line 123)
+..\SourceFiles\main.c(304): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(322): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(335): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(347): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(351): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(359): error:  #167: argument of type "unsigned int *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(310): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(368): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(411): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(412): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(20): error:  #13: expected a file name
+compiling main.c...
+..\SourceFiles\main.c(25): error:  #65: expected a ";"
+..\SourceFiles\main.c(95): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(123): warning:  #223-D: function "refreshPosition" declared implicitly
+..\SourceFiles\main.c(129): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(139): warning:  #223-D: function "Timer4_SmallMotorLeftDown" declared implicitly
+..\SourceFiles\main.c(145): warning:  #223-D: function "Timer2_MotorInit" declared implicitly
+..\SourceFiles\main.c(146): warning:  #223-D: function "Timer2_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(147): warning:  #223-D: function "Timer3_MotorInit" declared implicitly
+..\SourceFiles\main.c(148): warning:  #223-D: function "Timer3_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(149): warning:  #223-D: function "Timer4_MotorInit" declared implicitly
+..\SourceFiles\main.c(150): warning:  #223-D: function "Timer4_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(151): warning:  #223-D: function "Timer5_MotorInit" declared implicitly
+..\SourceFiles\main.c(152): warning:  #223-D: function "Timer5_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(163): error:  #20: identifier "SmaillMotorALeft" is undefined
+..\SourceFiles\main.c(167): error:  #20: identifier "SmaillMotorARight" is undefined
+..\SourceFiles\main.c(169): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(171): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(171): warning:  #223-D: function "refreshPosition" declared implicitly
+..\SourceFiles\main.c(177): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(128): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(225): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(225): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(229): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(233): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(237): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(216): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(265): error:  #159: declaration is incompatible with previous "refreshTable" (declared at line 177)
+..\SourceFiles\main.c(283): error:  #159: declaration is incompatible with previous "refreshPosition" (declared at line 123)
+..\SourceFiles\main.c(304): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(351): error:  #20: identifier "BigMotorALeft" is undefined
+..\SourceFiles\main.c(310): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(368): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(411): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(412): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(20): error:  #13: expected a file name
+compiling main.c...
+..\SourceFiles\main.c(25): error:  #65: expected a ";"
+..\SourceFiles\main.c(123): warning:  #223-D: function "refreshPosition" declared implicitly
+..\SourceFiles\main.c(139): warning:  #223-D: function "Timer4_SmallMotorLeftDown" declared implicitly
+..\SourceFiles\main.c(145): warning:  #223-D: function "Timer2_MotorInit" declared implicitly
+..\SourceFiles\main.c(146): warning:  #223-D: function "Timer2_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(147): warning:  #223-D: function "Timer3_MotorInit" declared implicitly
+..\SourceFiles\main.c(148): warning:  #223-D: function "Timer3_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(149): warning:  #223-D: function "Timer4_MotorInit" declared implicitly
+..\SourceFiles\main.c(150): warning:  #223-D: function "Timer4_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(151): warning:  #223-D: function "Timer5_MotorInit" declared implicitly
+..\SourceFiles\main.c(152): warning:  #223-D: function "Timer5_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(163): error:  #20: identifier "SmaillMotorALeft" is undefined
+..\SourceFiles\main.c(167): error:  #20: identifier "SmaillMotorARight" is undefined
+..\SourceFiles\main.c(169): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(171): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(171): warning:  #223-D: function "refreshPosition" declared implicitly
+..\SourceFiles\main.c(177): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(128): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(225): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(229): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(233): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(237): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(216): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(265): error:  #159: declaration is incompatible with previous "refreshTable" (declared at line 177)
+..\SourceFiles\main.c(283): error:  #159: declaration is incompatible with previous "refreshPosition" (declared at line 123)
+..\SourceFiles\main.c(310): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(368): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(411): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(412): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(20): error:  #13: expected a file name
+compiling main.c...
+..\SourceFiles\main.c(26): error:  #65: expected a ";"
+..\SourceFiles\main.c(140): warning:  #223-D: function "Timer4_SmallMotorLeftDown" declared implicitly
+..\SourceFiles\main.c(146): warning:  #223-D: function "Timer2_MotorInit" declared implicitly
+..\SourceFiles\main.c(147): warning:  #223-D: function "Timer2_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(148): warning:  #223-D: function "Timer3_MotorInit" declared implicitly
+..\SourceFiles\main.c(149): warning:  #223-D: function "Timer3_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(150): warning:  #223-D: function "Timer4_MotorInit" declared implicitly
+..\SourceFiles\main.c(151): warning:  #223-D: function "Timer4_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(152): warning:  #223-D: function "Timer5_MotorInit" declared implicitly
+..\SourceFiles\main.c(153): warning:  #223-D: function "Timer5_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(164): error:  #20: identifier "SmaillMotorALeft" is undefined
+..\SourceFiles\main.c(168): error:  #20: identifier "SmaillMotorARight" is undefined
+..\SourceFiles\main.c(170): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(172): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(178): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(129): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(226): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(230): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(234): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(238): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(217): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(266): error:  #159: declaration is incompatible with previous "refreshTable" (declared at line 178)
+..\SourceFiles\main.c(311): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(369): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(412): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(413): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(20): error:  #13: expected a file name
+compiling main.c...
+..\SourceFiles\main.c(22): warning:  #231-D: declaration is not visible outside of function
+..\SourceFiles\main.c(27): error:  #65: expected a ";"
+..\SourceFiles\main.c(141): warning:  #223-D: function "Timer4_SmallMotorLeftDown" declared implicitly
+..\SourceFiles\main.c(147): warning:  #223-D: function "Timer2_MotorInit" declared implicitly
+..\SourceFiles\main.c(148): warning:  #223-D: function "Timer2_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(149): warning:  #223-D: function "Timer3_MotorInit" declared implicitly
+..\SourceFiles\main.c(150): warning:  #223-D: function "Timer3_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(151): warning:  #223-D: function "Timer4_MotorInit" declared implicitly
+..\SourceFiles\main.c(152): warning:  #223-D: function "Timer4_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(153): warning:  #223-D: function "Timer5_MotorInit" declared implicitly
+..\SourceFiles\main.c(154): warning:  #223-D: function "Timer5_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(165): error:  #20: identifier "SmaillMotorALeft" is undefined
+..\SourceFiles\main.c(169): error:  #20: identifier "SmaillMotorARight" is undefined
+..\SourceFiles\main.c(171): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(173): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(179): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(180): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(181): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(182): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(130): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(227): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(227): error:  #140: too many arguments in function call
+..\SourceFiles\main.c(231): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(231): error:  #140: too many arguments in function call
+..\SourceFiles\main.c(235): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(235): error:  #140: too many arguments in function call
+..\SourceFiles\main.c(239): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(239): error:  #140: too many arguments in function call
+..\SourceFiles\main.c(218): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(267): error:  #147-D: declaration is incompatible with "void refreshTable(struct Motor)" (declared at line 22)
+..\SourceFiles\main.c(312): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(370): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(413): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(414): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\stm32f10x_it.c(20): error:  #13: expected a file name
+compiling main.c...
+..\SourceFiles\main.c(22): warning:  #231-D: declaration is not visible outside of function
+..\SourceFiles\main.c(27): error:  #65: expected a ";"
+..\SourceFiles\main.c(141): warning:  #223-D: function "Timer4_SmallMotorLeftDown" declared implicitly
+..\SourceFiles\main.c(147): warning:  #223-D: function "Timer2_MotorInit" declared implicitly
+..\SourceFiles\main.c(148): warning:  #223-D: function "Timer2_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(149): warning:  #223-D: function "Timer3_MotorInit" declared implicitly
+..\SourceFiles\main.c(150): warning:  #223-D: function "Timer3_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(151): warning:  #223-D: function "Timer4_MotorInit" declared implicitly
+..\SourceFiles\main.c(152): warning:  #223-D: function "Timer4_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(153): warning:  #223-D: function "Timer5_MotorInit" declared implicitly
+..\SourceFiles\main.c(154): warning:  #223-D: function "Timer5_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(165): error:  #20: identifier "SmaillMotorALeft" is undefined
+..\SourceFiles\main.c(169): error:  #20: identifier "SmaillMotorARight" is undefined
+..\SourceFiles\main.c(171): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(173): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(179): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(180): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(181): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(182): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(130): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(218): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "A" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "T" was declared but never referenced
+..\SourceFiles\main.c(267): error:  #147-D: declaration is incompatible with "void refreshTable(struct Motor)" (declared at line 22)
+..\SourceFiles\main.c(312): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(370): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(413): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(414): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+compiling main.c...
+..\SourceFiles\main.c(22): warning:  #231-D: declaration is not visible outside of function
+..\SourceFiles\main.c(27): error:  #65: expected a ";"
+..\SourceFiles\main.c(141): warning:  #223-D: function "Timer4_SmallMotorLeftDown" declared implicitly
+..\SourceFiles\main.c(147): warning:  #223-D: function "Timer2_MotorInit" declared implicitly
+..\SourceFiles\main.c(148): warning:  #223-D: function "Timer2_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(149): warning:  #223-D: function "Timer3_MotorInit" declared implicitly
+..\SourceFiles\main.c(150): warning:  #223-D: function "Timer3_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(151): warning:  #223-D: function "Timer4_MotorInit" declared implicitly
+..\SourceFiles\main.c(152): warning:  #223-D: function "Timer4_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(153): warning:  #223-D: function "Timer5_MotorInit" declared implicitly
+..\SourceFiles\main.c(154): warning:  #223-D: function "Timer5_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(165): error:  #20: identifier "SmaillMotorALeft" is undefined
+..\SourceFiles\main.c(169): error:  #20: identifier "SmaillMotorARight" is undefined
+..\SourceFiles\main.c(171): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(173): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(179): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(180): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(181): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(182): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(130): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(218): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "A" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "T" was declared but never referenced
+..\SourceFiles\main.c(267): error:  #147-D: declaration is incompatible with "void refreshTable(struct Motor)" (declared at line 22)
+..\SourceFiles\main.c(312): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(370): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(413): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(414): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(22): warning:  #231-D: declaration is not visible outside of function
+..\SourceFiles\main.c(141): warning:  #223-D: function "Timer4_SmallMotorLeftDown" declared implicitly
+..\SourceFiles\main.c(147): warning:  #223-D: function "Timer2_MotorInit" declared implicitly
+..\SourceFiles\main.c(148): warning:  #223-D: function "Timer2_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(149): warning:  #223-D: function "Timer3_MotorInit" declared implicitly
+..\SourceFiles\main.c(150): warning:  #223-D: function "Timer3_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(151): warning:  #223-D: function "Timer4_MotorInit" declared implicitly
+..\SourceFiles\main.c(152): warning:  #223-D: function "Timer4_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(153): warning:  #223-D: function "Timer5_MotorInit" declared implicitly
+..\SourceFiles\main.c(154): warning:  #223-D: function "Timer5_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(165): error:  #20: identifier "SmaillMotorALeft" is undefined
+..\SourceFiles\main.c(169): error:  #20: identifier "SmaillMotorARight" is undefined
+..\SourceFiles\main.c(171): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(173): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(179): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(180): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(181): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(182): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(130): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(218): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "A" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "T" was declared but never referenced
+..\SourceFiles\main.c(267): error:  #147-D: declaration is incompatible with "void refreshTable(struct Motor)" (declared at line 22)
+..\SourceFiles\main.c(312): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(370): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(413): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(414): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(147): warning:  #223-D: function "Timer2_MotorInit" declared implicitly
+..\SourceFiles\main.c(148): warning:  #223-D: function "Timer2_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(149): warning:  #223-D: function "Timer3_MotorInit" declared implicitly
+..\SourceFiles\main.c(150): warning:  #223-D: function "Timer3_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(151): warning:  #223-D: function "Timer4_MotorInit" declared implicitly
+..\SourceFiles\main.c(152): warning:  #223-D: function "Timer4_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(153): warning:  #223-D: function "Timer5_MotorInit" declared implicitly
+..\SourceFiles\main.c(154): warning:  #223-D: function "Timer5_MotorSetFreq" declared implicitly
+..\SourceFiles\main.c(165): error:  #20: identifier "SmaillMotorALeft" is undefined
+..\SourceFiles\main.c(169): error:  #20: identifier "SmaillMotorARight" is undefined
+..\SourceFiles\main.c(171): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(173): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(179): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(130): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(218): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "A" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "T" was declared but never referenced
+..\SourceFiles\main.c(267): error:  #159: declaration is incompatible with previous "refreshTable" (declared at line 179)
+..\SourceFiles\main.c(312): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(370): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(413): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(414): warning:  #177-D: variable "i" was declared but never referenced
+compiling stepmotor.c...
+compiling nrf24L01.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(165): error:  #20: identifier "SmaillMotorALeft" is undefined
+..\SourceFiles\main.c(169): error:  #20: identifier "SmaillMotorARight" is undefined
+..\SourceFiles\main.c(171): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(173): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(179): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(130): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(218): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "A" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "T" was declared but never referenced
+..\SourceFiles\main.c(267): error:  #159: declaration is incompatible with previous "refreshTable" (declared at line 179)
+..\SourceFiles\main.c(312): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(370): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(413): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(414): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(169): error:  #20: identifier "SmaillMotorARight" is undefined
+..\SourceFiles\main.c(171): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(173): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(179): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(130): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(218): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "A" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "T" was declared but never referenced
+..\SourceFiles\main.c(267): error:  #159: declaration is incompatible with previous "refreshTable" (declared at line 179)
+..\SourceFiles\main.c(312): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(370): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(413): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(414): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(171): warning:  #223-D: function "Timer4_SmallMotorRightStop" declared implicitly
+..\SourceFiles\main.c(173): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(179): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(130): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(218): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "A" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "T" was declared but never referenced
+..\SourceFiles\main.c(267): error:  #159: declaration is incompatible with previous "refreshTable" (declared at line 179)
+..\SourceFiles\main.c(312): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(370): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(413): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(414): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(173): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(179): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(130): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(218): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "A" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "T" was declared but never referenced
+..\SourceFiles\main.c(267): error:  #159: declaration is incompatible with previous "refreshTable" (declared at line 179)
+..\SourceFiles\main.c(312): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(370): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(413): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(414): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+compiling main.c...
+..\SourceFiles\main.c(173): warning:  #111-D: statement is unreachable
+..\SourceFiles\main.c(179): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(130): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(218): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "A" was declared but never referenced
+..\SourceFiles\main.c(219): warning:  #177-D: variable "T" was declared but never referenced
+..\SourceFiles\main.c(267): error:  #159: declaration is incompatible with previous "refreshTable" (declared at line 179)
+..\SourceFiles\main.c(312): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(370): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(413): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(414): warning:  #177-D: variable "i" was declared but never referenced
+compiling secondarylib.c...
+compiling usart.c...
+compiling stepmotor.c...
+compiling timer.c...
+compiling nrf24L01.c...
+compiling nvic.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_systick.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+assembling stm32f10x_vector.s...
+assembling cortexm3_macro.s...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(197): warning:  #223-D: function "refreshTable" declared implicitly
+..\SourceFiles\main.c(130): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(236): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(237): warning:  #177-D: variable "A" was declared but never referenced
+..\SourceFiles\main.c(237): warning:  #177-D: variable "T" was declared but never referenced
+..\SourceFiles\main.c(285): error:  #159: declaration is incompatible with previous "refreshTable" (declared at line 197)
+..\SourceFiles\main.c(330): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(388): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(431): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(432): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(22): warning:  #231-D: declaration is not visible outside of function
+..\SourceFiles\main.c(198): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(199): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(200): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(201): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor"
+..\SourceFiles\main.c(131): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(237): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(238): warning:  #177-D: variable "A" was declared but never referenced
+..\SourceFiles\main.c(238): warning:  #177-D: variable "T" was declared but never referenced
+..\SourceFiles\main.c(286): error:  #147-D: declaration is incompatible with "void refreshTable(struct Motor)" (declared at line 22)
+..\SourceFiles\main.c(331): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(389): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(432): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(433): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(22): warning:  #231-D: declaration is not visible outside of function
+..\SourceFiles\main.c(198): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(199): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(200): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(201): error:  #167: argument of type "struct Motor" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(131): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(237): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(238): warning:  #177-D: variable "A" was declared but never referenced
+..\SourceFiles\main.c(238): warning:  #177-D: variable "T" was declared but never referenced
+..\SourceFiles\main.c(286): error:  #147-D: declaration is incompatible with "void refreshTable(struct Motor *)" (declared at line 22)
+..\SourceFiles\main.c(289): error:  #154: expression must have struct or union type
+..\SourceFiles\main.c(331): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(389): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(432): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(433): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(22): warning:  #231-D: declaration is not visible outside of function
+..\SourceFiles\main.c(198): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(199): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(200): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(201): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(131): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(237): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(238): warning:  #177-D: variable "A" was declared but never referenced
+..\SourceFiles\main.c(238): warning:  #177-D: variable "T" was declared but never referenced
+..\SourceFiles\main.c(286): error:  #147-D: declaration is incompatible with "void refreshTable(struct Motor *)" (declared at line 22)
+..\SourceFiles\main.c(289): error:  #154: expression must have struct or union type
+..\SourceFiles\main.c(331): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(389): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(432): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(433): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(22): warning:  #231-D: declaration is not visible outside of function
+..\SourceFiles\main.c(198): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(199): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(200): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(201): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(286): error:  #147-D: declaration is incompatible with "void refreshTable(struct Motor *)" (declared at line 22)
+..\SourceFiles\main.c(289): error:  #154: expression must have struct or union type
+..\SourceFiles\main.c(331): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(389): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(432): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(433): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(22): warning:  #231-D: declaration is not visible outside of function
+..\SourceFiles\main.c(198): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(199): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(200): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(201): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(286): error:  #147-D: declaration is incompatible with "void refreshTable(struct Motor *)" (declared at line 22)
+..\SourceFiles\main.c(331): warning:  #177-D: variable "i" was declared but never referenced
+..\SourceFiles\main.c(389): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(432): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(433): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(22): warning:  #231-D: declaration is not visible outside of function
+..\SourceFiles\main.c(198): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(199): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(200): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(201): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(286): error:  #147-D: declaration is incompatible with "void refreshTable(struct Motor *)" (declared at line 22)
+..\SourceFiles\main.c(389): warning:  #223-D: function "Timer4_SmallMotorRightStart" declared implicitly
+..\SourceFiles\main.c(432): warning:  #177-D: variable "vEncoder" was declared but never referenced
+..\SourceFiles\main.c(433): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(22): warning:  #231-D: declaration is not visible outside of function
+..\SourceFiles\main.c(198): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(199): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(200): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(201): error:  #167: argument of type "struct Motor *" is incompatible with parameter of type "struct Motor *"
+..\SourceFiles\main.c(286): error:  #147-D: declaration is incompatible with "void refreshTable(struct Motor *)" (declared at line 22)
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(22): warning:  #231-D: declaration is not visible outside of function
+..\SourceFiles\main.c(95): error:  #147-D: declaration is incompatible with "void refreshTable(struct Motor *)" (declared at line 22)
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer2_BigMotorLeftPrepare (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer2_BigMotorLeftSetFreq (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer3_BigMotorRightPrepare (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer3_BigMotorRightSetFreq (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer4_SmallMotorLeftPrepare (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer4_SmallMotorLeftSetFreq (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer5_SmallMotorRightPrepare (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer5_SmallMotorRightSetFreq (referred from main.o).
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+compiling main.c...
+compiling secondarylib.c...
+compiling usart.c...
+compiling stepmotor.c...
+compiling timer.c...
+compiling nrf24L01.c...
+compiling nvic.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_systick.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+assembling stm32f10x_vector.s...
+assembling cortexm3_macro.s...
+linking...
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer2_BigMotorLeftPrepare (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer2_BigMotorLeftSetFreq (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer3_BigMotorRightPrepare (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer3_BigMotorRightSetFreq (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer4_SmallMotorLeftPrepare (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer4_SmallMotorLeftSetFreq (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer5_SmallMotorRightPrepare (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer5_SmallMotorRightSetFreq (referred from main.o).
+Target not created
+Build target 'Target 1'
+compiling stepmotor.c...
+linking...
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer4_SmallMotorLeftPrepare (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer4_SmallMotorLeftSetFreq (referred from main.o).
+Target not created
+Build target 'Target 1'
+compiling stepmotor.c...
+linking...
+Program Size: Code=16014 RO-data=358 RW-data=104 ZI-data=3976  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.164V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=16014 RO-data=358 RW-data=104 ZI-data=3976  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.300V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+compiling main.c...
+compiling secondarylib.c...
+compiling usart.c...
+compiling stepmotor.c...
+compiling timer.c...
+compiling nrf24L01.c...
+compiling nvic.c...
+compiling stm32f10x_lib.c...
+linking...
+Program Size: Code=16038 RO-data=358 RW-data=104 ZI-data=3976  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.235V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=16062 RO-data=358 RW-data=104 ZI-data=3976  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.209V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(332): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=16038 RO-data=358 RW-data=104 ZI-data=3976  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.073V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=16062 RO-data=358 RW-data=104 ZI-data=3976  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.196V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(344): warning:  #167-D: argument of type "volatile unsigned char *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(349): warning:  #167-D: argument of type "volatile unsigned char *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(361): warning:  #167-D: argument of type "volatile unsigned char *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(373): warning:  #167-D: argument of type "volatile unsigned char *" is incompatible with parameter of type "unsigned char *"
+..\SourceFiles\main.c(385): warning:  #167-D: argument of type "volatile unsigned char *" is incompatible with parameter of type "unsigned char *"
+compiling nrf24L01.c...
+linking...
+Program Size: Code=16062 RO-data=358 RW-data=104 ZI-data=3976  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 5 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.267V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(349): error:  #20: identifier "token" is undefined
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=16066 RO-data=358 RW-data=104 ZI-data=3976  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.261V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=16058 RO-data=358 RW-data=104 ZI-data=3976  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.274V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+compiling nrf24L01.c...
+linking...
+Program Size: Code=16050 RO-data=358 RW-data=104 ZI-data=3976  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.183V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=16090 RO-data=358 RW-data=104 ZI-data=3976  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.306V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=16086 RO-data=358 RW-data=104 ZI-data=3976  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.306V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(333): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=16050 RO-data=358 RW-data=104 ZI-data=3976  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=16050 RO-data=358 RW-data=104 ZI-data=3976  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.306V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(373): error:  #65: expected a ";"
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=16050 RO-data=358 RW-data=104 ZI-data=3976  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.300V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=16050 RO-data=358 RW-data=104 ZI-data=3976  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.306V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\usart.h(10): error:  #65: expected a ";"
+compiling main.c...
+..\SourceFiles\usart.h(10): error:  #65: expected a ";"
+compiling usart.c...
+..\SourceFiles\usart.h(10): error:  #65: expected a ";"
+compiling nrf24L01.c...
+..\SourceFiles\usart.h(10): error:  #65: expected a ";"
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+..\SourceFiles\usart.h(10): error:  #65: expected a ";"
+compiling main.c...
+..\SourceFiles\usart.h(10): error:  #65: expected a ";"
+compiling usart.c...
+..\SourceFiles\usart.h(10): error:  #65: expected a ";"
+compiling nrf24L01.c...
+..\SourceFiles\usart.h(10): error:  #65: expected a ";"
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+compiling main.c...
+compiling usart.c...
+..\SourceFiles\usart.c(8): error:  #18: expected a ")"
+..\SourceFiles\usart.c(8): error:  #79: expected a type specifier
+..\SourceFiles\usart.c(8): error:  #101: "USART_TypeDef" has already been declared in the current scope
+..\SourceFiles\usart.c(8): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+..\SourceFiles\usart.c(8): error:  #130: expected a "{"
+..\SourceFiles\usart.c(25): warning:  #12-D: parsing restarts here after previous syntax error
+..\SourceFiles\usart.c(26): error:  #29: expected an expression
+..\SourceFiles\usart.c(26): error:  #32: expression must have arithmetic type
+..\SourceFiles\usart.c(26): error:  #20: identifier "c" is undefined
+..\SourceFiles\usart.c(27): error:  #29: expected an expression
+..\SourceFiles\usart.c(27): error:  #32: expression must have arithmetic type
+..\SourceFiles\usart.c(44): warning:  #223-D: function "SerialPutChar" declared implicitly
+..\SourceFiles\usart.c(92): error:  #29: expected an expression
+..\SourceFiles\usart.c(92): error:  #32: expression must have arithmetic type
+..\SourceFiles\usart.c(95): error:  #29: expected an expression
+..\SourceFiles\usart.c(95): error:  #32: expression must have arithmetic type
+..\SourceFiles\usart.c(100): error:  #29: expected an expression
+..\SourceFiles\usart.c(100): error:  #32: expression must have arithmetic type
+..\SourceFiles\usart.c(146): error:  #29: expected an expression
+..\SourceFiles\usart.c(146): error:  #32: expression must have arithmetic type
+..\SourceFiles\usart.c(149): error:  #29: expected an expression
+..\SourceFiles\usart.c(149): error:  #32: expression must have arithmetic type
+..\SourceFiles\usart.c(152): error:  #29: expected an expression
+..\SourceFiles\usart.c(152): error:  #32: expression must have arithmetic type
+..\SourceFiles\usart.c(199): error:  #29: expected an expression
+..\SourceFiles\usart.c(199): error:  #32: expression must have arithmetic type
+..\SourceFiles\usart.c(202): error:  #29: expected an expression
+..\SourceFiles\usart.c(202): error:  #32: expression must have arithmetic type
+..\SourceFiles\usart.c(205): error:  #29: expected an expression
+..\SourceFiles\usart.c(205): error:  #32: expression must have arithmetic type
+..\SourceFiles\usart.c(246): error:  #29: expected an expression
+..\SourceFiles\usart.c(246): error:  #32: expression must have arithmetic type
+compiling nrf24L01.c...
+Target not created
+Build target 'Target 1'
+compiling usart.c...
+linking...
+Program Size: Code=16050 RO-data=358 RW-data=152 ZI-data=3928  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.306V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(388): error:  #65: expected a ";"
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=16050 RO-data=358 RW-data=152 ZI-data=3928  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.300V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=15782 RO-data=358 RW-data=152 ZI-data=3928  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.306V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=15790 RO-data=358 RW-data=152 ZI-data=3928  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.254V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=15782 RO-data=358 RW-data=152 ZI-data=3928  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.254V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(176): error:  #20: identifier "BigMotorRight" is undefined
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=15786 RO-data=358 RW-data=152 ZI-data=3928  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.216V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=15786 RO-data=358 RW-data=152 ZI-data=3928  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.216V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=15790 RO-data=358 RW-data=152 ZI-data=3928  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.216V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=15790 RO-data=358 RW-data=152 ZI-data=3928  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.300V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+compiling main.c...
+compiling secondarylib.c...
+compiling usart.c...
+compiling stepmotor.c...
+compiling timer.c...
+compiling nrf24L01.c...
+compiling nvic.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_systick.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+assembling stm32f10x_vector.s...
+assembling cortexm3_macro.s...
+linking...
+Program Size: Code=15794 RO-data=358 RW-data=152 ZI-data=3928  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.300V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(149): error:  #65: expected a ";"
+..\SourceFiles\main.c(151): error:  #127: expected a statement
+..\SourceFiles\main.c(415): warning:  #223-D: function "Timer3_BigMotorRightStart" declared implicitly
+..\SourceFiles\main.c(416): warning:  #223-D: function "Timer4_SmallMotorLeftStart" declared implicitly
+..\SourceFiles\main.c(417): warning:  #223-D: function "Timer5_SmallMotorRightStart" declared implicitly
+compiling stepmotor.c...
+compiling nrf24L01.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(149): error:  #65: expected a ";"
+..\SourceFiles\main.c(151): error:  #127: expected a statement
+..\SourceFiles\main.c(415): warning:  #223-D: function "Timer3_BigMotorRightStart" declared implicitly
+..\SourceFiles\main.c(416): warning:  #223-D: function "Timer4_SmallMotorLeftStart" declared implicitly
+..\SourceFiles\main.c(417): warning:  #223-D: function "Timer5_SmallMotorRightStart" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(415): warning:  #223-D: function "Timer3_BigMotorRightStart" declared implicitly
+..\SourceFiles\main.c(416): warning:  #223-D: function "Timer4_SmallMotorLeftStart" declared implicitly
+..\SourceFiles\main.c(417): warning:  #223-D: function "Timer5_SmallMotorRightStart" declared implicitly
+linking...
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer3_BigMotorRightStart (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer4_SmallMotorLeftStart (referred from main.o).
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer5_SmallMotorRightStart (referred from main.o).
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\SourceFiles\main.c(418): warning:  #223-D: function "Timer8_SmallMotorRightStart" declared implicitly
+linking...
+Stm32Work.axf: Error: L6218E: Undefined symbol Timer8_SmallMotorRightStart (referred from main.o).
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling stepmotor.c...
+compiling nrf24L01.c...
+linking...
+Program Size: Code=15762 RO-data=358 RW-data=152 ZI-data=3928  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.287V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=15762 RO-data=358 RW-data=152 ZI-data=3928  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.287V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=15762 RO-data=358 RW-data=152 ZI-data=3928  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.287V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=15762 RO-data=358 RW-data=152 ZI-data=3928  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=15762 RO-data=358 RW-data=152 ZI-data=3928  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.293V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=15726 RO-data=358 RW-data=152 ZI-data=3928  
+FromELF: creating hex file...
+"Stm32Work.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Dean\\桌面\\新建文件夹\\StupidFish\\StupidFish\\Project\\Stm32Work.AXF" 
+JLink Speed: 2000 kHz
+VTarget = 3.287V
+DLL version V4.03r, compiled Mar  9 2009 18:04:21
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+TotalIRLen = 9, IRPrint = 0x0011
+Found Cortex-M3 r1p1, Little endian.
+TPIU fitted.
+ETM fitted.
+  FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.

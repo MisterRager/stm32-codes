@@ -17,6 +17,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
+#include "stm32f10x_lib.h"
 #include "usart.h"
 extern void nRF24L01_ISR(void);
 extern void TX_Mode(unsigned char * BUF);
