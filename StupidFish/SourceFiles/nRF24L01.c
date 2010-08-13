@@ -250,10 +250,10 @@ void nRF24L01_ISR(void)
 		Serial_PutString(rx_buf);				 //put whatever received to the UART
 		Wireless_Received(rx_buf);
   }
-	if(MAX_RT)
-	{
+//	if(MAX_RT)
+//	{
 		SPI2_writeReg(FLUSH_TX,0);
-  }
+//  }
 
 	
 	RX_Mode();	

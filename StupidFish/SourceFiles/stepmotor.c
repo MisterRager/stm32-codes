@@ -83,7 +83,7 @@ void Timer1_MotorPrepare(void)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void Timer2_MotorSetFreq(unsigned int freq)
+void Timer2_BigMotorLeftSetFreq(unsigned int freq)
 {
 	static unsigned int value;
 	TIM_OCInitTypeDef TIM_OCInitStructure;
@@ -125,7 +125,7 @@ void Timer2_MotorSetFreq(unsigned int freq)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void Timer2_MotorPrepare(void)
+void Timer2_BigMotorLeftPrepare(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 
@@ -163,7 +163,7 @@ void Timer2_MotorPrepare(void)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void Timer3_MotorSetFreq(unsigned int freq)
+void Timer3_BigMotorLeftSetFreq(unsigned int freq)
 {
 	static unsigned int value;
 	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
@@ -206,7 +206,7 @@ void Timer3_MotorSetFreq(unsigned int freq)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void Timer3_MotorPrepare(void)
+void Timer3_BigMotorLeftPrepare(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 
@@ -241,7 +241,7 @@ void Timer3_MotorPrepare(void)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void Timer4_MotorSetFreq(unsigned int freq)
+void Timer4_BigMotorRightSetFreq(unsigned int freq)
 {
 	static unsigned int value;
 	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
@@ -280,7 +280,7 @@ void Timer4_MotorSetFreq(unsigned int freq)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void Timer4_MotorPrepare(void)
+void Timer4_BigMotorRightPrepare(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 
@@ -307,7 +307,7 @@ void Timer4_MotorPrepare(void)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void Timer5_MotorSetFreq(unsigned int freq)
+void Timer5_SmallMotorLeftSetFreq(unsigned int freq)
 {
 	static unsigned int value;
 	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
@@ -346,7 +346,7 @@ void Timer5_MotorSetFreq(unsigned int freq)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void Timer5_MotorPrepare(void)
+void Timer5_SmallMotorLeftPrepare(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 
@@ -373,7 +373,7 @@ void Timer5_MotorPrepare(void)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void Timer8_MotorSetFreq(unsigned int freq)
+void Timer8_SmallMotorRightSetFreq(unsigned int freq)
 {
 	static unsigned int value;
 	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
@@ -414,7 +414,7 @@ void Timer8_MotorSetFreq(unsigned int freq)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void Timer8_MotorPrepare(void)
+void Timer8_SmallMotorRightPrepare(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 

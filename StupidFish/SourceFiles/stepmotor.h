@@ -23,43 +23,44 @@ void Timer2_BigMotorLeftSetFreq(unsigned int freq);
 void Timer2_BigMotorLeftPrepare(void);
 #define Timer2_BigMotorLeftInit()					Timer2_BigMotorLeftPrepare(); Timer2_BigMotorLeftSetFreq(50)
 
-#define	Timer3_BigMotorRightUp() 					GPIO_ResetBits(GPIOA,GPIO_Pin_7)
-#define	Timer3_BigMotorRightDown() 				GPIO_SetBits(GPIOA,GPIO_Pin_7)
-#define	Timer3_BigMotorRightEnable() 			GPIO_ResetBits(GPIOB,GPIO_Pin_0)
-#define	Timer3_BigMotorRightDisable() 		GPIO_SetBits(GPIOB,GPIO_Pin_0)
-#define Timer3_BigMotorRightStop() 				TIM_Cmd(TIM3, DISABLE);
-#define Timer3_BigMotorRightStart() 				TIM_Cmd(TIM3,ENABLE);
-void Timer3_BigMotorRightSetFreq(unsigned int freq);
-void Timer3_BigMotorRightPrepare(void);
-#define Timer3_BigMotorRightInit()				Timer3_BigMotorRightPrepare(); Timer3_BigMotorRightSetFreq(50)
+#define	Timer3_BigMotorLeftUp() 					GPIO_ResetBits(GPIOA,GPIO_Pin_7)
+#define	Timer3_BigMotorLeftDown() 				GPIO_SetBits(GPIOA,GPIO_Pin_7)
+#define	Timer3_BigMotorLeftEnable() 			GPIO_ResetBits(GPIOB,GPIO_Pin_0)
+#define	Timer3_BigMotorLeftDisable() 		GPIO_SetBits(GPIOB,GPIO_Pin_0)
+#define Timer3_BigMotorLeftStop() 				TIM_Cmd(TIM3, DISABLE);
+#define Timer3_BigMotorLeftStart() 				TIM_Cmd(TIM3,ENABLE);
+void Timer3_BigMotorLeftSetFreq(unsigned int freq);
+void Timer3_BigMotorLeftPrepare(void);
+#define Timer3_BigMotorLeftInit()				Timer3_BigMotorLeftPrepare(); Timer3_BigMotorLeftSetFreq(50)
 
-#define	Timer4_SmallMotorLeftUp() 				GPIO_ResetBits(GPIOB,GPIO_Pin_7)
-#define	Timer4_SmallMotorleftDown() 			GPIO_SetBits(GPIOB,GPIO_Pin_7)
-#define	Timer4_SmallMotorLeftEnable() 		GPIO_ResetBits(GPIOB,GPIO_Pin_8)
-#define	Timer4_SmallMotorLeftDisable() 		GPIO_SetBits(GPIOB,GPIO_Pin_8)
-#define Timer4_SmallMotorLeftStop() 				TIM_Cmd(TIM4, DISABLE);
-#define Timer4_SmallMotorLeftStart() 				TIM_Cmd(TIM4, ENABLE);
-void Timer4_SmallMotorLeftSetFreq(unsigned int freq);
-void Timer4_SmallMotorLeftPrepare(void);
-#define Timer4_SmallMotorLeftInit()				Timer4_SmallMotorLeftPrepare(); Timer4_SmallMotorLeftSetFreq(50)
+#define	Timer4_BigMotorRightUp() 				GPIO_ResetBits(GPIOB,GPIO_Pin_7)
+#define	Timer4_BigMotorRightDown() 			GPIO_SetBits(GPIOB,GPIO_Pin_7)
+#define	Timer4_BigMotorRightEnable() 		GPIO_ResetBits(GPIOB,GPIO_Pin_8)
+#define	Timer4_BigMotorRightDisable() 		GPIO_SetBits(GPIOB,GPIO_Pin_8)
+#define Timer4_BigMotorRightStop() 				TIM_Cmd(TIM4, DISABLE);
+#define Timer4_BigMotorRightStart() 				TIM_Cmd(TIM4, ENABLE);
+void Timer4_BigMotorRightSetFreq(unsigned int freq);
+void Timer4_BigMotorRightPrepare(void);
+#define Timer4_BigMotorRightInit()				Timer4_BigMotorRightPrepare(); Timer4_BigMotorRightSetFreq(50)
 
-#define	Timer5_SmallMotorRightUp() 				GPIO_ResetBits(GPIOA,GPIO_Pin_2)
-#define	Timer5_SmallMotorRightDown() 			GPIO_SetBits(GPIOA,GPIO_Pin_2)
-#define	Timer5_SmallMotorRightEnable() 		GPIO_ResetBits(GPIOA,GPIO_Pin_1)
-#define	Timer5_SmallMotorRightDisable()  	GPIO_SetBits(GPIOA,GPIO_Pin_1)
-#define Timer5_SmallMotorRightStop() 				TIM_Cmd(TIM5, DISABLE);
-#define Timer5_SmallMotorRightStart() 				TIM_Cmd(TIM5, ENABLE);
-void Timer5_SmallMotorRightSetFreq(unsigned int freq);
-void Timer5_SmallMotorRightPrepare(void);
-#define Timer5_SmallMotorRightInit()			Timer5_SmallMotorRightPrepare(); Timer5_SmallMotorRightSetFreq(50)
+#define	Timer5_SmallMotorLeftUp() 				GPIO_ResetBits(GPIOA,GPIO_Pin_2)
+#define	Timer5_SmallMotorLeftDown() 			GPIO_SetBits(GPIOA,GPIO_Pin_2)
+#define	Timer5_SmallMotorLeftEnable() 		GPIO_ResetBits(GPIOA,GPIO_Pin_1)
+#define	Timer5_SmallMotorLeftDisable()  	GPIO_SetBits(GPIOA,GPIO_Pin_1)
+#define Timer5_SmallMotorLeftStop() 				TIM_Cmd(TIM5, DISABLE);
+#define Timer5_SmallMotorLeftStart() 				TIM_Cmd(TIM5, ENABLE);
+void Timer5_SmallMotorLeftSetFreq(unsigned int freq);
+void Timer5_SmallMotorLeftPrepare(void);
+#define Timer5_SmallMotorLeftInit()			Timer5_SmallMotorLeftPrepare(); Timer5_SmallMotorLeftSetFreq(50)
 
-#define	Timer8_MotorUp() 									GPIO_ResetBits(GPIOC,GPIO_Pin_7)
-#define	Timer8_MotorDown() 								GPIO_SetBits(GPIOC,GPIO_Pin_7)
-#define	Timer8_MotorEnable() 							GPIO_ResetBits(GPIOC,GPIO_Pin_8)
-#define	Timer8_MotorDisable() 						GPIO_SetBits(GPIOC,GPIO_Pin_8)
-void Timer8_MotorSetFreq(unsigned int freq);
-void Timer8_MotorPrepare(void);
-#define Timer8_MotorInit()								Timer8_MotorPrepare(); Timer8_MotorSetFreq(50)
+#define	Timer8_SmallMotorRightUp() 									GPIO_ResetBits(GPIOC,GPIO_Pin_7)
+#define	Timer8_SmallMotorRightDown() 								GPIO_SetBits(GPIOC,GPIO_Pin_7)
+#define	Timer8_SmallMotorRightEnable() 							GPIO_ResetBits(GPIOC,GPIO_Pin_8)
+#define	Timer8_SmallMotorRightDisable() 						GPIO_SetBits(GPIOC,GPIO_Pin_8)
+void Timer8_SmallMotorRightSetFreq(unsigned int freq);
+void Timer8_SmallMotorRightPrepare(void);
+#define Timer8_SmallMotorRightStart() 				TIM_Cmd(TIM8, ENABLE);
+#define Timer8_SmallMotorRightInit()		Timer8_SmallMotorRightPrepare(); Timer8_SmallMotorRightSetFreq(50)
 
 #endif 
 

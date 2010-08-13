@@ -2,6 +2,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_lib.h"
+#include "stm32f10x_type.h"
 #include "secondarylib.h"
 #include "stepmotor.h"
 #include "usart.h"
@@ -17,11 +18,13 @@ extern void TX_Mode(unsigned char * BUF);
 extern void RX_Mode(void);
 extern void EXTI_Configuration(void);
 extern void SPI2_Init(void);
+void refreshPosition(void);
+//void refreshTable(struct Motor motor);
 
 struct RespondToken
 {
 	unsigned char token[7];
-	bool valid=FALSE;
+	bool valid;
 }respondToken;
 
 unsigned int A=4500,qT=1000; // %degree: ms.
@@ -49,7 +52,7 @@ struct Motor
 	unsigned int currentPosition;
 	unsigned int currentIndex;
 };
-struct Motor BigMotorAleft,BigMotorARight,SmallMotorALeft,SmallMotorARight;
+struct Motor BigMotorALeft,BigMotorARight,SmallMotorALeft,SmallMotorARight;
 
 
 #define BigMotorALeftId 		0xa1
@@ -82,11 +85,27 @@ struct Motor BigMotorAleft,BigMotorARight,SmallMotorALeft,SmallMotorARight;
 
 #define SmallMotorARightPositionUpperLimit 20000
 #define SmallMotorARightPositionLowerLimit 9000
-
+/*
 #define BigMotorLeftActualPositiion vEncoder[0]
 #define BigMotorRightcurrentPosition vEncoder[1]
 #define SmallMotorLeftcurrentPosition vEncoder[2]
-#define SmallMotorLeftcurrentPosition vEncoder[3]
+#define SmallMotorLeftcurrentPosition vEncoder[3]  */
+
+void refreshTable(struct Motor * motor)
+{
+	unsigned int deltaSpeed,deltaT,i;
+	A=motor->A;
+	qT=motor->T/4;
+	deltaT=qT/50;
+	deltaSpeed=A/divNum;
+	motor->speedTable[0]=deltaSpeed;
+	motor->positionTable[0]=deltaSpeed*deltaT;
+	for(i=1;i<50;i++)
+	{
+		motor->speedTable[i]=motor->speedTable[i-1]+deltaSpeed;
+		motor->positionTable[i]=motor->currentPosition+motor->positionTable[i-1]+motor->speedTable[i]*deltaT;
+	}
+}
 
 void motorInit(void)
 {
@@ -94,78 +113,110 @@ void motorInit(void)
 	BigMotorALeft.motorId=0xa1;
 	BigMotorALeft.A=4500;
 	BigMotorALeft.T=1000;
-	BigMotorALeft.centralPosition=14000;
-	BigMotorALeft.positionUpperLimit=20000;
-	BigMotorALeft.positionLowerLimit=9000;
+	BigMotorALeft.centralPosition=21000;
+	BigMotorALeft.positionUpperLimit=30300;
+	BigMotorALeft.positionLowerLimit=12800;
 		
 	BigMotorARight.motorId=0xa2;
 	BigMotorARight.A=4500;
 	BigMotorARight.T=1000;
-	BigMotorARight.centralPosition=14000;
-	BigMotorARight.positionUpperLimit=20000;
-	BigMotorARight.positionLowerLimit=9000;
+	BigMotorARight.centralPosition=12800;
+	BigMotorARight.positionUpperLimit=22200;
+	BigMotorARight.positionLowerLimit=5100;
 	
 	SmallMotorALeft.motorId=0xa3;
 	SmallMotorARight.A=4500;
 	SmallMotorARight.T=1000;
-	SmallMotorALeft.centralPosition=14000;
-	SmallMotorALeft.positionUpperLimit=20000;
-	SmallMotorALeft.positionLowerLimit=9000;
+	SmallMotorALeft.centralPosition=8100;
+	SmallMotorALeft.positionUpperLimit=300;
+	SmallMotorALeft.positionLowerLimit=16200;
 	
 	SmallMotorARight.motorId=0xa4;
 	SmallMotorARight.A=4500;
 	SmallMotorARight.T=1000;
-	SmallMotorARight.centralPosition=14000;
-	SmallMotorARight.positionUpperLimit=20000;
-	SmallMotorARight.positionLowerLimit=9000;
+	SmallMotorARight.centralPosition=1300;
+	SmallMotorARight.positionUpperLimit=9800;
+	SmallMotorARight.positionLowerLimit=29500;
 	
 	refreshPosition();
 }
 
 void motorReset(void)
 {
-	int i,temp;
+	int temp;
+	Timer3_BigMotorLeftPrepare();
+	Timer4_BigMotorRightPrepare();
 	if(BigMotorALeft.currentPosition<BigMotorALeft.centralPosition)
-		Timer2_BigMotorLeftUp();
-	else Timer2_BigMotorLeftDown();
+		Timer3_BigMotorLeftUp();
+	else Timer3_BigMotorLeftDown();	 
 
 	if(BigMotorARight.currentPosition<BigMotorARight.centralPosition)
-		Timer3_BigMotorRightUp();
-	else Timer3_BigMotorRightDown();
+		Timer4_BigMotorRightDown();
+	else Timer4_BigMotorRightUp();
 
-	if(SmallMotorALeft.currentPosition<SmallMotorALeft.centralPosition)
+/*	if(SmallMotorALeft.currentPosition<SmallMotorALeft.centralPosition)
 		Timer4_SmallMotorLeftUp();
 	else Timer4_SmallMotorLeftDown();
 
 	if(SmallMotorARight.currentPosition<SmallMotorARight.centralPosition)
 		Timer5_SmallMotorRightUp();
-	else Timer5_SmallMotorRightDown();
+	else Timer5_SmallMotorRightDown(); */
 
-	Timer2_MotorInit();
-	Timer2_MotorSetFreq(80);
-	Timer3_MotorInit();
-	Timer3_MotorSetFreq(80);
-	Timer4_MotorInit();
-	Timer4_MotorSetFreq(80);
-	Timer5_MotorInit();
-	Timer5_MotorSetFreq(80);
+//	Timer3_BigMotorLeftInit();
+	Timer3_BigMotorLeftSetFreq(80);
+	//Timer2_BigMotorLeftStart();
+	//Timer4_BigMotorRightInit();
+	Timer4_BigMotorRightSetFreq(80);
+	//Timer5_SmallMotorLeftInit();
+	Timer5_SmallMotorLeftSetFreq(80);
+	//Timer8_SmallMotorRightInit();
+	Timer8_SmallMotorRightSetFreq(80);
+	//Timer8_MotorInit();
+	//Timer8_MotorSetFreq(80);
 	while(1)
 	{
+		refreshPosition();
 		temp=BigMotorALeft.currentPosition-BigMotorALeft.centralPosition;
 		if((temp>-50)&&(temp<=50))
-			Timer2_BigMotorLeftStop();
+		{
+			Timer3_BigMotorLeftStop();
+			break;
+		}
 
 		temp=BigMotorARight.currentPosition-BigMotorARight.centralPosition;
 		if((temp>-50)&&(temp<=50))
+		{
+			Timer4_BigMotorRightStop();
+			break;
+		}
+	}
+	/*
+	while(1)
+	{
+		temp=BigMotorARight.currentPosition-BigMotorARight.centralPosition;
+		if((temp>-50)&&(temp<=50))
+		{
 			Timer3_BigMotorRightStop();
-
-		temp=SmaillMotorALeft.currentPosition-SmallMotorALeft.centralPosition;
+			break;
+		}
+	}
+	while(1)
+	{
+		temp=SmallMotorALeft.currentPosition-SmallMotorALeft.centralPosition;
 		if((temp>-50)&&(temp<=50))
+		{
 			Timer4_SmallMotorLeftStop();
-
-		temp=SmaillMotorARight.currentPosition-SmallMotorARight.centralPosition;
+			break;
+		}
+	}
+	while(1)
+	{
+		temp=SmallMotorARight.currentPosition-SmallMotorARight.centralPosition;
 		if((temp>-50)&&(temp<=50))
-			Timer4_SmallMotorRightStop();
+		{
+			Timer5_SmallMotorRightStop();
+			break;
+		}
 	}
 	refreshPosition();
 	BigMotorALeft.centralPosition=BigMotorALeft.currentPosition;
@@ -173,10 +224,10 @@ void motorReset(void)
 	SmallMotorALeft.centralPosition=SmallMotorALeft.currentPosition;
 	SmallMotorARight.centralPosition=SmallMotorARight.currentPosition;
 
-	refreshTable(BigMotorALeft);
-	refreshTable(BigMotorARight);
-	refreshTable(SmallMotorALeft);
-	refreshTable(SmallMotorARight);
+	refreshTable(&BigMotorALeft);
+	refreshTable(&BigMotorARight);
+	refreshTable(&SmallMotorALeft);
+	refreshTable(&SmallMotorARight);
 
 	BigMotorALeft.currentIndex=49;
 	BigMotorARight.currentIndex=49;
@@ -186,7 +237,7 @@ void motorReset(void)
 	Timer2_BigMotorLeftUp();
 	Timer3_BigMotorRightUp();
 	Timer4_SmallMotorLeftUp();
-	Timer5_SmallMotorRightUp();
+	Timer5_SmallMotorRightUp();*/
 }
 
 
@@ -202,38 +253,39 @@ void motorReset(void)
 
 void Wireless_Send(unsigned char * token)
 {
-	Enter_Critical();
+//	Enter_Critical();
 	TX_Mode(token);
+
 	Delay_us(1000);
 	clearFlag();
 	RX_Mode();
-	Exit_Critical();
+//	Exit_Critical();
 }
 
 void Wireless_Received(unsigned char * token)
 {
-	unsigned int i;
-	unsigned short A,T;
+
+
 	//Set Parameters
-	if(token[0]=='s'&&token[1]=='p')
+/*	if(token[0]=='s'&&token[1]=='p')
 	{	//Serial_PutString("cmd rd");
 		A=token[AH]<<8+token[AL];
 		T=token[TH]<<8+token[TL];
 		if(token[MotorId]==BigMotorALeftId)
 		{
-			refreshTable(BigMotorALeft,A,T);
+			refreshTable(BigMotorALeft);
 		}
 		if(token[MotorId]==BigMotorARightId)
 		{
-			refreshTable(BigMotorARight,A,T);
+			refreshTable(BigMotorARight);
 		}
 		if(token[MotorId]==SmallMotorALeftId)
 		{
-			refreshTable(SmallMotorALeft,A,T);
+			refreshTable(SmallMotorALeft);
 		}
 		if(token[MotorId]==SmallMotorARightId)
 		{
-			refreshTable(SmallMotorARight,A,T);
+			refreshTable(SmallMotorARight);
 		}
 	}//Set Parameters end	
 	//Program Control
@@ -252,7 +304,7 @@ void Wireless_Received(unsigned char * token)
 		respondToken.valid=TRUE;
 	}//respond Token end
 	
-	//System_Init
+	//System_Init  */
 		
 }//Wireless_Received End
 
@@ -261,122 +313,122 @@ void Wireless_Received(unsigned char * token)
 
 
 /* Private functions ---------------------------------------------------------*/
-void refreshTable(struct Motor motor)
-{
-	unsigned int deltaSpeed,deltaT,i;
-	A=motor.A;
-	qT=motor.T/4;
-	deltaT=qT/50;
-	deltaSpeed=A/divNum;
-	motor.speedTable[0]=deltaSpeed;
-	motor.positionTable[0]=deltaSpeed*deltaT;
-	for(i=1;i<50;i++)
-	{
-		motor.speedTable[i]=motor.speedTable[i-1]+deltaSpeed;
-		motor.positionTable[i]=motor.currentPosition+motor.positionTable[i-1]+motor.speedTable[i]*deltaT;
-	}
-}
+
 	
 	
 
 void refreshPosition(void)
 {
 	unsigned int tmp;
-	if(UART5_Data.Locked==FALSE)
+	if(USART2_Data.Locked==FALSE)
 	{	
-		tmp=UART5_Data.Value;
+		tmp=USART2_Data.Value;
 		SmallMotorARight.currentPosition=tmp*36000>>11;
-	}
-	if(UART4_Data.Locked==FALSE)
-	{	
-		tmp=UART4_Data.Value;
-		SmallMotorALeft.currentPosition=tmp*36000>>11;
 	}
 	if(USART3_Data.Locked==FALSE)
 	{	
 		tmp=USART3_Data.Value;
+		SmallMotorALeft.currentPosition=tmp*36000>>11;
+	}
+	if(UART4_Data.Locked==FALSE)
+	{	
+		tmp=UART4_Data.Value;
 		BigMotorARight.currentPosition=tmp*36000>>11;
 	}
-	if(USART2_Data.Locked==FALSE)
+	if(UART5_Data.Locked==FALSE)
 	{	
-		tmp=USART2_Data.Value;
+		tmp=UART5_Data.Value;
 		BigMotorALeft.currentPosition=tmp*36000>>11;
 	}
 }
 
 void positionReport(void)
 {
-	unsigned int i,tmp;
-	unsigned token[7];
-	while(UART5_Data.Locked==FALSE);
+	unsigned int tmp;
+	unsigned char token[7];
+	while(UART5_Data.Locked==TRUE);
 	tmp=UART5_Data.Value;
 	SmallMotorARight.currentPosition=tmp*36000>>11;
 	token[0]='R';
-	token[1]=0xa4;
+	token[1]=0xa1;
+	///token[0]='4';
+	//token[1]=':';
 	token[2]=SmallMotorARight.currentPosition/10000+'0';
 	token[3]=SmallMotorARight.currentPosition%10000/1000+'0';
 	token[4]=SmallMotorARight.currentPosition%1000/100+'0';
 	token[5]=SmallMotorARight.currentPosition%100/10+'0';
 	token[6]=SmallMotorARight.currentPosition%10+'0';
 	Wireless_Send(token);
+	Delay_us(100000);
 	//while(respondToken.valid==FALSE);
 
-	while(UART4_Data.Locked==FALSE);
+	while(UART4_Data.Locked==TRUE);
 	tmp=UART4_Data.Value;
 	SmallMotorALeft.currentPosition=tmp*36000>>11;
 	token[0]='R';
-	token[1]=0xa3;
+	token[1]=0xa2;
+	//token[0]='3';
+	//token[1]=':';
 	token[2]=SmallMotorALeft.currentPosition/10000+'0';
 	token[3]=SmallMotorALeft.currentPosition%10000/1000+'0';
 	token[4]=SmallMotorALeft.currentPosition%1000/100+'0';
 	token[5]=SmallMotorALeft.currentPosition%100/10+'0';
 	token[6]=SmallMotorALeft.currentPosition%10+'0';
 	Wireless_Send(token);
+	Delay_us(100000);
 
-	while(USART3_Data.Locked==FALSE);
+	while(USART3_Data.Locked==TRUE);
 	tmp=USART3_Data.Value;
 	BigMotorARight.currentPosition=tmp*36000>>11;
 	token[0]='R';
-	token[1]=0xa2;
+	token[1]=0xa3;
+	//token[0]='2';
+	//token[1]=':';
 	token[2]=BigMotorARight.currentPosition/10000+'0';
 	token[3]=BigMotorARight.currentPosition%10000/1000+'0';
 	token[4]=BigMotorARight.currentPosition%1000/100+'0';
 	token[5]=BigMotorARight.currentPosition%100/10+'0';
 	token[6]=BigMotorARight.currentPosition%10+'0';
 	Wireless_Send(token);
+	Delay_us(100000);
 
-	while(USART2_Data.Locked==FALSE);
+	while(USART2_Data.Locked==TRUE);
 	tmp=USART2_Data.Value;
 	BigMotorALeft.currentPosition=tmp*36000>>11;
 	token[0]='R';
-	token[1]=0xa1;
+	token[1]=0xa4;
+	//token[0]='1';
+	//token[1]=':';
 	token[2]=BigMotorALeft.currentPosition/10000+'0';
 	token[3]=BigMotorALeft.currentPosition%10000/1000+'0';
 	token[4]=BigMotorALeft.currentPosition%1000/100+'0';
 	token[5]=BigMotorALeft.currentPosition%100/10+'0';
 	token[6]=BigMotorALeft.currentPosition%10+'0';
 	Wireless_Send(token);
+	Delay_us(100000);
 }
 
 void System_Loop(void)
 {
 	int i;
-	Timer2_BigMotorLeftStart();
-	Timer3_BigMotorRightStart();
-	Timer4_SmallMotorLeftStart();
-	Timer4_SmallMotorRightStart();
+	//Timer2_BigMotorLeftStart();
+	Timer3_BigMotorLeftStart();
+	Timer4_BigMotorRightStart();
+	Timer5_SmallMotorLeftStart();
+	Timer8_SmallMotorRightStart();
 	while(1)
 	{
 		for(i=0;i<=5;i++)
 		{
-			if(BigMotorALeft.currentPosition>=BigMotorALeft.positionTable[BigMotorALeft.currentIndex+i-1]
-				&&BigMotorALeft.currentPosition<=BigMotorALeft.positionTable[BigMotorALeft.currentIndex+i])
-			{
-				if(i==0)
-					set
+		//	if(BigMotorALeft.currentPosition>=BigMotorALeft.positionTable[BigMotorALeft.currentIndex+i-1]
+		//		&&BigMotorALeft.currentPosition<=BigMotorALeft.positionTable[BigMotorALeft.currentIndex+i])
+		//	{
+			//	if(i==0)
+			//		set
 
 					
-			}
+		//	}
+		}
 
 					
 	}
@@ -394,7 +446,7 @@ void System_Init(void)
 	positionReport();
 	motorInit();
 	motorReset();
-	positionReport();
+//	positionReport();
 
 }
 /*******************************************************************************
@@ -406,12 +458,11 @@ void System_Init(void)
 *******************************************************************************/
 int main(void)
 {
-	unsigned int vEncoder[4];
-	int i;
-  RCC_Configuration();
+
+  	RCC_Configuration();
 	NVIC_Configuration();
 	EXTI_Configuration();
-  USART1_Init();
+  	USART1_Init();
 	USART2_Init();															
 	USART3_Init();
 	UART4_Init();
@@ -425,7 +476,7 @@ int main(void)
 
 
 	while(1) 
-	{
+	{ /*
 		vEncoder_Refresh();
 		//////////////////////////////////////////////////////////////////////////////	
 		if( (BigMotorLeftcurrentPosition) <= BigMotorALeftPositionLowerLimit )	
@@ -448,8 +499,8 @@ int main(void)
 		//6
 		for(i=0;i<50;i++)
 		{
-			if(BigMotorLeftcurrentPosition>
-
+		//	if(BigMotorLeftcurrentPosition>
+		}
 
 
 
@@ -486,7 +537,7 @@ int main(void)
 		  
 
 
-
+	 */
 	}//end while
 
 }//end main();
