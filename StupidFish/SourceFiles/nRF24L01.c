@@ -5,6 +5,8 @@
 #include "stepmotor.h"
 #include "usart.h"
 #include "timer.h"
+
+extern void Wireless_Received(unsigned char *pbuf);
 u8 TxBuf[32]={0};
 volatile unsigned int sta;
 //bool sendOnce;
@@ -239,13 +241,14 @@ void clearFlag(void)
 
 void nRF24L01_ISR(void)
 {
-	int i;
+//	int i;
 	sta=SPI2_readReg(STATUS);
 	SPI2_writeReg(WRITE_REG+STATUS,0xff);
 	if(RX_DR)				
 	{
 		SPI2_readBuf(RD_RX_PLOAD,rx_buf,TX_PLOAD_WIDTH);
 		Serial_PutString(rx_buf);				 //put whatever received to the UART
+		Wireless_Received(rx_buf);
   }
 	if(MAX_RT)
 	{
@@ -257,35 +260,35 @@ void nRF24L01_ISR(void)
 }
 
 
-
-int main(void)
-{
-	unsigned int nCount;
-	unsigned char vEncoder[20]="--------------------";
-	int i;
-  RCC_Configuration();
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
-	NVIC_Configuration();
-		EXTI_Configuration();
-  USART1_Init();
-	USART2_Init();															
-	USART3_Init();
-	UART4_Init();
-	UART5_Init();
-	SPI2_Init();
-	SysTick_Init();
-	//init_NRF24L01();
-	RX_Mode();
-	//nRF24L01_ISR();
-	
-  while(1)
-{
-
-	//Serial_PutString("While ");
-
-
-}
-}	 
+//
+//int main(void)
+//{
+//	unsigned int nCount;
+//	unsigned char vEncoder[20]="--------------------";
+//	int i;
+//  RCC_Configuration();
+//	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+//	NVIC_Configuration();
+//		EXTI_Configuration();
+//  USART1_Init();
+//	USART2_Init();															
+//	USART3_Init();
+//	UART4_Init();
+//	UART5_Init();
+//	SPI2_Init();
+//	SysTick_Init();
+//	//init_NRF24L01();
+//	RX_Mode();
+//	//nRF24L01_ISR();
+//	
+//  while(1)
+//{
+//
+//	//Serial_PutString("While ");
+//
+//
+//}
+//}	 
 
 
 

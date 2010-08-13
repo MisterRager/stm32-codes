@@ -41,6 +41,7 @@ void Timer1_MotorSetFreq(unsigned int freq)
 
 	/*Start counter for timer1 */
 	TIM_Cmd(TIM1, ENABLE);
+	TIM_CtrlPWMOutputs(TIM1, ENABLE);
 }
 /*End Timer1_MotorSetFreq()*/
 
@@ -194,7 +195,7 @@ void Timer3_MotorSetFreq(unsigned int freq)
 	/*Start counter for timer3 */
 	TIM_Cmd(TIM3, ENABLE);
 
-	TIM_CtrlPWMOutputs(TIM1, ENABLE);
+	
 }
 /*End Timer3_MotorSetFreq()*/
 
