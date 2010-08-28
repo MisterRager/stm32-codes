@@ -34,6 +34,7 @@ extern void NVIC_Configuration(void);
 extern void GPIO_Configuration(void);
 extern void SysTick_Configuration(void);
 extern void SysTick_Start(void);
+extern void USART1_Init(void);
 unsigned int sig=0;
 
 
@@ -62,6 +63,7 @@ int main(void)
     GPIO_Configuration();
 		SysTick_Configuration();
 		SysTick_Start();
+		USART1_Init();
 		//GPIO_SetBits(GPIOE, GPIO_Pin_3);
     while(1)
     {	
