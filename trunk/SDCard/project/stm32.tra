@@ -33,15 +33,17 @@
 ### List of Objects: adding '"nvic.o"'
 ### List of Objects: adding '"gpio.o"'
 ### List of Objects: adding '"systick.o"'
+### List of Objects: adding '"usart.o"'
+### List of Objects: adding '"sdcard.o"'
 ### ADS-LD Command completed:
---device DARMSTM ".\cortexm3_macro.o" ".\stm32f10x_vector.o" "stm32f10x_adc.o" "stm32f10x_bkp.o" "stm32f10x_can.o" "stm32f10x_crc.o" "stm32f10x_dac.o" "stm32f10x_dbgmcu.o" "stm32f10x_dma.o" "stm32f10x_exti.o" "stm32f10x_flash.o" "stm32f10x_fsmc.o" "stm32f10x_gpio.o" "stm32f10x_i2c.o" "stm32f10x_iwdg.o" "stm32f10x_lib.o" "stm32f10x_nvic.o" "stm32f10x_pwr.o" "stm32f10x_rcc.o" "stm32f10x_rtc.o" "stm32f10x_sdio.o" "stm32f10x_spi.o" "stm32f10x_systick.o" "stm32f10x_tim.o" "stm32f10x_usart.o" "stm32f10x_wwdg.o" "main.o" "stm32f10x_it.o" "rcc.o" "nvic.o" "gpio.o" "systick.o" --strict --scatter "stm32.sct" 
+--device DARMSTM ".\cortexm3_macro.o" ".\stm32f10x_vector.o" "stm32f10x_adc.o" "stm32f10x_bkp.o" "stm32f10x_can.o" "stm32f10x_crc.o" "stm32f10x_dac.o" "stm32f10x_dbgmcu.o" "stm32f10x_dma.o" "stm32f10x_exti.o" "stm32f10x_flash.o" "stm32f10x_fsmc.o" "stm32f10x_gpio.o" "stm32f10x_i2c.o" "stm32f10x_iwdg.o" "stm32f10x_lib.o" "stm32f10x_nvic.o" "stm32f10x_pwr.o" "stm32f10x_rcc.o" "stm32f10x_rtc.o" "stm32f10x_sdio.o" "stm32f10x_spi.o" "stm32f10x_systick.o" "stm32f10x_tim.o" "stm32f10x_usart.o" "stm32f10x_wwdg.o" "main.o" "stm32f10x_it.o" "rcc.o" "nvic.o" "gpio.o" "systick.o" "usart.o" "sdcard.o" --strict --scatter "stm32.sct" 
 --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\stm32.map" -o "stm32.axf"### Preparing Environment (PrepEnvAds)
 ### ADS-LD Output File: 'stm32.axf'
 ### ADS-LD Command File: 'stm32.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'stm32.lnp', Handle=0x000003D4
+### Creating CmdFile 'stm32.lnp', Handle=0x000005B8
 ### Writing '.lnp' file
 ### ADS-LD Command file 'stm32.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.
