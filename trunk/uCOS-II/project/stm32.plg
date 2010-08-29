@@ -1,0 +1,11 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+F:\Dean\uCOS-II\project\stm32.uv2
+Project File Date:  08/29/2010
+
+<h2>Output:</h2>
+Clean started: Project: 'stm32'
+   deleting intermediate output files for target 'stm32'

@@ -1,0 +1,1 @@
+Note: The files in this directory (not including this readme file) are the very same code files downloaded from micrium's website with nothing being changed. All right belong the micrium as is stated in the files' headers.
