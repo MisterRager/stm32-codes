@@ -5,8 +5,9 @@ Target (stm32), 0x0004 // Tools: 'ARM-ADS'
 
 Group (StartUp)
 Group (FWLib)
-Group (Source)
 Group (uCOS-II)
+Group (STM32_Core)
+Group (LCD)
 
 File 1,2,<..\startup\cortexm3_macro.s><cortexm3_macro.s>
 File 1,2,<..\startup\stm32f10x_vector.s><stm32f10x_vector.s>
@@ -34,19 +35,21 @@ File 2,1,<..\stm32lib\src\stm32f10x_systick.c><stm32f10x_systick.c>
 File 2,1,<..\stm32lib\src\stm32f10x_tim.c><stm32f10x_tim.c>
 File 2,1,<..\stm32lib\src\stm32f10x_usart.c><stm32f10x_usart.c>
 File 2,1,<..\stm32lib\src\stm32f10x_wwdg.c><stm32f10x_wwdg.c>
-File 3,1,<..\source\main.c><main.c>
-File 3,1,<..\source\stm32f10x_it.c><stm32f10x_it.c>
-File 3,1,<..\source\rcc.c><rcc.c>
-File 3,1,<..\source\nvic.c><nvic.c>
-File 3,1,<..\source\gpio.c><gpio.c>
-File 3,1,<..\source\usart.c><usart.c>
-File 4,1,<..\uCOS-II\Port\os_dbg.c><os_dbg.c>
-File 4,1,<..\uCOS-II\Port\os_cpu_c.c><os_cpu_c.c>
-File 4,2,<..\uCOS-II\Port\os_cpu_a.s><os_cpu_a.s>
-File 4,1,<..\uCOS-II\Port\systick.c><systick.c>
-File 4,5,<..\uCOS-II\Port\os_cpu.h><os_cpu.h>
-File 4,5,<..\uCOS-II\Port\os_cfg.h><os_cfg.h>
-File 4,1,<..\uCOS-II\uCOS-II-V290\ucos_ii.c><ucos_ii.c>
+File 3,1,<..\uCOS-II\Port\os_dbg.c><os_dbg.c>
+File 3,1,<..\uCOS-II\Port\os_cpu_c.c><os_cpu_c.c>
+File 3,2,<..\uCOS-II\Port\os_cpu_a.s><os_cpu_a.s>
+File 3,1,<..\uCOS-II\Port\systick.c><systick.c>
+File 3,5,<..\uCOS-II\Port\os_cpu.h><os_cpu.h>
+File 3,5,<..\uCOS-II\Port\os_cfg.h><os_cfg.h>
+File 3,1,<..\uCOS-II\uCOS-II-V290\ucos_ii.c><ucos_ii.c>
+File 4,1,<..\STM32_Core\tty.c><tty.c>
+File 4,1,<..\STM32_Core\gpio.c><gpio.c>
+File 4,1,<..\STM32_Core\main.c><main.c>
+File 4,1,<..\STM32_Core\nvic.c><nvic.c>
+File 4,1,<..\STM32_Core\rcc.c><rcc.c>
+File 4,1,<..\STM32_Core\stm32f10x_it.c><stm32f10x_it.c>
+File 5,1,<..\LCD\LCD_IOCFG.c><LCD_IOCFG.c>
+File 5,1,<..\LCD\LCD_ILI9325.c><LCD_ILI9325.c>
 
 
 Options 1,0,0  // Target 'stm32'
