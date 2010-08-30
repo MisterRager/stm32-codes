@@ -42,6 +42,7 @@ File 3,1,<..\uCOS-II\Port\systick.c><systick.c>
 File 3,5,<..\uCOS-II\Port\os_cpu.h><os_cpu.h>
 File 3,5,<..\uCOS-II\Port\os_cfg.h><os_cfg.h>
 File 3,1,<..\uCOS-II\uCOS-II-V290\ucos_ii.c><ucos_ii.c>
+File 3,5,<..\Config.h><Config.h>
 File 4,1,<..\STM32_Core\tty.c><tty.c>
 File 4,1,<..\STM32_Core\gpio.c><gpio.c>
 File 4,1,<..\STM32_Core\main.c><main.c>
