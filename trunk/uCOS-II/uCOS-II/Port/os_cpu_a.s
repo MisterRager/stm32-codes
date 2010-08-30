@@ -1,33 +1,30 @@
 	IMPORT  OSRunning               ; External references
-        IMPORT  OSPrioCur
-        IMPORT  OSPrioHighRdy
-        IMPORT  OSTCBCur
-        IMPORT  OSTCBHighRdy
-        IMPORT  OSIntNesting
-        IMPORT  OSIntExit
-        IMPORT  OSTaskSwHook
+    IMPORT  OSPrioCur
+    IMPORT  OSPrioHighRdy
+    IMPORT  OSTCBCur
+    IMPORT  OSTCBHighRdy
+    IMPORT  OSIntNesting
+    IMPORT  OSIntExit
+    IMPORT  OSTaskSwHook
 		
          
             
-        EXPORT  OSStartHighRdy               
-        EXPORT  OSCtxSw
-        EXPORT  OSIntCtxSw
-		EXPORT  OS_CPU_SR_SAVE
-        EXPORT  OS_CPU_SR_RESTORE               
-        EXPORT  PendSVC_Handler
+    EXPORT  OSStartHighRdy               
+    EXPORT  OSCtxSw
+    EXPORT  OSIntCtxSw
+	EXPORT  OS_CPU_SR_SAVE
+    EXPORT  OS_CPU_SR_RESTORE               
+    EXPORT  PendSVC_Handler
 
 NVIC_INT_CTRL   	EQU     0xE000ED04  ; 中断控制寄存器
 NVIC_SYSPRI14    	EQU     0xE000ED22  ; 系统优先级寄存器14
 NVIC_PENDSV_PRI 	EQU     0xFF        ; 软件中断和系统节拍中断(都为最低，0xff).
 NVIC_PENDSVSET  	EQU     0x10000000  ; 触发软件中断的值.
 
-;	PRESERVE8
-;	AREA |.text|, CODE, READONLY
-;	THUMB
-    AREA |.text|, CODE, READONLY, ALIGN=2
-    THUMB
-    REQUIRE8
-    PRESERVE8
+	PRESERVE8
+	AREA |.text|, CODE, READONLY
+	THUMB
+
 	
 OS_CPU_SR_SAVE 
 	MRS 	R0,PRIMASK 	;Get value of PRIMASK which will later be returned as cpu_sr
@@ -93,7 +90,7 @@ PendSVC_Handler_nosave
 	LDRB	R2,[R1]
 	STRB	R2,[R0]
 
-	LDR	R0,=OSPrioCur
+	LDR	R0,=OSTCBCur
 	LDR	R1,=OSTCBHighRdy
 	LDR	R2,[R1]
 	STR	R2,[R0]
