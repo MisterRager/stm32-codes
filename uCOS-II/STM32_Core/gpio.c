@@ -1,9 +1,9 @@
 /******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
-* File Name          : systick.c
+* File Name          : gpio.c
 * Author             : Dean Sinaean (Dean.Sinaean@gmail.com)
 * Version            : V0
 * Date               : 07/11/2008
-* Description        : This file provides systick function.
+* Description        : This file provides gpio function.
 ********************************************************************************
 * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
 * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME.
@@ -13,31 +13,39 @@
 * INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
 *******************************************************************************/
 /* Includes ------------------------------------------------------------------*/
+#include "../Config.h"
 #include "stm32f10x_lib.h"
 
+#if ( USE_LCD==1 && LCD_ILI9325==1 )
+#include "../LCD/LCD_IOCFG.c"
+#endif
+
 /******************************************************************************
- * Function Name  : SysTick_Configuration
- * Description    : None
+ * Function Name  : GPIO_Configuration
+ * Description    : General Purpose I/O configuration
  * Input          : None
  * Output         : None
  * Return         : None
  ******************************************************************************/
-void SysTick_Configuration(void)
+void GPIO_Configuration(void)
 {
-	SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK);
-	SysTick_SetReload(72000);
-	SysTick_ITConfig(ENABLE);
-}
-/******************************************************************************
- * Function Name  : SysTick_Start
- * Description    : None
- * Input          : None
- * Output         : None
- * Return         : None
- ******************************************************************************/
-void SysTick_Start(void)
-{
-	SysTick_CounterCmd(SysTick_Counter_Clear);
-	SysTick_CounterCmd(SysTick_Counter_Enable);
-}
+		/* Enabele GPIO Ports on APB2 */
+    RCC_APB2PeriphClockCmd(	RCC_APB2Periph_GPIOA \
+													| RCC_APB2Periph_GPIOB \
+													|	RCC_APB2Periph_GPIOC \
+													| RCC_APB2Periph_GPIOD \
+													| RCC_APB2Periph_GPIOE \
+													|	RCC_APB2Periph_USART1 \
+													, ENABLE);
+    
+
+#if ( USE_LCD==1 && LCD_ILI9325==1 )
+		/* LCD GPIO Configuration 
+		 * Want	:  	PD and PE enabled.
+		 */
+		LCD_GPIO_Configuration();
+		LCD_FSMC_Configuration();
+#endif
+}	 
+
 /******************* (C) COPYRIGHT 2010 WWW.USR.CC *****END OF FILE****/

@@ -8,11 +8,99 @@ Project File Date:  08/29/2010
 
 <h2>Output:</h2>
 Build target 'stm32'
-compiling main.c...
-compiling usart.c...
+assembling cortexm3_macro.s...
+assembling stm32f10x_vector.s...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_systick.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling os_dbg.c...
+compiling os_cpu_c.c...
 assembling os_cpu_a.s...
+compiling systick.c...
+compiling ucos_ii.c...
+compiling tty.c...
+..\STM32_Core\tty.c(2): error:  #5: cannot open source input file "usart.h": No such file or directory
+compiling gpio.c...
+..\STM32_Core\gpio.c(30): warning:  #177-D: variable "GPIO_InitStructure" was declared but never referenced
+compiling main.c...
+..\STM32_Core\main.c(18): error:  #5: cannot open source input file "usart.h": No such file or directory
+compiling nvic.c...
+compiling rcc.c...
+compiling stm32f10x_it.c...
+compiling timx.c...
+..\STM32_Core\timx.c(10): error:  #20: identifier "TIM_TimeBaseInitTypeDef" is undefined
+..\STM32_Core\timx.c(11): error:  #20: identifier "TIM_OCInitTypeDef" is undefined
+..\STM32_Core\timx.c(14): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+..\STM32_Core\timx.c(14): error:  #20: identifier "RCC_APB1Periph_TIM2" is undefined
+..\STM32_Core\timx.c(14): error:  #20: identifier "ENABLE" is undefined
+..\STM32_Core\timx.c(21): error:  #20: identifier "TIM_CounterMode_Up" is undefined
+..\STM32_Core\timx.c(22): warning:  #223-D: function "TIM_TimeBaseInit" declared implicitly
+..\STM32_Core\timx.c(22): error:  #20: identifier "TIM2" is undefined
+..\STM32_Core\timx.c(25): error:  #20: identifier "TIM_OCMode_Active" is undefined
+..\STM32_Core\timx.c(26): error:  #20: identifier "TIM_OutputState_Enable" is undefined
+..\STM32_Core\timx.c(28): error:  #20: identifier "TIM_OCPolarity_High" is undefined
+..\STM32_Core\timx.c(29): warning:  #223-D: function "TIM_OC1Init" declared implicitly
+..\STM32_Core\timx.c(32): warning:  #223-D: function "TIM_OC1PreloadConfig" declared implicitly
+..\STM32_Core\timx.c(32): error:  #20: identifier "TIM_OCPreload_Disable" is undefined
+..\STM32_Core\timx.c(35): warning:  #223-D: function "TIM_ARRPreloadConfig" declared implicitly
+..\STM32_Core\timx.c(38): warning:  #223-D: function "TIM_ITConfig" declared implicitly
+..\STM32_Core\timx.c(38): error:  #20: identifier "TIM_IT_CC1" is undefined
+..\STM32_Core\timx.c(41): warning:  #223-D: function "TIM_Cmd" declared implicitly
+compiling LCD_ILI9325.c...
+compiling LCD_IOCFG.c...
+Target not created
+Build target 'stm32'
+compiling tty.c...
+..\STM32_Core\tty.c(2): error:  #5: cannot open source input file "usart.h": No such file or directory
+compiling main.c...
+..\STM32_Core\main.c(18): error:  #5: cannot open source input file "usart.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling tty.c...
+compiling main.c...
+..\STM32_Core\main.c(167): warning:  #223-D: function "ILI9325_FillWindowArea" declared implicitly
 linking...
-Program Size: Code=25380 RO-data=740 RW-data=108 ZI-data=6908  
+stm32.axf: Error: L6218E: Undefined symbol ILI9325_FillWindowArea (referred from main.o).
+Target not created
+Build target 'stm32'
+compiling main.c...
+..\STM32_Core\Config.h(3): warning:  #1-D: last line of file ends without a newline
+..\STM32_Core\main.c(24): error:  #5: cannot open source input file "LCD_ILI9325.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling main.c...
+linking...
+stm32.axf: Error: L6218E: Undefined symbol ILI9325_FillWindowArea (referred from main.o).
+Target not created
+Build target 'stm32'
+compiling LCD_ILI9325.c...
+..\LCD\LCD_ILI9325.c(1): error:  #5: cannot open source input file "Config.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling LCD_ILI9325.c...
+linking...
+Program Size: Code=27512 RO-data=740 RW-data=108 ZI-data=6908  
 FromELF: creating hex file...
 "stm32.axf" - 0 Error(s), 0 Warning(s).
 Load "F:\\Dean\\uCOS-II\\project\\stm32.AXF" 
@@ -33,7 +121,514 @@ Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull
 Target info:
 ------------
 Device: STM32F103VE
-VTarget = 3.300V
+VTarget = 3.287V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=27544 RO-data=740 RW-data=108 ZI-data=6908  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\uCOS-II\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling gpio.c...
+..\STM32_Core\gpio.c(19): error:  #5: cannot open source input file "LCD_IOCFG.c": No such file or directory
+Target not created
+Build target 'stm32'
+compiling gpio.c...
+..\STM32_Core\gpio.c(31): warning:  #177-D: variable "GPIO_InitStructure" was declared but never referenced
+linking...
+Program Size: Code=29296 RO-data=740 RW-data=108 ZI-data=6908  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 1 Warning(s).
+Build target 'stm32'
+compiling gpio.c...
+linking...
+Program Size: Code=29296 RO-data=740 RW-data=108 ZI-data=6908  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\uCOS-II\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=29316 RO-data=740 RW-data=108 ZI-data=6908  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\uCOS-II\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.287V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling LCD_ILI9325.c...
+..\LCD\LCD_ILI9325.c(2): error:  #37: the #endif for this directive is missing
+Target not created
+Build target 'stm32'
+compiling LCD_ILI9325.c...
+linking...
+Program Size: Code=29320 RO-data=740 RW-data=108 ZI-data=6908  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\uCOS-II\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.287V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=29328 RO-data=740 RW-data=108 ZI-data=6908  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\uCOS-II\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.287V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=29332 RO-data=740 RW-data=108 ZI-data=6908  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\uCOS-II\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.287V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+compiling LCD_ILI9325.c...
+linking...
+Program Size: Code=29328 RO-data=740 RW-data=108 ZI-data=6908  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\uCOS-II\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.287V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling gpio.c...
+..\STM32_Core\gpio.c(17): error:  #5: cannot open source input file "Config.h": No such file or directory
+compiling main.c...
+compiling LCD_ILI9325.c...
+Target not created
+Build target 'stm32'
+compiling gpio.c...
+compiling main.c...
+compiling rcc.c...
+linking...
+stm32.axf: Error: L6218E: Undefined symbol ILI9325_FillWindowArea (referred from main.o).
+stm32.axf: Error: L6218E: Undefined symbol ILI9325_Init (referred from main.o).
+stm32.axf: Error: L6218E: Undefined symbol ILI9325_SetRegister (referred from main.o).
+stm32.axf: Error: L6218E: Undefined symbol ILI9325_WriteIR (referred from main.o).
+Target not created
+Build target 'stm32'
+assembling cortexm3_macro.s...
+assembling stm32f10x_vector.s...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_systick.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling os_dbg.c...
+compiling os_cpu_c.c...
+assembling os_cpu_a.s...
+compiling systick.c...
+compiling ucos_ii.c...
+compiling tty.c...
+compiling gpio.c...
+compiling main.c...
+compiling nvic.c...
+compiling rcc.c...
+compiling stm32f10x_it.c...
+compiling LCD_ILI9325.c...
+compiling LCD_IOCFG.c...
+linking...
+stm32.axf: Error: L6218E: Undefined symbol ILI9325_FillWindowArea (referred from main.o).
+stm32.axf: Error: L6218E: Undefined symbol ILI9325_Init (referred from main.o).
+stm32.axf: Error: L6218E: Undefined symbol ILI9325_SetRegister (referred from main.o).
+stm32.axf: Error: L6218E: Undefined symbol ILI9325_WriteIR (referred from main.o).
+Target not created
+Build target 'stm32'
+compiling LCD_ILI9325.c...
+linking...
+Program Size: Code=29328 RO-data=740 RW-data=108 ZI-data=6908  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\uCOS-II\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.287V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=29312 RO-data=740 RW-data=108 ZI-data=6908  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\uCOS-II\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.287V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+linking...
+Program Size: Code=29312 RO-data=740 RW-data=108 ZI-data=6908  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\uCOS-II\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.287V
 State of Pins: 
 TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
 * JLink Info: Found SWD-DP with ID 0x1BA01477

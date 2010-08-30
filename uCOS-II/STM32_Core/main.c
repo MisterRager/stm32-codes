@@ -15,9 +15,14 @@
 // *****************************************************************************
 #include "stm32f10x_lib.h"
 #include "stdio.h"
-#include "usart.h"
+#include "tty.h"
 #include "ucos_ii.h"
 #include "app_cfg.h"
+#include "../Config.h"
+
+#if ( USE_LCD==1 && LCD_ILI9325==1 )
+#include "../LCD/LCD_ILI9325.h"
+#endif
 
 
 
@@ -91,7 +96,8 @@ int main(void)
 	debug();
 #endif
     //  System clock configuration
-    RCC_Configuration();    
+    RCC_Configuration(); 
+		  
     // Nested Vector Interrupt Controller configuration
     NVIC_Configuration(); 
 		 
@@ -99,6 +105,12 @@ int main(void)
     GPIO_Configuration();
 		USART1_Init();
 		SysTick_Configuration();
+		LCD_BackLightOn();
+		ILI9325_Init();
+		//ILI9325_VerticalScreen();
+		//ILI9325_GRAMOperation(); 
+		ILI9325_FillWindowArea(10,10,200,200,0xf800);
+
 
 	//	while(1);
 		
@@ -157,8 +169,10 @@ void task1(void *pdata)
 	pdata = pdata;				/* Avoid warnings from compiler	 				*/
 	while(1)
 	{
+		unsigned int i;
 		printf("\n\r Task1................ ");
 		OSTimeDly(300);
+		ILI9325_FillWindowArea(10,10,200,200,i++);
 	}	
 }
 
