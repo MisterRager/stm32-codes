@@ -99,13 +99,13 @@ int main(void)
     GPIO_Configuration();
 		USART1_Init();
 		SysTick_Configuration();
-		SysTick_Start();
+
 	//	while(1);
 		
 		OSInit();
 
 		OSTaskCreate(InitTask, (void *)0, (OS_STK *)&InitTaskStk[OS_INIT_TASK_STACK_SIZE - 1],OS_TASK_INIT_PRIO);
-		 SysTick_Start();
+		 
 		OSStart();
 			
 		
@@ -127,13 +127,13 @@ void assert_failed(u8* file, u32 line)
 void InitTask(void *pdata)
 {
 		 
-	pdata = pdata;				/* ∑¿÷π±‡“Î∆˜æØ∏Ê 				*/
+	pdata = pdata;				/* Avoid warnings from compiler	*/
 
 	OSTaskCreate(task0, (void *)0, (OS_STK *)&Task0_Stack[TASK_STACK_SIZE - 1],	TASK_0_PRIO);
 	OSTaskCreate(task1, (void *)0, (OS_STK *)&Task1_Stack[TASK_STACK_SIZE - 1], TASK_1_PRIO);
 
 
-	
+	SysTick_Start();
 	OSTaskDel(OS_PRIO_SELF);
 	while(1)
 	{
@@ -143,21 +143,22 @@ void InitTask(void *pdata)
 void task0(void *pdata)
 {
 		 
-	pdata = pdata;				/* ∑¿÷π±‡“Î∆˜æØ∏Ê 				*/
+	pdata = pdata;				/* Avoid warnings from compiler	 				*/
 	while(1)
 	{
-	//	printf("\n\r Task0 ");
-		OSTimeDly(5000); 									// if Task 1 does not run, led won't be lit off at all.
+		printf("\n\r Task0 ");
+		OSTimeDly(500); 									// if Task 1 does not run, led won't be lit off at all.
 	}	
 }
 
 void task1(void *pdata)
 {
 		 
-	pdata = pdata;				/* ∑¿÷π±‡“Î∆˜æØ∏Ê 				*/
+	pdata = pdata;				/* Avoid warnings from compiler	 				*/
 	while(1)
 	{
-		//	printf("\n\r Task1................ ");
+		printf("\n\r Task1................ ");
+		OSTimeDly(300);
 	}	
 }
 

@@ -5,6 +5,7 @@
 
 
 void SerialPutChar(u8 c);
+void	Serial_PutString(unsigned char * str);
 
 void USART1_Init(void);
 void USART2_Init(void);
