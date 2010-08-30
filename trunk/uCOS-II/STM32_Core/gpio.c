@@ -20,6 +20,10 @@
 #include "../LCD/LCD_IOCFG.c"
 #endif
 
+#if	(USE_USART1==1 && TTY_AS_USART1==1)
+#include "../STM32_Core/tty.h"
+#endif
+
 /******************************************************************************
  * Function Name  : GPIO_Configuration
  * Description    : General Purpose I/O configuration
@@ -33,16 +37,21 @@ void GPIO_Configuration(void)
     RCC_APB2PeriphClockCmd(	RCC_APB2Periph_GPIOA \
 													| RCC_APB2Periph_GPIOB \
 													|	RCC_APB2Periph_GPIOC \
-													| RCC_APB2Periph_GPIOD \
-													| RCC_APB2Periph_GPIOE \
-													|	RCC_APB2Periph_USART1 \
 													, ENABLE);
+#if	(USE_USART1==1 &&TTY_AS_USART1==1)
+		RCC_APB2PeriphClockCmd( RCC_APB2Periph_USART1,ENABLE);
+		TTY_USART1_GPIO_Configuration();
+		TTY_USART1_Init();
+#endif	
     
 
 #if ( USE_LCD==1 && LCD_ILI9325==1 )
 		/* LCD GPIO Configuration 
 		 * Want	:  	PD and PE enabled.
 		 */
+		RCC_APB2PeriphClockCmd(	RCC_APB2Periph_GPIOD \
+													| RCC_APB2Periph_GPIOE \
+													,ENABLE);
 		LCD_GPIO_Configuration();
 		LCD_FSMC_Configuration();
 #endif

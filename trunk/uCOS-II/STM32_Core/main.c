@@ -28,20 +28,7 @@
 
 
 
-/*******************************************************************************
-* Function Name  : fputc
-* Description    : Retargets the C library printf function to the USART.
-* Input          : None
-* Output         : None
-* Return         : None
-*******************************************************************************/
-int fputc(int ch, FILE *f)
-{
-  /* Place your implementation of fputc here */
-  /* e.g. write a character to the USART */
-	SerialPutChar(ch);
-	return ch;
-}
+
 //-----------------------------------------------------------------------------------------
 #define OS_TASK_INIT_PRIO 			2 
 #define OS_INIT_TASK_STACK_SIZE		64			/* 初始化任务堆栈大小 	*/ 
@@ -103,7 +90,7 @@ int main(void)
 		 
     // General Purpose I/O default configration
     GPIO_Configuration();
-		USART1_Init();
+
 		SysTick_Configuration();
 		LCD_BackLightOn();
 		ILI9325_Init();
