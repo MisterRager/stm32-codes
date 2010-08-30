@@ -1,5 +1,5 @@
 #include <stm32f10x_lib.h>
-#include "usart.h"
+#include "tty.h"
 
 
 /* Usart functions ---------------------------------  ------------------------*/

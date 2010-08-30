@@ -14,6 +14,7 @@
 *******************************************************************************/
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_lib.h"
+#include "../Config.h"
 
 /*****************************************************************************
  * Function Name  : RCC_Configuration
@@ -70,6 +71,9 @@ void RCC_Configuration(void)
         /* Wait till PLL is used as system clock source	*/
         while(RCC_GetSYSCLKSource() != 0x08);
     } 
+#if ( USE_LCD==1 && LCD_ILI9325==1 )
+		RCC_AHBPeriphClockCmd(RCC_AHBPeriph_FSMC, ENABLE);
+#endif 
 }
 
 /******************* (C) COPYRIGHT 2010 WWW.USR.CC *****END OF FILE****/
