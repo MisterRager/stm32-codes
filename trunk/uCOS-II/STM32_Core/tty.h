@@ -1,17 +1,18 @@
-#include "stm32f10x_type.h"
-#include "stm32f10x_lib.h"
 #ifndef __USART_H
 #define __USART_H
+#include "../Config.h"
+#if	(USE_USART1==1 )
+#include "stm32f10x_type.h"
+#include "stm32f10x_lib.h"
+#include "stdio.h"
 
-
-void SerialPutChar(u8 c);
-
-void USART1_Init(void);
-void USART2_Init(void);
-void USART3_Init(void);
-void UART4_Init(void);
-void UART5_Init(void);
-
+#if(TTY_AS_USART1==1)
+int fputc(int ch, FILE *f);
+int fgetc(FILE *f);
+#endif
+void TTY_USART1_Init(void);
+void TTY_USART1_GPIO_Configuration(void);
+#endif
 #endif
 
 
