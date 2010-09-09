@@ -2,19 +2,7 @@
 #include "fsmc_lcd.h"
 #include "stm32f10x_fsmc.h"
 #include "stdint.h"
-void Delay(volatile uint32_t nCount)
-{
-  for(; nCount != 0; nCount--);
-}
 
-// ++++++++++++++++TFT ¸´Î»²Ù×÷
-void LCD_Reset(void)
-{
-	GPIO_ResetBits(GPIOE, GPIO_Pin_1);
-    Delay(0xAFFFFf);					   
-    GPIO_SetBits(GPIOE, GPIO_Pin_1 );		 	 
-	Delay(0xAFFFFf);	
-}
 
 void FSMC_LCD_Init(void)
 {

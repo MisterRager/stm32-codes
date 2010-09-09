@@ -3,7 +3,2150 @@
 <pre>
 <h1>µVision3 Build Log</h1>
 <h2>Project:</h2>
-F:\Dean\lcd\project\stm32.uv2
-Project File Date:  07/23/2010
+F:\Dean\LCD_MicroChipGUI\project\stm32.uv2
+Project File Date:  09/08/2010
 
 <h2>Output:</h2>
+Build target 'stm32'
+assembling cortexm3_macro.s...
+assembling stm32f10x_vector.s...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_systick.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling rcc.c...
+compiling nvic.c...
+compiling gpio.c...
+compiling systick.c...
+compiling fsmc_lcd.c...
+compiling lcd.c...
+compiling usart.c...
+compiling Button.c...
+..\MicroChipGUI\Graphics\Button.c(47): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling Chart.c...
+..\MicroChipGUI\Graphics\Chart.c(49): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling CheckBox.c...
+..\MicroChipGUI\Graphics\CheckBox.c(41): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling DigitalMeter.c...
+..\MicroChipGUI\Graphics\DigitalMeter.c(42): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling DisplayDriver.c...
+..\MicroChipGUI\Graphics\DisplayDriver.c(40): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling EditBox.c...
+..\MicroChipGUI\Graphics\EditBox.c(41): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling GOL.c...
+..\MicroChipGUI\Graphics\GOL.c(44): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Graphics\GOLFontDefault.c(8): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling Grid.c...
+..\MicroChipGUI\Graphics\Grid.c(49): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling GroupBox.c...
+..\MicroChipGUI\Graphics\GroupBox.c(41): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling ListBox.c...
+..\MicroChipGUI\Graphics\ListBox.c(41): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling Meter.c...
+..\MicroChipGUI\Graphics\Meter.c(43): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling Palette.c...
+..\MicroChipGUI\Graphics\Palette.c(40): error:  #5: cannot open source input file "Graphics\Palette.h": No such file or directory
+compiling Picture.c...
+..\MicroChipGUI\Graphics\Picture.c(41): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling Primitive.c...
+..\MicroChipGUI\Graphics\Primitive.c(41): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling ProgressBar.c...
+..\MicroChipGUI\Graphics\ProgressBar.c(41): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling RadioButton.c...
+..\MicroChipGUI\Graphics\RadioButton.c(41): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling RoundDial.c...
+..\MicroChipGUI\Graphics\RoundDial.c(42): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling Slider.c...
+..\MicroChipGUI\Graphics\Slider.c(46): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling StaticText.c...
+..\MicroChipGUI\Graphics\StaticText.c(42): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling Template.c...
+compiling TextEntry.c...
+..\MicroChipGUI\Graphics\TextEntry.c(43): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+compiling Window.c...
+..\MicroChipGUI\Graphics\Window.c(41): error:  #5: cannot open source input file "Graphics\Graphics.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_systick.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling rcc.c...
+compiling nvic.c...
+compiling gpio.c...
+compiling systick.c...
+compiling fsmc_lcd.c...
+compiling lcd.c...
+compiling usart.c...
+compiling Button.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling Chart.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling CheckBox.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling DigitalMeter.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling DisplayDriver.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling EditBox.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling GOL.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling Grid.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling GroupBox.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling ListBox.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling Meter.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling Palette.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling Picture.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling Primitive.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling ProgressBar.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling RadioButton.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling RoundDial.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling Slider.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling StaticText.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling Template.c...
+compiling TextEntry.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+compiling Window.c...
+..\MicroChipGUI\Include\Graphics\Graphics.h(86): error:  #5: cannot open source input file "GraphicsConfig.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling Button.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling Chart.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling CheckBox.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling DigitalMeter.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling DisplayDriver.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling EditBox.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling GOL.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling Grid.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling GroupBox.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling ListBox.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling Meter.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling Palette.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling Picture.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling Primitive.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling ProgressBar.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling RadioButton.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling RoundDial.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling Slider.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling StaticText.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling TextEntry.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+compiling Window.c...
+..\MicroChipGUI\Include\GraphicsConfig.h(156): error:  #5: cannot open source input file "GDD_GraphicsConfig.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling Button.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling Chart.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling CheckBox.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling DigitalMeter.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling DisplayDriver.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling EditBox.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling GOL.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling Grid.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling GroupBox.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling ListBox.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling Meter.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling Palette.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling Picture.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling Primitive.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling ProgressBar.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling RadioButton.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling RoundDial.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling Slider.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling StaticText.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling TextEntry.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+compiling Window.c...
+..\MicroChipGUI\Include\Compiler.h(113): error:  #35: #error directive: Unknown processor or compiler.  See Compiler.h
+Target not created
+Build target 'stm32'
+compiling Button.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling Chart.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling CheckBox.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling DigitalMeter.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling DisplayDriver.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling EditBox.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling GOL.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling Grid.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling GroupBox.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling ListBox.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling Meter.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling Palette.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling Picture.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling Primitive.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling ProgressBar.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling RadioButton.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling RoundDial.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling Slider.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling StaticText.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling TextEntry.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling Window.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(105): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+Target not created
+Build target 'stm32'
+compiling Button.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling Chart.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling CheckBox.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling DigitalMeter.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling DisplayDriver.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling EditBox.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling GOL.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling Grid.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling GroupBox.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling ListBox.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling Meter.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling Palette.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling Picture.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling Primitive.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling ProgressBar.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling RadioButton.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling RoundDial.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling Slider.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling StaticText.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling TextEntry.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+compiling Window.c...
+..\MicroChipGUI\Include\Graphics\DisplayDriver.h(104): error:  #5: cannot open source input file "lcd_ili9325.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_systick.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling rcc.c...
+compiling nvic.c...
+compiling gpio.c...
+compiling systick.c...
+compiling fsmc_lcd.c...
+compiling lcd.c...
+compiling usart.c...
+compiling Button.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Chart.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling CheckBox.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling DigitalMeter.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling DisplayDriver.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\DisplayDriver.c(103): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling EditBox.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling GOL.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\GOL.c(267): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\GOL.c(377): warning:  #188-D: enumerated type mixed with another type
+..\MicroChipGUI\Graphics\GOL.c(401): warning:  #188-D: enumerated type mixed with another type
+..\MicroChipGUI\Graphics\GOL.c(424): warning:  #188-D: enumerated type mixed with another type
+..\MicroChipGUI\Graphics\GOL.c(451): warning:  #188-D: enumerated type mixed with another type
+..\MicroChipGUI\Graphics\GOL.c(793): warning:  #177-D: variable "translatedMsg" was declared but never referenced
+..\MicroChipGUI\Graphics\GOL.c(1133): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1142): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1157): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1482): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1491): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1505): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+compiling GOLFontDefault.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\GOLFontDefault.c(14): warning:  #188-D: enumerated type mixed with another type
+compiling Grid.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling GroupBox.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling ListBox.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Meter.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Palette.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Picture.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Primitive.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\Primitive.c(46): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(47): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(48): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(49): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(123): warning:  #223-D: function "ResetDevice" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(126): warning:  #223-D: function "SetActivePage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(127): warning:  #223-D: function "SetVisualPage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): error:  #20: identifier "BLACK" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(136): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(139): warning:  #223-D: function "SetClip" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(139): error:  #20: identifier "CLIP_DISABLE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(414): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(753): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(781): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(814): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(863): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(867): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(903): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(912): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(961): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(985): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1181): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1376): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1411): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\Primitive.c(1447): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1452): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxX" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxY" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1515): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1669): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1673): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1675): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1681): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1745): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1775): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1853): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1931): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1972): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1973): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(1973): error:  #136: struct "<unnamed>" has no field "address"
+..\MicroChipGUI\Graphics\Primitive.c(2013): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(2014): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(2014): error:  #136: struct "<unnamed>" has no field "address"
+..\MicroChipGUI\Graphics\Primitive.c(2054): error:  #65: expected a ";"
+..\MicroChipGUI\Graphics\Primitive.c(2063): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2068): warning:  #223-D: function "GetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2074): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(2077): error:  #20: identifier "flashAddress" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(2077): error:  #136: struct "<unnamed>" has no field "address"
+..\MicroChipGUI\Graphics\Primitive.c(2085): error:  #140: too many arguments in function call
+..\MicroChipGUI\Graphics\Primitive.c(2140): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2054): warning:  #177-D: variable "__prog__" was declared but never referenced
+..\MicroChipGUI\Graphics\Primitive.c(2164): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(2166): error:  #101: "__prog__" has already been declared in the current scope
+..\MicroChipGUI\Graphics\Primitive.c(2166): error:  #65: expected a ";"
+compiling ProgressBar.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling RadioButton.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling RoundDial.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Slider.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling StaticText.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Template.c...
+compiling TextEntry.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Window.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+Target not created
+Build target 'stm32'
+compiling Button.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Chart.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling CheckBox.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling DigitalMeter.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling DisplayDriver.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\DisplayDriver.c(103): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling EditBox.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling GOL.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\GOL.c(267): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\GOL.c(793): warning:  #177-D: variable "translatedMsg" was declared but never referenced
+..\MicroChipGUI\Graphics\GOL.c(1133): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1142): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1157): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1482): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1491): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1505): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+compiling GOLFontDefault.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\GOLFontDefault.c(14): warning:  #188-D: enumerated type mixed with another type
+compiling Grid.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling GroupBox.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling ListBox.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Meter.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Palette.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Picture.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Primitive.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\Primitive.c(46): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(47): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(48): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(49): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(123): warning:  #223-D: function "ResetDevice" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(126): warning:  #223-D: function "SetActivePage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(127): warning:  #223-D: function "SetVisualPage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): error:  #20: identifier "BLACK" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(136): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(139): warning:  #223-D: function "SetClip" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(139): error:  #20: identifier "CLIP_DISABLE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(414): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(753): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(781): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(814): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(863): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(867): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(903): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(912): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(961): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(985): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1181): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1376): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1411): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\Primitive.c(1447): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1452): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxX" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxY" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1515): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1669): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1673): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1675): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1681): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1745): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1775): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1853): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1931): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1972): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1973): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(1973): error:  #136: struct "<unnamed>" has no field "address"
+..\MicroChipGUI\Graphics\Primitive.c(2013): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(2014): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(2014): error:  #136: struct "<unnamed>" has no field "address"
+..\MicroChipGUI\Graphics\Primitive.c(2054): error:  #65: expected a ";"
+..\MicroChipGUI\Graphics\Primitive.c(2063): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2068): warning:  #223-D: function "GetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2074): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(2077): error:  #20: identifier "flashAddress" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(2077): error:  #136: struct "<unnamed>" has no field "address"
+..\MicroChipGUI\Graphics\Primitive.c(2085): error:  #140: too many arguments in function call
+..\MicroChipGUI\Graphics\Primitive.c(2140): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2054): warning:  #177-D: variable "__prog__" was declared but never referenced
+..\MicroChipGUI\Graphics\Primitive.c(2164): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(2166): error:  #101: "__prog__" has already been declared in the current scope
+..\MicroChipGUI\Graphics\Primitive.c(2166): error:  #65: expected a ";"
+..\MicroChipGUI\Graphics\Primitive.c(2167): error:  #101: "__prog__" has already been declared in the current scope
+..\MicroChipGUI\Graphics\Primitive.c(2167): error:  #65: expected a ";"
+compiling ProgressBar.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling RadioButton.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling RoundDial.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Slider.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling StaticText.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling TextEntry.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Window.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+Target not created
+Build target 'stm32'
+compiling Button.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Chart.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling CheckBox.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling DigitalMeter.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling DisplayDriver.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\DisplayDriver.c(103): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling EditBox.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling GOL.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\GOL.c(267): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\GOL.c(793): warning:  #177-D: variable "translatedMsg" was declared but never referenced
+..\MicroChipGUI\Graphics\GOL.c(1133): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1142): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1157): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1482): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1491): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1505): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\GOLFontDefault.c(14): warning:  #188-D: enumerated type mixed with another type
+compiling Grid.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling GroupBox.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling ListBox.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Meter.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Palette.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Picture.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Primitive.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\Primitive.c(46): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(47): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(48): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(49): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(123): warning:  #223-D: function "ResetDevice" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(126): warning:  #223-D: function "SetActivePage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(127): warning:  #223-D: function "SetVisualPage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): error:  #20: identifier "BLACK" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(136): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(139): warning:  #223-D: function "SetClip" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(139): error:  #20: identifier "CLIP_DISABLE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(414): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(753): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(781): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(814): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(863): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(867): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(903): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(912): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(961): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(985): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1181): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1376): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1411): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\Primitive.c(1447): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1452): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxX" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxY" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1515): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1669): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1673): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1675): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1681): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1745): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1775): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1853): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1931): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1972): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1973): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(1973): error:  #136: struct "<unnamed>" has no field "address"
+..\MicroChipGUI\Graphics\Primitive.c(2013): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(2014): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(2014): error:  #136: struct "<unnamed>" has no field "address"
+..\MicroChipGUI\Graphics\Primitive.c(2054): error:  #65: expected a ";"
+..\MicroChipGUI\Graphics\Primitive.c(2063): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2068): warning:  #223-D: function "GetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2074): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(2077): error:  #20: identifier "flashAddress" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(2077): error:  #136: struct "<unnamed>" has no field "address"
+..\MicroChipGUI\Graphics\Primitive.c(2085): error:  #140: too many arguments in function call
+..\MicroChipGUI\Graphics\Primitive.c(2140): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2054): warning:  #177-D: variable "__prog__" was declared but never referenced
+..\MicroChipGUI\Graphics\Primitive.c(2164): error:  #18: expected a ")"
+..\MicroChipGUI\Graphics\Primitive.c(2166): error:  #101: "__prog__" has already been declared in the current scope
+..\MicroChipGUI\Graphics\Primitive.c(2166): error:  #65: expected a ";"
+..\MicroChipGUI\Graphics\Primitive.c(2167): error:  #101: "__prog__" has already been declared in the current scope
+..\MicroChipGUI\Graphics\Primitive.c(2167): error:  #65: expected a ";"
+..\MicroChipGUI\Graphics\Primitive.c(2177): error:  #20: identifier "flashAddress" is undefined
+compiling ProgressBar.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling RadioButton.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling RoundDial.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Slider.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling StaticText.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling TextEntry.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Window.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\Primitive.h(166): error:  #65: expected a ";"
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+Target not created
+Build target 'stm32'
+compiling Button.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Chart.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling CheckBox.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling DigitalMeter.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling DisplayDriver.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\DisplayDriver.c(103): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling EditBox.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling GOL.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\GOL.c(267): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\GOL.c(793): warning:  #177-D: variable "translatedMsg" was declared but never referenced
+..\MicroChipGUI\Graphics\GOL.c(1133): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1142): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1157): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1482): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1491): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1505): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\GOLFontDefault.c(14): warning:  #188-D: enumerated type mixed with another type
+compiling Grid.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling GroupBox.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling ListBox.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Meter.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Palette.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Picture.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Primitive.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\Primitive.c(123): warning:  #223-D: function "ResetDevice" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(126): warning:  #223-D: function "SetActivePage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(127): warning:  #223-D: function "SetVisualPage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): error:  #20: identifier "BLACK" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(136): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(139): warning:  #223-D: function "SetClip" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(139): error:  #20: identifier "CLIP_DISABLE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(414): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(753): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(781): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(814): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(863): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(867): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(903): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(912): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(961): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(985): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1181): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1376): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1411): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\Primitive.c(1447): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1452): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxX" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxY" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1515): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1669): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1673): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1675): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1681): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1745): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1775): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1853): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1931): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(1972): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(2013): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(2063): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2068): warning:  #223-D: function "GetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2074): error:  #183: type of cast must be integral
+..\MicroChipGUI\Graphics\Primitive.c(2140): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2216): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2225): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2232): warning:  #223-D: function "PutPixel" declared implicitly
+compiling ProgressBar.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling RadioButton.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling RoundDial.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Slider.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling StaticText.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling TextEntry.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Window.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(119): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+Target not created
+Build target 'stm32'
+compiling Button.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Chart.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling CheckBox.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling DigitalMeter.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling DisplayDriver.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\DisplayDriver.c(103): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling EditBox.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling GOL.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\GOL.c(267): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\GOL.c(793): warning:  #177-D: variable "translatedMsg" was declared but never referenced
+..\MicroChipGUI\Graphics\GOL.c(1133): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1142): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1157): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1482): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1491): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1505): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\GOLFontDefault.c(14): warning:  #188-D: enumerated type mixed with another type
+compiling Grid.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling GroupBox.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling ListBox.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Meter.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Palette.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Picture.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Primitive.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\Primitive.c(123): warning:  #223-D: function "ResetDevice" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(126): warning:  #223-D: function "SetActivePage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(127): warning:  #223-D: function "SetVisualPage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): error:  #20: identifier "BLACK" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(136): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(139): warning:  #223-D: function "SetClip" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(139): error:  #20: identifier "CLIP_DISABLE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(414): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(753): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(781): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(814): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(863): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(867): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(903): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(912): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(961): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(985): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1181): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1376): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1411): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\Primitive.c(1447): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1452): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxX" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxY" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1516): error:  #29: expected an expression
+..\MicroChipGUI\Graphics\Primitive.c(1670): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1674): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1676): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1683): error:  #29: expected an expression
+..\MicroChipGUI\Graphics\Primitive.c(1747): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1777): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1856): error:  #29: expected an expression
+..\MicroChipGUI\Graphics\Primitive.c(1935): error:  #29: expected an expression
+..\MicroChipGUI\Graphics\Primitive.c(1977): error:  #29: expected an expression
+..\MicroChipGUI\Graphics\Primitive.c(2019): error:  #29: expected an expression
+..\MicroChipGUI\Graphics\Primitive.c(2069): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2074): warning:  #223-D: function "GetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2081): error:  #29: expected an expression
+..\MicroChipGUI\Graphics\Primitive.c(2147): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2223): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2232): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2239): warning:  #223-D: function "PutPixel" declared implicitly
+compiling ProgressBar.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling RadioButton.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling RoundDial.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Slider.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling StaticText.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling TextEntry.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Window.c...
+..\MicroChipGUI\Include\Graphics\Primitive.h(120): error:  #40: expected an identifier
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+Target not created
+Build target 'stm32'
+compiling Button.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Chart.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling CheckBox.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling DigitalMeter.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling DisplayDriver.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\DisplayDriver.c(103): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling EditBox.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling GOL.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\GOL.c(267): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\GOL.c(793): warning:  #177-D: variable "translatedMsg" was declared but never referenced
+..\MicroChipGUI\Graphics\GOL.c(1133): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1142): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1157): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1482): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1491): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1505): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\GOLFontDefault.c(14): warning:  #188-D: enumerated type mixed with another type
+compiling Grid.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling GroupBox.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling ListBox.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Meter.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Palette.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Picture.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Primitive.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+..\MicroChipGUI\Graphics\Primitive.c(123): warning:  #223-D: function "ResetDevice" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(126): warning:  #223-D: function "SetActivePage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(127): warning:  #223-D: function "SetVisualPage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): error:  #20: identifier "BLACK" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(136): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(139): warning:  #223-D: function "SetClip" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(139): error:  #20: identifier "CLIP_DISABLE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(414): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(753): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(781): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(814): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(863): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(867): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(903): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(912): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(961): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(985): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1181): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1376): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1411): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\Primitive.c(1447): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1452): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxX" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxY" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1670): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1674): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1676): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1747): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1777): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2069): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2074): warning:  #223-D: function "GetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2147): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2223): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2232): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2239): warning:  #223-D: function "PutPixel" declared implicitly
+compiling ProgressBar.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling RadioButton.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling RoundDial.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Slider.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling StaticText.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling TextEntry.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+compiling Window.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(958): warning:  #1295-D: Deprecated declaration GOLInit - give arg types
+Target not created
+Build target 'stm32'
+compiling Button.c...
+compiling Chart.c...
+compiling CheckBox.c...
+compiling DigitalMeter.c...
+compiling DisplayDriver.c...
+..\MicroChipGUI\Graphics\DisplayDriver.c(103): error:  #35: #error directive: GRAPHICS CONTROLLER IS NOT SUPPORTED
+compiling EditBox.c...
+compiling GOL.c...
+..\MicroChipGUI\Graphics\GOL.c(267): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\GOL.c(793): warning:  #177-D: variable "translatedMsg" was declared but never referenced
+..\MicroChipGUI\Graphics\GOL.c(1133): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1142): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1157): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1482): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1491): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1505): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Graphics\GOLFontDefault.c(14): warning:  #188-D: enumerated type mixed with another type
+compiling Grid.c...
+compiling GroupBox.c...
+compiling ListBox.c...
+compiling Meter.c...
+compiling Palette.c...
+compiling Picture.c...
+compiling Primitive.c...
+..\MicroChipGUI\Graphics\Primitive.c(123): warning:  #223-D: function "ResetDevice" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(126): warning:  #223-D: function "SetActivePage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(127): warning:  #223-D: function "SetVisualPage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): error:  #20: identifier "BLACK" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(136): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(139): warning:  #223-D: function "SetClip" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(139): error:  #20: identifier "CLIP_DISABLE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(414): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(753): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(781): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(814): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(863): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(867): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(903): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(912): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(961): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(985): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1181): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1376): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1411): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\Primitive.c(1447): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1452): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxX" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxY" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1670): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1674): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1676): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1747): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1777): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2069): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2074): warning:  #223-D: function "GetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2147): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2223): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2232): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2239): warning:  #223-D: function "PutPixel" declared implicitly
+compiling ProgressBar.c...
+compiling RadioButton.c...
+compiling RoundDial.c...
+compiling Slider.c...
+compiling StaticText.c...
+compiling TextEntry.c...
+compiling Window.c...
+Target not created
+Build target 'stm32'
+compiling DisplayDriver.c...
+compiling GOL.c...
+..\MicroChipGUI\Graphics\GOL.c(267): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\GOL.c(793): warning:  #177-D: variable "translatedMsg" was declared but never referenced
+..\MicroChipGUI\Graphics\GOL.c(1133): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1142): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1157): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1482): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1491): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1505): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+compiling Primitive.c...
+..\MicroChipGUI\Graphics\Primitive.c(123): warning:  #223-D: function "ResetDevice" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(126): warning:  #223-D: function "SetActivePage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(127): warning:  #223-D: function "SetVisualPage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): error:  #20: identifier "BLACK" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(136): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(139): warning:  #223-D: function "SetClip" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(139): error:  #20: identifier "CLIP_DISABLE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(414): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(753): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(781): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(814): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(863): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(867): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(903): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(912): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(961): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(985): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1181): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1376): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1411): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\Primitive.c(1447): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1452): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxX" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxY" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1670): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1674): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1676): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1747): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1777): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2069): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2074): warning:  #223-D: function "GetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2147): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2223): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2232): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2239): warning:  #223-D: function "PutPixel" declared implicitly
+Target not created
+Build target 'stm32'
+compiling LCD_ILI9325.c...
+compiling DisplayDriver.c...
+..\MicroChipGUI\Graphics\Drivers\drvILI9325.c(143): error:  #65: expected a ";"
+compiling GOL.c...
+..\MicroChipGUI\Graphics\GOL.c(267): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\GOL.c(793): warning:  #177-D: variable "translatedMsg" was declared but never referenced
+..\MicroChipGUI\Graphics\GOL.c(1133): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1142): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1157): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1482): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1491): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1505): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+compiling Primitive.c...
+..\MicroChipGUI\Graphics\Primitive.c(123): warning:  #223-D: function "ResetDevice" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(126): warning:  #223-D: function "SetActivePage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(127): warning:  #223-D: function "SetVisualPage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): error:  #20: identifier "BLACK" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(136): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(139): warning:  #223-D: function "SetClip" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(139): error:  #20: identifier "CLIP_DISABLE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(414): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(753): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(781): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(814): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(863): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(867): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(903): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(912): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(961): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(985): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1181): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1376): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1411): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\Primitive.c(1447): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1452): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxX" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxY" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1670): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1674): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1676): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1747): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1777): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2069): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2074): warning:  #223-D: function "GetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2147): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2223): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2232): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2239): warning:  #223-D: function "PutPixel" declared implicitly
+Target not created
+Build target 'stm32'
+compiling DisplayDriver.c...
+compiling GOL.c...
+..\MicroChipGUI\Graphics\GOL.c(267): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\GOL.c(793): warning:  #177-D: variable "translatedMsg" was declared but never referenced
+..\MicroChipGUI\Graphics\GOL.c(1133): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1142): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1157): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1482): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1491): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1505): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+compiling Primitive.c...
+..\MicroChipGUI\Graphics\Primitive.c(123): warning:  #223-D: function "ResetDevice" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(126): warning:  #223-D: function "SetActivePage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(127): warning:  #223-D: function "SetVisualPage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): error:  #20: identifier "BLACK" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(136): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(139): warning:  #223-D: function "SetClip" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(139): error:  #20: identifier "CLIP_DISABLE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(414): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(753): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(781): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(814): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(863): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(867): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(903): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(912): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(961): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(985): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1181): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1376): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1411): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\Primitive.c(1447): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1452): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxX" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxY" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1670): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1674): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1676): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1747): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1777): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2069): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2074): warning:  #223-D: function "GetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2147): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2223): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2232): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2239): warning:  #223-D: function "PutPixel" declared implicitly
+Target not created
+Build target 'stm32'
+compiling DisplayDriver.c...
+compiling GOL.c...
+..\MicroChipGUI\Graphics\GOL.c(267): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\GOL.c(793): warning:  #177-D: variable "translatedMsg" was declared but never referenced
+..\MicroChipGUI\Graphics\GOL.c(1133): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1142): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1157): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1482): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1491): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1505): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+compiling Primitive.c...
+..\MicroChipGUI\Graphics\Primitive.c(123): warning:  #223-D: function "ResetDevice" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(126): warning:  #223-D: function "SetActivePage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(127): warning:  #223-D: function "SetVisualPage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): error:  #20: identifier "BLACK" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(136): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(139): warning:  #223-D: function "SetClip" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(139): error:  #20: identifier "CLIP_DISABLE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(414): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(753): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(781): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(814): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(863): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(867): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(903): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(912): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(961): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(985): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1181): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1376): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1411): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\Primitive.c(1447): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1452): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxX" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxY" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1670): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1674): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1676): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1747): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1777): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2069): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2074): warning:  #223-D: function "GetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2147): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2223): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2232): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2239): warning:  #223-D: function "PutPixel" declared implicitly
+Target not created
+Build target 'stm32'
+compiling GOL.c...
+..\MicroChipGUI\Graphics\GOL.c(267): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\GOL.c(793): warning:  #177-D: variable "translatedMsg" was declared but never referenced
+..\MicroChipGUI\Graphics\GOL.c(1133): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1142): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1157): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1482): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1491): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1505): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+compiling Primitive.c...
+..\MicroChipGUI\Graphics\Primitive.c(123): warning:  #223-D: function "ResetDevice" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(126): warning:  #223-D: function "SetActivePage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(127): warning:  #223-D: function "SetVisualPage" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(130): error:  #20: identifier "BLACK" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(136): error:  #20: identifier "WHITE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(139): warning:  #223-D: function "SetClip" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(139): error:  #20: identifier "CLIP_DISABLE" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(414): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(753): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(781): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(814): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(863): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(867): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(903): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(912): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(961): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(985): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1181): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1376): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1411): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\Primitive.c(1447): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1452): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxX" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1480): warning:  #223-D: function "GetMaxY" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1670): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1674): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1676): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1747): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(1777): warning:  #223-D: function "PutPixel" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2069): warning:  #223-D: function "IsDeviceBusy" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2074): warning:  #223-D: function "GetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2147): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2223): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2232): warning:  #223-D: function "SetColor" declared implicitly
+..\MicroChipGUI\Graphics\Primitive.c(2239): warning:  #223-D: function "PutPixel" declared implicitly
+Target not created
+Build target 'stm32'
+compiling Button.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling Chart.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling CheckBox.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling DigitalMeter.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling DisplayDriver.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling EditBox.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling GOL.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling Grid.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling GroupBox.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling ListBox.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling Meter.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling Palette.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling Picture.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling Primitive.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling ProgressBar.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling RadioButton.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling RoundDial.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling Slider.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling StaticText.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling TextEntry.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+compiling Window.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(49): error:  #35: #error directive: CONTROLLER IS NOT SUPPORTED
+Target not created
+Build target 'stm32'
+compiling Button.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling Chart.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling CheckBox.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling DigitalMeter.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling DisplayDriver.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling EditBox.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling GOL.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling Grid.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling GroupBox.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling ListBox.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling Meter.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling Palette.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling Picture.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling Primitive.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling ProgressBar.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling RadioButton.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling RoundDial.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling Slider.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling StaticText.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling TextEntry.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+compiling Window.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(76): error:  #35: #error directive: DISP_HOR_RESOLUTION must be defined in GraphicsConfig.h
+Target not created
+Build target 'stm32'
+compiling Button.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling Chart.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling CheckBox.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling DigitalMeter.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling DisplayDriver.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling EditBox.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling GOL.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling Grid.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling GroupBox.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling ListBox.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling Meter.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling Palette.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling Picture.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling Primitive.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling ProgressBar.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling RadioButton.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling RoundDial.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling Slider.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling StaticText.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling TextEntry.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+compiling Window.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(84): error:  #35: #error directive: COLOR_DEPTH must be defined in GraphicsConfig.h
+Target not created
+Build target 'stm32'
+compiling Button.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling Chart.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling CheckBox.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling DigitalMeter.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling DisplayDriver.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling EditBox.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling GOL.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling Grid.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling GroupBox.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling ListBox.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling Meter.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling Palette.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling Picture.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling Primitive.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling ProgressBar.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling RadioButton.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling RoundDial.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling Slider.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling StaticText.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling TextEntry.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+compiling Window.c...
+..\MicroChipGUI\Include\Graphics\drvILI9325.h(88): error:  #35: #error directive: DISP_ORIENTATION must be defined in GraphicsConfig.h
+Target not created
+Build target 'stm32'
+compiling Button.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling Chart.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling CheckBox.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling DigitalMeter.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling DisplayDriver.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling EditBox.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling GOL.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Graphics\GOL.c(374): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Graphics\GOL.c(377): error:  #20: identifier "FALSE" is undefined
+..\MicroChipGUI\Graphics\GOL.c(424): error:  #20: identifier "TRUE" is undefined
+..\MicroChipGUI\Graphics\GOL.c(444): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Graphics\GOL.c(451): error:  #20: identifier "FALSE" is undefined
+..\MicroChipGUI\Graphics\GOL.c(793): warning:  #177-D: variable "translatedMsg" was declared but never referenced
+..\MicroChipGUI\Graphics\GOL.c(1286): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Graphics\GOLFontDefault.c(14): warning:  #188-D: enumerated type mixed with another type
+compiling Grid.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling GroupBox.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling ListBox.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling Meter.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling Palette.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling Picture.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling Primitive.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Graphics\Primitive.c(1411): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\Primitive.c(1674): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1676): warning:  #68-D: integer conversion resulted in a change of sign
+compiling ProgressBar.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling RadioButton.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling RoundDial.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling Slider.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling StaticText.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling TextEntry.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+compiling Window.c...
+..\MicroChipGUI\Include\Graphics\GOL.h(1188): error:  #20: identifier "bool" is undefined
+..\MicroChipGUI\Include\Graphics\GOL.h(1207): error:  #20: identifier "bool" is undefined
+Target not created
+Build target 'stm32'
+compiling Button.c...
+compiling Chart.c...
+compiling CheckBox.c...
+compiling DigitalMeter.c...
+compiling DisplayDriver.c...
+compiling EditBox.c...
+compiling GOL.c...
+..\MicroChipGUI\Graphics\GOL.c(793): warning:  #177-D: variable "translatedMsg" was declared but never referenced
+..\MicroChipGUI\Graphics\GOL.c(1286): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Graphics\GOLFontDefault.c(14): warning:  #188-D: enumerated type mixed with another type
+compiling Grid.c...
+compiling GroupBox.c...
+compiling ListBox.c...
+compiling Meter.c...
+compiling Palette.c...
+compiling Picture.c...
+compiling Primitive.c...
+..\MicroChipGUI\Graphics\Primitive.c(1411): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\Primitive.c(1674): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1676): warning:  #68-D: integer conversion resulted in a change of sign
+compiling ProgressBar.c...
+compiling RadioButton.c...
+compiling RoundDial.c...
+compiling Slider.c...
+compiling StaticText.c...
+compiling TextEntry.c...
+compiling Window.c...
+linking...
+stm32.axf: Error: L6218E: Undefined symbol GOLDrawCallback (referred from gol.o).
+Target not created
+Build target 'stm32'
+compiling GOL.c...
+..\MicroChipGUI\Graphics\GOL.c(793): warning:  #177-D: variable "translatedMsg" was declared but never referenced
+..\MicroChipGUI\Graphics\GOL.c(1286): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+linking...
+stm32.axf: Error: L6200E: Symbol Delay multiply defined (by lcd_ili9325.o and fsmc_lcd.o).
+stm32.axf: Error: L6200E: Symbol LCD_Reset multiply defined (by lcd_ili9325.o and fsmc_lcd.o).
+Target not created
+Build target 'stm32'
+compiling main.c...
+compiling fsmc_lcd.c...
+linking...
+Program Size: Code=11740 RO-data=356 RW-data=20 ZI-data=2148  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Build target 'stm32'
+compiling Button.c...
+..\MicroChipGUI\Graphics\Button.c(350): warning:  #550-D: variable "width" was set but never used
+..\MicroChipGUI\Graphics\Button.c(350): warning:  #550-D: variable "height" was set but never used
+compiling Chart.c...
+compiling CheckBox.c...
+compiling DigitalMeter.c...
+compiling DisplayDriver.c...
+compiling EditBox.c...
+compiling GOL.c...
+..\MicroChipGUI\Graphics\GOL.c(1286): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+compiling GOLFontDefault.c...
+..\MicroChipGUI\Graphics\GOLFontDefault.c(14): warning:  #188-D: enumerated type mixed with another type
+compiling Grid.c...
+compiling GroupBox.c...
+compiling ListBox.c...
+compiling Meter.c...
+compiling Palette.c...
+compiling Picture.c...
+compiling Primitive.c...
+..\MicroChipGUI\Graphics\Primitive.c(1411): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\Primitive.c(1674): warning:  #68-D: integer conversion resulted in a change of sign
+..\MicroChipGUI\Graphics\Primitive.c(1676): warning:  #68-D: integer conversion resulted in a change of sign
+compiling ProgressBar.c...
+compiling RadioButton.c...
+compiling RoundDial.c...
+compiling Slider.c...
+compiling StaticText.c...
+compiling TextEntry.c...
+compiling Window.c...
+linking...
+stm32.axf: Error: L6218E: Undefined symbol GOLMsgCallback (referred from gol.o).
+Target not created
+Build target 'stm32'
+compiling GOL.c...
+..\MicroChipGUI\Graphics\GOL.c(1286): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+linking...
+stm32.axf: Error: L6218E: Undefined symbol GOLMsgCallback (referred from gol.o).
+Target not created
+Build target 'stm32'
+compiling GOL.c...
+..\MicroChipGUI\Graphics\GOL.c(1286): warning:  #111-D: statement is unreachable
+..\MicroChipGUI\Graphics\GOL.c(1657): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=11740 RO-data=356 RW-data=20 ZI-data=2148  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 2 Warning(s).
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(19): error:  #5: cannot open source input file "Graphic.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(107): error:  #20: identifier "ID_WINDOW1" is undefined
+..\source\main.c(68): warning:  #177-D: variable "btn" was declared but never referenced
+Target not created
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(68): warning:  #177-D: variable "btn" was declared but never referenced
+linking...
+Program Size: Code=23706 RO-data=5870 RW-data=164 ZI-data=2148  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 1 Warning(s).
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=23754 RO-data=5870 RW-data=164 ZI-data=2148  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\LCD_MicroChipGUI\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.280V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=23758 RO-data=5870 RW-data=164 ZI-data=2148  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\LCD_MicroChipGUI\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.280V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=23754 RO-data=5870 RW-data=164 ZI-data=2148  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\LCD_MicroChipGUI\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.280V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Clean started: Project: 'stm32'
+   deleting intermediate output files for target 'stm32'

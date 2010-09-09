@@ -16,6 +16,7 @@
 #include "lcd.h"
 #include "usart.h"
 #include "fsmc_lcd.h"
+#include "Graphics\Graphics.h"
 
 
 
@@ -63,6 +64,9 @@ int main(void)
 	debug();
 #endif
 	int i,j;
+		WINDOW * wnd;
+		BUTTON * btn;
+		GOL_SCHEME *pScheme;
 
 
     //  System clock configuration
@@ -101,6 +105,23 @@ int main(void)
 			
 
 		ILI9325_FillWindowArea(10,10,100,100,0x001f);
+
+		pScheme = GOLCreateScheme();
+
+
+		wnd=WndCreate(0,                // ID
+                         0,0,GetMaxX(),GetMaxY(),   // whole screen dimension
+                         WND_DRAW,                  // set state to draw all
+                         NULL,             // icon
+                         "Place Title Here.",       // text
+                         pScheme);                     // use default GOL scheme
+		WndDraw(wnd);
+
+		btn=BtnCreate(1,20,64,50,118,0, BTN_DRAW, NULL, "ON", pScheme);
+		BtnDraw(btn);
+
+
+
 						    
     while(1)
     {
