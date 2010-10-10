@@ -3,7 +3,1709 @@
 <pre>
 <h1>礦ision3 Build Log</h1>
 <h2>Project:</h2>
-F:\Dean\SysTick\project\stm32.uv2
-Project File Date:  07/09/2010
+C:\Documents and Settings\SinaeanDean\桌面\SDIO\project\stm32.uv2
+Project File Date:  10/10/2010
 
 <h2>Output:</h2>
+Build target 'stm32'
+assembling cortexm3_macro.s...
+assembling stm32f10x_vector.s...
+compiling gpio.c...
+compiling main.c...
+compiling nvic.c...
+compiling rcc.c...
+compiling sdcard.c...
+compiling stm32f10x_it.c...
+compiling systick.c...
+compiling timx.c...
+..\source\timx.c(10): error:  #20: identifier "TIM_TimeBaseInitTypeDef" is undefined
+..\source\timx.c(11): error:  #20: identifier "TIM_OCInitTypeDef" is undefined
+..\source\timx.c(14): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+..\source\timx.c(14): error:  #20: identifier "RCC_APB1Periph_TIM2" is undefined
+..\source\timx.c(14): error:  #20: identifier "ENABLE" is undefined
+..\source\timx.c(21): error:  #20: identifier "TIM_CounterMode_Up" is undefined
+..\source\timx.c(22): warning:  #223-D: function "TIM_TimeBaseInit" declared implicitly
+..\source\timx.c(22): error:  #20: identifier "TIM2" is undefined
+..\source\timx.c(25): error:  #20: identifier "TIM_OCMode_Active" is undefined
+..\source\timx.c(26): error:  #20: identifier "TIM_OutputState_Enable" is undefined
+..\source\timx.c(28): error:  #20: identifier "TIM_OCPolarity_High" is undefined
+..\source\timx.c(29): warning:  #223-D: function "TIM_OC1Init" declared implicitly
+..\source\timx.c(32): warning:  #223-D: function "TIM_OC1PreloadConfig" declared implicitly
+..\source\timx.c(32): error:  #20: identifier "TIM_OCPreload_Disable" is undefined
+..\source\timx.c(35): warning:  #223-D: function "TIM_ARRPreloadConfig" declared implicitly
+..\source\timx.c(38): warning:  #223-D: function "TIM_ITConfig" declared implicitly
+..\source\timx.c(38): error:  #20: identifier "TIM_IT_CC1" is undefined
+..\source\timx.c(41): warning:  #223-D: function "TIM_Cmd" declared implicitly
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_systick.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+Target not created
+Build target 'stm32'
+linking...
+Program Size: Code=19788 RO-data=408 RW-data=64 ZI-data=2248  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Build target 'stm32'
+linking...
+Program Size: Code=19788 RO-data=408 RW-data=64 ZI-data=2248  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19888 RO-data=444 RW-data=64 ZI-data=2248  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling nvic.c...
+..\source\nvic.c(34): error:  #268: declaration may not appear after executable statement in block
+..\source\nvic.c(39): error:  #20: identifier "SDIO_IRQn" is undefined
+Target not created
+Build target 'stm32'
+compiling nvic.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(314): error:  #256: invalid redeclaration of type name "s32" (declared at line 26 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(318): error:  #256: invalid redeclaration of type name "sc32" (declared at line 30 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(322): error:  #256: invalid redeclaration of type name "vs32" (declared at line 34 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(326): error:  #256: invalid redeclaration of type name "vsc32" (declared at line 38 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(330): error:  #256: invalid redeclaration of type name "u32" (declared at line 42 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(334): error:  #256: invalid redeclaration of type name "uc32" (declared at line 46 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(338): error:  #256: invalid redeclaration of type name "vu32" (declared at line 50 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(342): error:  #256: invalid redeclaration of type name "vuc32" (declared at line 54 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(347): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(347): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(347): error:  #256: invalid redeclaration of type name "bool" (declared at line 58 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(350): error:  #101: "RESET" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(350): error:  #101: "SET" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(350): error:  #256: invalid redeclaration of type name "FlagStatus" (declared at line 60 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(350): error:  #256: invalid redeclaration of type name "ITStatus" (declared at line 60 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(352): error:  #101: "DISABLE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(352): error:  #101: "ENABLE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(352): error:  #256: invalid redeclaration of type name "FunctionalState" (declared at line 62 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(355): error:  #101: "ERROR" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(355): error:  #101: "SUCCESS" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(355): error:  #256: invalid redeclaration of type name "ErrorStatus" (declared at line 65 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(391): error:  #256: invalid redeclaration of type name "ADC_TypeDef" (declared at line 58 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_map.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(490): error:  #256: invalid redeclaration of type name "BKP_TypeDef" (declared at line 154 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_map.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(502): error:  #256: invalid redeclaration of type name "CAN_TxMailBox_TypeDef" (declared at line 163 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_map.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(514): error:  #256: invalid redeclaration of type name "CAN_FIFOMailBox_TypeDef" (declared at line 171 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_map.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(524): error:  #256: invalid redeclaration of type name "CAN_FilterRegister_TypeDef" (declared at line 177 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_map.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(558): error:  #256: invalid redeclaration of type name "CAN_TypeDef" (declared at line 203 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_map.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(571): error:  #256: invalid redeclaration of type name "CRC_TypeDef" (declared at line 213 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_map.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(592): error:  #256: invalid redeclaration of type name "DAC_TypeDef" (declared at line 232 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_map.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h(602): error:  #256: invalid redeclaration of type name "DBGMCU_TypeDef" (declared at line 239 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_map.h")
+Target not created
+Build target 'stm32'
+compiling nvic.c...
+..\source\nvic.c(116): error:  #268: declaration may not appear after executable statement in block
+..\source\nvic.c(121): error:  #20: identifier "SDIO_IRQn" is undefined
+Target not created
+Build target 'stm32'
+compiling nvic.c...
+..\source\nvic.c(122): error:  #20: identifier "SDIO_IRQn" is undefined
+Target not created
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(144): error:  #20: identifier "SDIO_IRQn" is undefined
+compiling nvic.c...
+Target not created
+Build target 'stm32'
+compiling main.c...
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(26): error:  #256: invalid redeclaration of type name "s32" (declared at line 314 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(30): error:  #256: invalid redeclaration of type name "sc32" (declared at line 318 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(34): error:  #256: invalid redeclaration of type name "vs32" (declared at line 322 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(38): error:  #256: invalid redeclaration of type name "vsc32" (declared at line 326 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(42): error:  #256: invalid redeclaration of type name "u32" (declared at line 330 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(46): error:  #256: invalid redeclaration of type name "uc32" (declared at line 334 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(50): error:  #256: invalid redeclaration of type name "vu32" (declared at line 338 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(54): error:  #256: invalid redeclaration of type name "vuc32" (declared at line 342 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "FALSE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #101: "TRUE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(58): error:  #256: invalid redeclaration of type name "bool" (declared at line 347 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "RESET" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #101: "SET" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #256: invalid redeclaration of type name "FlagStatus" (declared at line 350 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(60): error:  #256: invalid redeclaration of type name "ITStatus" (declared at line 350 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(62): error:  #101: "DISABLE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(62): error:  #101: "ENABLE" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(62): error:  #256: invalid redeclaration of type name "FunctionalState" (declared at line 352 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(65): error:  #101: "ERROR" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(65): error:  #101: "SUCCESS" has already been declared in the current scope
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_type.h(65): error:  #256: invalid redeclaration of type name "ErrorStatus" (declared at line 355 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_conf.h(147): warning:  #47-D: incompatible redefinition of macro "HSE_Value" (declared at line 85 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\cortexm3_macro.h(30): error:  #55: too many arguments in macro invocation
+D:\Keil1\ARM\INC\ST\STM32F10x\cortexm3_macro.h(30): error:  #79: expected a type specifier
+D:\Keil1\ARM\INC\ST\STM32F10x\cortexm3_macro.h(31): error:  #55: too many arguments in macro invocation
+D:\Keil1\ARM\INC\ST\STM32F10x\cortexm3_macro.h(31): error:  #79: expected a type specifier
+D:\Keil1\ARM\INC\ST\STM32F10x\cortexm3_macro.h(32): error:  #55: too many arguments in macro invocation
+D:\Keil1\ARM\INC\ST\STM32F10x\cortexm3_macro.h(32): error:  #79: expected a type specifier
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_map.h(58): error:  #256: invalid redeclaration of type name "ADC_TypeDef" (declared at line 391 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_map.h(154): error:  #256: invalid redeclaration of type name "BKP_TypeDef" (declared at line 490 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x_map.h(163): error:  #256: invalid redeclaration of type name "CAN_TxMailBox_TypeDef" (declared at line 502 of "D:\Keil1\ARM\INC\ST\STM32F10x\stm32f10x.h")
+Target not created
+Build target 'stm32'
+compiling gpio.c...
+compiling main.c...
+..\source\main.c(151): warning:  #177-D: variable "writeBuffer" was declared but never referenced
+compiling nvic.c...
+compiling rcc.c...
+compiling sdcard.c...
+compiling stm32f10x_it.c...
+compiling systick.c...
+compiling stm32f10x_lib.c...
+linking...
+Program Size: Code=19876 RO-data=444 RW-data=64 ZI-data=2248  
+"stm32.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19888 RO-data=444 RW-data=64 ZI-data=2248  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19888 RO-data=444 RW-data=64 ZI-data=2248  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(194): error:  #20: identifier "BlockSize" is undefined
+..\source\main.c(194): error:  #20: identifier "NumberOfBlocks" is undefined
+..\source\main.c(206): error:  #20: identifier "Buffer_Block_Tx" is undefined
+..\source\main.c(206): error:  #20: identifier "BlockSize" is undefined
+..\source\main.c(210): error:  #20: identifier "Buffer_Block_Rx" is undefined
+Target not created
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(212): warning:  #167-D: argument of type "uint32_t *" is incompatible with parameter of type "u32 *"
+..\source\main.c(216): warning:  #167-D: argument of type "uint32_t *" is incompatible with parameter of type "u32 *"
+linking...
+Program Size: Code=20288 RO-data=444 RW-data=64 ZI-data=2248  
+"stm32.axf" - 0 Error(s), 2 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(203): warning:  #167-D: argument of type "uint32_t *" is incompatible with parameter of type "u32 *"
+..\source\main.c(152): warning:  #177-D: variable "Buffer_Block_Rx" was declared but never referenced
+..\source\main.c(157): warning:  #177-D: variable "writeBuffer" was declared but never referenced
+linking...
+Program Size: Code=19892 RO-data=444 RW-data=64 ZI-data=2248  
+"stm32.axf" - 0 Error(s), 3 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(150): error:  #20: identifier "BufferWordsSize" is undefined
+..\source\main.c(198): error:  #20: identifier "BlockSize" is undefined
+Target not created
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(197): error:  #20: identifier "Buffer_Block_Tx" is undefined
+..\source\main.c(197): error:  #20: identifier "BlockSize" is undefined
+Target not created
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19738 RO-data=398 RW-data=580 ZI-data=2756  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 4000 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(200): warning:  #167-D: argument of type "uint32_t *" is incompatible with parameter of type "u32 *"
+..\source\main.c(205): error:  #20: identifier "readBuffer" is undefined
+..\source\main.c(209): error:  #20: identifier "i" is undefined
+..\source\main.c(210): error:  #20: identifier "readBuffer" is undefined
+..\source\main.c(152): warning:  #177-D: variable "Buffer_Block_Rx" was declared but never referenced
+Target not created
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(203): warning:  #167-D: argument of type "uint32_t *" is incompatible with parameter of type "u32 *"
+..\source\main.c(155): warning:  #177-D: variable "Buffer_Block_Rx" was declared but never referenced
+linking...
+Program Size: Code=19738 RO-data=398 RW-data=580 ZI-data=2756  
+"stm32.axf" - 0 Error(s), 2 Warning(s).
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(204): warning:  #167-D: argument of type "uint32_t *" is incompatible with parameter of type "u32 *"
+linking...
+Program Size: Code=19738 RO-data=398 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 4000 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(204): warning:  #167-D: argument of type "uint32_t *" is incompatible with parameter of type "u32 *"
+linking...
+Program Size: Code=19726 RO-data=398 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling nvic.c...
+linking...
+Program Size: Code=19762 RO-data=398 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling stm32f10x_it.c...
+linking...
+Program Size: Code=19766 RO-data=398 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19766 RO-data=398 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19766 RO-data=398 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19766 RO-data=398 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19818 RO-data=398 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19818 RO-data=398 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19786 RO-data=398 RW-data=196 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19858 RO-data=398 RW-data=196 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19858 RO-data=398 RW-data=196 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19886 RO-data=398 RW-data=196 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19886 RO-data=398 RW-data=196 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19922 RO-data=398 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(206): error:  #513: a value of type "u32 *" cannot be assigned to an entity of type "u8 *"
+Target not created
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(227): warning:  #1441-D: nonstandard cast on lvalue
+..\source\main.c(227): error:  #513: a value of type "u32 *" cannot be assigned to an entity of type "u8 *"
+Target not created
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19914 RO-data=398 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19918 RO-data=398 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19962 RO-data=398 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+linking...
+Program Size: Code=19962 RO-data=398 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+linking...
+Program Size: Code=19962 RO-data=398 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19930 RO-data=398 RW-data=68 ZI-data=14020  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19930 RO-data=398 RW-data=68 ZI-data=4292  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+linking...
+Program Size: Code=19930 RO-data=398 RW-data=68 ZI-data=4292  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(30): warning:  #520-D: initialization with "{...}" expected for aggregate object
+..\source\main.c(30): error:  #144: a value of type "char *" cannot be used to initialize an entity of type "u32"
+Target not created
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(30): warning:  #520-D: initialization with "{...}" expected for aggregate object
+..\source\main.c(30): error:  #144: a value of type "u32 *" cannot be used to initialize an entity of type "u32"
+Target not created
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(30): warning:  #520-D: initialization with "{...}" expected for aggregate object
+..\source\main.c(30): warning:  #1296-D: extended constant initialiser used
+linking...
+Program Size: Code=19962 RO-data=434 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 2 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19962 RO-data=398 RW-data=580 ZI-data=3780  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(31): error:  #144: a value of type "u32 *" cannot be used to initialize an entity of type "u32"
+Target not created
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19966 RO-data=398 RW-data=584 ZI-data=3784  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+..\source\main.c(30): warning:  #69-D: integer conversion resulted in truncation
+..\source\main.c(30): warning:  #69-D: integer conversion resulted in truncation
+..\source\main.c(30): warning:  #69-D: integer conversion resulted in truncation
+..\source\main.c(30): warning:  #69-D: integer conversion resulted in truncation
+..\source\main.c(30): warning:  #69-D: integer conversion resulted in truncation
+..\source\main.c(30): warning:  #69-D: integer conversion resulted in truncation
+..\source\main.c(30): warning:  #69-D: integer conversion resulted in truncation
+linking...
+Program Size: Code=19966 RO-data=398 RW-data=584 ZI-data=3784  
+"stm32.axf" - 0 Error(s), 7 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19966 RO-data=398 RW-data=584 ZI-data=3784  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=19966 RO-data=398 RW-data=584 ZI-data=3784  
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\SinaeanDean\\桌面\\SDIO\\project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 9600 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Clean started: Project: 'stm32'
+   deleting intermediate output files for target 'stm32'

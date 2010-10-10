@@ -3,52 +3,53 @@
 
 Target (stm32), 0x0004 // Tools: 'ARM-ADS'
 
-Group (StartUp)
-Group (FWLib)
-Group (Source)
+Group (startup)
+Group (source)
+Group (fwlib)
 
 File 1,2,<..\startup\cortexm3_macro.s><cortexm3_macro.s>
 File 1,2,<..\startup\stm32f10x_vector.s><stm32f10x_vector.s>
-File 2,1,<..\stm32lib\src\stm32f10x_adc.c><stm32f10x_adc.c>
-File 2,1,<..\stm32lib\src\stm32f10x_bkp.c><stm32f10x_bkp.c>
-File 2,1,<..\stm32lib\src\stm32f10x_can.c><stm32f10x_can.c>
-File 2,1,<..\stm32lib\src\stm32f10x_crc.c><stm32f10x_crc.c>
-File 2,1,<..\stm32lib\src\stm32f10x_dac.c><stm32f10x_dac.c>
-File 2,1,<..\stm32lib\src\stm32f10x_dbgmcu.c><stm32f10x_dbgmcu.c>
-File 2,1,<..\stm32lib\src\stm32f10x_dma.c><stm32f10x_dma.c>
-File 2,1,<..\stm32lib\src\stm32f10x_exti.c><stm32f10x_exti.c>
-File 2,1,<..\stm32lib\src\stm32f10x_flash.c><stm32f10x_flash.c>
-File 2,1,<..\stm32lib\src\stm32f10x_fsmc.c><stm32f10x_fsmc.c>
-File 2,1,<..\stm32lib\src\stm32f10x_gpio.c><stm32f10x_gpio.c>
-File 2,1,<..\stm32lib\src\stm32f10x_i2c.c><stm32f10x_i2c.c>
-File 2,1,<..\stm32lib\src\stm32f10x_iwdg.c><stm32f10x_iwdg.c>
-File 2,1,<..\stm32lib\src\stm32f10x_lib.c><stm32f10x_lib.c>
-File 2,1,<..\stm32lib\src\stm32f10x_nvic.c><stm32f10x_nvic.c>
-File 2,1,<..\stm32lib\src\stm32f10x_pwr.c><stm32f10x_pwr.c>
-File 2,1,<..\stm32lib\src\stm32f10x_rcc.c><stm32f10x_rcc.c>
-File 2,1,<..\stm32lib\src\stm32f10x_rtc.c><stm32f10x_rtc.c>
-File 2,1,<..\stm32lib\src\stm32f10x_sdio.c><stm32f10x_sdio.c>
-File 2,1,<..\stm32lib\src\stm32f10x_spi.c><stm32f10x_spi.c>
-File 2,1,<..\stm32lib\src\stm32f10x_systick.c><stm32f10x_systick.c>
-File 2,1,<..\stm32lib\src\stm32f10x_tim.c><stm32f10x_tim.c>
-File 2,1,<..\stm32lib\src\stm32f10x_usart.c><stm32f10x_usart.c>
-File 2,1,<..\stm32lib\src\stm32f10x_wwdg.c><stm32f10x_wwdg.c>
-File 3,1,<..\source\main.c><main.c>
-File 3,1,<..\source\stm32f10x_it.c><stm32f10x_it.c>
-File 3,1,<..\source\rcc.c><rcc.c>
-File 3,1,<..\source\nvic.c><nvic.c>
-File 3,1,<..\source\gpio.c><gpio.c>
-File 3,1,<..\source\systick.c><systick.c>
+File 2,1,<..\source\gpio.c><gpio.c>
+File 2,1,<..\source\main.c><main.c>
+File 2,1,<..\source\nvic.c><nvic.c>
+File 2,1,<..\source\rcc.c><rcc.c>
+File 2,1,<..\source\sdcard.c><sdcard.c>
+File 2,1,<..\source\stm32f10x_it.c><stm32f10x_it.c>
+File 2,1,<..\source\systick.c><systick.c>
+File 3,1,<..\stm32lib\src\stm32f10x_wwdg.c><stm32f10x_wwdg.c>
+File 3,1,<..\stm32lib\src\stm32f10x_adc.c><stm32f10x_adc.c>
+File 3,1,<..\stm32lib\src\stm32f10x_bkp.c><stm32f10x_bkp.c>
+File 3,1,<..\stm32lib\src\stm32f10x_can.c><stm32f10x_can.c>
+File 3,1,<..\stm32lib\src\stm32f10x_crc.c><stm32f10x_crc.c>
+File 3,1,<..\stm32lib\src\stm32f10x_dac.c><stm32f10x_dac.c>
+File 3,1,<..\stm32lib\src\stm32f10x_dbgmcu.c><stm32f10x_dbgmcu.c>
+File 3,1,<..\stm32lib\src\stm32f10x_dma.c><stm32f10x_dma.c>
+File 3,1,<..\stm32lib\src\stm32f10x_exti.c><stm32f10x_exti.c>
+File 3,1,<..\stm32lib\src\stm32f10x_flash.c><stm32f10x_flash.c>
+File 3,1,<..\stm32lib\src\stm32f10x_fsmc.c><stm32f10x_fsmc.c>
+File 3,1,<..\stm32lib\src\stm32f10x_gpio.c><stm32f10x_gpio.c>
+File 3,1,<..\stm32lib\src\stm32f10x_i2c.c><stm32f10x_i2c.c>
+File 3,1,<..\stm32lib\src\stm32f10x_iwdg.c><stm32f10x_iwdg.c>
+File 3,1,<..\stm32lib\src\stm32f10x_lib.c><stm32f10x_lib.c>
+File 3,1,<..\stm32lib\src\stm32f10x_nvic.c><stm32f10x_nvic.c>
+File 3,1,<..\stm32lib\src\stm32f10x_pwr.c><stm32f10x_pwr.c>
+File 3,1,<..\stm32lib\src\stm32f10x_rcc.c><stm32f10x_rcc.c>
+File 3,1,<..\stm32lib\src\stm32f10x_rtc.c><stm32f10x_rtc.c>
+File 3,1,<..\stm32lib\src\stm32f10x_sdio.c><stm32f10x_sdio.c>
+File 3,1,<..\stm32lib\src\stm32f10x_spi.c><stm32f10x_spi.c>
+File 3,1,<..\stm32lib\src\stm32f10x_systick.c><stm32f10x_systick.c>
+File 3,1,<..\stm32lib\src\stm32f10x_tim.c><stm32f10x_tim.c>
+File 3,1,<..\stm32lib\src\stm32f10x_usart.c><stm32f10x_usart.c>
 
 
 Options 1,0,0  // Target 'stm32'
- Device (STM32F103VE)
+ Device (STM32F103ZE)
  Vendor (STMicroelectronics)
  Cpu (IRAM(0x20000000-0x2000FFFF) IROM(0x8000000-0x807FFFF) CLOCK(8000000) CPUTYPE("Cortex-M3"))
  FlashUt ()
  StupF ("STARTUP\ST\STM32F10x.s" ("STM32 Startup Code"))
  FlashDR (UL2CM3(-O14 -S0 -C0 -N00("ARM Cortex-M3") -D00(1BA00477) -L00(4) -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F10x_512 -FS08000000 -FL080000))
- DevID (4225)
+ DevID (4216)
  Rgf (stm32f10x_lib.h)
  Mem ()
  C ()
@@ -70,7 +71,7 @@ Options 1,0,0  // Target 'stm32'
  OutName (stm32)
  GenApp=1
  GenLib=0
- GenHex=1
+ GenHex=0
  Debug=1
  Browse=1
  LstDir (.\)
@@ -123,8 +124,8 @@ Options 1,0,0  // Target 'stm32'
  ADSLDMC ()
  ADSLDIF ()
  ADSLDDW ()
-  OPTDL (SARMCM3.DLL)()(DARMSTM.DLL)(-pSTM32F103VE)(SARMCM3.DLL)()(TARMSTM.DLL)(-pSTM32F103VE)
-  OPTDBG 49150,7,()()()()()()()()()() (Segger\JL2CM3.dll)()()()
+  OPTDL (SARMCM3.DLL)()(DARMSTM.DLL)(-pSTM32F103ZE)(SARMCM3.DLL)()(TARMSTM.DLL)(-pSTM32F103ZE)
+  OPTDBG 49150,7,()()()()()()()()()(..\STM32DBG.ini) (Segger\JL2CM3.dll)()()()
  FLASH1 { 9,0,0,0,1,0,0,0,5,16,0,0,0,0,0,0,0,0,0,0 }
  FLASH2 (Segger\JL2CM3.dll)
  FLASH3 ("" ())
