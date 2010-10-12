@@ -16,6 +16,8 @@ File 2,1,<..\source\rcc.c><rcc.c>
 File 2,1,<..\source\sdcard.c><sdcard.c>
 File 2,1,<..\source\stm32f10x_it.c><stm32f10x_it.c>
 File 2,1,<..\source\systick.c><systick.c>
+File 2,1,<..\fat16\fat16.c><fat16.c>
+File 2,1,<..\fat16\Unicodetogb2312.c><Unicodetogb2312.c>
 File 3,1,<..\stm32lib\src\stm32f10x_wwdg.c><stm32f10x_wwdg.c>
 File 3,1,<..\stm32lib\src\stm32f10x_adc.c><stm32f10x_adc.c>
 File 3,1,<..\stm32lib\src\stm32f10x_bkp.c><stm32f10x_bkp.c>
