@@ -14,6 +14,7 @@
 #include "stm32f10x_lib.h"
 #include "stdio.h"
 #include "sdcard.h"
+#include "../fat16/fat16.h"
 
 // *****************************************************************************
 // Description: Private defines
@@ -205,7 +206,7 @@ int main(void)
 		}	
 	//	Status = SD_Erase(0x00, 10240);
 		//Status = SD_WriteBlock(0x00, Buffer_Block_Tx, BlockSize);
-		Status = SD_WriteBlock(0x00, (u32 *)writeBuffer, 512);
+		//Status = SD_WriteBlock(0x00, (u32 *)writeBuffer, 512);
 		if (Status==SD_OK)
 		{
   		printf("Read from 0x00~0x1f:\n\r");
@@ -231,7 +232,16 @@ int main(void)
 			for(i=0;i<32;i++)
 			 printf("\t %d \t",*pt++);
 		}
-			
+
+		//////////////////////////////////////////
+		//fat16 test
+		{
+			static u32 currSec;
+			FAT_Init();
+			FAT_Info();
+			currSec = DirStartSec();
+			List_AllDir_Long(currSec);
+		}
     while(1)
     {	
 
