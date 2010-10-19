@@ -102,7 +102,7 @@ Options 1,0,0  // Target 'stm32'
  ADSCMISC ()
  ADSCDEFN ()
  ADSCUDEF ()
- ADSCINCD ()
+ ADSCINCD (..\stm32lib\inc;..\source)
  ADSASFLG { 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
  ADSAMISC ()
  ADSADEFN ()
