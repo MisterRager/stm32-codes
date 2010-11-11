@@ -18,6 +18,8 @@
 #include "integer.h"
 #include "../filesystem/ff.h"
 #include "../filesystem/diskio.h"
+#include "../5110/lcd.h"
+#include "../5110/delay.h"
 
 #define buffsize 512
 u8  fileBuff[buffsize];
@@ -71,25 +73,41 @@ int main(void)
 	/* Interrupt Config */
 	NVIC_Configuration();
 	///////////////// SDCARD Initialisation ////
-	SDCard_Configuration();
-	res = f_open(&fsrc, "a.txt", FA_OPEN_ALWAYS | FA_WRITE |FA_READ);
-	if(res==FR_OK)
-		printf("File opened successfully.\n\r");
-	else 
-	{
-		printf("File open error.\n\r");
-		return 1;
+//	SDCard_Configuration();
+//	res = f_open(&fsrc, "a.txt", FA_OPEN_ALWAYS | FA_WRITE |FA_READ);
+//	if(res==FR_OK)
+//		printf("File opened successfully.\n\r");
+//	else 
+//	{
+//		printf("File open error.\n\r");
+//		return 1;
+//	}
+//	printf("****************File Start***************\n\r");
+//	while(f_read(&fsrc, fileBuff, buffsize,&br)==FR_OK)
+//	{
+//		printf("\n\r%s\n\r",fileBuff);
+//		if(br!=buffsize)
+//			break;
+//	}
+//	printf("****************File End*****************\n\r");
+//	if(f_close(&fsrc)==FR_OK)
+//		printf("\n\rFile closed.\n\r");
+	LcdInit();
+	while(1)
+	{	
+		LcdWriteDC(COMMAND , 0x0c );	/*标准显示模式*/
+		//	LcdDrawBitmap(0, 0, (uint8_t *)logo, 80, 6);  //画一个接近全屏的位图
+		LcdPutString(0, 0, "Nokia 5110 LCD");  //在位图的左上方覆盖英文字符
+		LcdPutString(0, 1, "--0123456789--");  //在位图的左上方覆盖英文字符
+		LcdPutString(0, 2, "--9876543210--");  //在位图的左上方覆盖英文字符
+		LcdPutString(0, 3, "--0123456789--");  //在位图的左上方覆盖英文字符
+		LcdPutString(0, 4, "--9876543210--");
+		LcdPutString(0, 5, "--0123456789--");
+		Delaynus(1000000);
+		
+		LcdWriteDC(COMMAND , 0x0d);   /*反显*/
+		Delaynus(1000000);
 	}
-	printf("****************File Start***************\n\r");
-	while(f_read(&fsrc, fileBuff, buffsize,&br)==FR_OK)
-	{
-		printf("\n\r%s\n\r",fileBuff);
-		if(br!=buffsize)
-			break;
-	}
-	printf("****************File End*****************\n\r");
-	if(f_close(&fsrc)==FR_OK)
-		printf("\n\rFile closed.\n\r");
 }
 
 /**
@@ -104,7 +122,7 @@ void RCC_Configuration(void)
     SystemInit();
     
     /* Enable GPIOA and USART1 clocks */
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOD | RCC_APB2Periph_USART1, ENABLE);//GPIO A B C取决于USART 1 2 3
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOD |RCC_APB2Periph_GPIOG | RCC_APB2Periph_USART1, ENABLE);//GPIO A B C取决于USART 1 2 3
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
     /* TIM2 clock enable */
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
