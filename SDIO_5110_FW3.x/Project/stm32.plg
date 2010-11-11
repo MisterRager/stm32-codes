@@ -1,30 +1,598 @@
 <html>
 <body>
 <pre>
-<h1>µVision3 Build Log</h1>
+<h1>µVision Build Log</h1>
 <h2>Project:</h2>
-F:\Dean\SDIO_FW3.x\Project\stm32.uv2
-Project File Date:  10/20/2010
+F:\Dean\SDIO_5110_FW3.x\Project\stm32.uvproj
+Project File Date:  <unknown>
 
 <h2>Output:</h2>
 Build target 'stm32'
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
 assembling startup_stm32f10x_hd.s...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling sdcard.c...
+compiling diskio.c...
+compiling ff.c...
+compiling cnpix.c...
+..\5110\cnpix.c(3): error:  #5: cannot open source input file "includes.h": No such file or directory
+compiling delay.c...
+..\5110\delay.c(2): error:  #5: cannot open source input file "includes.h": No such file or directory
+compiling enpix.c...
+..\5110\enpix.c(4): error:  #5: cannot open source input file "includes.h": No such file or directory
+compiling lcd.c...
+..\5110\spi.h(5): error:  #20: identifier "uint8_t" is undefined
+..\5110\lcd.h(73): warning:  #1295-D: Deprecated declaration LCM_SDI_LOW - give arg types
+..\5110\lcd.h(74): warning:  #1295-D: Deprecated declaration LCM_SDI_HIGH - give arg types
+..\5110\lcd.h(75): warning:  #1295-D: Deprecated declaration LCM_SCLK_HIGH - give arg types
+..\5110\lcd.h(76): warning:  #1295-D: Deprecated declaration LCM_SCLK_LOW - give arg types
+..\5110\lcd.h(81): error:  #20: identifier "u8" is undefined
+..\5110\lcd.c(30): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+..\5110\lcd.c(34): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+..\5110\lcd.c(34): error:  #20: identifier "RCC_APB2Periph_GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(34): error:  #20: identifier "ENABLE" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_SDI_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_SCLK_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_CE_PIN" is undefined
+..\5110\lcd.c(37): error:  #20: identifier "GPIO_Mode_Out_PP" is undefined
+..\5110\lcd.c(38): error:  #20: identifier "GPIO_SPEED_LCM_CTR" is undefined
+..\5110\lcd.c(39): warning:  #223-D: function "GPIO_Init" declared implicitly
+..\5110\lcd.c(39): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(40): warning:  #223-D: function "GPIO_SetBits" declared implicitly
+..\5110\lcd.c(40): error:  #20: identifier "LCM_WR_PIN" is undefined
+..\5110\lcd.c(40): error:  #20: identifier "LCM_RD_PIN" is undefined
+..\5110\lcd.c(42): error:  #20: identifier "LCM_RST_PIN" is undefined
+..\5110\lcd.c(44): error:  #20: identifier "GPIOA_SPEED_LCM_CTR" is undefined
+..\5110\lcd.c(45): error:  #20: identifier "GPIOA_LCM_CTR" is undefined
+..\5110\lcd.c(52): warning:  #223-D: function "GPIO_ResetBits" declared implicitly
+..\5110\lcd.c(52): error:  #20: identifier "GPIOA_LCM_CTR" is undefined
+..\5110\lcd.c(52): error:  #20: identifier "LCM_RST_PIN" is undefined
+..\5110\lcd.c(53): warning:  #223-D: function "Delaynus" declared implicitly
+..\5110\lcd.c(54): warning:  #223-D: function "GPIO_SetBits" declared implicitly
+..\5110\lcd.c(57): error:  #20: identifier "u32" is undefined
+..\5110\lcd.c(59): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(65): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(69): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(78): warning:  #223-D: function "GPIO_SetBits" declared implicitly
+..\5110\lcd.c(78): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(78): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(84): warning:  #223-D: function "GPIO_ResetBits" declared implicitly
+..\5110\lcd.c(84): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(84): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(91): warning:  #223-D: function "GPIO_SetBits" declared implicitly
+..\5110\lcd.c(91): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(91): error:  #20: identifier "LCM_RD_PIN" is undefined
+..\5110\lcd.c(96): warning:  #223-D: function "GPIO_ResetBits" declared implicitly
+..\5110\lcd.c(96): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(96): error:  #20: identifier "LCM_SDI_PIN" is undefined
+..\5110\lcd.c(102): warning:  #223-D: function "GPIO_SetBits" declared implicitly
+..\5110\lcd.c(102): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(102): error:  #20: identifier "LCM_SCLK_PIN" is undefined
+compiling spi.c...
+..\5110\spi.c(1): error:  #5: cannot open source input file "includes.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling cnpix.c...
+..\5110\cnpix.c(3): error:  #5: cannot open source input file "includes.h": No such file or directory
+compiling delay.c...
+..\5110\delay.c(2): error:  #5: cannot open source input file "includes.h": No such file or directory
+compiling enpix.c...
+..\5110\enpix.c(4): error:  #5: cannot open source input file "includes.h": No such file or directory
+compiling lcd.c...
+..\5110\lcd.h(73): warning:  #1295-D: Deprecated declaration LCM_SDI_LOW - give arg types
+..\5110\lcd.h(74): warning:  #1295-D: Deprecated declaration LCM_SDI_HIGH - give arg types
+..\5110\lcd.h(75): warning:  #1295-D: Deprecated declaration LCM_SCLK_HIGH - give arg types
+..\5110\lcd.h(76): warning:  #1295-D: Deprecated declaration LCM_SCLK_LOW - give arg types
+..\5110\lcd.c(34): error:  #20: identifier "RCC_APB2Periph_GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_SDI_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_SCLK_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_CE_PIN" is undefined
+..\5110\lcd.c(38): error:  #20: identifier "GPIO_SPEED_LCM_CTR" is undefined
+..\5110\lcd.c(39): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(40): error:  #20: identifier "LCM_WR_PIN" is undefined
+..\5110\lcd.c(40): error:  #20: identifier "LCM_RD_PIN" is undefined
+..\5110\lcd.c(42): error:  #20: identifier "LCM_RST_PIN" is undefined
+..\5110\lcd.c(44): error:  #20: identifier "GPIOA_SPEED_LCM_CTR" is undefined
+..\5110\lcd.c(45): error:  #20: identifier "GPIOA_LCM_CTR" is undefined
+..\5110\lcd.c(52): error:  #20: identifier "GPIOA_LCM_CTR" is undefined
+..\5110\lcd.c(52): error:  #20: identifier "LCM_RST_PIN" is undefined
+..\5110\lcd.c(53): warning:  #223-D: function "Delaynus" declared implicitly
+..\5110\lcd.c(59): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(65): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(69): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(78): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(78): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(84): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(84): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(91): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(91): error:  #20: identifier "LCM_RD_PIN" is undefined
+..\5110\lcd.c(96): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(96): error:  #20: identifier "LCM_SDI_PIN" is undefined
+..\5110\lcd.c(102): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(102): error:  #20: identifier "LCM_SCLK_PIN" is undefined
+..\5110\lcd.c(108): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(108): error:  #20: identifier "LCM_WR_PIN" is undefined
+..\5110\lcd.c(115): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(115): error:  #20: identifier "LCM_CE_PIN" is undefined
+..\5110\lcd.c(121): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(121): error:  #20: identifier "LCM_CE_PIN" is undefined
+compiling spi.c...
+..\5110\spi.c(1): error:  #5: cannot open source input file "includes.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling delay.c...
+..\5110\delay.c(2): error:  #5: cannot open source input file "includes.h": No such file or directory
+compiling enpix.c...
+..\5110\enpix.c(4): error:  #5: cannot open source input file "includes.h": No such file or directory
+compiling lcd.c...
+..\5110\lcd.h(73): warning:  #1295-D: Deprecated declaration LCM_SDI_LOW - give arg types
+..\5110\lcd.h(74): warning:  #1295-D: Deprecated declaration LCM_SDI_HIGH - give arg types
+..\5110\lcd.h(75): warning:  #1295-D: Deprecated declaration LCM_SCLK_HIGH - give arg types
+..\5110\lcd.h(76): warning:  #1295-D: Deprecated declaration LCM_SCLK_LOW - give arg types
+..\5110\lcd.c(34): error:  #20: identifier "RCC_APB2Periph_GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_SDI_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_SCLK_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_CE_PIN" is undefined
+..\5110\lcd.c(38): error:  #20: identifier "GPIO_SPEED_LCM_CTR" is undefined
+..\5110\lcd.c(39): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(40): error:  #20: identifier "LCM_WR_PIN" is undefined
+..\5110\lcd.c(40): error:  #20: identifier "LCM_RD_PIN" is undefined
+..\5110\lcd.c(42): error:  #20: identifier "LCM_RST_PIN" is undefined
+..\5110\lcd.c(44): error:  #20: identifier "GPIOA_SPEED_LCM_CTR" is undefined
+..\5110\lcd.c(45): error:  #20: identifier "GPIOA_LCM_CTR" is undefined
+..\5110\lcd.c(52): error:  #20: identifier "GPIOA_LCM_CTR" is undefined
+..\5110\lcd.c(52): error:  #20: identifier "LCM_RST_PIN" is undefined
+..\5110\lcd.c(53): warning:  #223-D: function "Delaynus" declared implicitly
+..\5110\lcd.c(59): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(65): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(69): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(78): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(78): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(84): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(84): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(91): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(91): error:  #20: identifier "LCM_RD_PIN" is undefined
+..\5110\lcd.c(96): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(96): error:  #20: identifier "LCM_SDI_PIN" is undefined
+..\5110\lcd.c(102): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(102): error:  #20: identifier "LCM_SCLK_PIN" is undefined
+..\5110\lcd.c(108): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(108): error:  #20: identifier "LCM_WR_PIN" is undefined
+..\5110\lcd.c(115): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(115): error:  #20: identifier "LCM_CE_PIN" is undefined
+..\5110\lcd.c(121): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(121): error:  #20: identifier "LCM_CE_PIN" is undefined
+compiling spi.c...
+..\5110\spi.c(1): error:  #5: cannot open source input file "includes.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling delay.c...
+compiling enpix.c...
+..\5110\enpix.c(4): error:  #5: cannot open source input file "includes.h": No such file or directory
+compiling lcd.c...
+..\5110\lcd.h(73): warning:  #1295-D: Deprecated declaration LCM_SDI_LOW - give arg types
+..\5110\lcd.h(74): warning:  #1295-D: Deprecated declaration LCM_SDI_HIGH - give arg types
+..\5110\lcd.h(75): warning:  #1295-D: Deprecated declaration LCM_SCLK_HIGH - give arg types
+..\5110\lcd.h(76): warning:  #1295-D: Deprecated declaration LCM_SCLK_LOW - give arg types
+..\5110\lcd.c(34): error:  #20: identifier "RCC_APB2Periph_GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_SDI_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_SCLK_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_CE_PIN" is undefined
+..\5110\lcd.c(38): error:  #20: identifier "GPIO_SPEED_LCM_CTR" is undefined
+..\5110\lcd.c(39): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(40): error:  #20: identifier "LCM_WR_PIN" is undefined
+..\5110\lcd.c(40): error:  #20: identifier "LCM_RD_PIN" is undefined
+..\5110\lcd.c(42): error:  #20: identifier "LCM_RST_PIN" is undefined
+..\5110\lcd.c(44): error:  #20: identifier "GPIOA_SPEED_LCM_CTR" is undefined
+..\5110\lcd.c(45): error:  #20: identifier "GPIOA_LCM_CTR" is undefined
+..\5110\lcd.c(52): error:  #20: identifier "GPIOA_LCM_CTR" is undefined
+..\5110\lcd.c(52): error:  #20: identifier "LCM_RST_PIN" is undefined
+..\5110\lcd.c(53): warning:  #223-D: function "Delaynus" declared implicitly
+..\5110\lcd.c(59): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(65): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(69): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(78): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(78): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(84): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(84): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(91): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(91): error:  #20: identifier "LCM_RD_PIN" is undefined
+..\5110\lcd.c(96): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(96): error:  #20: identifier "LCM_SDI_PIN" is undefined
+..\5110\lcd.c(102): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(102): error:  #20: identifier "LCM_SCLK_PIN" is undefined
+..\5110\lcd.c(108): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(108): error:  #20: identifier "LCM_WR_PIN" is undefined
+..\5110\lcd.c(115): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(115): error:  #20: identifier "LCM_CE_PIN" is undefined
+..\5110\lcd.c(121): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(121): error:  #20: identifier "LCM_CE_PIN" is undefined
+compiling spi.c...
+..\5110\spi.c(1): error:  #5: cannot open source input file "includes.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling enpix.c...
+..\5110\enpix.c(5): error:  #20: identifier "NUMBER_OF_CHARACTER" is undefined
+compiling lcd.c...
+..\5110\lcd.h(73): warning:  #1295-D: Deprecated declaration LCM_SDI_LOW - give arg types
+..\5110\lcd.h(74): warning:  #1295-D: Deprecated declaration LCM_SDI_HIGH - give arg types
+..\5110\lcd.h(75): warning:  #1295-D: Deprecated declaration LCM_SCLK_HIGH - give arg types
+..\5110\lcd.h(76): warning:  #1295-D: Deprecated declaration LCM_SCLK_LOW - give arg types
+..\5110\lcd.c(34): error:  #20: identifier "RCC_APB2Periph_GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_SDI_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_SCLK_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_CE_PIN" is undefined
+..\5110\lcd.c(38): error:  #20: identifier "GPIO_SPEED_LCM_CTR" is undefined
+..\5110\lcd.c(39): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(40): error:  #20: identifier "LCM_WR_PIN" is undefined
+..\5110\lcd.c(40): error:  #20: identifier "LCM_RD_PIN" is undefined
+..\5110\lcd.c(42): error:  #20: identifier "LCM_RST_PIN" is undefined
+..\5110\lcd.c(44): error:  #20: identifier "GPIOA_SPEED_LCM_CTR" is undefined
+..\5110\lcd.c(45): error:  #20: identifier "GPIOA_LCM_CTR" is undefined
+..\5110\lcd.c(52): error:  #20: identifier "GPIOA_LCM_CTR" is undefined
+..\5110\lcd.c(52): error:  #20: identifier "LCM_RST_PIN" is undefined
+..\5110\lcd.c(53): warning:  #223-D: function "Delaynus" declared implicitly
+..\5110\lcd.c(59): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(65): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(69): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(78): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(78): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(84): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(84): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(91): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(91): error:  #20: identifier "LCM_RD_PIN" is undefined
+..\5110\lcd.c(96): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(96): error:  #20: identifier "LCM_SDI_PIN" is undefined
+..\5110\lcd.c(102): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(102): error:  #20: identifier "LCM_SCLK_PIN" is undefined
+..\5110\lcd.c(108): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(108): error:  #20: identifier "LCM_WR_PIN" is undefined
+..\5110\lcd.c(115): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(115): error:  #20: identifier "LCM_CE_PIN" is undefined
+..\5110\lcd.c(121): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(121): error:  #20: identifier "LCM_CE_PIN" is undefined
+compiling spi.c...
+..\5110\spi.c(1): error:  #5: cannot open source input file "includes.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling enpix.c...
+compiling lcd.c...
+..\5110\lcd.h(73): warning:  #1295-D: Deprecated declaration LCM_SDI_LOW - give arg types
+..\5110\lcd.h(74): warning:  #1295-D: Deprecated declaration LCM_SDI_HIGH - give arg types
+..\5110\lcd.h(75): warning:  #1295-D: Deprecated declaration LCM_SCLK_HIGH - give arg types
+..\5110\lcd.h(76): warning:  #1295-D: Deprecated declaration LCM_SCLK_LOW - give arg types
+..\5110\lcd.c(34): error:  #20: identifier "RCC_APB2Periph_GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_SDI_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_SCLK_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_CE_PIN" is undefined
+..\5110\lcd.c(38): error:  #20: identifier "GPIO_SPEED_LCM_CTR" is undefined
+..\5110\lcd.c(39): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(40): error:  #20: identifier "LCM_WR_PIN" is undefined
+..\5110\lcd.c(40): error:  #20: identifier "LCM_RD_PIN" is undefined
+..\5110\lcd.c(42): error:  #20: identifier "LCM_RST_PIN" is undefined
+..\5110\lcd.c(44): error:  #20: identifier "GPIOA_SPEED_LCM_CTR" is undefined
+..\5110\lcd.c(45): error:  #20: identifier "GPIOA_LCM_CTR" is undefined
+..\5110\lcd.c(52): error:  #20: identifier "GPIOA_LCM_CTR" is undefined
+..\5110\lcd.c(52): error:  #20: identifier "LCM_RST_PIN" is undefined
+..\5110\lcd.c(53): warning:  #223-D: function "Delaynus" declared implicitly
+..\5110\lcd.c(59): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(65): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(69): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(78): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(78): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(84): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(84): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(91): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(91): error:  #20: identifier "LCM_RD_PIN" is undefined
+..\5110\lcd.c(96): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(96): error:  #20: identifier "LCM_SDI_PIN" is undefined
+..\5110\lcd.c(102): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(102): error:  #20: identifier "LCM_SCLK_PIN" is undefined
+..\5110\lcd.c(108): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(108): error:  #20: identifier "LCM_WR_PIN" is undefined
+..\5110\lcd.c(115): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(115): error:  #20: identifier "LCM_CE_PIN" is undefined
+..\5110\lcd.c(121): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(121): error:  #20: identifier "LCM_CE_PIN" is undefined
+compiling spi.c...
+..\5110\spi.c(1): error:  #5: cannot open source input file "includes.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling lcd.c...
+..\5110\lcd.c(34): error:  #20: identifier "RCC_APB2Periph_GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_SDI_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_SCLK_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(36): error:  #20: identifier "LCM_CE_PIN" is undefined
+..\5110\lcd.c(38): error:  #20: identifier "GPIO_SPEED_LCM_CTR" is undefined
+..\5110\lcd.c(39): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(40): error:  #20: identifier "LCM_WR_PIN" is undefined
+..\5110\lcd.c(40): error:  #20: identifier "LCM_RD_PIN" is undefined
+..\5110\lcd.c(42): error:  #20: identifier "LCM_RST_PIN" is undefined
+..\5110\lcd.c(44): error:  #20: identifier "GPIOA_SPEED_LCM_CTR" is undefined
+..\5110\lcd.c(45): error:  #20: identifier "GPIOA_LCM_CTR" is undefined
+..\5110\lcd.c(52): error:  #20: identifier "GPIOA_LCM_CTR" is undefined
+..\5110\lcd.c(52): error:  #20: identifier "LCM_RST_PIN" is undefined
+..\5110\lcd.c(53): warning:  #223-D: function "Delaynus" declared implicitly
+..\5110\lcd.c(59): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(65): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(69): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(78): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(78): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(84): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(84): error:  #20: identifier "LCM_CD_PIN" is undefined
+..\5110\lcd.c(91): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(91): error:  #20: identifier "LCM_RD_PIN" is undefined
+..\5110\lcd.c(96): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(96): error:  #20: identifier "LCM_SDI_PIN" is undefined
+..\5110\lcd.c(102): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(102): error:  #20: identifier "LCM_SCLK_PIN" is undefined
+..\5110\lcd.c(108): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(108): error:  #20: identifier "LCM_WR_PIN" is undefined
+..\5110\lcd.c(115): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(115): error:  #20: identifier "LCM_CE_PIN" is undefined
+..\5110\lcd.c(121): error:  #20: identifier "GPIO_LCM_CTR" is undefined
+..\5110\lcd.c(121): error:  #20: identifier "LCM_CE_PIN" is undefined
+compiling spi.c...
+..\5110\spi.c(1): error:  #5: cannot open source input file "includes.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling lcd.c...
+..\5110\lcd.c(33): error:  #20: identifier "LCD_CTL" is undefined
+..\5110\lcd.c(35): error:  #20: identifier "LCD_SDIN" is undefined
+..\5110\lcd.c(35): error:  #20: identifier "LCD_SCLK" is undefined
+..\5110\lcd.c(35): error:  #20: identifier "LCD_DC" is undefined
+..\5110\lcd.c(35): error:  #20: identifier "LCD_SCE" is undefined
+..\5110\lcd.c(37): error:  #20: identifier "LCD_Speed" is undefined
+..\5110\lcd.c(38): error:  #20: identifier "LCD_CTL_Pins" is undefined
+..\5110\lcd.c(41): error:  #20: identifier "LCD_RST" is undefined
+..\5110\lcd.c(44): error:  #20: identifier "LCD_RESET_CTL_Pins" is undefined
+..\5110\lcd.c(51): error:  #20: identifier "LCD_RESET_CTL_Pins" is undefined
+..\5110\lcd.c(51): error:  #20: identifier "LCD_RST" is undefined
+..\5110\lcd.c(52): warning:  #223-D: function "Delaynus" declared implicitly
+..\5110\lcd.c(58): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(64): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(68): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(77): error:  #20: identifier "LCD_CTL_Pins" is undefined
+..\5110\lcd.c(77): error:  #20: identifier "LCD_DC" is undefined
+..\5110\lcd.c(83): error:  #20: identifier "LCD_CTL_Pins" is undefined
+..\5110\lcd.c(83): error:  #20: identifier "LCD_DC" is undefined
+..\5110\lcd.c(90): error:  #20: identifier "LCD_CTL_Pins" is undefined
+..\5110\lcd.c(90): error:  #20: identifier "LCD_SDIN" is undefined
+..\5110\lcd.c(95): error:  #20: identifier "LCD_CTL_Pins" is undefined
+..\5110\lcd.c(95): error:  #20: identifier "LCD_SDIN" is undefined
+..\5110\lcd.c(101): error:  #20: identifier "LCD_CTL_Pins" is undefined
+..\5110\lcd.c(101): error:  #20: identifier "LCD_SCLK" is undefined
+..\5110\lcd.c(107): error:  #20: identifier "LCD_CTL_Pins" is undefined
+..\5110\lcd.c(107): error:  #20: identifier "LCD_SCLK" is undefined
+..\5110\lcd.c(114): error:  #20: identifier "LCD_CTL_Pins" is undefined
+..\5110\lcd.c(114): error:  #20: identifier "LCD_SCE" is undefined
+..\5110\lcd.c(120): error:  #20: identifier "LCD_CTL_Pins" is undefined
+..\5110\lcd.c(120): error:  #20: identifier "LCD_SCE" is undefined
+..\5110\lcd.c(128): error:  #20: identifier "LCD_RESET_CTL_Pins" is undefined
+..\5110\lcd.c(128): error:  #20: identifier "LCD_RST" is undefined
+..\5110\lcd.c(129): warning:  #223-D: function "Delaynus" declared implicitly
+..\5110\lcd.c(142): warning:  #223-D: function "Delaynus" declared implicitly
+..\5110\lcd.c(152): error:  #20: identifier "DATA" is undefined
+compiling spi.c...
+..\5110\spi.c(1): error:  #5: cannot open source input file "stm32f10x_lib.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling lcd.c...
+..\5110\lcd.c(53): warning:  #223-D: function "Delaynus" declared implicitly
+..\5110\lcd.c(59): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(65): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(69): warning:  #223-D: function "Delay" declared implicitly
+..\5110\lcd.c(130): warning:  #223-D: function "Delaynus" declared implicitly
+..\5110\lcd.c(143): warning:  #223-D: function "Delaynus" declared implicitly
+..\5110\lcd.c(157): warning:  #223-D: function "Delaynus" declared implicitly
+..\5110\lcd.c(159): warning:  #223-D: function "SpiSendByte" declared implicitly
+..\5110\lcd.c(277): warning:  #223-D: function "SpiInit" declared implicitly
+..\5110\lcd.c(356): error:  #20: identifier "NUMBER_OF_CHARACTER" is undefined
+..\5110\lcd.c(363): error:  #20: identifier "EnPix" is undefined
+..\5110\lcd.c(380): error:  #20: identifier "CnPix" is undefined
+compiling spi.c...
+..\5110\spi.c(1): error:  #5: cannot open source input file "stm32f10x_lib.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling lcd.c...
+..\5110\delay.h(3): error:  #5: cannot open source input file "stm32f10x_lib.h": No such file or directory
+compiling spi.c...
+..\5110\spi.c(1): error:  #5: cannot open source input file "stm32f10x_lib.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling lcd.c...
+..\5110\lcd.c(160): warning:  #223-D: function "SpiSendByte" declared implicitly
+..\5110\lcd.c(278): warning:  #223-D: function "SpiInit" declared implicitly
+..\5110\lcd.c(357): error:  #20: identifier "NUMBER_OF_CHARACTER" is undefined
+..\5110\lcd.c(364): error:  #20: identifier "EnPix" is undefined
+..\5110\lcd.c(381): error:  #20: identifier "CnPix" is undefined
+compiling spi.c...
+..\5110\spi.c(1): error:  #5: cannot open source input file "stm32f10x_lib.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling lcd.c...
+..\5110\lcd.c(358): error:  #20: identifier "NUMBER_OF_CHARACTER" is undefined
+..\5110\lcd.c(365): error:  #20: identifier "EnPix" is undefined
+..\5110\lcd.c(382): error:  #20: identifier "CnPix" is undefined
+compiling spi.c...
+..\5110\spi.c(1): error:  #5: cannot open source input file "stm32f10x_lib.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling lcd.c...
+..\5110\lcd.c(383): error:  #20: identifier "CnPix" is undefined
+compiling spi.c...
+..\5110\spi.c(1): error:  #5: cannot open source input file "stm32f10x_lib.h": No such file or directory
+Target not created
+Build target 'stm32'
+compiling lcd.c...
+..\5110\lcd.c(412): warning:  #223-D: function "LcdPutCnChar" declared implicitly
+compiling spi.c...
+..\5110\spi.c(16): warning:  #223-D: function "LCD_SDIN_HIGH" declared implicitly
+..\5110\spi.c(17): warning:  #223-D: function "LCD_SCLK_HIGH" declared implicitly
+..\5110\spi.c(18): warning:  #223-D: function "Delay" declared implicitly
+..\5110\spi.c(25): warning:  #223-D: function "LCD_SCLK_HIGH" declared implicitly
+..\5110\spi.c(31): warning:  #223-D: function "LCD_SDIN_HIGH" declared implicitly
+..\5110\spi.c(33): warning:  #223-D: function "LCD_SDIN_LOW" declared implicitly
+..\5110\spi.c(35): warning:  #223-D: function "LCD_SCLK_LOW" declared implicitly
+linking...
+stm32.axf: Error: L6218E: Undefined symbol LcdPutCnChar (referred from lcd.o).
+Target not created
+Build target 'stm32'
+compiling lcd.c...
 linking...
 Program Size: Code=12016 RO-data=408 RW-data=184 ZI-data=19208  
 FromELF: creating hex file...
 "stm32.axf" - 0 Error(s), 0 Warning(s).
-Load "F:\\Dean\\SDIO_FW3.x\\Project\\stm32.AXF" 
-USB Communication Failure
-Load "F:\\Dean\\SDIO_FW3.x\\Project\\stm32.AXF" 
+Build target 'stm32'
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling sdcard.c...
+compiling diskio.c...
+compiling ff.c...
+compiling delay.c...
+compiling enpix.c...
+compiling lcd.c...
+compiling spi.c...
+..\5110\spi.c(16): warning:  #223-D: function "LCD_SDIN_HIGH" declared implicitly
+..\5110\spi.c(17): warning:  #223-D: function "LCD_SCLK_HIGH" declared implicitly
+..\5110\spi.c(18): warning:  #223-D: function "Delay" declared implicitly
+..\5110\spi.c(25): warning:  #223-D: function "LCD_SCLK_HIGH" declared implicitly
+..\5110\spi.c(31): warning:  #223-D: function "LCD_SDIN_HIGH" declared implicitly
+..\5110\spi.c(33): warning:  #223-D: function "LCD_SDIN_LOW" declared implicitly
+..\5110\spi.c(35): warning:  #223-D: function "LCD_SCLK_LOW" declared implicitly
+linking...
+Program Size: Code=12016 RO-data=408 RW-data=184 ZI-data=19208  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 7 Warning(s).
+Build target 'stm32'
+compiling spi.c...
+..\5110\spi.c(16): warning:  #223-D: function "LCD_SDIN_HIGH" declared implicitly
+..\5110\spi.c(17): warning:  #223-D: function "LCD_SCLK_HIGH" declared implicitly
+..\5110\spi.c(18): warning:  #223-D: function "Delay" declared implicitly
+..\5110\spi.c(25): warning:  #223-D: function "LCD_SCLK_HIGH" declared implicitly
+..\5110\spi.c(31): warning:  #223-D: function "LCD_SDIN_HIGH" declared implicitly
+..\5110\spi.c(33): warning:  #223-D: function "LCD_SDIN_LOW" declared implicitly
+..\5110\spi.c(35): warning:  #223-D: function "LCD_SCLK_LOW" declared implicitly
+linking...
+Program Size: Code=12016 RO-data=408 RW-data=184 ZI-data=19208  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 7 Warning(s).
+Build target 'stm32'
+compiling spi.c...
+..\5110\spi.c(17): warning:  #223-D: function "LCD_SDIN_HIGH" declared implicitly
+..\5110\spi.c(18): warning:  #223-D: function "LCD_SCLK_HIGH" declared implicitly
+..\5110\spi.c(19): warning:  #223-D: function "Delay" declared implicitly
+..\5110\spi.c(26): warning:  #223-D: function "LCD_SCLK_HIGH" declared implicitly
+..\5110\spi.c(32): warning:  #223-D: function "LCD_SDIN_HIGH" declared implicitly
+..\5110\spi.c(34): warning:  #223-D: function "LCD_SDIN_LOW" declared implicitly
+..\5110\spi.c(36): warning:  #223-D: function "LCD_SCLK_LOW" declared implicitly
+linking...
+Program Size: Code=12016 RO-data=408 RW-data=184 ZI-data=19208  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 7 Warning(s).
+Build target 'stm32'
+compiling spi.c...
+..\5110\spi.c(19): warning:  #223-D: function "Delay" declared implicitly
+linking...
+Program Size: Code=12016 RO-data=408 RW-data=184 ZI-data=19208  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 1 Warning(s).
+Build target 'stm32'
+compiling spi.c...
+linking...
+Program Size: Code=12016 RO-data=408 RW-data=184 ZI-data=19208  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Build target 'stm32'
+compiling main.c...
+..\Source\main.c(97): error:  #20: identifier "CMD" is undefined
+..\Source\main.c(105): warning:  #223-D: function "Delaynus" declared implicitly
+compiling lcd.c...
+Target not created
+Build target 'stm32'
+compiling main.c...
+..\Source\main.c(105): warning:  #223-D: function "Delaynus" declared implicitly
+..\Source\main.c(107): error:  #20: identifier "CMD" is undefined
+Target not created
+Build target 'stm32'
+compiling main.c...
+..\Source\main.c(108): error:  #20: identifier "CMD" is undefined
+Target not created
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=2752 RO-data=336 RW-data=592 ZI-data=1128  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\SDIO_5110_FW3.x\\Project\\stm32.AXF" 
 
 JLink info:
 -----------
-DLL: V4.08b, compiled Jun 30 2009 19:10:31
-Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+DLL: V4.09p, compiled Oct 28 2009 17:33:00
+Firmware: J-Link ARM V8 compiled Oct  5 2010 08:59:59
 Hardware: V8.00
-S/N : 20100214 
+S/N : 20090626 
 Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
 ---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
 * JLink Info: Found SWD-DP with ID 0x1BA01477
 * JLink Info: TPIU fitted.
 * JLink Info: ETM fitted.
@@ -33,7 +601,7 @@ Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull
 Target info:
 ------------
 Device: STM32F103VE
-VTarget = 3.313V
+VTarget = 3.287V
 State of Pins: 
 TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
 * JLink Info: Found SWD-DP with ID 0x1BA01477
@@ -43,7 +611,7 @@ TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
 Hardware-Breakpoints: 6
 Software-Breakpoints: 2048
 Watchpoints:          4
-JTAG speed: 9600 kHz
+JTAG speed: 4000 kHz
 ---
 * JLink Info: Found SWD-DP with ID 0x1BA01477
 * JLink Info: TPIU fitted.
@@ -55,19 +623,28 @@ Verify OK.
 Build target 'stm32'
 compiling main.c...
 linking...
-Program Size: Code=12016 RO-data=408 RW-data=184 ZI-data=19208  
+Program Size: Code=2752 RO-data=336 RW-data=592 ZI-data=1128  
 FromELF: creating hex file...
 "stm32.axf" - 0 Error(s), 0 Warning(s).
-Load "F:\\Dean\\SDIO_FW3.x\\Project\\stm32.AXF" 
+Build target 'stm32'
+linking...
+Program Size: Code=2752 RO-data=336 RW-data=592 ZI-data=1128  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\SDIO_5110_FW3.x\\Project\\stm32.AXF" 
 
 JLink info:
 -----------
-DLL: V4.08b, compiled Jun 30 2009 19:10:31
-Firmware: J-Link ARM V8 compiled Dec  1 2009 11:42:48
+DLL: V4.09p, compiled Oct 28 2009 17:33:00
+Firmware: J-Link ARM V8 compiled Oct  5 2010 08:59:59
 Hardware: V8.00
-S/N : 20100214 
+S/N : 20090626 
 Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
 ---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
 * JLink Info: Found SWD-DP with ID 0x1BA01477
 * JLink Info: TPIU fitted.
 * JLink Info: ETM fitted.
@@ -76,7 +653,7 @@ Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull
 Target info:
 ------------
 Device: STM32F103VE
-VTarget = 3.313V
+VTarget = 3.293V
 State of Pins: 
 TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
 * JLink Info: Found SWD-DP with ID 0x1BA01477
@@ -86,7 +663,54 @@ TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
 Hardware-Breakpoints: 6
 Software-Breakpoints: 2048
 Watchpoints:          4
-JTAG speed: 9600 kHz
+JTAG speed: 4000 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=2752 RO-data=336 RW-data=592 ZI-data=1128  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\SDIO_5110_FW3.x\\Project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.09p, compiled Oct 28 2009 17:33:00
+Firmware: J-Link ARM V8 compiled Oct  5 2010 08:59:59
+Hardware: V8.00
+S/N : 20090626 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 4000 kHz
 ---
 * JLink Info: Found SWD-DP with ID 0x1BA01477
 * JLink Info: TPIU fitted.
