@@ -18,6 +18,7 @@
 #include "integer.h"
 #include "../filesystem/ff.h"
 #include "../filesystem/diskio.h"
+#include "../vs1003/vs1003.h"
 
 #define buffsize 512
 u8  fileBuff[buffsize];
@@ -64,6 +65,7 @@ int fputc(int ch, FILE *f)
 
 int main(void)
 {
+	int i=0;
 	/* Clock Config */
 	RCC_Configuration();
 	/* Configure the GPIO ports */
@@ -72,24 +74,51 @@ int main(void)
 	NVIC_Configuration();
 	///////////////// SDCARD Initialisation ////
 	SDCard_Configuration();
-	res = f_open(&fsrc, "a.txt", FA_OPEN_ALWAYS | FA_WRITE |FA_READ);
+//	res = f_open(&fsrc, "VS1003.c", FA_OPEN_ALWAYS | FA_WRITE |FA_READ);
+//	if(res==FR_OK)
+//		printf("File opened successfully.\n\r");
+//	else 
+//	{
+//		printf("File open error.\n\r");
+//		return 1;
+//	}
+//	printf("****************File Start***************\n\r");
+//	while(f_read(&fsrc, fileBuff, buffsize,&br)==FR_OK)
+//	{
+//		printf("\n\r%s\n\r",fileBuff);
+//		if(br!=buffsize)
+//			break;
+//	}
+//	printf("****************File End*****************\n\r");
+//	if(f_close(&fsrc)==FR_OK)
+//		printf("\n\rFile closed.\n\r");
+
+
+//	VS1003_Config();
+//	Mp3Reset();
+//	VsRamTest();
+//	VsSineTest();
+	VS1003_Config();
+	Mp3Reset();
+	Mp3DeselectControl();
+	Mp3SelectData();       						
+	res = f_open(&fsrc, "a.mp3", FA_OPEN_ALWAYS | FA_WRITE |FA_READ);
 	if(res==FR_OK)
 		printf("File opened successfully.\n\r");
-	else 
-	{
-		printf("File open error.\n\r");
-		return 1;
-	}
-	printf("****************File Start***************\n\r");
 	while(f_read(&fsrc, fileBuff, buffsize,&br)==FR_OK)
 	{
-		printf("\n\r%s\n\r",fileBuff);
-		if(br!=buffsize)
-			break;
+		Mp3DeselectControl();
+		Mp3SelectData();
+		for(i=0;i<buffsize;i++)
+		{
+			while (GPIO_ReadInputData(GPIOC) & MP3_DREQ == 0);
+			SPIPutChar(fileBuff[i]);
+		}
+		Mp3DeselectData();
+			
 	}
-	printf("****************File End*****************\n\r");
-	if(f_close(&fsrc)==FR_OK)
-		printf("\n\rFile closed.\n\r");
+	while(1);
+
 }
 
 /**
