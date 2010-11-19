@@ -2,6 +2,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
 #include "../../sdio/sdcard.h"
+#include "ucos_ii.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -119,7 +120,14 @@ void PendSV_Handler(void)
 * @retval : None
 */
 void SysTick_Handler(void)
-{}
+{
+	OS_CPU_SR  cpu_sr;
+  	OS_ENTER_CRITICAL();                         /* Tell uC/OS-II that we are starting an ISR          */
+  	OSIntNesting++;
+  	OS_EXIT_CRITICAL();
+	OSTimeTick();                                /* Call uC/OS-II's OSTimeTick()                       */
+	OSIntExit();                                 /* Tell uC/OS-II that we are leaving the ISR          */
+}
 
 /*******************************************************************************
 * Function Name  : WWDG_IRQHandler
