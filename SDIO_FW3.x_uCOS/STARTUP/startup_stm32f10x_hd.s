@@ -60,7 +60,7 @@ __heap_limit
                 EXPORT  __Vectors
                 EXPORT  __Vectors_End
                 EXPORT  __Vectors_Size
-
+				IMPORT  PendSVC_Handler
 __Vectors       DCD     __initial_spTop           ; Top of Stack
                 DCD     Reset_Handler             ; Reset Handler
                 DCD     NMI_Handler               ; NMI Handler
@@ -75,7 +75,7 @@ __Vectors       DCD     __initial_spTop           ; Top of Stack
                 DCD     SVC_Handler               ; SVCall Handler
                 DCD     DebugMon_Handler          ; Debug Monitor Handler
                 DCD     0                         ; Reserved
-                DCD     PendSV_Handler            ; PendSV Handler
+                DCD     PendSVC_Handler            ; PendSV Handler
                 DCD     SysTick_Handler           ; SysTick Handler
 
                 ; External Interrupts
