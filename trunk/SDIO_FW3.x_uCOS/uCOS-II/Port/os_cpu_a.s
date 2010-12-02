@@ -28,7 +28,7 @@ NVIC_PENDSVSET  	EQU     0x10000000  ; 触发软件中断的值.
 	
 OS_CPU_SR_SAVE 
 	MRS 	R0,PRIMASK 	;Get value of PRIMASK which will later be returned as cpu_sr
-	CPSID 	I		;Disable all interrupts.
+;//	CPSID 	I		;Disable all interrupts.
 	BX 	LR		;return
 
 OS_CPU_SR_RESTORE

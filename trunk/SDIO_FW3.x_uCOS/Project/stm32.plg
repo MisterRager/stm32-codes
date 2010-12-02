@@ -4,441 +4,78 @@
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
 F:\Dean\SDIO_FW3.x_uCOS\Project\stm32.uvproj
-Project File Date:  <unknown>
+Project File Date:  12/01/2010
 
 <h2>Output:</h2>
 Build target 'stm32'
-compiling misc.c...
-compiling stm32f10x_adc.c...
-compiling stm32f10x_bkp.c...
-compiling stm32f10x_can.c...
-compiling stm32f10x_crc.c...
-compiling stm32f10x_dac.c...
-compiling stm32f10x_dbgmcu.c...
-compiling stm32f10x_dma.c...
-compiling stm32f10x_exti.c...
-compiling stm32f10x_flash.c...
-compiling stm32f10x_fsmc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_i2c.c...
-compiling stm32f10x_iwdg.c...
-compiling stm32f10x_pwr.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_rtc.c...
-compiling stm32f10x_sdio.c...
-compiling stm32f10x_spi.c...
-compiling stm32f10x_tim.c...
-compiling stm32f10x_usart.c...
-compiling stm32f10x_wwdg.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-assembling startup_stm32f10x_hd.s...
 compiling main.c...
-compiling stm32f10x_it.c...
-compiling sdcard.c...
-compiling diskio.c...
-compiling ff.c...
-compiling os_cpu_c.c...
-..\uCOS-II\Port\os_cpu_c.c(2): error:  #5: cannot open source input file "../uCOS-II-V290/ucos_ii.h": No such file or directory
-compiling os_dbg.c...
-..\uCOS-II\Port\os_dbg.c(24): error:  #5: cannot open source input file "../uCOS-II-V290/ucos_ii.h": No such file or directory
-compiling systick.c...
-..\uCOS-II\Port\systick.c(16): error:  #5: cannot open source input file "stm32f10x_lib.h": No such file or directory
-compiling ucos_ii.c...
-..\uCOS-II\uCOS-II-V290\ucos_ii.c(24): error:  #5: cannot open source input file "../uCOS-II-V290/ucos_ii.h": No such file or directory
+..\Source\../uart/usart.h(1): error:  #5: cannot open source input file "stm32f10x_type.h": No such file or directory
+compiling usart.c...
+..\uart\usart.c(1): error:  #5: cannot open source input file "stm32f10x_lib.h": No such file or directory
 Target not created
 Build target 'stm32'
-compiling os_cpu_c.c...
-..\uCOS-II\Port\os_cpu_c.c(2): error:  #5: cannot open source input file "../uCOS-II-V290/ucos_ii.h": No such file or directory
-compiling os_dbg.c...
-..\uCOS-II\Port\os_dbg.c(24): error:  #5: cannot open source input file "../uCOS-II-V290/ucos_ii.h": No such file or directory
-compiling systick.c...
-..\uCOS-II\Port\systick.c(18): error:  #5: cannot open source input file "../uCOS-II-V290/ucos_ii.h": No such file or directory
-compiling ucos_ii.c...
-..\uCOS-II\uCOS-II-V290\ucos_ii.c(24): error:  #5: cannot open source input file "../uCOS-II-V290/ucos_ii.h": No such file or directory
-Target not created
-Build target 'stm32'
-compiling misc.c...
-compiling stm32f10x_adc.c...
-compiling stm32f10x_bkp.c...
-compiling stm32f10x_can.c...
-compiling stm32f10x_crc.c...
-compiling stm32f10x_dac.c...
-compiling stm32f10x_dbgmcu.c...
-compiling stm32f10x_dma.c...
-compiling stm32f10x_exti.c...
-compiling stm32f10x_flash.c...
-compiling stm32f10x_fsmc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_i2c.c...
-compiling stm32f10x_iwdg.c...
-compiling stm32f10x_pwr.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_rtc.c...
-compiling stm32f10x_sdio.c...
-compiling stm32f10x_spi.c...
-compiling stm32f10x_tim.c...
-compiling stm32f10x_usart.c...
-compiling stm32f10x_wwdg.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
 compiling main.c...
-compiling stm32f10x_it.c...
-compiling sdcard.c...
-compiling diskio.c...
-compiling ff.c...
-compiling os_cpu_c.c...
-..\uCOS-II\uCOS-II-V290\../uCOS-II-V290/ucos_ii.h(44): error:  #5: cannot open source input file "app_cfg.h": No such file or directory
-compiling os_dbg.c...
-..\uCOS-II\uCOS-II-V290\../uCOS-II-V290/ucos_ii.h(44): error:  #5: cannot open source input file "app_cfg.h": No such file or directory
-compiling systick.c...
-..\uCOS-II\uCOS-II-V290\../uCOS-II-V290/ucos_ii.h(44): error:  #5: cannot open source input file "app_cfg.h": No such file or directory
-compiling ucos_ii.c...
-..\uCOS-II\uCOS-II-V290\../uCOS-II-V290/ucos_ii.h(44): error:  #5: cannot open source input file "app_cfg.h": No such file or directory
+..\Source\system.h(63): error:  #20: identifier "c" is undefined
+compiling usart.c...
+..\uart\usart.c(1): error:  #5: cannot open source input file "stm32f10x_lib.h": No such file or directory
 Target not created
 Build target 'stm32'
-compiling misc.c...
-compiling stm32f10x_adc.c...
-compiling stm32f10x_bkp.c...
-compiling stm32f10x_can.c...
-compiling stm32f10x_crc.c...
-compiling stm32f10x_dac.c...
-compiling stm32f10x_dbgmcu.c...
-compiling stm32f10x_dma.c...
-compiling stm32f10x_exti.c...
-compiling stm32f10x_flash.c...
-compiling stm32f10x_fsmc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_i2c.c...
-compiling stm32f10x_iwdg.c...
-compiling stm32f10x_pwr.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_rtc.c...
-compiling stm32f10x_sdio.c...
-compiling stm32f10x_spi.c...
-compiling stm32f10x_tim.c...
-compiling stm32f10x_usart.c...
-compiling stm32f10x_wwdg.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
 compiling main.c...
-compiling stm32f10x_it.c...
-compiling sdcard.c...
-compiling diskio.c...
-compiling ff.c...
-compiling os_cpu_c.c...
-compiling os_dbg.c...
-compiling systick.c...
-..\uCOS-II\Port\systick.c(30): warning:  #223-D: function "SysTick_SetReload" declared implicitly
-..\uCOS-II\Port\systick.c(31): warning:  #223-D: function "SysTick_ITConfig" declared implicitly
-..\uCOS-II\Port\systick.c(42): warning:  #223-D: function "SysTick_CounterCmd" declared implicitly
-..\uCOS-II\Port\systick.c(42): error:  #20: identifier "SysTick_Counter_Clear" is undefined
-..\uCOS-II\Port\systick.c(43): error:  #20: identifier "SysTick_Counter_Enable" is undefined
-compiling ucos_ii.c...
+compiling usart.c...
+..\uart\usart.c(1): error:  #5: cannot open source input file "stm32f10x_lib.h": No such file or directory
 Target not created
 Build target 'stm32'
+compiling main.c...
+compiling usart.c...
 linking...
-stm32.axf: Error: L6218E: Undefined symbol OSCtxSw (referred from ucos_ii.o).
-stm32.axf: Error: L6218E: Undefined symbol OSIntCtxSw (referred from ucos_ii.o).
-stm32.axf: Error: L6218E: Undefined symbol OSStartHighRdy (referred from ucos_ii.o).
-stm32.axf: Error: L6218E: Undefined symbol OS_CPU_SR_RESTORE (referred from ucos_ii.o).
-stm32.axf: Error: L6218E: Undefined symbol OS_CPU_SR_SAVE (referred from ucos_ii.o).
-Target not created
-Build target 'stm32'
-assembling os_cpu_a.s...
-linking...
-Program Size: Code=12016 RO-data=408 RW-data=184 ZI-data=19208  
+Program Size: Code=7104 RO-data=596 RW-data=136 ZI-data=6288  
 FromELF: creating hex file...
 "stm32.axf" - 0 Error(s), 0 Warning(s).
-Build target 'stm32'
-compiling misc.c...
-compiling stm32f10x_adc.c...
-compiling stm32f10x_bkp.c...
-compiling stm32f10x_can.c...
-compiling stm32f10x_crc.c...
-compiling stm32f10x_dac.c...
-compiling stm32f10x_dbgmcu.c...
-compiling stm32f10x_dma.c...
-compiling stm32f10x_exti.c...
-compiling stm32f10x_flash.c...
-compiling stm32f10x_fsmc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_i2c.c...
-compiling stm32f10x_iwdg.c...
-compiling stm32f10x_pwr.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_rtc.c...
-compiling stm32f10x_sdio.c...
-compiling stm32f10x_spi.c...
-compiling stm32f10x_tim.c...
-compiling stm32f10x_usart.c...
-compiling stm32f10x_wwdg.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-compiling main.c...
-..\Source\system.h(83): error:  #20: identifier "Status" is undefined
-..\Source\system.h(83): warning:  #223-D: function "SD_Init" declared implicitly
-..\Source\system.h(85): error:  #20: identifier "SD_OK" is undefined
-..\Source\system.h(88): warning:  #223-D: function "SD_GetCardInfo" declared implicitly
-..\Source\system.h(88): error:  #20: identifier "SDCardInfo" is undefined
-..\Source\system.h(90): warning:  #223-D: function "SD_SelectDeselect" declared implicitly
-..\Source\system.h(92): warning:  #223-D: function "SD_EnableWideBusOperation" declared implicitly
-..\Source\system.h(94): warning:  #223-D: function "SD_SetDeviceMode" declared implicitly
-..\Source\system.h(94): error:  #20: identifier "SD_DMA_MODE" is undefined
-..\Source\system.h(98): error:  #20: identifier "res" is undefined
-..\Source\system.h(98): warning:  #223-D: function "f_mount" declared implicitly
-..\Source\system.h(98): error:  #20: identifier "fs" is undefined
-..\Source\system.h(99): error:  #20: identifier "FR_OK" is undefined
-..\Source\system.h(125): warning:  #1-D: last line of file ends without a newline
-..\Source\../sdio/sdcard.h(256): error:  #159: declaration is incompatible with previous "SD_Init" (declared at line 83 of "..\Source\system.h")
-..\Source\../sdio/sdcard.h(260): error:  #159: declaration is incompatible with previous "SD_GetCardInfo" (declared at line 88 of "..\Source\system.h")
-..\Source\../sdio/sdcard.h(261): error:  #159: declaration is incompatible with previous "SD_EnableWideBusOperation" (declared at line 92 of "..\Source\system.h")
-..\Source\../sdio/sdcard.h(262): error:  #159: declaration is incompatible with previous "SD_SetDeviceMode" (declared at line 94 of "..\Source\system.h")
-..\Source\../sdio/sdcard.h(263): error:  #159: declaration is incompatible with previous "SD_SelectDeselect" (declared at line 90 of "..\Source\system.h")
-..\Source\../filesystem/ff.h(550): error:  #159: declaration is incompatible with previous "f_mount" (declared at line 98 of "..\Source\system.h")
-..\Source\main.c(70): warning:  #223-D: function "OSInit" declared implicitly
-..\Source\main.c(71): warning:  #223-D: function "OSTaskCreate" declared implicitly
-..\Source\main.c(71): error:  #20: identifier "InitTask" is undefined
-..\Source\main.c(71): error:  #20: identifier "OS_STK" is undefined
-..\Source\main.c(71): error:  #29: expected an expression
-..\Source\main.c(71): error:  #20: identifier "InitTaskStk" is undefined
-..\Source\main.c(71): error:  #20: identifier "OS_INIT_TASK_STACK_SIZE" is undefined
-..\Source\main.c(71): error:  #20: identifier "OS_TASK_INIT_PRIO" is undefined
-..\Source\main.c(72): warning:  #223-D: function "OSStart" declared implicitly
-..\Source\main.c(81): warning:  #223-D: function "OSTaskCreate" declared implicitly
-..\Source\main.c(81): error:  #20: identifier "task0" is undefined
-..\Source\main.c(81): error:  #20: identifier "OS_STK" is undefined
-..\Source\main.c(81): error:  #29: expected an expression
-..\Source\main.c(81): error:  #20: identifier "Task0_Stack" is undefined
-..\Source\main.c(81): error:  #20: identifier "TASK_STACK_SIZE" is undefined
-..\Source\main.c(81): error:  #20: identifier "TASK_0_PRIO" is undefined
-..\Source\main.c(82): error:  #20: identifier "task1" is undefined
-..\Source\main.c(82): error:  #29: expected an expression
-..\Source\main.c(82): error:  #20: identifier "Task1_Stack" is undefined
-..\Source\main.c(82): error:  #20: identifier "TASK_1_PRIO" is undefined
-..\Source\main.c(85): warning:  #223-D: function "SysTick_Start" declared implicitly
-..\Source\main.c(86): warning:  #223-D: function "OSTaskDel" declared implicitly
-..\Source\main.c(86): error:  #20: identifier "OS_PRIO_SELF" is undefined
-compiling stm32f10x_it.c...
-compiling sdcard.c...
-compiling diskio.c...
-compiling ff.c...
-compiling os_cpu_c.c...
-compiling os_dbg.c...
-compiling ucos_ii.c...
-Target not created
-Build target 'stm32'
-compiling main.c...
-..\Source\system.h(7): error:  #20: identifier "SD_CardInfo" is undefined
-..\Source\system.h(8): error:  #20: identifier "SD_Error" is undefined
-..\Source\system.h(8): error:  #20: identifier "SD_OK" is undefined
-..\Source\system.h(86): warning:  #223-D: function "SD_Init" declared implicitly
-..\Source\system.h(91): warning:  #223-D: function "SD_GetCardInfo" declared implicitly
-..\Source\system.h(93): warning:  #223-D: function "SD_SelectDeselect" declared implicitly
-..\Source\system.h(95): warning:  #223-D: function "SD_EnableWideBusOperation" declared implicitly
-..\Source\system.h(97): warning:  #223-D: function "SD_SetDeviceMode" declared implicitly
-..\Source\system.h(97): error:  #20: identifier "SD_DMA_MODE" is undefined
-..\Source\system.h(101): error:  #20: identifier "res" is undefined
-..\Source\system.h(101): warning:  #223-D: function "f_mount" declared implicitly
-..\Source\system.h(101): error:  #20: identifier "fs" is undefined
-..\Source\system.h(102): error:  #20: identifier "FR_OK" is undefined
-..\Source\system.h(128): warning:  #1-D: last line of file ends without a newline
-..\Source\../sdio/sdcard.h(256): error:  #159: declaration is incompatible with previous "SD_Init" (declared at line 86 of "..\Source\system.h")
-..\Source\../sdio/sdcard.h(260): error:  #159: declaration is incompatible with previous "SD_GetCardInfo" (declared at line 91 of "..\Source\system.h")
-..\Source\../sdio/sdcard.h(261): error:  #159: declaration is incompatible with previous "SD_EnableWideBusOperation" (declared at line 95 of "..\Source\system.h")
-..\Source\../sdio/sdcard.h(262): error:  #159: declaration is incompatible with previous "SD_SetDeviceMode" (declared at line 97 of "..\Source\system.h")
-..\Source\../sdio/sdcard.h(263): error:  #159: declaration is incompatible with previous "SD_SelectDeselect" (declared at line 93 of "..\Source\system.h")
-..\Source\../filesystem/ff.h(550): error:  #159: declaration is incompatible with previous "f_mount" (declared at line 101 of "..\Source\system.h")
-..\Source\main.c(65): warning:  #223-D: function "OSInit" declared implicitly
-..\Source\main.c(66): warning:  #223-D: function "OSTaskCreate" declared implicitly
-..\Source\main.c(66): error:  #20: identifier "InitTask" is undefined
-..\Source\main.c(66): error:  #20: identifier "OS_STK" is undefined
-..\Source\main.c(66): error:  #29: expected an expression
-..\Source\main.c(66): error:  #20: identifier "InitTaskStk" is undefined
-..\Source\main.c(66): error:  #20: identifier "OS_INIT_TASK_STACK_SIZE" is undefined
-..\Source\main.c(66): error:  #20: identifier "OS_TASK_INIT_PRIO" is undefined
-..\Source\main.c(67): warning:  #223-D: function "OSStart" declared implicitly
-..\Source\main.c(76): warning:  #223-D: function "OSTaskCreate" declared implicitly
-..\Source\main.c(76): error:  #20: identifier "task0" is undefined
-..\Source\main.c(76): error:  #20: identifier "OS_STK" is undefined
-..\Source\main.c(76): error:  #29: expected an expression
-..\Source\main.c(76): error:  #20: identifier "Task0_Stack" is undefined
-..\Source\main.c(76): error:  #20: identifier "TASK_STACK_SIZE" is undefined
-..\Source\main.c(76): error:  #20: identifier "TASK_0_PRIO" is undefined
-..\Source\main.c(77): error:  #20: identifier "task1" is undefined
-..\Source\main.c(77): error:  #29: expected an expression
-..\Source\main.c(77): error:  #20: identifier "Task1_Stack" is undefined
-..\Source\main.c(77): error:  #20: identifier "TASK_1_PRIO" is undefined
-..\Source\main.c(80): warning:  #223-D: function "SysTick_Start" declared implicitly
-..\Source\main.c(81): warning:  #223-D: function "OSTaskDel" declared implicitly
-..\Source\main.c(81): error:  #20: identifier "OS_PRIO_SELF" is undefined
-Target not created
-Build target 'stm32'
-compiling main.c...
-..\Source\system.h(102): error:  #20: identifier "res" is undefined
-..\Source\system.h(102): warning:  #223-D: function "f_mount" declared implicitly
-..\Source\system.h(102): error:  #20: identifier "fs" is undefined
-..\Source\system.h(103): error:  #20: identifier "FR_OK" is undefined
-..\Source\system.h(129): warning:  #1-D: last line of file ends without a newline
-..\Source\../filesystem/ff.h(550): error:  #159: declaration is incompatible with previous "f_mount" (declared at line 102 of "..\Source\system.h")
-..\Source\main.c(65): warning:  #223-D: function "OSInit" declared implicitly
-..\Source\main.c(66): warning:  #223-D: function "OSTaskCreate" declared implicitly
-..\Source\main.c(66): error:  #20: identifier "InitTask" is undefined
-..\Source\main.c(66): error:  #20: identifier "OS_STK" is undefined
-..\Source\main.c(66): error:  #29: expected an expression
-..\Source\main.c(66): error:  #20: identifier "InitTaskStk" is undefined
-..\Source\main.c(66): error:  #20: identifier "OS_INIT_TASK_STACK_SIZE" is undefined
-..\Source\main.c(66): error:  #20: identifier "OS_TASK_INIT_PRIO" is undefined
-..\Source\main.c(67): warning:  #223-D: function "OSStart" declared implicitly
-..\Source\main.c(76): warning:  #223-D: function "OSTaskCreate" declared implicitly
-..\Source\main.c(76): error:  #20: identifier "task0" is undefined
-..\Source\main.c(76): error:  #20: identifier "OS_STK" is undefined
-..\Source\main.c(76): error:  #29: expected an expression
-..\Source\main.c(76): error:  #20: identifier "Task0_Stack" is undefined
-..\Source\main.c(76): error:  #20: identifier "TASK_STACK_SIZE" is undefined
-..\Source\main.c(76): error:  #20: identifier "TASK_0_PRIO" is undefined
-..\Source\main.c(77): error:  #20: identifier "task1" is undefined
-..\Source\main.c(77): error:  #29: expected an expression
-..\Source\main.c(77): error:  #20: identifier "Task1_Stack" is undefined
-..\Source\main.c(77): error:  #20: identifier "TASK_1_PRIO" is undefined
-..\Source\main.c(80): warning:  #223-D: function "SysTick_Start" declared implicitly
-..\Source\main.c(81): warning:  #223-D: function "OSTaskDel" declared implicitly
-..\Source\main.c(81): error:  #20: identifier "OS_PRIO_SELF" is undefined
-..\Source\main.c(94): warning:  #223-D: function "OSTimeDly" declared implicitly
-..\Source\main.c(106): warning:  #223-D: function "OSTimeDly" declared implicitly
-..\Source\main.c(107): warning:  #223-D: function "ILI9325_FillWindowArea" declared implicitly
-Target not created
-Build target 'stm32'
-compiling main.c...
-..\Source\system.h(146): warning:  #1-D: last line of file ends without a newline
-..\Source\main.c(49): warning:  #223-D: function "OSInit" declared implicitly
-..\Source\main.c(50): warning:  #223-D: function "OSTaskCreate" declared implicitly
-..\Source\main.c(50): error:  #20: identifier "InitTask" is undefined
-..\Source\main.c(50): error:  #20: identifier "OS_STK" is undefined
-..\Source\main.c(50): error:  #29: expected an expression
-..\Source\main.c(50): error:  #20: identifier "InitTaskStk" is undefined
-..\Source\main.c(50): error:  #20: identifier "OS_INIT_TASK_STACK_SIZE" is undefined
-..\Source\main.c(50): error:  #20: identifier "OS_TASK_INIT_PRIO" is undefined
-..\Source\main.c(51): warning:  #223-D: function "OSStart" declared implicitly
-..\Source\main.c(60): warning:  #223-D: function "OSTaskCreate" declared implicitly
-..\Source\main.c(60): error:  #20: identifier "task0" is undefined
-..\Source\main.c(60): error:  #20: identifier "OS_STK" is undefined
-..\Source\main.c(60): error:  #29: expected an expression
-..\Source\main.c(60): error:  #20: identifier "Task0_Stack" is undefined
-..\Source\main.c(60): error:  #20: identifier "TASK_STACK_SIZE" is undefined
-..\Source\main.c(60): error:  #20: identifier "TASK_0_PRIO" is undefined
-..\Source\main.c(61): error:  #20: identifier "task1" is undefined
-..\Source\main.c(61): error:  #29: expected an expression
-..\Source\main.c(61): error:  #20: identifier "Task1_Stack" is undefined
-..\Source\main.c(61): error:  #20: identifier "TASK_1_PRIO" is undefined
-..\Source\main.c(64): warning:  #223-D: function "SysTick_Start" declared implicitly
-..\Source\main.c(65): warning:  #223-D: function "OSTaskDel" declared implicitly
-..\Source\main.c(65): error:  #20: identifier "OS_PRIO_SELF" is undefined
-..\Source\main.c(78): warning:  #223-D: function "OSTimeDly" declared implicitly
-..\Source\main.c(90): warning:  #223-D: function "OSTimeDly" declared implicitly
-..\Source\main.c(91): warning:  #223-D: function "ILI9325_FillWindowArea" declared implicitly
-Target not created
-Build target 'stm32'
-compiling main.c...
-..\Source\main.c(51): error:  #20: identifier "InitTask" is undefined
-..\Source\main.c(51): error:  #20: identifier "InitTaskStk" is undefined
-..\Source\main.c(51): error:  #20: identifier "OS_INIT_TASK_STACK_SIZE" is undefined
-..\Source\main.c(51): error:  #20: identifier "OS_TASK_INIT_PRIO" is undefined
-..\Source\main.c(61): error:  #20: identifier "task0" is undefined
-..\Source\main.c(61): error:  #20: identifier "Task0_Stack" is undefined
-..\Source\main.c(61): error:  #20: identifier "TASK_STACK_SIZE" is undefined
-..\Source\main.c(61): error:  #20: identifier "TASK_0_PRIO" is undefined
-..\Source\main.c(62): error:  #20: identifier "task1" is undefined
-..\Source\main.c(62): error:  #20: identifier "Task1_Stack" is undefined
-..\Source\main.c(62): error:  #20: identifier "TASK_1_PRIO" is undefined
-..\Source\main.c(65): warning:  #223-D: function "SysTick_Start" declared implicitly
-..\Source\main.c(92): warning:  #223-D: function "ILI9325_FillWindowArea" declared implicitly
-Target not created
-Build target 'stm32'
-compiling main.c...
-..\Source\main.c(53): error:  #20: identifier "InitTaskStk" is undefined
-..\Source\main.c(53): error:  #20: identifier "OS_INIT_TASK_STACK_SIZE" is undefined
-..\Source\main.c(53): error:  #20: identifier "OS_TASK_INIT_PRIO" is undefined
-..\Source\main.c(63): error:  #20: identifier "Task0_Stack" is undefined
-..\Source\main.c(63): error:  #20: identifier "TASK_STACK_SIZE" is undefined
-..\Source\main.c(63): error:  #20: identifier "TASK_0_PRIO" is undefined
-..\Source\main.c(64): error:  #20: identifier "Task1_Stack" is undefined
-..\Source\main.c(64): error:  #20: identifier "TASK_1_PRIO" is undefined
-..\Source\main.c(67): warning:  #223-D: function "SysTick_Start" declared implicitly
-..\Source\main.c(94): warning:  #223-D: function "ILI9325_FillWindowArea" declared implicitly
-Target not created
-Build target 'stm32'
-compiling main.c...
-..\Source\main.c(53): error:  #20: identifier "InitTaskStk" is undefined
-..\Source\main.c(53): error:  #20: identifier "OS_INIT_TASK_STACK_SIZE" is undefined
-..\Source\main.c(53): error:  #20: identifier "OS_TASK_INIT_PRIO" is undefined
-..\Source\main.c(63): error:  #20: identifier "Task0_Stack" is undefined
-..\Source\main.c(63): error:  #20: identifier "TASK_STACK_SIZE" is undefined
-..\Source\main.c(63): error:  #20: identifier "TASK_0_PRIO" is undefined
-..\Source\main.c(64): error:  #20: identifier "Task1_Stack" is undefined
-..\Source\main.c(64): error:  #20: identifier "TASK_1_PRIO" is undefined
-..\Source\main.c(94): warning:  #223-D: function "ILI9325_FillWindowArea" declared implicitly
-Target not created
-Build target 'stm32'
-compiling main.c...
-..\Source\main.c(53): error:  #20: identifier "InitTaskStk" is undefined
-..\Source\main.c(53): error:  #20: identifier "OS_INIT_TASK_STACK_SIZE" is undefined
-..\Source\main.c(53): error:  #20: identifier "OS_TASK_INIT_PRIO" is undefined
-..\Source\main.c(63): error:  #20: identifier "Task0_Stack" is undefined
-..\Source\main.c(63): error:  #20: identifier "TASK_STACK_SIZE" is undefined
-..\Source\main.c(63): error:  #20: identifier "TASK_0_PRIO" is undefined
-..\Source\main.c(64): error:  #20: identifier "Task1_Stack" is undefined
-..\Source\main.c(64): error:  #20: identifier "TASK_1_PRIO" is undefined
-..\Source\main.c(91): warning:  #177-D: variable "i" was declared but never referenced
-Target not created
-Build target 'stm32'
-compiling main.c...
-..\Source\main.c(53): error:  #20: identifier "InitTaskStk" is undefined
-..\Source\main.c(53): error:  #20: identifier "OS_INIT_TASK_STACK_SIZE" is undefined
-..\Source\main.c(53): error:  #20: identifier "OS_TASK_INIT_PRIO" is undefined
-..\Source\main.c(63): error:  #20: identifier "Task0_Stack" is undefined
-..\Source\main.c(63): error:  #20: identifier "TASK_STACK_SIZE" is undefined
-..\Source\main.c(63): error:  #20: identifier "TASK_0_PRIO" is undefined
-..\Source\main.c(64): error:  #20: identifier "Task1_Stack" is undefined
-..\Source\main.c(64): error:  #20: identifier "TASK_1_PRIO" is undefined
-Target not created
-Build target 'stm32'
-compiling main.c...
-..\Source\main.c(29): error:  #65: expected a ";"
-..\Source\main.c(61): warning:  #12-D: parsing restarts here after previous syntax error
-..\Source\main.c(62): error:  #40: expected an identifier
-..\Source\main.c(62): error:  #40: expected an identifier
-..\Source\main.c(62): error:  #18: expected a ")"
-..\Source\main.c(62): warning:  #77-D: this declaration has no storage class or type specifier
-..\Source\main.c(62): error:  #92: identifier-list parameters may only be used in a function definition
-..\Source\main.c(62): error:  #147: declaration is incompatible with "INT8U OSTaskCreate(void (*)(void *), void *, OS_STK *, INT8U)" (declared at line 1050 of "..\uCOS-II\uCOS-II-V290\ucos_ii.h")
-..\Source\main.c(63): warning:  #1295-D: Deprecated declaration OSStart - give arg types
-..\Source\main.c(63): warning:  #77-D: this declaration has no storage class or type specifier
-..\Source\main.c(63): error:  #147: declaration is incompatible with "void OSStart(void)" (declared at line 1198 of "..\uCOS-II\uCOS-II-V290\ucos_ii.h")
-..\Source\main.c(64): error:  #169: expected a declaration
-..\Source\main.c(65): error:  #169: expected a declaration
-..\Source\main.c(136): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
-Target not created
+Load "F:\\Dean\\SDIO_FW3.x_uCOS\\Project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.09p, compiled Oct 28 2009 17:33:00
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 4000 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
 Build target 'stm32'
 compiling main.c...
 linking...
-Program Size: Code=7524 RO-data=596 RW-data=128 ZI-data=6288  
-FromELF: creating hex file...
-"stm32.axf" - 0 Error(s), 0 Warning(s).
-Build target 'stm32'
-assembling startup_stm32f10x_hd.s...
-..\STARTUP\startup_stm32f10x_hd.s(78): error: A1516E: Bad symbol 'PendSVC_Handler', not defined or external
-Target not created
-Build target 'stm32'
-assembling startup_stm32f10x_hd.s...
-linking...
-Program Size: Code=7520 RO-data=596 RW-data=128 ZI-data=6288  
-FromELF: creating hex file...
-"stm32.axf" - 0 Error(s), 0 Warning(s).
-Build target 'stm32'
-compiling stm32f10x_it.c...
-linking...
-Program Size: Code=7804 RO-data=596 RW-data=128 ZI-data=6288  
+Program Size: Code=7108 RO-data=596 RW-data=136 ZI-data=6288  
 FromELF: creating hex file...
 "stm32.axf" - 0 Error(s), 0 Warning(s).
 Load "F:\\Dean\\SDIO_FW3.x_uCOS\\Project\\stm32.AXF" 
@@ -464,7 +101,336 @@ Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull
 Target info:
 ------------
 Device: STM32F103VE
-VTarget = 3.313V
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 4000 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=7104 RO-data=596 RW-data=136 ZI-data=6288  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\SDIO_FW3.x_uCOS\\Project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.09p, compiled Oct 28 2009 17:33:00
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 4000 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=7112 RO-data=596 RW-data=136 ZI-data=6288  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\SDIO_FW3.x_uCOS\\Project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.09p, compiled Oct 28 2009 17:33:00
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.306V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 4000 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=7112 RO-data=596 RW-data=136 ZI-data=6288  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\SDIO_FW3.x_uCOS\\Project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.09p, compiled Oct 28 2009 17:33:00
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.306V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 4000 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=7112 RO-data=596 RW-data=136 ZI-data=6288  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\SDIO_FW3.x_uCOS\\Project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.09p, compiled Oct 28 2009 17:33:00
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.306V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 4000 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=7112 RO-data=596 RW-data=136 ZI-data=6288  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\SDIO_FW3.x_uCOS\\Project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.09p, compiled Oct 28 2009 17:33:00
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.306V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 4000 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=7112 RO-data=596 RW-data=136 ZI-data=6288  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\SDIO_FW3.x_uCOS\\Project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.09p, compiled Oct 28 2009 17:33:00
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.306V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 4000 kHz
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'stm32'
+compiling main.c...
+linking...
+Program Size: Code=7104 RO-data=596 RW-data=136 ZI-data=6288  
+FromELF: creating hex file...
+"stm32.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\Dean\\SDIO_FW3.x_uCOS\\Project\\stm32.AXF" 
+
+JLink info:
+-----------
+DLL: V4.09p, compiled Oct 28 2009 17:33:00
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.306V
 State of Pins: 
 TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
 * JLink Info: Found SWD-DP with ID 0x1BA01477

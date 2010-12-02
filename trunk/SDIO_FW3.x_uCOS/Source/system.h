@@ -6,6 +6,11 @@
 #include "../sdio/sdcard.h"
 #include "../filesystem/ff.h"
 #include "../filesystem/diskio.h"
+#include "../5110/lcd.h"
+#include "../5110/delay.h"
+#include "../motor/stepmotor.h"
+#include "../uart/usart.h"
+#define PRINTF_USE_TIM_USART 0
 
 #define buffsize 512
 u8  fileBuff[buffsize];
@@ -41,6 +46,8 @@ void SDCard_Configuration(void);
 struct __FILE { int handle; /* Add whatever you need here */ }; 
 FILE __stdout; 
 FILE __stdin; 
+
+#if   (PRINTF_USE_ITM_USART==1)
 int fputc(int ch, FILE *f)
 { 
 	if (DEMCR & TRCENA)
@@ -50,6 +57,14 @@ int fputc(int ch, FILE *f)
 	}
 	return(ch);
 }
+#elif (PRINTF_USE_TIM_USART==0)
+int fputc(int ch, FILE *f)
+{ 
+  	USART_SendData(USART1, ch);
+  	while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET);
+	return(ch);
+}
+#endif
 /**
 * @brief  Configures the different system clocks.
 * @param  None
@@ -62,10 +77,10 @@ void RCC_Configuration(void)
     SystemInit();
     
     /* Enable GPIOA and USART1 clocks */
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOD | RCC_APB2Periph_USART1, ENABLE);//GPIO A B C取决于USART 1 2 3
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOE | RCC_APB2Periph_USART1, ENABLE);//GPIO A B C取决于USART 1 2 3
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
     /* TIM2 clock enable */
-    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_TIM1, ENABLE);
     /* TIM4 clock enable */
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
     /* Enable PWR and BKP clocks */
