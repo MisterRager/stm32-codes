@@ -34,8 +34,13 @@ int main(void)
 	GPIO_Configuration_Main();
 	/* Interrupt Config */
 	NVIC_Configuration();
+	USART1_Init();
+	printf("system boot");
 	///////////////// SDCARD Initialisation ////
-	SDCard_Configuration();
+//	SDCard_Configuration();
+//	LcdInit();
+//	LcdWriteDC(COMMAND , 0x0c );	/*标准显示模式*/
+
 //	res = f_open(&fsrc, "a.txt", FA_OPEN_ALWAYS | FA_WRITE |FA_READ);
 //	if(res==FR_OK)
 //		printf("File opened successfully.\n\r");
@@ -72,8 +77,32 @@ void InitTask(void *pdata)
 	OSTaskCreate(task0, (void *)0, (OS_STK *)&Task0_Stack[TASK_STACK_SIZE - 1],	TASK_0_PRIO);
 	OSTaskCreate(task1, (void *)0, (OS_STK *)&Task1_Stack[TASK_STACK_SIZE - 1], TASK_1_PRIO);
 
+	Timer4_Prepare();
+	Timer4_SetTimeBaseCount(2400000/50);
+//	Timer1_SetOutputPulseWidth(2400000/200,CH1);
+	Timer4_SetOutputPulseWidth(2400000*3/20/50,CH2);
+	Timer4_SetOutputPulseWidth(2400000*3/20/50,CH3);
+	Timer4_SetOutputPulseWidth(2400000*3/20/50,CH4);
+	Timer4_SetOutputPulseWidth(2400000*3/20/50,CH1);
+	Timer4_StartStop(TRUE);
+	Timer3_Prepare();
+	Timer3_SetTimeBaseCount(2400000/50);
+//	Timer1_SetOutputPulseWidth(2400000/200,CH1);
+	Timer3_SetOutputPulseWidth(2400000*3/20/50,CH2);
+	Timer3_SetOutputPulseWidth(2400000*3/20/50,CH3);
+	Timer3_SetOutputPulseWidth(2400000*3/20/50,CH4);
+	Timer3_SetOutputPulseWidth(2400000*3/20/50,CH1);
+	Timer3_StartStop(TRUE);
 
-	SysTick_Config(SystemFrequency/72000);
+	Timer1_Prepare();
+	Timer1_SetTimeBaseCount(2400000/50);
+//	Timer1_SetOutputPulseWidth(2400000/200,CH1);
+	Timer1_SetOutputPulseWidth(2400000*3/20/50,CH2);
+	Timer1_SetOutputPulseWidth(2400000*3/20/50,CH3);
+	Timer1_SetOutputPulseWidth(2400000*3/20/50,CH4);
+	Timer1_SetOutputPulseWidth(2400000*3/20/50,CH1);
+	Timer1_StartStop(TRUE);
+	SysTick_Config(SystemFrequency/1000);
 	OSTaskDel(OS_PRIO_SELF);
 	while(1)
 	{
@@ -87,7 +116,9 @@ void task0(void *pdata)
 	while(1)
 	{
 		printf("\n\r Task0 ");
-		OSTimeDly(500); 									// if Task 1 does not run, led won't be lit off at all.
+//		LcdPutString(0, 0, "Nokia 5110 LCD");  //在位图的左上方覆盖英文字符
+		OSTimeDly(2500); 									// if Task 1 does not run, led won't be lit off at all.
+		
 	}	
 }
 
@@ -98,7 +129,8 @@ void task1(void *pdata)
 	while(1)
 	{
 		printf("\n\r Task1................ ");
-		OSTimeDly(300);
+//		LcdPutString(0, 0, "www.usr.cc");  //在位图的左上方覆盖英文字符
+		OSTimeDly(3000);
 	}	
 }
 

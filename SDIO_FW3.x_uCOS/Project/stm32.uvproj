@@ -525,45 +525,6 @@
               <FileType>2</FileType>
               <FilePath>..\STARTUP\startup_stm32f10x_hd.s</FilePath>
             </File>
-            <File>
-              <FileName>startup_stm32f10x_cl.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\STARTUP\startup_stm32f10x_cl.s</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>0</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                </CommonProperty>
-                <FileArmAds>
-                  <Aads>
-                    <interw>2</interw>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <thumb>2</thumb>
-                    <SplitLS>2</SplitLS>
-                    <SwStkChk>2</SwStkChk>
-                    <NoWarn>2</NoWarn>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Aads>
-                </FileArmAds>
-              </FileOption>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -633,6 +594,51 @@
               <FileName>os_cpu_a.s</FileName>
               <FileType>2</FileType>
               <FilePath>..\uCOS-II\Port\os_cpu_a.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>5110</GroupName>
+          <Files>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\5110\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>enpix.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\5110\enpix.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\5110\lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\5110\spi.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>motor</GroupName>
+          <Files>
+            <File>
+              <FileName>stepmotor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\motor\stepmotor.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>usart</GroupName>
+          <Files>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\uart\usart.c</FilePath>
             </File>
           </Files>
         </Group>
