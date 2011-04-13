@@ -361,6 +361,11 @@
               <FileType>1</FileType>
               <FilePath>.\uart.c</FilePath>
             </File>
+            <File>
+              <FileName>D12.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\D12.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

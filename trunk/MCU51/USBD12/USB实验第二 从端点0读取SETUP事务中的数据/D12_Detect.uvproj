@@ -366,6 +366,11 @@
               <FileType>1</FileType>
               <FilePath>.\D12.c</FilePath>
             </File>
+            <File>
+              <FileName>usbCore.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\usbCore.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

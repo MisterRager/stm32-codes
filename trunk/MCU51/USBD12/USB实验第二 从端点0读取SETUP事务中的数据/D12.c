@@ -3,6 +3,8 @@
 // Email Address:	Dean.Sinaean@gmail.com
 
 #include "d12.h"
+#include "config.h"
+
 void DelayXms(u16 x)
 {
 	u16 i,j;
@@ -60,4 +62,50 @@ void USBConnect(void)
 	D12WriteByte(0x16);
 	D12WriteByte(0x47);
 }
+
+void D12AckSetup(void)
+{
+	D12SelectEndPoint(1);
+	D12WriteCMD(D12_ACKNOWLEGDE_SETUP);
+	D12SelectEndPoint(0);
+	D12WriteCMD(D12_ACKNOWLEGDE_SETUP);
+}
+
+u8 D12ReadEndPointLastStatus(u8 ep)
+{
+	D12WriteCMD(0x40+ep);
+	return D12ReadByte();
+}
+
+u8 D12ReadEndPointBuffer(u8 ep,u8 len,u8 *buf)
+{
+	u8 i,j;
+	D12SelectEndPoint(ep);
+	D12WriteCMD(D12_READ_BUFFER);
+	D12ReadByte();
+	j=D12ReadByte();
+#ifdef DEBUG
+	Prints("Read endpoint");
+	PrintShortIntHex((u16)(ep/2));
+	Prints("  want ");
+	PrintShortIntHex((u16)j);
+	Prints("bytes of total ");
+	PrintShortIntHex((u16)j);
+	Prints("\n");
+#endif
+	j=j>len?len:j;
+	for(i=0;i<j;i++)
+	{
+		D12ClrRD();
+		*(buf+i)=D12GetData();
+		D12SetRD();
+#ifdef DEBUG
+		PrintShortIntHex((u16)*(buf+i));
+#endif
+	}
+	return j;
+}
+
+
+
 

@@ -205,8 +205,8 @@
       <Focus>0</Focus>
       <ColumnNumber>14</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>32</TopLine>
-      <CurrentLine>52</CurrentLine>
+      <TopLine>19</TopLine>
+      <CurrentLine>19</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\key.c</PathWithFileName>
       <FilenameWithoutPath>key.c</FilenameWithoutPath>
@@ -217,10 +217,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>14</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>23</CurrentLine>
+      <TopLine>3</TopLine>
+      <CurrentLine>27</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -238,6 +238,20 @@
       <bDave2>0</bDave2>
       <PathWithFileName>.\uart.c</PathWithFileName>
       <FilenameWithoutPath>uart.c</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>0</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>36</TopLine>
+      <CurrentLine>54</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\D12.c</PathWithFileName>
+      <FilenameWithoutPath>D12.c</FilenameWithoutPath>
     </File>
   </Group>
 
@@ -373,34 +387,8 @@
 
   <AlienFiles>
     <PathWithFilename>F:\Dean\MCU51\USBD12\D12.h</PathWithFilename>
-    <TopLine>16</TopLine>
-    <CurrentLine>36</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\D12.c</PathWithFilename>
-    <TopLine>5</TopLine>
-    <CurrentLine>27</CurrentLine>
+    <TopLine>20</TopLine>
+    <CurrentLine>40</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1775,14 +1763,14 @@
         <Doc>
           <Name>.\main.c</Name>
           <ColumnNumber>14</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>23</CurrentLine>
+          <TopLine>3</TopLine>
+          <CurrentLine>27</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\key.c</Name>
           <ColumnNumber>14</ColumnNumber>
-          <TopLine>32</TopLine>
-          <CurrentLine>52</CurrentLine>
+          <TopLine>19</TopLine>
+          <CurrentLine>19</CurrentLine>
         </Doc>
         <Doc>
           <Name>KEY.H</Name>
@@ -1816,15 +1804,15 @@
         </Doc>
         <Doc>
           <Name>D12.H</Name>
-          <ColumnNumber>20</ColumnNumber>
-          <TopLine>16</TopLine>
-          <CurrentLine>36</CurrentLine>
+          <ColumnNumber>25</ColumnNumber>
+          <TopLine>20</TopLine>
+          <CurrentLine>40</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\Dean\MCU51\USBD12\D12.c</Name>
+          <Name>.\D12.c</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>5</TopLine>
-          <CurrentLine>27</CurrentLine>
+          <TopLine>36</TopLine>
+          <CurrentLine>54</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
