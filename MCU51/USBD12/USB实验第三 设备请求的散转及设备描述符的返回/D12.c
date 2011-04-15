@@ -106,6 +106,40 @@ u8 D12ReadEndPointBuffer(u8 ep,u8 len,u8 *buf)
 	return j;
 }
 
+void D12ValidateBuffer(void)
+{
+	D12WriteCMD(D12_VALIDATE_BUFFER);
+}
+
+u8 D12WriteEndPointBuffer(u8 ep,u8 len,u8 *buf)
+{
+	u8 i;
+	D12SelectEndPoint(ep);
+	D12WriteCMD(D12_WRITE_BUFFER);
+	D12WriteByte(0);
+	D12WriteByte(len);
+
+#ifdef DEBUG
+	Prints("Write to endpoint:");
+	PrintShortIntHex((u16)ep/2);
+	Prints(", ");
+	PrintShortIntHex((u16)len);
+	Prints("bytes.\n");
+#endif
+
+	D12SetPortOut();
+	for(i=0;i<len;i++)
+	{
+		D12ClrWR();
+		D12SetData(*(buf+i));
+		D12SetWR();
+	}
+	D12SetPortIn();
+	D12ValidateBuffer();
+	return len;
+}
+	
+	
 
 
 
