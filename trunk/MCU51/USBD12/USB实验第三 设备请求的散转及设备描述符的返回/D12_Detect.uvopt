@@ -217,10 +217,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>2</ColumnNumber>
+      <ColumnNumber>27</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>19</TopLine>
-      <CurrentLine>46</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>17</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -245,24 +245,24 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>1</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>7</CurrentLine>
+      <TopLine>109</TopLine>
+      <CurrentLine>140</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\D12.c</PathWithFileName>
       <FilenameWithoutPath>D12.c</FilenameWithoutPath>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <FileNumber>5</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>20</ColumnNumber>
+      <ColumnNumber>71</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>25</TopLine>
+      <CurrentLine>51</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\usbCore.c</PathWithFileName>
       <FilenameWithoutPath>usbCore.c</FilenameWithoutPath>
@@ -270,9 +270,9 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第二 从端点0读取SETUP事务中的数据\D12.H</PathWithFilename>
-    <TopLine>43</TopLine>
-    <CurrentLine>57</CurrentLine>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\D12.H</PathWithFilename>
+    <TopLine>13</TopLine>
+    <CurrentLine>32</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -296,7 +296,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第二 从端点0读取SETUP事务中的数据\UART.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\UART.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>7</CurrentLine>
     <Constant>0</Constant>
@@ -322,7 +322,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第二 从端点0读取SETUP事务中的数据\LED.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\LED.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>15</CurrentLine>
     <Constant>0</Constant>
@@ -348,7 +348,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第二 从端点0读取SETUP事务中的数据\CONFIG.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\CONFIG.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>7</CurrentLine>
     <Constant>0</Constant>
@@ -374,7 +374,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第二 从端点0读取SETUP事务中的数据\MCU51_TYPES.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\MCU51_TYPES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>4</CurrentLine>
     <Constant>0</Constant>
@@ -400,7 +400,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第二 从端点0读取SETUP事务中的数据\KEY.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\KEY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>4</CurrentLine>
     <Constant>0</Constant>
@@ -426,9 +426,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第二 从端点0读取SETUP事务中的数据\usbCore.h</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\usbCore.h</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>5</CurrentLine>
+    <CurrentLine>18</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1792,7 +1792,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>1</ActiveTab>
+      <ActiveTab>10</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\uart.c</Name>
@@ -1802,9 +1802,9 @@
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>20</ColumnNumber>
+          <ColumnNumber>27</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>12</CurrentLine>
+          <CurrentLine>17</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\key.c</Name>
@@ -1844,27 +1844,27 @@
         </Doc>
         <Doc>
           <Name>D12.H</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>43</TopLine>
-          <CurrentLine>57</CurrentLine>
+          <ColumnNumber>8</ColumnNumber>
+          <TopLine>13</TopLine>
+          <CurrentLine>32</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\D12.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>7</CurrentLine>
+          <ColumnNumber>1</ColumnNumber>
+          <TopLine>109</TopLine>
+          <CurrentLine>140</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\usbCore.c</Name>
-          <ColumnNumber>20</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <ColumnNumber>71</ColumnNumber>
+          <TopLine>25</TopLine>
+          <CurrentLine>51</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\Dean\MCU51\USBD12\USB实验第二 从端点0读取SETUP事务中的数据\usbCore.h</Name>
-          <ColumnNumber>0</ColumnNumber>
+          <Name>USBCORE.H</Name>
+          <ColumnNumber>118</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>5</CurrentLine>
+          <CurrentLine>18</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
