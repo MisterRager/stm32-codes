@@ -247,8 +247,8 @@
       <Focus>0</Focus>
       <ColumnNumber>35</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>140</TopLine>
-      <CurrentLine>170</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\D12.c</PathWithFileName>
       <FilenameWithoutPath>D12.c</FilenameWithoutPath>
@@ -259,10 +259,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>6</ColumnNumber>
+      <ColumnNumber>64</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>142</TopLine>
-      <CurrentLine>161</CurrentLine>
+      <TopLine>214</TopLine>
+      <CurrentLine>237</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\usbCore.c</PathWithFileName>
       <FilenameWithoutPath>usbCore.c</FilenameWithoutPath>
@@ -270,7 +270,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第五 配置描述符\USBCORE.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第六 字符串描述符\USBCORE.H</PathWithFilename>
     <TopLine>21</TopLine>
     <CurrentLine>42</CurrentLine>
     <Constant>0</Constant>
@@ -296,7 +296,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第五 配置描述符\D12.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第六 字符串描述符\D12.H</PathWithFilename>
     <TopLine>31</TopLine>
     <CurrentLine>40</CurrentLine>
     <Constant>0</Constant>
@@ -322,7 +322,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第五 配置描述符\UART.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第六 字符串描述符\UART.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>7</CurrentLine>
     <Constant>0</Constant>
@@ -348,7 +348,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第五 配置描述符\LED.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第六 字符串描述符\LED.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>15</CurrentLine>
     <Constant>0</Constant>
@@ -374,7 +374,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第五 配置描述符\CONFIG.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第六 字符串描述符\CONFIG.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>7</CurrentLine>
     <Constant>0</Constant>
@@ -400,7 +400,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第五 配置描述符\MCU51_TYPES.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第六 字符串描述符\MCU51_TYPES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>4</CurrentLine>
     <Constant>0</Constant>
@@ -426,7 +426,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第五 配置描述符\KEY.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第六 字符串描述符\KEY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>4</CurrentLine>
     <Constant>0</Constant>
@@ -1851,14 +1851,14 @@
         <Doc>
           <Name>.\D12.c</Name>
           <ColumnNumber>35</ColumnNumber>
-          <TopLine>140</TopLine>
-          <CurrentLine>170</CurrentLine>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\usbCore.c</Name>
-          <ColumnNumber>6</ColumnNumber>
-          <TopLine>142</TopLine>
-          <CurrentLine>161</CurrentLine>
+          <ColumnNumber>64</ColumnNumber>
+          <TopLine>214</TopLine>
+          <CurrentLine>237</CurrentLine>
         </Doc>
         <Doc>
           <Name>USBCORE.H</Name>

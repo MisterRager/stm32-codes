@@ -84,6 +84,43 @@ sizeof(ReportDescriptor)&0xff,
 0x0A, //7  bInterval
 };
 
+code u8 LanguageId[4]=
+{
+0x04, //1  bLength
+0x03, //2  bDescriptorType
+0x09, //3  //american english
+0x04,
+};
+
+code u8 ManufacturerStringDescriptor[]=
+{
+0x08,	 //bLength
+0x03,//bDescriptorType
+0x20,0x5F,
+0x8F,0x79,
+0x87,0x65,
+};
+
+code u8 ProductStringDescriptor[]=
+{
+0x08,
+0x03,
+0x2A, 0x67,
+0xE5, 0x77,
+0x0D, 0x54,	
+};
+
+code u8 SerialNumberStringDescriptor[]=
+{
+0x08,
+0x03,
+0x32, 0x4E,
+0x4C, 0x88,
+0x26, 0x7B,
+};
+
+
+
 
 
 void UsbBusSuspend(void)
@@ -179,6 +216,57 @@ void UsbEp0Out(void)
 						#ifdef DEBUG
 						Prints("-Get string descriptor.\r\n");
 						#endif
+						switch(wValue&0xff)
+						{
+							case 0:
+							#ifdef DEBUG 
+							Prints("--Get Language ID.\r\n");
+							#endif
+							pSendData=LanguageId;
+							SendLength=LanguageId[0];
+							break;
+
+							case 1:
+							#ifdef DEBUG
+							Prints("--Get Manufacturer string.\r\n");
+							#endif
+							pSendData=ManufacturerStringDescriptor;
+							SendLength=ManufacturerStringDescriptor[0];
+							break;
+
+							case 2:
+							#ifdef DEBUG
+							Prints("--Get product string.\r\n");
+							#endif
+							pSendData=ProductStringDescriptor;
+							SendLength=ProductStringDescriptor[0];
+
+							case 3:
+							#ifdef DEBUG
+							Prints("--Get serial string.\r\n");
+							#endif
+							pSendData=SerialNumberStringDescriptor;
+							SendLength=SerialNumberStringDescriptor[0];
+							break;
+
+							default:
+							#ifdef DEBUG
+							Prints("Undefined index.\r\n");
+							#endif
+							SendLength=0;
+							NeedZeroPacket=1;
+							break;
+						}
+						if(wLength>SendLength)
+						{
+							if(SendLength%DeviceDescriptor[7]==0)
+								NeedZeroPacket=1;
+						}
+						else 
+						{
+							SendLength=wLength;
+						}
+						UsbEp0SendData();
 						break;
 
 						default:
