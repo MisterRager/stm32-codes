@@ -37,6 +37,7 @@
 #define D12_READ_BUFFER  0xF0
 #define D12_VALIDATE_BUFFER 0xFA
 #define D12_WRITE_BUFFER 0xF0
+#define D12_SET_ADDRESS_ENABLE 0xD0
 
 
 #define D12ClearBuffer(void) D12WriteCMD(D12_CLEAR_BUFFER)
@@ -60,6 +61,7 @@ void USBDisconnect(void);
 void D12AckSetup(void) ;
 u8 D12ReadEndPointBuffer(u8 ep,u8 len,u8 *buf);
 u8 D12ReadEndPointLastStatus(u8 ep);
+void D12SetAddress(u8 Addr);
 
 
 #define D12ReadID(id)	\

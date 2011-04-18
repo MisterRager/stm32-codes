@@ -245,10 +245,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>1</ColumnNumber>
+      <ColumnNumber>11</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>109</TopLine>
-      <CurrentLine>140</CurrentLine>
+      <TopLine>73</TopLine>
+      <CurrentLine>95</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\D12.c</PathWithFileName>
       <FilenameWithoutPath>D12.c</FilenameWithoutPath>
@@ -259,10 +259,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>71</ColumnNumber>
+      <ColumnNumber>2</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>25</TopLine>
-      <CurrentLine>51</CurrentLine>
+      <TopLine>73</TopLine>
+      <CurrentLine>94</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\usbCore.c</PathWithFileName>
       <FilenameWithoutPath>usbCore.c</FilenameWithoutPath>
@@ -270,9 +270,35 @@
   </Group>
 
   <AlienFiles>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\USBCORE.H</PathWithFilename>
+    <TopLine>7</TopLine>
+    <CurrentLine>7</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
     <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\D12.H</PathWithFilename>
     <TopLine>13</TopLine>
-    <CurrentLine>32</CurrentLine>
+    <CurrentLine>13</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -403,32 +429,6 @@
     <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\KEY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>4</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\usbCore.h</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>18</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1844,27 +1844,27 @@
         </Doc>
         <Doc>
           <Name>D12.H</Name>
-          <ColumnNumber>8</ColumnNumber>
+          <ColumnNumber>20</ColumnNumber>
           <TopLine>13</TopLine>
-          <CurrentLine>32</CurrentLine>
+          <CurrentLine>13</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\D12.c</Name>
-          <ColumnNumber>1</ColumnNumber>
-          <TopLine>109</TopLine>
-          <CurrentLine>140</CurrentLine>
+          <ColumnNumber>11</ColumnNumber>
+          <TopLine>73</TopLine>
+          <CurrentLine>95</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\usbCore.c</Name>
-          <ColumnNumber>71</ColumnNumber>
-          <TopLine>25</TopLine>
-          <CurrentLine>51</CurrentLine>
+          <ColumnNumber>2</ColumnNumber>
+          <TopLine>73</TopLine>
+          <CurrentLine>94</CurrentLine>
         </Doc>
         <Doc>
           <Name>USBCORE.H</Name>
-          <ColumnNumber>118</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>18</CurrentLine>
+          <ColumnNumber>110</ColumnNumber>
+          <TopLine>7</TopLine>
+          <CurrentLine>7</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

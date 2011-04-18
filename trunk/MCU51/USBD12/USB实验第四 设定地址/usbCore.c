@@ -190,7 +190,14 @@ void UsbEp0Out(void)
 					case SET_ADDRESS:
 					#ifdef DEBUG
 					Prints("Set address.\r\n");
+					Prints("Address is :");
+					PrintShortIntHex(wValue&0xff);
+					Prints("\r\n");
 					#endif
+					D12SetAddress(wValue&0xff);
+					SendLength=0;
+					NeedZeroPacket=1;
+					UsbEp0SendData();
 					break;
 	
 					case SET_CONFIGURATION:
