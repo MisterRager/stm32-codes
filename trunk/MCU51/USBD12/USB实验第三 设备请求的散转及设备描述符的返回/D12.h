@@ -7,6 +7,7 @@
 #include <at89x52.h>
 #include "MCU51_Types.h"
 #include "uart.h"
+#include "usbCore.h"
 
 #define D12_CMD_ADDR  1
 #define D12_DATA_ADDR 0
