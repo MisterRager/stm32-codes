@@ -2,6 +2,7 @@
 // Home Page	:  	http://zhuifeng.usr.cc
 // Email Address:	Dean.Sinaean@gmail.com
 
+
 #include "d12.h"
 #include "config.h"
 
@@ -45,7 +46,7 @@ void D12WriteByte(u8 value)
 void USBDisconnect(void)
 {
 	#ifdef DEBUG
-	Prints("disconnect.\n");
+	Prints("disconnect.\r\n");
 	#endif
 	D12WriteCMD(D12_SET_MODE);
 	D12WriteByte(0x06);
@@ -56,7 +57,7 @@ void USBDisconnect(void)
 void USBConnect(void)
 {
 	#ifdef DEBUG
-	Prints("connect.\n");
+	Prints("connect.\r\n");
 	#endif
 	D12WriteCMD(D12_SET_MODE);
 	D12WriteByte(0x16);
@@ -91,7 +92,7 @@ u8 D12ReadEndPointBuffer(u8 ep,u8 len,u8 *buf)
 	PrintShortIntHex((u16)j);
 	Prints("bytes of total ");
 	PrintShortIntHex((u16)j);
-	Prints("\n");
+	Prints("\r\n");
 #endif
 	j=j>len?len:j;
 	for(i=0;i<j;i++)
@@ -138,7 +139,31 @@ u8 D12WriteEndPointBuffer(u8 ep,u8 len,u8 *buf)
 	D12ValidateBuffer();
 	return len;
 }
-	
+void UsbEp0SendData(void)
+{
+	if(SendLength>DeviceDescriptor[7])
+	{
+		D12WriteEndPointBuffer(1,DeviceDescriptor[7],pSendData);
+		SendLength-=DeviceDescriptor[7];
+		pSendData+=DeviceDescriptor[7];
+	}
+	else
+	{
+		if(SendLength!=0)
+		{
+			D12WriteEndPointBuffer(1,SendLength,pSendData);
+			SendLength=0;	
+		}
+		else
+		{
+			if(NeedZeroPacket==1)
+			{
+				D12WriteEndPointBuffer(1,0,pSendData);
+				NeedZeroPacket=0;
+			}
+		}	
+	}
+}	
 	
 
 

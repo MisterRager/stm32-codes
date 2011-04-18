@@ -12,29 +12,265 @@ compiling key.c...
 compiling main.c...
 compiling uart.c...
 compiling D12.c...
+D12.C(144): error C202: 'SendLength': undefined identifier
+D12.C(146): error C202: 'DeviceDescriptor': undefined identifier
+D12.C(147): error C202: 'SendLength': undefined identifier
+D12.C(148): error C202: 'pSendData': undefined identifier
+D12.C(152): error C202: 'SendLength': undefined identifier
+D12.C(154): error C202: 'SendLength': undefined identifier
+D12.C(155): error C202: 'SendLength': undefined identifier
+D12.C(159): error C202: 'NeedZeroPacket': undefined identifier
+D12.C(161): error C202: 'pSendData': undefined identifier
+D12.C(162): error C202: 'NeedZeroPacket': undefined identifier
 compiling usbCore.c...
-USBCORE.C(14): error C231: 'wLength': redefinition
-USBCORE.C(39): error C172: 'case': missing enclosing switch
-USBCORE.C(46): error C202: 'GET_CONFIGURATION': undefined identifier
-USBCORE.C(52): error C202: 'GET_DESCRIPTOR': undefined identifier
-USBCORE.C(58): error C202: 'GET_INTERFACE': undefined identifier
-USBCORE.C(64): error C202: 'GET_STATUS': undefined identifier
-USBCORE.C(70): error C202: 'SYNCH_FRAME': undefined identifier
-USBCORE.C(82): error C171: 'break': missing enclosing loop
-USBCORE.C(84): error C172: 'case': missing enclosing switch
-USBCORE.C(88): error C171: 'break': missing enclosing loop
-USBCORE.C(90): error C172: 'case': missing enclosing switch
-USBCORE.C(94): error C171: 'break': missing enclosing loop
-USBCORE.C(96): error C172: 'default': missing enclosing switch
-USBCORE.C(100): error C171: 'break': missing enclosing loop
-USBCORE.C(114): error C202: 'CLEAR_FEATURE': undefined identifier
-USBCORE.C(120): error C202: 'SET_ADDRESS': undefined identifier
-USBCORE.C(126): error C202: 'SET_CONFIGURATION': undefined identifier
-USBCORE.C(132): error C202: 'SET_DESCRIPTOR': undefined identifier
-USBCORE.C(138): error C202: 'SET_FEATURE': undefined identifier
-USBCORE.C(144): error C202: 'SET_INTERFACE': undefined identifier
-USBCORE.C(176): error C141: syntax error near 'else'
-USBCORE.C(182): error C141: syntax error near 'void'
+USBCORE.C(40): error C141: syntax error near 'void'
+USBCORE.C(41): error C231: 'UsbBusSuspend': redefinition
+USBCORE.C(41): error C141: syntax error near '{'
+USBCORE.C(43): error C231: 'UsbBusReset': redefinition
+USBCORE.C(43): error C141: syntax error near '{'
+USBCORE.C(45): error C231: 'UsbEp0Out': redefinition
+USBCORE.C(45): error C141: syntax error near '{'
+USBCORE.C(47): error C231: '_Prints': redefinition
+USBCORE.C(49): error C141: syntax error near 'if'
+USBCORE.C(49): error C141: syntax error near '0'
+USBCORE.C(49): error C141: syntax error near '&', expected ')'
+USBCORE.C(51): error C141: syntax error near '0'
+USBCORE.C(51): error C231: '_D12ReadEndPointBuffer': redefinition
+USBCORE.C(52): error C231: 'D12AckSetup': redefinition
+USBCORE.C(53): error C141: syntax error near '0xF2'
+USBCORE.C(53): error C231: '_D12WriteCMD': redefinition
+USBCORE.C(55): error C231: 'bmRequestType': redefinition
+USBCORE.C(56): error C231: 'bRequest': redefinition
+USBCORE.C(57): error C231: 'wValue': redefinition
+USBCORE.C(57): error C247: non-address/-constant initializer
+USBCORE.C(58): error C231: 'wIndex': redefinition
+USBCORE.C(58): error C247: non-address/-constant initializer
+USBCORE.C(59): error C231: 'wLength': redefinition
+USBCORE.C(59): error C247: non-address/-constant initializer
+USBCORE.C(61): error C141: syntax error near 'if'
+USBCORE.C(61): error C141: syntax error near '&', expected ')'
+USBCORE.C(63): error C141: syntax error near '>>', expected ')'
+USBCORE.C(67): error C141: syntax error near '<string>'
+USBCORE.C(67): error C231: '_Prints': redefinition
+USBCORE.C(69): error C141: syntax error near 'switch'
+USBCORE.C(70): error C129: missing ';' before '{'
+Target not created
+Build target 'D12Detect'
+compiling key.c...
+compiling main.c...
+compiling uart.c...
+compiling D12.c...
+D12.C(144): error C202: 'SendLength': undefined identifier
+D12.C(146): error C202: 'DeviceDescriptor': undefined identifier
+D12.C(147): error C202: 'SendLength': undefined identifier
+D12.C(148): error C202: 'pSendData': undefined identifier
+D12.C(152): error C202: 'SendLength': undefined identifier
+D12.C(154): error C202: 'SendLength': undefined identifier
+D12.C(155): error C202: 'SendLength': undefined identifier
+D12.C(159): error C202: 'NeedZeroPacket': undefined identifier
+D12.C(161): error C202: 'pSendData': undefined identifier
+D12.C(162): error C202: 'NeedZeroPacket': undefined identifier
+compiling usbCore.c...
+USBCORE.C(40): error C141: syntax error near 'void'
+USBCORE.C(41): error C231: 'UsbBusSuspend': redefinition
+USBCORE.C(41): error C141: syntax error near '{'
+USBCORE.C(43): error C231: 'UsbBusReset': redefinition
+USBCORE.C(43): error C141: syntax error near '{'
+USBCORE.C(45): error C231: 'UsbEp0Out': redefinition
+USBCORE.C(45): error C141: syntax error near '{'
+USBCORE.C(47): error C231: '_Prints': redefinition
+USBCORE.C(49): error C141: syntax error near 'if'
+USBCORE.C(49): error C141: syntax error near '0'
+USBCORE.C(49): error C141: syntax error near '&', expected ')'
+USBCORE.C(51): error C141: syntax error near '0'
+USBCORE.C(51): error C231: '_D12ReadEndPointBuffer': redefinition
+USBCORE.C(52): error C231: 'D12AckSetup': redefinition
+USBCORE.C(53): error C141: syntax error near '0xF2'
+USBCORE.C(53): error C231: '_D12WriteCMD': redefinition
+USBCORE.C(55): error C231: 'bmRequestType': redefinition
+USBCORE.C(56): error C231: 'bRequest': redefinition
+USBCORE.C(57): error C231: 'wValue': redefinition
+USBCORE.C(57): error C247: non-address/-constant initializer
+USBCORE.C(58): error C231: 'wIndex': redefinition
+USBCORE.C(58): error C247: non-address/-constant initializer
+USBCORE.C(59): error C231: 'wLength': redefinition
+USBCORE.C(59): error C247: non-address/-constant initializer
+USBCORE.C(61): error C141: syntax error near 'if'
+USBCORE.C(61): error C141: syntax error near '&', expected ')'
+USBCORE.C(63): error C141: syntax error near '>>', expected ')'
+USBCORE.C(67): error C141: syntax error near '<string>'
+USBCORE.C(67): error C231: '_Prints': redefinition
+USBCORE.C(69): error C141: syntax error near 'switch'
+USBCORE.C(70): error C129: missing ';' before '{'
+Target not created
+Build target 'D12Detect'
+compiling key.c...
+compiling main.c...
+compiling uart.c...
+compiling D12.c...
+D12.C(144): error C202: 'SendLength': undefined identifier
+D12.C(146): error C202: 'DeviceDescriptor': undefined identifier
+D12.C(147): error C202: 'SendLength': undefined identifier
+D12.C(148): error C202: 'pSendData': undefined identifier
+D12.C(152): error C202: 'SendLength': undefined identifier
+D12.C(154): error C202: 'SendLength': undefined identifier
+D12.C(155): error C202: 'SendLength': undefined identifier
+D12.C(159): error C202: 'NeedZeroPacket': undefined identifier
+D12.C(161): error C202: 'pSendData': undefined identifier
+D12.C(162): error C202: 'NeedZeroPacket': undefined identifier
+compiling usbCore.c...
+USBCORE.C(40): error C141: syntax error near 'void'
+USBCORE.C(41): error C231: 'UsbBusSuspend': redefinition
+USBCORE.C(41): error C141: syntax error near '{'
+USBCORE.C(43): error C231: 'UsbBusReset': redefinition
+USBCORE.C(43): error C141: syntax error near '{'
+USBCORE.C(45): error C231: 'UsbEp0Out': redefinition
+USBCORE.C(45): error C141: syntax error near '{'
+USBCORE.C(47): error C231: '_Prints': redefinition
+USBCORE.C(49): error C141: syntax error near 'if'
+USBCORE.C(49): error C141: syntax error near '0'
+USBCORE.C(49): error C141: syntax error near '&', expected ')'
+USBCORE.C(51): error C141: syntax error near '0'
+USBCORE.C(51): error C231: '_D12ReadEndPointBuffer': redefinition
+USBCORE.C(52): error C231: 'D12AckSetup': redefinition
+USBCORE.C(53): error C141: syntax error near '0xF2'
+USBCORE.C(53): error C231: '_D12WriteCMD': redefinition
+USBCORE.C(55): error C231: 'bmRequestType': redefinition
+USBCORE.C(56): error C231: 'bRequest': redefinition
+USBCORE.C(57): error C231: 'wValue': redefinition
+USBCORE.C(57): error C247: non-address/-constant initializer
+USBCORE.C(58): error C231: 'wIndex': redefinition
+USBCORE.C(58): error C247: non-address/-constant initializer
+USBCORE.C(59): error C231: 'wLength': redefinition
+USBCORE.C(59): error C247: non-address/-constant initializer
+USBCORE.C(61): error C141: syntax error near 'if'
+USBCORE.C(61): error C141: syntax error near '&', expected ')'
+USBCORE.C(63): error C141: syntax error near '>>', expected ')'
+USBCORE.C(67): error C141: syntax error near '<string>'
+USBCORE.C(67): error C231: '_Prints': redefinition
+USBCORE.C(69): error C141: syntax error near 'switch'
+USBCORE.C(70): error C129: missing ';' before '{'
+Target not created
+Build target 'D12Detect'
+compiling key.c...
+compiling main.c...
+compiling uart.c...
+compiling D12.c...
+D12.C(144): error C202: 'DeviceDescriptor': undefined identifier
+D12.C(146): error C202: 'DeviceDescriptor': undefined identifier
+D12.C(147): error C202: 'DevcieDescriptor': undefined identifier
+D12.C(148): error C202: 'DeviceDescriptor': undefined identifier
+compiling usbCore.c...
+USBCORE.C(40): error C141: syntax error near 'void'
+USBCORE.C(41): error C231: 'UsbBusSuspend': redefinition
+USBCORE.C(41): error C141: syntax error near '{'
+USBCORE.C(43): error C231: 'UsbBusReset': redefinition
+USBCORE.C(43): error C141: syntax error near '{'
+USBCORE.C(45): error C231: 'UsbEp0Out': redefinition
+USBCORE.C(45): error C141: syntax error near '{'
+USBCORE.C(47): error C231: '_Prints': redefinition
+USBCORE.C(49): error C141: syntax error near 'if'
+USBCORE.C(49): error C141: syntax error near '0'
+USBCORE.C(49): error C141: syntax error near '&', expected ')'
+USBCORE.C(51): error C141: syntax error near '0'
+USBCORE.C(51): error C231: '_D12ReadEndPointBuffer': redefinition
+USBCORE.C(52): error C231: 'D12AckSetup': redefinition
+USBCORE.C(53): error C141: syntax error near '0xF2'
+USBCORE.C(53): error C231: '_D12WriteCMD': redefinition
+USBCORE.C(55): error C231: 'bmRequestType': redefinition
+USBCORE.C(56): error C231: 'bRequest': redefinition
+USBCORE.C(57): error C231: 'wValue': redefinition
+USBCORE.C(57): error C247: non-address/-constant initializer
+USBCORE.C(58): error C231: 'wIndex': redefinition
+USBCORE.C(58): error C247: non-address/-constant initializer
+USBCORE.C(59): error C231: 'wLength': redefinition
+USBCORE.C(59): error C247: non-address/-constant initializer
+USBCORE.C(61): error C141: syntax error near 'if'
+USBCORE.C(61): error C141: syntax error near '&', expected ')'
+USBCORE.C(63): error C141: syntax error near '>>', expected ')'
+USBCORE.C(67): error C141: syntax error near '<string>'
+USBCORE.C(67): error C231: '_Prints': redefinition
+USBCORE.C(69): error C141: syntax error near 'switch'
+USBCORE.C(70): error C129: missing ';' before '{'
+Target not created
+Build target 'D12Detect'
+compiling key.c...
+compiling main.c...
+compiling uart.c...
+compiling D12.c...
+D12.C(147): error C202: 'DevcieDescriptor': undefined identifier
+compiling usbCore.c...
+USBCORE.C(40): error C141: syntax error near 'void'
+USBCORE.C(41): error C231: 'UsbBusSuspend': redefinition
+USBCORE.C(41): error C141: syntax error near '{'
+USBCORE.C(43): error C231: 'UsbBusReset': redefinition
+USBCORE.C(43): error C141: syntax error near '{'
+USBCORE.C(45): error C231: 'UsbEp0Out': redefinition
+USBCORE.C(45): error C141: syntax error near '{'
+USBCORE.C(47): error C231: '_Prints': redefinition
+USBCORE.C(49): error C141: syntax error near 'if'
+USBCORE.C(49): error C141: syntax error near '0'
+USBCORE.C(49): error C141: syntax error near '&', expected ')'
+USBCORE.C(51): error C141: syntax error near '0'
+USBCORE.C(51): error C231: '_D12ReadEndPointBuffer': redefinition
+USBCORE.C(52): error C231: 'D12AckSetup': redefinition
+USBCORE.C(53): error C141: syntax error near '0xF2'
+USBCORE.C(53): error C231: '_D12WriteCMD': redefinition
+USBCORE.C(55): error C231: 'bmRequestType': redefinition
+USBCORE.C(56): error C231: 'bRequest': redefinition
+USBCORE.C(57): error C231: 'wValue': redefinition
+USBCORE.C(57): error C247: non-address/-constant initializer
+USBCORE.C(58): error C231: 'wIndex': redefinition
+USBCORE.C(58): error C247: non-address/-constant initializer
+USBCORE.C(59): error C231: 'wLength': redefinition
+USBCORE.C(59): error C247: non-address/-constant initializer
+USBCORE.C(61): error C141: syntax error near 'if'
+USBCORE.C(61): error C141: syntax error near '&', expected ')'
+USBCORE.C(63): error C141: syntax error near '>>', expected ')'
+USBCORE.C(67): error C141: syntax error near '<string>'
+USBCORE.C(67): error C231: '_Prints': redefinition
+USBCORE.C(69): error C141: syntax error near 'switch'
+USBCORE.C(70): error C129: missing ';' before '{'
+Target not created
+Build target 'D12Detect'
+compiling key.c...
+compiling main.c...
+compiling uart.c...
+compiling D12.c...
+D12.C(166): warning C173: missing return-expression
+D12.C(166): warning C290: missing return value
+compiling usbCore.c...
+USBCORE.C(40): error C141: syntax error near 'void'
+USBCORE.C(41): error C231: 'UsbBusSuspend': redefinition
+USBCORE.C(41): error C141: syntax error near '{'
+USBCORE.C(43): error C231: 'UsbBusReset': redefinition
+USBCORE.C(43): error C141: syntax error near '{'
+USBCORE.C(45): error C231: 'UsbEp0Out': redefinition
+USBCORE.C(45): error C141: syntax error near '{'
+USBCORE.C(47): error C231: '_Prints': redefinition
+USBCORE.C(49): error C141: syntax error near 'if'
+USBCORE.C(49): error C141: syntax error near '0'
+USBCORE.C(49): error C141: syntax error near '&', expected ')'
+USBCORE.C(51): error C141: syntax error near '0'
+USBCORE.C(51): error C231: '_D12ReadEndPointBuffer': redefinition
+USBCORE.C(52): error C231: 'D12AckSetup': redefinition
+USBCORE.C(53): error C141: syntax error near '0xF2'
+USBCORE.C(53): error C231: '_D12WriteCMD': redefinition
+USBCORE.C(55): error C231: 'bmRequestType': redefinition
+USBCORE.C(56): error C231: 'bRequest': redefinition
+USBCORE.C(57): error C231: 'wValue': redefinition
+USBCORE.C(57): error C247: non-address/-constant initializer
+USBCORE.C(58): error C231: 'wIndex': redefinition
+USBCORE.C(58): error C247: non-address/-constant initializer
+USBCORE.C(59): error C231: 'wLength': redefinition
+USBCORE.C(59): error C247: non-address/-constant initializer
+USBCORE.C(61): error C141: syntax error near 'if'
+USBCORE.C(61): error C141: syntax error near '&', expected ')'
+USBCORE.C(63): error C141: syntax error near '>>', expected ')'
+USBCORE.C(67): error C141: syntax error near '<string>'
+USBCORE.C(67): error C231: '_Prints': redefinition
+USBCORE.C(69): error C141: syntax error near 'switch'
+USBCORE.C(70): error C129: missing ';' before '{'
 Target not created
 Build target 'D12Detect'
 compiling key.c...
@@ -42,28 +278,37 @@ compiling main.c...
 compiling uart.c...
 compiling D12.c...
 compiling usbCore.c...
-USBCORE.C(14): error C231: 'wLength': redefinition
-USBCORE.C(39): error C172: 'case': missing enclosing switch
-USBCORE.C(45): error C202: 'GET_CONFIGURATION': undefined identifier
-USBCORE.C(51): error C202: 'GET_DESCRIPTOR': undefined identifier
-USBCORE.C(57): error C202: 'GET_INTERFACE': undefined identifier
-USBCORE.C(63): error C202: 'GET_STATUS': undefined identifier
-USBCORE.C(69): error C202: 'SYNCH_FRAME': undefined identifier
-USBCORE.C(81): error C171: 'break': missing enclosing loop
-USBCORE.C(83): error C172: 'case': missing enclosing switch
-USBCORE.C(87): error C171: 'break': missing enclosing loop
-USBCORE.C(89): error C172: 'case': missing enclosing switch
-USBCORE.C(93): error C171: 'break': missing enclosing loop
-USBCORE.C(95): error C172: 'default': missing enclosing switch
-USBCORE.C(99): error C171: 'break': missing enclosing loop
-USBCORE.C(113): error C202: 'CLEAR_FEATURE': undefined identifier
-USBCORE.C(119): error C202: 'SET_ADDRESS': undefined identifier
-USBCORE.C(125): error C202: 'SET_CONFIGURATION': undefined identifier
-USBCORE.C(131): error C202: 'SET_DESCRIPTOR': undefined identifier
-USBCORE.C(137): error C202: 'SET_FEATURE': undefined identifier
-USBCORE.C(143): error C202: 'SET_INTERFACE': undefined identifier
-USBCORE.C(175): error C141: syntax error near 'else'
-USBCORE.C(181): error C141: syntax error near 'void'
+USBCORE.C(40): error C141: syntax error near 'void'
+USBCORE.C(41): error C231: 'UsbBusSuspend': redefinition
+USBCORE.C(41): error C141: syntax error near '{'
+USBCORE.C(43): error C231: 'UsbBusReset': redefinition
+USBCORE.C(43): error C141: syntax error near '{'
+USBCORE.C(45): error C231: 'UsbEp0Out': redefinition
+USBCORE.C(45): error C141: syntax error near '{'
+USBCORE.C(47): error C231: '_Prints': redefinition
+USBCORE.C(49): error C141: syntax error near 'if'
+USBCORE.C(49): error C141: syntax error near '0'
+USBCORE.C(49): error C141: syntax error near '&', expected ')'
+USBCORE.C(51): error C141: syntax error near '0'
+USBCORE.C(51): error C231: '_D12ReadEndPointBuffer': redefinition
+USBCORE.C(52): error C231: 'D12AckSetup': redefinition
+USBCORE.C(53): error C141: syntax error near '0xF2'
+USBCORE.C(53): error C231: '_D12WriteCMD': redefinition
+USBCORE.C(55): error C231: 'bmRequestType': redefinition
+USBCORE.C(56): error C231: 'bRequest': redefinition
+USBCORE.C(57): error C231: 'wValue': redefinition
+USBCORE.C(57): error C247: non-address/-constant initializer
+USBCORE.C(58): error C231: 'wIndex': redefinition
+USBCORE.C(58): error C247: non-address/-constant initializer
+USBCORE.C(59): error C231: 'wLength': redefinition
+USBCORE.C(59): error C247: non-address/-constant initializer
+USBCORE.C(61): error C141: syntax error near 'if'
+USBCORE.C(61): error C141: syntax error near '&', expected ')'
+USBCORE.C(63): error C141: syntax error near '>>', expected ')'
+USBCORE.C(67): error C141: syntax error near '<string>'
+USBCORE.C(67): error C231: '_Prints': redefinition
+USBCORE.C(69): error C141: syntax error near 'switch'
+USBCORE.C(70): error C129: missing ';' before '{'
 Target not created
 Build target 'D12Detect'
 compiling key.c...
@@ -71,26 +316,8 @@ compiling main.c...
 compiling uart.c...
 compiling D12.c...
 compiling usbCore.c...
-USBCORE.C(14): error C231: 'wLength': redefinition
-USBCORE.C(39): error C172: 'case': missing enclosing switch
-USBCORE.C(45): error C202: 'GET_CONFIGURATION': undefined identifier
-USBCORE.C(51): error C202: 'GET_DESCRIPTOR': undefined identifier
-USBCORE.C(57): error C202: 'GET_INTERFACE': undefined identifier
-USBCORE.C(63): error C202: 'GET_STATUS': undefined identifier
-USBCORE.C(69): error C202: 'SYNCH_FRAME': undefined identifier
-USBCORE.C(81): error C171: 'break': missing enclosing loop
-USBCORE.C(83): error C172: 'case': missing enclosing switch
-USBCORE.C(87): error C171: 'break': missing enclosing loop
-USBCORE.C(89): error C172: 'case': missing enclosing switch
-USBCORE.C(93): error C171: 'break': missing enclosing loop
-USBCORE.C(95): error C172: 'default': missing enclosing switch
-USBCORE.C(99): error C171: 'break': missing enclosing loop
-USBCORE.C(113): error C202: 'CLEAR_FEATURE': undefined identifier
-USBCORE.C(119): error C202: 'SET_ADDRESS': undefined identifier
-USBCORE.C(125): error C202: 'SET_CONFIGURATION': undefined identifier
-USBCORE.C(131): error C202: 'SET_DESCRIPTOR': undefined identifier
-USBCORE.C(137): error C202: 'SET_FEATURE': undefined identifier
-USBCORE.C(143): error C202: 'SET_INTERFACE': undefined identifier
+USBCORE.C(83): error C202: 'DEVICE_DESCRIPTOR': undefined identifier
+USBCORE.C(91): error C202: 'DevcieDescriptor': undefined identifier
 Target not created
 Build target 'D12Detect'
 compiling key.c...
@@ -98,100 +325,11 @@ compiling main.c...
 compiling uart.c...
 compiling D12.c...
 compiling usbCore.c...
-USBCORE.C(40): error C172: 'case': missing enclosing switch
-USBCORE.C(46): error C202: 'GET_CONFIGURATION': undefined identifier
-USBCORE.C(52): error C202: 'GET_DESCRIPTOR': undefined identifier
-USBCORE.C(58): error C202: 'GET_INTERFACE': undefined identifier
-USBCORE.C(64): error C202: 'GET_STATUS': undefined identifier
-USBCORE.C(70): error C202: 'SYNCH_FRAME': undefined identifier
-USBCORE.C(82): error C171: 'break': missing enclosing loop
-USBCORE.C(84): error C172: 'case': missing enclosing switch
-USBCORE.C(88): error C171: 'break': missing enclosing loop
-USBCORE.C(90): error C172: 'case': missing enclosing switch
-USBCORE.C(94): error C171: 'break': missing enclosing loop
-USBCORE.C(96): error C172: 'default': missing enclosing switch
-USBCORE.C(100): error C171: 'break': missing enclosing loop
-USBCORE.C(114): error C202: 'CLEAR_FEATURE': undefined identifier
-USBCORE.C(120): error C202: 'SET_ADDRESS': undefined identifier
-USBCORE.C(126): error C202: 'SET_CONFIGURATION': undefined identifier
-USBCORE.C(132): error C202: 'SET_DESCRIPTOR': undefined identifier
-USBCORE.C(138): error C202: 'SET_FEATURE': undefined identifier
-USBCORE.C(144): error C202: 'SET_INTERFACE': undefined identifier
-Target not created
-Build target 'D12Detect'
-compiling key.c...
-compiling main.c...
-compiling uart.c...
-compiling D12.c...
-compiling usbCore.c...
-USBCORE.C(46): error C202: 'GET_CONFIGURATION': undefined identifier
-USBCORE.C(52): error C202: 'GET_DESCRIPTOR': undefined identifier
-USBCORE.C(58): error C202: 'GET_INTERFACE': undefined identifier
-USBCORE.C(64): error C202: 'GET_STATUS': undefined identifier
-USBCORE.C(70): error C202: 'SYNCH_FRAME': undefined identifier
-USBCORE.C(102): error C141: syntax error near 'else'
-USBCORE.C(114): error C202: 'CLEAR_FEATURE': undefined identifier
-USBCORE.C(120): error C202: 'SET_ADDRESS': undefined identifier
-USBCORE.C(126): error C202: 'SET_CONFIGURATION': undefined identifier
-USBCORE.C(132): error C202: 'SET_DESCRIPTOR': undefined identifier
-USBCORE.C(138): error C202: 'SET_FEATURE': undefined identifier
-USBCORE.C(144): error C202: 'SET_INTERFACE': undefined identifier
-Target not created
-Build target 'D12Detect'
-compiling key.c...
-compiling main.c...
-compiling uart.c...
-compiling D12.c...
-compiling usbCore.c...
-USBCORE.C(46): error C202: 'GET_CONFIGURATION': undefined identifier
-USBCORE.C(52): error C202: 'GET_DESCRIPTOR': undefined identifier
-USBCORE.C(58): error C202: 'GET_INTERFACE': undefined identifier
-USBCORE.C(64): error C202: 'GET_STATUS': undefined identifier
-USBCORE.C(70): error C202: 'SYNCH_FRAME': undefined identifier
-USBCORE.C(102): error C141: syntax error near 'else'
-USBCORE.C(114): error C202: 'CLEAR_FEATURE': undefined identifier
-USBCORE.C(120): error C202: 'SET_ADDRESS': undefined identifier
-USBCORE.C(126): error C202: 'SET_CONFIGURATION': undefined identifier
-USBCORE.C(132): error C202: 'SET_DESCRIPTOR': undefined identifier
-USBCORE.C(138): error C202: 'SET_FEATURE': undefined identifier
-USBCORE.C(144): error C202: 'SET_INTERFACE': undefined identifier
-Target not created
-Build target 'D12Detect'
-compiling key.c...
-compiling main.c...
-compiling uart.c...
-compiling D12.c...
-compiling usbCore.c...
-USBCORE.C(102): error C141: syntax error near 'else'
-Target not created
-Build target 'D12Detect'
-compiling key.c...
-compiling main.c...
-compiling uart.c...
-compiling D12.c...
-compiling usbCore.c...
-USBCORE.C(177): error C141: syntax error near 'else'
-Target not created
-Build target 'D12Detect'
-compiling key.c...
-compiling main.c...
-compiling uart.c...
-compiling D12.c...
-compiling usbCore.c...
-USBCORE.C(180): error C141: syntax error near 'else'
-Target not created
-Build target 'D12Detect'
-compiling key.c...
-compiling main.c...
-compiling uart.c...
-compiling D12.c...
-compiling usbCore.c...
+USBCORE.C(100): warning C206: 'UsbEp0SendData': missing function-prototype
 linking...
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?USBDISCONNECT?D12
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_D12WRITEENDPOINTBUFFER?D12
-Program Size: data=70.0 xdata=0 code=1198
+Program Size: data=65.0 xdata=0 code=2280
 creating hex file from "D12_Detect"...
 "D12_Detect" - 0 Error(s), 2 Warning(s).
 Build target 'D12Detect'
@@ -203,11 +341,9 @@ compiling usbCore.c...
 linking...
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?USBDISCONNECT?D12
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_D12WRITEENDPOINTBUFFER?D12
-Program Size: data=70.0 xdata=0 code=1786
+Program Size: data=65.0 xdata=0 code=2280
 creating hex file from "D12_Detect"...
-"D12_Detect" - 0 Error(s), 2 Warning(s).
+"D12_Detect" - 0 Error(s), 1 Warning(s).
 Build target 'D12Detect'
 compiling key.c...
 compiling main.c...
@@ -217,11 +353,9 @@ compiling usbCore.c...
 linking...
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?USBDISCONNECT?D12
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_D12WRITEENDPOINTBUFFER?D12
-Program Size: data=70.0 xdata=0 code=1850
+Program Size: data=65.0 xdata=0 code=2304
 creating hex file from "D12_Detect"...
-"D12_Detect" - 0 Error(s), 2 Warning(s).
+"D12_Detect" - 0 Error(s), 1 Warning(s).
 Build target 'D12Detect'
 compiling key.c...
 compiling main.c...
@@ -231,11 +365,9 @@ compiling usbCore.c...
 linking...
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?USBDISCONNECT?D12
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_D12WRITEENDPOINTBUFFER?D12
-Program Size: data=70.0 xdata=0 code=1855
+Program Size: data=65.0 xdata=0 code=2307
 creating hex file from "D12_Detect"...
-"D12_Detect" - 0 Error(s), 2 Warning(s).
+"D12_Detect" - 0 Error(s), 1 Warning(s).
 Build target 'D12Detect'
 compiling key.c...
 compiling main.c...
@@ -245,11 +377,9 @@ compiling usbCore.c...
 linking...
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?USBDISCONNECT?D12
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_D12WRITEENDPOINTBUFFER?D12
-Program Size: data=70.0 xdata=0 code=1855
+Program Size: data=65.0 xdata=0 code=2307
 creating hex file from "D12_Detect"...
-"D12_Detect" - 0 Error(s), 2 Warning(s).
+"D12_Detect" - 0 Error(s), 1 Warning(s).
 Build target 'D12Detect'
 compiling key.c...
 compiling main.c...
@@ -259,10 +389,44 @@ compiling usbCore.c...
 linking...
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?USBDISCONNECT?D12
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_D12WRITEENDPOINTBUFFER?D12
-Program Size: data=70.0 xdata=0 code=1786
+Program Size: data=65.0 xdata=0 code=2307
 creating hex file from "D12_Detect"...
-"D12_Detect" - 0 Error(s), 2 Warning(s).
+"D12_Detect" - 0 Error(s), 1 Warning(s).
+Build target 'D12Detect'
+compiling key.c...
+compiling main.c...
+compiling uart.c...
+compiling D12.c...
+compiling usbCore.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?USBDISCONNECT?D12
+Program Size: data=65.0 xdata=0 code=2318
+creating hex file from "D12_Detect"...
+"D12_Detect" - 0 Error(s), 1 Warning(s).
+Build target 'D12Detect'
+compiling key.c...
+compiling main.c...
+compiling uart.c...
+compiling D12.c...
+compiling usbCore.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?USBDISCONNECT?D12
+Program Size: data=65.0 xdata=0 code=2401
+creating hex file from "D12_Detect"...
+"D12_Detect" - 0 Error(s), 1 Warning(s).
+Build target 'D12Detect'
+compiling key.c...
+compiling main.c...
+compiling uart.c...
+compiling D12.c...
+compiling usbCore.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?USBDISCONNECT?D12
+Program Size: data=65.0 xdata=0 code=2480
+creating hex file from "D12_Detect"...
+"D12_Detect" - 0 Error(s), 1 Warning(s).
 Clean started: Project: 'D12_Detect'
    deleting intermediate output files for target 'D12Detect'
