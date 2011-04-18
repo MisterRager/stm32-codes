@@ -163,6 +163,12 @@ void UsbEp0SendData(void)
 			}
 		}	
 	}
+}
+
+void D12SetAddress(u8 Addr)
+{
+	D12WriteCMD(D12_SET_ADDRESS_ENABLE);
+	D12WriteByte(0x80|Addr);	
 }	
 	
 

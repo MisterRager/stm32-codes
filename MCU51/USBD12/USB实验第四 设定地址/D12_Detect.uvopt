@@ -245,10 +245,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>11</ColumnNumber>
+      <ColumnNumber>35</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>73</TopLine>
-      <CurrentLine>95</CurrentLine>
+      <TopLine>138</TopLine>
+      <CurrentLine>170</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\D12.c</PathWithFileName>
       <FilenameWithoutPath>D12.c</FilenameWithoutPath>
@@ -259,10 +259,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>2</ColumnNumber>
+      <ColumnNumber>9</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>73</TopLine>
-      <CurrentLine>94</CurrentLine>
+      <TopLine>187</TopLine>
+      <CurrentLine>198</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\usbCore.c</PathWithFileName>
       <FilenameWithoutPath>usbCore.c</FilenameWithoutPath>
@@ -270,7 +270,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\USBCORE.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第四 设定地址\USBCORE.H</PathWithFilename>
     <TopLine>7</TopLine>
     <CurrentLine>7</CurrentLine>
     <Constant>0</Constant>
@@ -296,9 +296,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\D12.H</PathWithFilename>
-    <TopLine>13</TopLine>
-    <CurrentLine>13</CurrentLine>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第四 设定地址\D12.H</PathWithFilename>
+    <TopLine>31</TopLine>
+    <CurrentLine>40</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -322,7 +322,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\UART.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第四 设定地址\UART.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>7</CurrentLine>
     <Constant>0</Constant>
@@ -348,7 +348,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\LED.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第四 设定地址\LED.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>15</CurrentLine>
     <Constant>0</Constant>
@@ -374,7 +374,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\CONFIG.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第四 设定地址\CONFIG.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>7</CurrentLine>
     <Constant>0</Constant>
@@ -400,7 +400,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\MCU51_TYPES.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第四 设定地址\MCU51_TYPES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>4</CurrentLine>
     <Constant>0</Constant>
@@ -426,7 +426,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第三 设备请求的散转及设备描述符的返回\KEY.H</PathWithFilename>
+    <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第四 设定地址\KEY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>4</CurrentLine>
     <Constant>0</Constant>
@@ -1844,21 +1844,21 @@
         </Doc>
         <Doc>
           <Name>D12.H</Name>
-          <ColumnNumber>20</ColumnNumber>
-          <TopLine>13</TopLine>
-          <CurrentLine>13</CurrentLine>
+          <ColumnNumber>35</ColumnNumber>
+          <TopLine>31</TopLine>
+          <CurrentLine>40</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\D12.c</Name>
-          <ColumnNumber>11</ColumnNumber>
-          <TopLine>73</TopLine>
-          <CurrentLine>95</CurrentLine>
+          <ColumnNumber>35</ColumnNumber>
+          <TopLine>138</TopLine>
+          <CurrentLine>170</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\usbCore.c</Name>
-          <ColumnNumber>2</ColumnNumber>
-          <TopLine>73</TopLine>
-          <CurrentLine>94</CurrentLine>
+          <ColumnNumber>9</ColumnNumber>
+          <TopLine>187</TopLine>
+          <CurrentLine>198</CurrentLine>
         </Doc>
         <Doc>
           <Name>USBCORE.H</Name>
