@@ -37,6 +37,55 @@ code u8 DeviceDescriptor[0x12]=
 	0x01,//bNumConfigurations.
 };
 
+code u8 ReportDescriptor[]=
+{
+	0x00,
+};
+
+code u8 ConfigurationDescriptor[9+9+9+7]=
+{
+/*********************configuration descriptor,9bytes**************************/
+0x09, //1  bLength
+0x02, //2  bDescriptorType.
+sizeof(ConfigurationDescriptor)&0xff,//3  lower byte of wTotalLength
+(sizeof(ConfigurationDescriptor)>>8)&0xff,//4  higher byte of wTotalLength
+0x01,//5  bNumInterface
+0x01,//6  bNumConfiguration
+0x00,//7  iConfiguration
+0x80,//8  bmAttributes
+0x32,//9  mMaxPower.
+/********************Interface descriptor,9bytes*******************************/
+0x09, //1  bLength
+0x04, //2  bDescriptorType
+0x00, //3  bInterfaceNumber
+0x00, //4  bAlternateSetting
+0x01, //5  bNumEndpoints
+0x03, //6  bInterfaceClass
+0x01, //7  bInterfaceSubClass
+0x02, //8  bInterfaceProtocol
+0x00, //9  iConfiguration
+/*********************HID descriptor,9bytes*****************************************/
+0x09, //1  bLength
+0x21, //2  bDescriptorType
+0x10, //3  bcdHID
+0x01, //4  bcdHID
+0x21, //5  bCountryCode
+0x01, //6  bNumDescriptors
+0x22, //7  bDescriptorType
+sizeof(ReportDescriptor)&0xff,
+(sizeof(ReportDescriptor)>>8)&0xff,
+/*************************Endpoint descriptor**************************************/
+0x07, //1  bLength
+0x05, //2  bDescriptorType
+0x81, //3  bEndpointAddress
+0x03, //4  bmAttributes
+0x10, //5  wMaxPacketSize
+0x00, //6  wMaxPacketSize
+0x0A, //7  bInterval
+};
+
+
+
 void UsbBusSuspend(void)
 {}
 void UsbBusReset(void)
@@ -109,6 +158,21 @@ void UsbEp0Out(void)
 						#ifdef DEBUG
 						Prints("-Get configuration descriptor.\r\n");
 						#endif
+						pSendData=ConfigurationDescriptor;
+						SendLength=ConfigurationDescriptor[3];
+						SendLength=SendLength*256+ConfigurationDescriptor[2];
+						if(wLength>SendLength)
+						{
+							if(SendLength%DeviceDescriptor[7]==0)
+							{
+								NeedZeroPacket=1;
+							}
+						}
+						else
+						{
+							SendLength=wLength;
+						}
+						UsbEp0SendData();
 						break;
 
 						case STRING_DESCRIPTOR:

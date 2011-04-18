@@ -39,6 +39,8 @@ extern u8 * pSendData;
 extern u16 SendLength;
 extern u8 NeedZeroPacket;
 extern code u8 DeviceDescriptor[];
+extern code u8 ReportDescriptor[];
+extern code u8 ConfigurationDescriptor[];
 
 void UsbBusSuspend(void);
 void UsbBusReset(void);
