@@ -104,6 +104,7 @@ u8 D12ReadEndPointBuffer(u8 ep,u8 len,u8 *buf)
 		PrintShortIntHex((u16)*(buf+i));
 #endif
 	}
+	Prints("\r\n");
 	return j;
 }
 
@@ -169,6 +170,19 @@ void D12SetAddress(u8 Addr)
 {
 	D12WriteCMD(D12_SET_ADDRESS_ENABLE);
 	D12WriteByte(0x80|Addr);	
+}
+
+void D12SetEndPointEnable(u8 enable)
+{
+	D12WriteCMD(D12_SET_ENDPOINT_ENABLE);
+	if(enable!=0)
+	{
+		D12WriteByte(0x01);
+	}
+	else
+	{
+		D12WriteByte(0x00);
+	}
 }	
 	
 

@@ -29,6 +29,8 @@
 #define ENDPOINT_DESCRIPTOR       5
 #define REPORT_DESCRIPTOR         0x22
 
+#define SET_IDLE 0x0A
+
 extern idata u8 Buffer[16];
 extern u8 bmRequestType;
 extern u8 bRequest;
@@ -41,6 +43,8 @@ extern u8 NeedZeroPacket;
 extern code u8 DeviceDescriptor[];
 extern code u8 ReportDescriptor[];
 extern code u8 ConfigurationDescriptor[];
+extern u8 ConfigValue;
+extern u8 Ep1InIsBusy;
 
 void UsbBusSuspend(void);
 void UsbBusReset(void);
