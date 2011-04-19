@@ -73,8 +73,9 @@ void SendReport(void)
  //需要返回的8字节报告的缓冲。但在本测试程序中，只使用前5字节。
 	 u8 Buf[4]={0,0,0,0};
 	 
-	 KeyUp&=~(KEY1|KEY2|KEY3|KEY4);
-	 KeyDown&=~(KEY1|KEY2|KEY3|KEY4);
+	 KeyUp&=~(KEY1|KEY2|KEY3|KEY4|KEY5|KEY6);
+	 KeyDown&=~(KEY1|KEY2|KEY3|KEY4|KEY5|KEY6);
+
 	 if((KeyPress&(~(KEY7|KEY8)))||KeyUp||KeyDown)
 	 {
 	 	if(KeyPress&KEY1)

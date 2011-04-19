@@ -24,7 +24,7 @@ code u8 DeviceDescriptor[0x12]=
 	0x01,//bDescriptorType
 	0x10,//bcdUSB
 	0x01,
-	0xFF,//bDeviceClass
+	0x00,//bDeviceClass
 	0x00,//bDeviceSubClass
 	0x00,//bDeviceProtocol
 	0x10,//bMaxPacketSize0
@@ -153,6 +153,7 @@ code u8 SerialNumberStringDescriptor[]=
 };
 
 
+
 void UsbBusSuspend(void)
 {}
 void UsbBusReset(void)
@@ -185,7 +186,7 @@ void UsbEp0Out(void)
 			{
 				case 0:
 				#ifdef DEBUG
-				Prints("Standard USB request.\r\n");
+				Prints("USB Standard in request.\r\n");
 				#endif
 			   	switch(bRequest)
 				{
@@ -275,6 +276,7 @@ void UsbEp0Out(void)
 							#endif
 							pSendData=ProductStringDescriptor;
 							SendLength=ProductStringDescriptor[0];
+							break;
 
 							case 3:
 							#ifdef DEBUG
@@ -304,6 +306,26 @@ void UsbEp0Out(void)
 						UsbEp0SendData();
 						break;
 
+						case REPORT_DESCRIPTOR:
+						#ifdef DEBUG
+						Prints("Get report descriptor.\r\n");
+						#endif
+						if(wLength>SendLength)
+						{
+							pSendData=ReportDescriptor;
+							SendLength=sizeof(ReportDescriptor);
+							if(wLength%DeviceDescriptor[7]==0)
+							{
+								NeedZeroPacket=1;
+							}
+							else
+							{
+								SendLength=wLength;
+							}
+							UsbEp0SendData();
+						}
+						break;
+
 						default:
 						#ifdef DEBUG
 						Prints("-Get other descriptor(unrecognized).\r\n");
@@ -329,27 +351,6 @@ void UsbEp0Out(void)
 					Prints("Synch frame.\r\n");
 					#endif
 					break;
-
-					case REPORT_DESCRIPTOR:
-					#ifdef DEBUG
-					Prints("Get report descriptor.\r\n");
-					#endif
-					if(wLength>SendLength)
-					{
-						pSendData=ReportDescriptor;
-						SendLength=sizeof(ReportDescriptor);
-						if(wLength%DeviceDescriptor[7]==0)
-						{
-							NeedZeroPacket=1;
-						}
-						else
-						{
-							SendLength=wLength;
-						}
-						UsbEp0SendData();
-					}
-					break;
-					
 	
 					default:
 					#ifdef DEBUG
@@ -412,7 +413,8 @@ void UsbEp0Out(void)
 					#ifdef DEBUG
 					Prints("Set configuration.\r\n");
 					#endif
-					D12SetEndPointEnable(wValue&0xff);
+					ConfigValue=wValue&0xff;
+					D12SetEndPointEnable(ConfigValue);
 					SendLength=0;
 					NeedZeroPacket=1;
 					UsbEp0SendData();

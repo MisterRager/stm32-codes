@@ -217,10 +217,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>26</ColumnNumber>
+      <ColumnNumber>33</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>63</TopLine>
+      <CurrentLine>86</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -259,10 +259,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>12</ColumnNumber>
+      <ColumnNumber>49</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>495</TopLine>
-      <CurrentLine>506</CurrentLine>
+      <TopLine>103</TopLine>
+      <CurrentLine>117</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\usbCore.c</PathWithFileName>
       <FilenameWithoutPath>usbCore.c</FilenameWithoutPath>
@@ -297,8 +297,8 @@
 
   <AlienFiles>
     <PathWithFilename>F:\Dean\MCU51\USBD12\USB实验第七 设置配置\D12.H</PathWithFilename>
-    <TopLine>34</TopLine>
-    <CurrentLine>64</CurrentLine>
+    <TopLine>1</TopLine>
+    <CurrentLine>15</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1792,8 +1792,20 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>8</ActiveTab>
+      <ActiveTab>0</ActiveTab>
       <Documents>
+        <Doc>
+          <Name>.\usbCore.c</Name>
+          <ColumnNumber>49</ColumnNumber>
+          <TopLine>103</TopLine>
+          <CurrentLine>117</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>D12.H</Name>
+          <ColumnNumber>70</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>15</CurrentLine>
+        </Doc>
         <Doc>
           <Name>.\uart.c</Name>
           <ColumnNumber>2</ColumnNumber>
@@ -1802,9 +1814,9 @@
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>26</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <ColumnNumber>33</ColumnNumber>
+          <TopLine>63</TopLine>
+          <CurrentLine>86</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\key.c</Name>
@@ -1843,22 +1855,10 @@
           <CurrentLine>7</CurrentLine>
         </Doc>
         <Doc>
-          <Name>D12.H</Name>
-          <ColumnNumber>11</ColumnNumber>
-          <TopLine>34</TopLine>
-          <CurrentLine>64</CurrentLine>
-        </Doc>
-        <Doc>
           <Name>.\D12.c</Name>
           <ColumnNumber>16</ColumnNumber>
           <TopLine>158</TopLine>
           <CurrentLine>158</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\usbCore.c</Name>
-          <ColumnNumber>12</ColumnNumber>
-          <TopLine>495</TopLine>
-          <CurrentLine>506</CurrentLine>
         </Doc>
         <Doc>
           <Name>USBCORE.H</Name>
