@@ -15,13 +15,16 @@ u8 * pSendData;
 u16 SendLength;
 u8 NeedZeroPacket;
 
+u8 ConfigValue;
+u8 Ep1InIsBusy;
+
 code u8 DeviceDescriptor[0x12]=
 {
 	0x12,//bLength
 	0x01,//bDescriptorType
 	0x10,//bcdUSB
 	0x01,
-	0x00,//bDeviceClass
+	0xFF,//bDeviceClass
 	0x00,//bDeviceSubClass
 	0x00,//bDeviceProtocol
 	0x10,//bMaxPacketSize0
@@ -39,8 +42,36 @@ code u8 DeviceDescriptor[0x12]=
 
 code u8 ReportDescriptor[]=
 {
-	0x00,
+0x05,0x01,
+0x09,0x02,
+0xa1,0x01,
+0x09,0x01,
+0xa1,0x00,
+0x05,0x09,
+0x19,0x01,
+0x29,0x03,
+0x15,0x00,
+0x25,0x01,
+0x95,0x03,
+0x75,0x01,
+0x81,0x02,
+0x95,0x01,
+0x75,0x05,
+0x81,0x03,
+0x05,0x01,
+0x09,0x30,
+0x09,0x31,
+0x09,0x38,
+0x15,0x81,
+0x25,0x7f,
+0x75,0x08,
+0x95,0x03,
+0x81,0x06,
+0xc0,
+0xc0
 };
+
+
 
 code u8 ConfigurationDescriptor[9+9+9+7]=
 {
@@ -84,6 +115,8 @@ sizeof(ReportDescriptor)&0xff,
 0x0A, //7  bInterval
 };
 
+
+
 code u8 LanguageId[4]=
 {
 0x04, //1  bLength
@@ -120,17 +153,19 @@ code u8 SerialNumberStringDescriptor[]=
 };
 
 
-
-
-
 void UsbBusSuspend(void)
 {}
 void UsbBusReset(void)
-{}
+{
+	#ifdef DEBUG
+	Prints("Usb bus reset.\r\n");
+	#endif
+	Ep1InIsBusy=0;
+}
 void UsbEp0Out(void)
 {
 #ifdef DEBUG
-	Prints("USB ep0 out interrupt.");
+	Prints("USB ep0 out interrupt.\r\n");
 #endif 
 	if(D12ReadEndPointLastStatus(0)&0x20)
 	{
@@ -294,6 +329,27 @@ void UsbEp0Out(void)
 					Prints("Synch frame.\r\n");
 					#endif
 					break;
+
+					case REPORT_DESCRIPTOR:
+					#ifdef DEBUG
+					Prints("Get report descriptor.\r\n");
+					#endif
+					if(wLength>SendLength)
+					{
+						pSendData=ReportDescriptor;
+						SendLength=sizeof(ReportDescriptor);
+						if(wLength%DeviceDescriptor[7]==0)
+						{
+							NeedZeroPacket=1;
+						}
+						else
+						{
+							SendLength=wLength;
+						}
+						UsbEp0SendData();
+					}
+					break;
+					
 	
 					default:
 					#ifdef DEBUG
@@ -356,6 +412,10 @@ void UsbEp0Out(void)
 					#ifdef DEBUG
 					Prints("Set configuration.\r\n");
 					#endif
+					D12SetEndPointEnable(wValue&0xff);
+					SendLength=0;
+					NeedZeroPacket=1;
+					UsbEp0SendData();
 					break;
 	
 					case SET_DESCRIPTOR:
@@ -385,8 +445,27 @@ void UsbEp0Out(void)
 	
 				case 1:  //class request.
 				#ifdef DEBUG
-				Prints("Class output request.");
+				Prints("Class output request.****\r\n");
 				#endif
+				switch(bRequest)
+				{
+					case SET_IDLE:
+					#ifdef DEBUG
+					Prints("--Set idle.\r\n");
+					#endif
+					SendLength=0;
+					NeedZeroPacket=1;
+					UsbEp0SendData();
+					break;
+
+					default:
+					#ifdef DEBUG
+					Prints("Unrecognized class request.");
+					PrintShortIntHex(bRequest);
+					Prints("\r\n");
+					#endif
+					break;
+				}
 				break;
 	
 				case 2: //vendor request.
@@ -420,7 +499,14 @@ void UsbEp0In(void)
 void UsbEp1Out(void)
 {}
 void UsbEp1In(void)
-{}
+{
+	#ifdef DEBUG
+	Prints("Endpoint 1 in interrupt.\r\n");
+	#endif
+	D12ReadEndPointLastStatus(3);
+	Ep1InIsBusy=0;
+
+}
 void UsbEp2Out(void)
 {}
 void UsbEp2In(void)
